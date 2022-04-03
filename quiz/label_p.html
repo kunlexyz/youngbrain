@@ -1,0 +1,737 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>app</title>
+<style>
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#d0ebfb;
+}
+input[type=text]{
+	font-size:22px;
+	border:none;
+	margin:1px 0px;
+	border-bottom:thin solid #06C;
+}
+.mk{vertical-align: middle;}
+
+.imgCon{background-color:#fff;}
+
+.imgCon img{max-width:100%;}
+
+ol{ padding:20px;
+    max-width: 310px;
+    margin: auto;}
+
+#ti{
+	position:fixed;
+	top:0px;
+	right:0px;}
+#ti, #start, .ti {display:inline-block;
+	background-color:#009;
+	color:white;
+	padding:6px;
+	cursor:pointer;
+	font-size:26px;
+	margin:0px 1px;
+}
+.hh{
+	background-color:#e0fbfb;
+	font-size:20px;
+	padding:6px;
+	margin-bottom: 6px;
+	}
+.ce{text-align:center;}
+#msg, #end{width:100%;height:100vh;}
+</style>
+</head>
+
+<body>
+
+		<div id="msg" class ="ce" >
+<div id="caption" style="font-size:50px;padding-top:60px;">
+Labeling <br />
+challenge
+</div>
+<div id="ti2" style="padding:11px 0px;"> Time duration: 2 minutes</div>
+<div id="start" style="
+	font-size:30px;" onclick="start2()">Start</div>
+   <br />
+How far can you go in 120 seconds?
+<!--
+How much can you label right in 60 sec
+-->
+		</div>
+        <div id="end" class ="ce" style="display:none;">
+<div id="ti3" class="ti"> Time up</div>
+<div id="sco" style="font-size:30px;">hey</div>
+	<div style="padding-top:15px"></div>
+<div id="start" style="
+	font-size:30px;" onclick="again()">Try again?</div>
+<div id="start" style="font-size:30px;" onclick="again()">Past Results</div>
+
+<div style="padding-top:15px;">
+For more exercises: download the APP for <br />
+Biology Practical Activity &amp; Work Book 1 - 3.<br />
+
+<a href="https://youngbrain.com.ng/app">
+<div id="start" style="font-size:30px;" onclick="again()">Biology_App</div>
+</a>
+</div>
+        </div>
+		<div id="labelView" class="ce" style="display:none;">
+<div class ="hh">Labeling 
+
+	<div id="ti"> Time: </div>
+</div>
+
+<div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">1</div>
+</div>
+<div class="imgCon">
+	<img src="images/1.jpg" class="im" />
+</div>
+<ol type="1">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+	</div>
+	<div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">2</div>
+</div>
+<div class="imgCon">
+	<img src="images/2.jpg" class="im" />
+</div>
+<ol type="1">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+</div>
+	<div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">3</div>
+</div>
+<div class="imgCon">
+	<img src="images/3.jpg" class="im" />
+</div>
+<ol type="1">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+
+	</div>
+    <div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">4</div>
+</div>
+<div class="imgCon">
+	<img src="images/4.jpg" class="im" />
+</div>
+<ol type="1">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+
+	</div>
+    <div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">5</div>
+</div>
+<div class="imgCon">
+	<img src="images/5.jpg" class="im" />
+</div>
+<ol type="1">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+
+	</div>
+    <div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">6</div>
+</div>
+<div class="imgCon">
+	<img src="images/6.jpg" class="im" />
+</div>
+<ol type="1">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+
+	</div>
+    <div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">7</div>
+</div>
+<div class="imgCon">
+	<img src="images/7.jpg" class="im" />
+</div>
+<ol type="1">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+
+	</div>
+    <div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">8</div>
+</div>
+<div class="imgCon">
+	<img src="images/8.jpg" class="im" />
+</div>
+<ol type="1">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+
+	</div>
+    <div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">9</div>
+</div>
+<div class="imgCon">
+	<img src="images/9.jpg" class="im" />
+</div>
+<ol type="1">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+
+	</div>
+    <div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">10</div>
+</div>
+<div class="imgCon">
+	<img src="images/10.jpg" class="im" />
+</div>
+<ol type="1">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+
+	</div>
+    <div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">11</div>
+</div>
+<div class="imgCon">
+	<img src="images/11.jpg" class="im" />
+</div>
+<ol type="i">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+
+	</div>
+    <div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">12</div>
+</div>
+<div class="imgCon">
+	<img src="images/12.jpg" class="im" />
+</div>
+<ol type="1">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+
+	</div>
+    <div class="qq">
+
+<div class="dia">
+	Diagram 
+    <div class="num">13</div>
+</div>
+<div class="imgCon">
+	<img src="images/13.jpg" class="im" />
+</div>
+<ol type="1">
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+    <li>
+    <input type="text" class="answ" /><span class="resp"></span>
+    </li>
+
+</ol>
+
+	</div>
+	<div class="qq">
+
+	</div>
+	<div class="qq">
+
+	</div>
+	<div class="qq">
+
+	</div>
+		</div>
+
+</body>
+
+<script type="text/javascript">
+
+function again(){
+		document.getElementById('msg').style.display = 'block';
+		document.getElementById('end').style.display = 'none';	
+}
+var tym=15;
+tymbox=document.getElementById('ti');
+function ty(){
+	if(tym >0){
+		tym--;
+		tymbox.innerHTML = "Time : "+tym;
+		setTimeout(ty, 1000);
+	}
+	else {
+		tymbox.innerHTML = "TIME UP! 00:00";
+		document.getElementById('ti3').innerHTML="TIME UP! 00:00";
+		document.getElementById('end').style.display = 'block';
+		document.getElementById('labelView').style.display = 'none';
+	
+	cc = countSco();
+	document.getElementById('sco').innerHTML='you scored: ' + cc;
+	}
+}
+
+function start2(){
+	tym = 31;
+	document.getElementById('msg').style.display = 'none';
+	document.getElementById('labelView').style.display = 'block';
+	setTimeout(ty, 1000);
+}
+function countSco(){
+	var mkk=0;
+	
+	for(ii = 0; ii < totSco.length; ii++){
+		mkk=mkk + totSco[ii];
+	}
+	
+	return mkk;
+}
+
+/*** marker **/
+
+var g=document.getElementsByClassName('answ');
+gg=document.getElementsByClassName("resp");
+xw='<span class="T_A_required">Teacher\'s attention required</span>';
+z = 'x';
+totSco=[];
+function myFunction(){
+for (var i = 0, len = g.length; i < len; i++)
+{
+totSco[i]=0;
+//if(answer[i][0].length < 1){gg[i].innerHTML=xw}else{ gg[i].innerHTML=answer[i][0];}
+    (function(index){
+        g[i].onkeyup = function(){
+              //alert(index+1)  ;
+			  if(answer[index][0].length < 1){gg[index].innerHTML=xw}else{
+				  
+              var y=g[index].value.toLowerCase();
+              xx=answer[index];
+              mk = "";
+              anso = "f";
+              //alert(xx.length);
+			  			 
+			  
+			  for (var ii = 0, len = xx.length; ii < len; ii++)
+			  {x2 = xx[ii].toLowerCase();
+			  if(y==x2){anso = "t";
+			  /*
+			  return anso;
+			  break;
+			  */
+			  }
+			  }
+			  
+if(anso=="t"){z= "<img src='images/correctx.jpg' alt='correct' class='mk' />";
+totSco[index]=1;}
+else{z= "<img src='images/wrongx.jpg' alt='wrong' class='mk' />";
+totSco[index]=0;}//{z= x2}
+//document.getElementById("demo").innerHTML=z;
+gg[index].innerHTML=z;
+        }}    
+    })(i);
+
+}
+}
+setTimeout(myFunction, 3000);
+
+
+var answer= [
+	['cell membrane'],
+	['Golgi body'],
+	['centrosome'],
+	['nucleus'],
+	['nucleolus'],
+	['nuclear membrane'],
+	['smooth endoplasmic reticulum'],
+	['mitochondria'],
+	['cytoplasm'],
+	['cellulose cell wall'],
+	//10
+	['cellulose cell wall','cellulose'],
+	['tonoplast'],
+	['chloroplast'],
+	['mitochondrion'],
+	['cytoplasm'],
+	['cell membrane'],
+	['nucleus'],
+	['vacuole'],
+	//17
+	['Humerus'],
+	['Radius'],
+	['ulna'],
+	['carpals'],
+	//21
+	['atlas vertebra'],
+	['axis vertebra'],
+	['cervical vertebrae'],
+	['thoracic vertebra'],
+	['lumber vertebra'],
+	//26
+	['renal artery'],
+	['renal vein'],
+	['nephron'],
+	['renal pelvis'],
+	//30
+	['funnel'],
+	['ovary'],
+	['oviduct'],
+	['anterior chamber of cloaca','anterior chamber','cloaca anterior chamber'],
+	['cloacal opening'],
+	['posterior chamber of cloaca','posterior chamber','cloaca posterior chamber'],
+	//36 - Amniote egg of a bird (e.g. hen)
+	['shell'],
+	['thin albumin'],
+	['chalaza'],
+	['thick albumin'],
+	['germinal disc'],
+	['vitelline (yolk) membrane'],
+	['yolk'],
+	['chalaza'],
+	['inner shell membrane'],
+	['outer shell membrane'],
+	['air cell'],
+	//47
+	['petal'],
+	['ovule'],
+	['sepal'],
+	['receptacle'],
+	['peduncle'],
+	// 52
+	['Right bronchus'],
+	['Outer pleural membrane'],                
+	['Nose','Nasal opening'],
+	['Windpipe','trachea'],
+	['Left bronchus'],
+	['Bronchiole'],
+	['Diaphragm'],
+	//59 
+	['Cerebrum'],
+	['Thalamus'],
+	['Hypothalamus'],
+	['Cerebellum'],
+	//63
+	['Olfactory lobes'],
+	['Cerebral hemisphere'],
+	['Cerebellar hemispehere'],
+	['Medulla oblongata'],
+	['Spinal Cord'],
+	//68
+	['Lens'],
+	['Pupil'],
+	['Iris'],
+	['Cornea'],
+	['Choroid'],
+	['Retina'],
+	['nerve Optic'],
+	['Blind spot'],
+	//76
+	['ear drum'],
+	['malleus'],
+	['incus'],
+	['stapes'],
+	['vestibular nerve'],
+	['cochlea'],
+	['eustachian tube'],
+	// 83
+	/*
+	[''],	
+	[''],
+	[''],
+	[''],
+	[''],
+	[''],
+	[''],
+	[''],
+	*/
+];
+</script>
+
+</html>
