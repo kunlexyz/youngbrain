@@ -1,0 +1,355 @@
+.tabler, .tabler th, .tabler td {
+    border: none;
+    text-align: left;
+    padding: 8px;
+	border-left: 1px solid #aaa;
+}
+.tabler tbody tr:nth-child(2n) {
+    background-color: #FF9;
+}
+.tabler {
+    border-collapse: collapse;
+    border-spacing: 0;
+width: 100%;
+	border: 1px solid #aaa;
+	margin-bottom:15px;
+}
+.smal_t{font-size:11px;}
+.smal_t2{font-size:9px;}
+/*.tabler tr{background-color:#FFF;}*/
+.bg_white{background-color:#fff;}
+
+.tableB{
+    border-collapse: collapse;
+    border-spacing: 0;
+width: 100%;
+	margin-bottom:15px;
+}
+
+.tableB td:nth-child(2n){
+	border-left: 1px solid #aaa;
+}
+
+.tableB td{
+    padding: 8px;
+}
+
+.w100{width:100%;}
+
+.h_bio{
+	border-bottom: 1px solid #aaa;}
+	
+.fig{margin-top:15px;}
+.fig_1, .fig{
+	background-color:#FC0;
+	
+	text-align:left;}
+	
+.fig_box{display:inline-block;
+	background-color:#FC0;}
+.no_ol{    padding: 0px 14px;
+    margin: 0px;}
+.method{border-right:#0C0 solid 2px;}
+.gr{color:#0C0}
+.or{color:#F60;}
+
+.tb td{padding:15px;}
+
+.titBox{
+	background-color:#000;
+	color:#FF0;
+	/*max-width:450px;*/
+	padding:5px;
+}
+.u{text-decoration:underline;}
+
+.qBox_bio{border:none;
+	border-bottom:2px #03F solid;
+	background-color:#DEF3F8;
+	text-align:center}
+.resp{color:#F00;}
+
+.ul_style li{
+	padding-right:3px;
+}
+.ul_style li:nth-child(2n){
+	background-color:#E1F2FB;
+}
+.box_head{
+	min-width:85px;
+	min-height:78px;
+	background-color:#222;
+	background-image: linear-gradient(#111, #fff);
+	color:#fff;
+	font-size:20px;
+	font-weight:bolder;
+	padding:0px 8px;
+	float:left;
+	margin-left:20px;
+	margin-right:3px;
+}
+.box_head2{
+	font-size:45px;
+	background-color:#aaa;
+	margin: 0px 9px;
+	color:#000;
+}
+.box_title{
+	font-size:25px;
+	line-height:20px;
+	padding-top:12px;
+	font-weight: bolder;
+}
+.le{text-align:right;}
+.box_Oh{display: inline-block;
+	width:100%;}
+.box_O{display: inline-block;}
+.round_corner{
+	border-radius:10px;
+	padding:2px;
+}
+.big_t{
+	font-size:26px;
+	font-weight:110000;
+}
+#verify{position: fixed;
+background-color:#FFF;
+top: 0px;
+width: 100vw;
+height: 100vh;
+overflow: auto;}
+
+#coHide{display:none;}
+
+.T_A_required{color:#F00;
+font-style:italic;font-size:11px;}
+
+.option_bio{padding-top:4px;}
+
+.imn {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+/*[FreeTutorials.Us] Udemy - The Complete Web Developer in 2018 Zero to Mastery*/
+/*
+
+
+<script type="text/javascript" src="js/ch15.js">
+</script>
+
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div> 
+
+<span id="QQ4"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('QQ4',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Nostoc and Oscilatoria</div>
+    </div>
+	<div class="optionbox" onclick="opMark('QQ4')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Euglina and clamydomonal</div>
+    </div>
+	<div class="optionbox" onclick="opMark('QQ4')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Volvox and spyrogira</div>
+    </div>
+</div> 
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Photosynthesis</td><td>Respiration</td>
+</tr>
+<tr>
+<td>
+1<textarea class="w100"></textarea><span class="w100resp"></span></td><td>
+1<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>2
+<textarea class="w100"></textarea><span class="w100resp"></span></td><td>
+2<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>3 
+<textarea class="w100"></textarea><span class="w100resp"></span></td><td>
+3<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+
+</div>
+<div class="pa paj">
+
+
+<table class="tabler">
+<tr class="trA">
+<td></td>
+</tr>
+</table>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td></td><td>Bony fish</td><td>Cartilagenous fish</td>
+</tr>
+<tr>
+<td>1</td><td></td><td></td>
+</tr>
+<tr>
+<td>2</td><td></td><td></td>
+</tr>
+<tr>
+<td>3</td><td></td><td></td>
+</tr>
+</table>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Features</td><td>Function</td>
+</tr>
+<tr>
+<td>1</td><td></td>
+</tr>
+<tr>
+<td>2</td><td></td>
+</tr>
+<tr>
+<td>3</td><td></td>
+</tr>
+<tr>
+<td>2</td><td></td>
+</tr>
+<tr>
+<td>3</td><td></td>
+</tr>
+</table>
+
+<div class="Notable_head">
+Notable Concepts
+</div>
+
+*/
+
+/*
+#####images
+
+<div class="fig">
+<strong>fig7.3:</strong> 
+</div>
+<img src="images/fig7.3.jpg" class="imn" />
+
+
+
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+<br />
+
+
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+<ol type="i">
+<li></li>
+<li></li>
+<li></li>
+</ol>
+
+<ul type="disc">
+<b></b>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+<ul type="disc">
+<li>
+
+</li>
+</ul>
+
+
+<h3 class="h_bio">
+
+</h3>
+
+
+</li><li>
+<!--
+
+-->
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <div class="menu1" onclick="showViewTab('quote')"><div class="bull"></div>Diagrams</div>
+    <div class="menu1" onclick="showViewTab('backCover')"><div class="bull"></div>About the Book</div>
+    <div class="menu1" onclick="showViewTab('verify')"><div class="bull"></div>Activate</div>
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    <div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+</div>
+
+
+<script type="text/javascript" src="js/connect.js">
+</script>
+
+
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+*/
