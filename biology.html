@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology Practical &amp; Activity Workbook</title>
+	<link rel="icon" type="images/x-icon" href="/images/favicon.ico">
+<link rel="stylesheet" href="th.css" />
+        <link rel="manifest" href="./manifest.json">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- ios support -->
+        <link rel="apple-touch-icon" href="/img/icons/icon-96x96.png">
+        <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+        <meta name="theme-color" content="#FFE1C4">
+<style type="text/css">
+body{
+margin:0px; padding:0px;
+background-color: #008644;}
+.heada{background-color:#F00;
+color:#FFF;
+font-size:24px;
+font-weight:bolder;
+padding-left:4px;
+box-shadow:1px 4px 6px 1px rgba(0, 0, 0, 0.4);}
+.cont{text-align:center;}
+.subcont{text-align:left;
+display:inline-block;
+margin-top:10px;}
+.lis{
+	font-size:20px;
+	padding:4px;
+	cursor:pointer;}
+button{    padding: 5px;
+    font-size: 16px;
+}
+#the_line{
+    width: 100%;
+    height:100vh;
+    display: none;
+    background: #eee;
+}
+</style>
+</head>
+
+<body>
+
+<div id="cova1" style="text-align:center; background-color:#090; padding-bottom:15px;background: rgba(0, 0, 0, 0) linear-gradient(rgb(240, 9, 9), rgb(28, 1, 1)) repeat scroll 0% 0%; width:100%; height:100vh;align-items: center;display: flex; position:fixed; z-index:101;">
+<img class="" src="images/bio_logo2.png" style="display:block; margin:auto;"  />
+</div>
+<!-- -->
+<div class="mCon2" style="right:0px;" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="copyright.html">
+    <div class="menu1"><div class="bull"></div>© copyright</div>
+    </a>
+    <a href="1/content.html">
+    <div class="menu1" >
+    <div class="bull"></div>Book 1
+    </div>
+    </a>
+    <a href="2/content.html">
+    <div class="menu1" >
+    <div class="bull"></div>Book 2
+    </div>
+    </a>
+    <a href="3/content.html">
+    <div class="menu1" >
+    <div class="bull"></div>Book 3
+    </div>
+    </a>
+    <a href="preface.html">
+    <div class="menu1" >
+    <div class="bull"></div>Preface</div>
+    </a>
+    <a href="hint.html">
+    <div class="menu1" >
+    <div class="bull"></div>Hint</div>
+    </a>
+    <a href="ack.html">
+    <div class="menu1" ><div class="bull"></div>Acknowledgement</div>
+    </a>
+    <div class="menu1" onclick="popName()"><div class="bull"></div>Register</div>
+    <a href="frame.html">
+    <div class="menu1" ><div class="bull"></div>Online</div>
+    </a>
+    <a href="1/diagram.html">
+    <div class="menu1" ><div class="bull"></div>Diagrams</div>
+    </a>
+    <a href="past/waec2018.html">
+    <div class="menu1" ><div class="bull"></div>Past Questions</div>
+    </a>
+    <a href="about.html">
+    <div class="menu1" onclick="showViewTab('backCover')"><div class="bull"></div>About the Book</div>
+    </a>
+    <a href="activate.html">
+    <div class="menu1" ><div class="bull"></div>Activate</div>
+    </a>
+    <a href="more.html">
+    <div class="menu1" ><div class="bull"></div>More Books</div>
+    </a>
+    <a href="set.html">
+    <div class="menu1" ><div class="bull"></div>Settings</div>
+    </a>
+    
+		<input id="install_btn" type="button" value="Install this App" 
+    style="font-size:20px;" onClick="instal()"  />
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+		<div id="layer1">
+	<div id="cover">
+<img id="co" class="im" style="position:absolute; z-index:-1" src="images/bio_cover.jpg" />
+<div style="z-index:1;position:absolute; bottom:0px; width:100%; ">
+<button onclick="openNav()">Menu</button>
+	
+		<input id="install_btn" type="button" value="Install this App" 
+    style="font-size:20px;" onClick="instal()"  />
+
+	<div style="text-align:left;padding:0px 15px">
+<div>
+<div class="contains">CONTAINS</div>
+</div>
+<div class="menu1" onclick=""><div class="bull"></div>SSCE Past Questions</div>
+    <div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Illustrated and Elaborated Diagrams</div>
+    
+<div class="oke">Okechukwu C.O.</div>
+    </div>
+
+<div class="rCov">
+YOUNG BRAIN SENIOR SECONDARY SECONDARY SCIENCE SERIES 1-3
+</div>
+<br />
+<a href="1/content.html">
+<button onclick="">Book1</button>
+</a>
+
+<a href="2/content.html">
+<button onclick="">Book2</button>
+</a>
+
+<a href="3/content.html">
+<button onclick="showViewTab('backCover')">Book3</button>
+</a>
+	</div>
+    </div>
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+    		</div>
+<style>
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    width: 90%;
+    height:95vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 96%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+/* For Namebox that send names & phone_No to server */
+
+.pCon{
+	margin:auto;
+	margin-top:80px;
+	padding:20px;
+	background:#eee;
+	max-width:350px;
+	text-align:center;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 12%), 0 4px 7px rgb(0 0 0 / 24%);
+}
+.pas{
+	font-size:22px;
+	border-radius:8px;
+	border:solid 2px #f00;
+	padding:10px;
+	max-width:90%;
+	margin-top: 5px;
+	background:#fff;
+}
+.btnRed {
+    color: #FFF;
+    background-color: #F00;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnC {
+    border: solid 1px #F00;
+    border-radius: 5px;
+    display: inline-block;
+    overflow: hidden;
+}
+</style>
+
+<div id="namebox" style="z-index: 2;position:fixed; top:40px; width: 100%;
+display: none;">
+<div class="pCon shadow">
+    <div class="closebtn" onclick="unPopName()"
+    style="background: red;top:none;font-size: 45px;
+    cursor: pointer;
+    color: #F60;
+    color: #FFF;
+    line-height: 40px;
+    font-weight: bold;"
+    >×</div>
+        <div>Please enter your:</div>
+        Name:<br>
+        <input type="text" id="name" class="pas" >
+
+        <br>
+        Phone Number:<br>
+        <input type="tel" id="phone" class="pas" >
+        
+            <div class="ce">
+        <div onclick="submit_name()" class="btnRed btnC">Submit</div>
+        <div onclick="unPopName()" class="btnRed btnC">←Back</div>
+            </div>
+        <div id="help">
+            This info help us to serve you better
+        </div>
+</div>
+</div>
+
+<div id="the_line">
+    <div class="the_line_msg pCon">
+        No Internet or Slow connection !!
+    </div>
+    
+</div>
+<!-- 
+<iframe id="the_line_frame" src="http://localhost/yb/quiz/yb_online.html"></iframe>
+-->
+</body>
+<script src="app.js"></script>
+<script type="text/javascript" src="js/jq.js">
+</script>
+<script type="text/javascript" src="js/content.js">
+</script>
+<script type="text/javascript">
+
+// font setting - handwritting setting
+
+//cover slide
+$(document).ready(function(){
+        $("#cova1").slideUp(3000);
+});
+
+/*************YEK**********/
+var leta = 'ZYXWVEDCBA';
+letta = 'JKLMNOPQRS';
+text = '';
+textLetta = '';
+serva = 'http://youngbrain.com.ng';
+//serva = 'localhost';
+
+//generate data & yek
+function gener(){
+		//check if app has been activate
+	if(typeof localStorage.biO == 'undefined'){
+		text = '';
+		for (i = 0; i < 5; i++) {
+			text += leta[Math.floor(Math.random()*9)];
+		}
+  		localStorage.biO = text;
+	}
+	if(typeof localStorage.actidKey == 'undefined'){
+		
+	//get .actidKey if not available
+		textLetta = '';
+		for (ii = 0; ii < 2; ii++) {
+			textLetta += Math.floor(Math.random()*9);
+		}
+		for (i = 0; i < 3; i++) {
+			textLetta += letta[Math.floor(Math.random()*9)];
+		}
+  	localStorage.actidKey = textLetta;
+	}
+	//if .actN never existed
+	if(typeof localStorage.actN == 'undefined'){
+		localStorage.actN = 0;
+	}
+	srch();
+}
+
+// online reg
+
+function srch(){
+	var user_id = localStorage.actidKey;
+	veri_id = localStorage.biO;
+	ac = localStorage.actN;
+	
+	if(typeof localStorage.BioEmail == 'undefined')
+	{email = localStorage.BioEmail;}else{ email = 'none';}
+	
+	if(typeof localStorage.BioPhone == 'undefined')
+	{phone = localStorage.BioPhone;}else{ phone = 'none';}
+	
+	if(typeof localStorage.sutats == 'undefined')
+    {
+        localStorage.sutats = 1566;
+	    localStorage.LT = 0;
+    }
+	sut = localStorage.sutats;
+	
+	if(typeof localStorage.regis == 'undefined' || localStorage.reg == 'empty')
+    {
+        
+    }
+    
+    // register the app once
+    //send_to_reg();
+    
+}
+function srch2(){
+	
+	//alert(x);
+	//$("#result").load("card2.php?quick_search=qq&member="+qs);
+	var p1 = localStorage.actidKey;
+	p2 = localStorage.biO;
+	p3 = localStorage.actN;
+	p4 = localStorage.sutats;
+	p5 = localStorage.LT;
+
+	if(p5.length > 15){
+		p5 = p5.slice(4,24);
+	}
+	p5 = p5.replace(/ /g,'-');
+	//alert("i dey");
+	//return p1;
+	//Expecting /xxxxappxxxx/mytatus/user_app_id/veri_no/key/state
+	$.get(serva+"/xxxxappxxxx/mytatus/"+p1+"/"+p2+"/"+p3+"/"+p4+"/"+p5, function(data, status){
+    //alert("Data: " + data + "\nStatus: " + status);
+	var data2 = data.split("+");
+	//document.getElementById('tt').innerHTML = "Switch :- "+data2[0]+"Lock Time :- "+data2[0];
+	console.log(data2[0]);
+	
+	if(status == 'success'){}
+	dat = Number(data2[0]);
+	if(dat == 1514){
+		
+		localStorage.sutats = 1514;
+		/*			
+		document.getElementById('tk').innerHTML ='App is opened by the Admin <br /> Reg No :'+ localStorage.actidKey + '<br /> Click the button below to go back to "table of content" <br /> <a href="content.html"><button>Content</button></a>';
+		document.getElementById('verify').style.display='none';
+        document.getElementById('coHide').style.display='block';
+        */
+	}
+	if(dat == 1566){
+		
+		localStorage.sutats = 1566;
+		localStorage.actN = 0;
+		/*			
+		document.getElementById('tk').innerHTML ='Deactivated by the admin <br /> Reg No :'+ localStorage.actidKey + '<br /> Contact Admin for more info. <br /> <a href="content.html"><button>Content</button></a>';
+		document.getElementById('verify').style.display='block';
+        document.getElementById('coHide').style.display='none';
+        */
+
+	}
+	dat_2=Number(data2[1]);
+	if(dat_2 > 0){
+		ty = data2[1];//*1000;//*60;
+		console.log('ty+'+ty);
+		localStorage.LT = ty;
+		//upd(ty);
+	}else{
+
+	}
+  });
+
+  sr = setTimeout(srch2,60000);
+}
+gener();				
+
+srch2();
+
+//Js code for mamebox to pop-up every 1 min
+
+function popName(){
+    if(typeof localStorage.regis == 'undefined'){}else{
+        if(localStorage.phone.length > 2){
+            document.getElementById('phone').value = localStorage.phone;
+        }
+        if(localStorage.name.length > 2){
+            document.getElementById('name').value = localStorage.name;
+        }
+    }
+        //alert('i work');
+        document.getElementById('namebox').style.display = 'block';
+        document.getElementsByClassName('overlay2')[0].style.display='block';
+
+    if(typeof localStorage.regis == 'undefined'){
+        setTimeout(popName,30000);
+    }
+    //if(){}
+	closeNav();
+}
+
+if(typeof localStorage.regis == 'undefined'){
+    setTimeout(popName,30000);
+}else if(localStorage.regis == 'l_Reg'){
+    setTimeout(send_to_reg,30000);
+}
+
+function unPopName(){
+        document.getElementById('namebox').style.display = 'none';
+        document.getElementsByClassName('overlay2')[0].style.display='none';
+		closeNav();
+}
+
+function submit_name(){ 
+    name = document.getElementById('name').value;
+    phone = document.getElementById('phone').value;
+    //localStorage.phone
+    if(phone.length <10){
+        document.getElementById('help').innerHTML = 'Incorrect Number! Pls enter a valid phone number';
+        return;
+    }else if(name.length <2){
+        document.getElementById('help').innerHTML = 'Name cannot be empty or lessthan 3 letters';
+        return;
+    }else{
+        localStorage.phone = phone;
+        localStorage.name = name;
+        localStorage.regis = 'l_Reg';
+        unPopName();
+        send_to_reg();
+    }
+}
+function send_to_reg(){
+    
+    if (localStorage.regis == 'undefined'){
+        popName();
+        return;
+    }
+    
+	var p1 = localStorage.actidKey;
+	p2 = localStorage.biO;
+	p3 = localStorage.phone;
+	p4 = localStorage.name;
+	
+    $.get(serva+"/xxxxappxxxx/regis/"+p1+"/"+p2+"/"+p3+"/"+p4, function(data, status){
+    //alert("Data: " + data + "\nStatus: " + status);
+    
+	console.log(data);
+	if(status == 'success'){
+        localStorage.regis = 'G_reg';
+    }
+    
+    
+    console.log(status);
+    
+	
+    });
+
+    if(localStorage.regis == 'l_Reg'){
+    setTimeout(send_to_reg,30000);
+    }
+}
+	
+	//New code		
+var deferredPrompt;
+window.addEventListener('beforeinstal1prompt', (e) => {
+	// Prevent Chrome 67 and earlier from automatically
+	//I showing the prompt
+	e.preventDefault();
+	//If Stash the event so it can be triggered later.
+	deferredPrompt = e;
+});
+
+var btnAdd = document.getElementById('install_btn');
+window.addEventListener('beforeinstallprompt', (e) => {
+	e.preventDefault();
+	deferredPrompt = e;
+	// Update UI notify the user they can
+	// add to home screen
+	btnAdd.style.disp1ay = 'b1ock';
+});
+	
+window.addEventListener('appinstalled', (evt) => {
+	app.logEvent('a-z', 'installed');
+	btnAdd.style.disp1ay = 'none';
+});
+	
+function instal(){
+	console.log('hit me');
+	deferredPrompt.prompt();
+	deferredPrompt.userChoice.then((choiceResult) => {
+		if (choiceResult.outcome === 'accepted') {
+		console.log('User accepted the prompt');
+		}
+		deferredPrompt = null;
+	});
+}
+</script>
+<script type="text/javascript" src="https://youngbrain.com.ng/yb/the_line.js">
+</script>
+<script type="text/javascript" src="https://youngbrain.com.ng/yb/the_line.js">
+</script>
+</html>

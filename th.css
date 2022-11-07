@@ -1,0 +1,285 @@
+.siz{width:100%;
+max-width:400px;}
+.wod{text-align:justify;}
+.im{text-align:center;}
+.pointred{color:#F00;
+font-style:italic;
+font-weight:bolder;}
+.bullet{color:#FFF;
+display:inline-block;
+margin:2px;
+border-radius:10px;
+font-weight:bolder;
+min-width:25px;
+min-height:25px;
+text-align:center;
+font-size:20px;
+font-weight:bold;}
+.Red{background-color:#F00;}
+.Green{background-color:#093;}
+.bar{color:#FFF;
+font-weight:bolder;
+margin-bottom:2px;}
+a{text-decoration:none;}
+
+.men{
+position:fixed;
+right:0px;
+background-color:#900;
+color:#FFF;
+font-weight:bolder;
+border-radius:3px;
+padding:2px;}
+
+.heada{background-color:#F00;
+color:#FFF;
+font-size:24px;
+font-weight:bolder;
+padding-left:4px;
+box-shadow:1px 4px 6px 1px rgba(0, 0, 0, 0.4);}
+
+body{
+margin:0px; padding:0px;}
+
+.sBox{width:20px; height:30px;
+display:inline-block;}
+.sBoxUp{width:100%;
+height:40%;}
+.sBoxDown{width:100%;
+height:60%;
+text-align:center;}
+a{text-decoration:none;
+color:#000;}
+
+#setin{display:none;}
+
+.menu3{color:#FFF;}
+.menu4{background-color:#FF0;
+color:#000;
+display:inline-block;
+padding-left:2px;
+padding-right:2px;}
+
+.plain{display:none;
+text-align:justify;}
+
+/* The Art Of A Genius */
+body{
+    margin: 0px;
+    padding: 0px;
+	font-family:myFirstFont;
+	font-size:16px;
+    -webkit-font-smoothing: antialiased;
+	text-align:center;}
+
+.bulletO{display:inline-block;
+background-color:#F00;
+width:8px;
+height:8px;
+margin-bottom:2px;
+margin-right:8px;
+}
+
+.h_bio{
+	border-bottom:1px solid #aaa;}
+
+a{text-decoration:none;
+color:#000;}
+.pa{padding:10px;}
+.pa:nth-child(odd){background-color:#eeeeee;}
+.lis:nth-child(odd){background-color:#fbbf1f;}
+.lis{
+	font-size:20px;
+	padding:4px;
+	cursor:pointer;}
+
+@font-face{
+	font-family:myFirstFont;
+	src:url(css/tt0142m_.ttf);
+}
+@font-face{
+	font-family:myFont2;
+	src:url(css/comic.ttf);
+}
+@font-face{
+	font-family:myFont3;
+	src:url(css/sylfaen.ttf);
+}
+@font-face{
+	font-family:myFont4;
+	src:url(css/tt0001m_.ttf);
+}
+@font-face{
+	font-family:myFont5;
+	src:url(css/tt1018m_.ttf);
+}
+.b{font-weight:bold;}
+
+.rCov{
+	background-color:#F00;
+  background-image:  linear-gradient(to right, #460e0e, #ff0c00, #800600);
+	padding:2px;
+	color:#FFF;
+	font-size:10px;
+}
+
+.im{max-width:400px;width:100%; margin:auto; display:block;}
+
+.co{display:none;
+position:fixed;
+top:0px;
+width:100vw;
+height:100vh;
+overflow:auto;}
+
+#backCover{
+	background-color:#ffff7d;
+	margin:7px;
+	border-radius:28px;
+	padding:8px;
+	width:auto;
+}
+
+.redBox{
+	background-color:#F00;
+	border:solid 2px #000;
+	border-radius:11px;
+	color:#FFF;
+	font-size:20px;
+	display:inline-block;
+	padding:5px 8px;
+	margin:9px;
+	box-shadow: 5px 3px #000;
+}
+.chapta{padding-top:5px;text-align:justify;
+background-color:#FF6;margin: 0px 2px;
+overflow:auto;}
+.content_Justified{text-align:justify;}
+
+.headaChap{
+	font-size:18px;
+	text-transform:capitalize;
+	padding:10px;
+	background-color:#fb7318;
+	font-weight:bold;
+	text-align:center;}
+.ce{
+	text-align:center;}
+.cont{margin:10px 0px;
+text-align:center;
+}
+.subcont{text-align:left;
+display:inline-block;
+margin-top:10px;
+}
+
+.menu_dash{
+    padding: 1px;
+    margin: 4px;
+    background-color: #fff;
+    width: 15px;
+}
+.mCon2{position:fixed;
+background-color:#F00; color:#FFF;
+z-index:1;
+top:0px;
+padding:5px;
+cursor:pointer;
+padding-top:2px;}
+
+
+/*
+css code for Pop Out Menu
+*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color:#F00;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay2{opacity:0.5;
+background-color:#000;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display:none;
+    top: 0px;}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align:left;
+  padding: 10px 0px;
+  background-color:#FFF;
+}
+
+.overlay .menu1 {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #222;
+  display: block;
+  transition: 0.3s;
+}
+.menu1:hover{
+	cursor:pointer;background-color:#DDD;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+}
+
+.close3{
+	font-size:45px;
+	cursor:pointer;
+	color:#F60;
+	color:#FFF;
+	line-height: 40px;
+	top:0px;
+	font-weight:bold;
+	border:solid 1px #FF0000;
+}
+.bull{
+	padding:4px;
+	background-color:#F00;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:10px;
+}
+/* @end of Pop Out Menu*/
+
+.contains{
+	background-color:#F00;
+	padding:2px 5px;
+	color:#fff;
+	display:inline-block;
+	border-radius:6px;
+	clear:both;
+}
+
+.oke{
+	background-color:#168747;
+	background-image: linear-gradient(#278a4a, #0a331f);
+	border:solid 2px #FFFFFF;
+	border-radius:10px 10px 0px 0px;
+	display:inline-block;
+	color:#FFF;padding: 4px;
+	margin-top:8px;
+}
+.pa{text-align:left;}
+.paj{text-align:justify;}
+
+/*=
+#layer{
+	display:none;
+}
+	*/

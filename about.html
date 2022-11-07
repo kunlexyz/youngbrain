@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About</title>
+<link rel="stylesheet" href="th.css" />
+<style type="text/css">
+body{
+margin:0px; padding:0px;
+background-color: #008644;}
+
+ul{ list-style:none;}
+ul li::before{
+	content:"\2022";
+	color:#F00;
+	font-weight:bolder;
+	display:inline-block;
+}
+
+.bull_content{
+	color:#fff;
+	width:90%;
+	display:inline-block;
+	vertical-align:top;
+}
+</style>
+</head>
+
+<body>
+
+<div id="cova1" style="text-align:center; background-color:#090; padding-bottom:15px;background: rgba(0, 0, 0, 0) linear-gradient(rgb(240, 9, 9), rgb(28, 1, 1)) repeat scroll 0% 0%; width:100%; height:100vh;align-items: center;display: flex; position:fixed; z-index:101;">
+<img class="" src="images/bio_logo2.png" style="display:block; margin:auto;"  />
+</div>
+<div class="navig8">
+<!-- -->
+<div class="mCon2" style="right:0px;" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    
+    <a href="index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    <a href="copyright.html">
+    <div class="menu1"><div class="bull"></div>© copyright</div>
+    </a>
+    <a href="1/content.html">
+    <div class="menu1" >
+    <div class="bull"></div>Book 1
+    </div>
+    </a>
+    <a href="2/content.html">
+    <div class="menu1" >
+    <div class="bull"></div>Book 2
+    </div>
+    </a>
+    <a href="3/content.html">
+    <div class="menu1" >
+    <div class="bull"></div>Book 3
+    </div>
+    </a>
+    <a href="hint.html">
+    <div class="menu1" >
+    <div class="bull"></div>Hint</div>
+    </a>
+    <a href="preface.html">
+    <div class="menu1" >
+    <div class="bull"></div>Preface</div>
+    </a>
+    <a href="ack.html">
+    <div class="menu1" ><div class="bull"></div>Acknowledgement</div>
+    </a>
+    <div class="menu1" onclick="showViewTab('chapx')"><div class="bull"></div>Last Reading</div>
+    <a href="1/diagram.html">
+    <div class="menu1" ><div class="bull"></div>Diagrams</div>
+    </a>
+    <a href="past/waec2018.html">
+    <div class="menu1" ><div class="bull"></div>Past Questions</div>
+    </a>
+    <a href="activate.html">
+    <div class="menu1" ><div class="bull"></div>Activate</div>
+    </a>
+    <a href="more.html">
+    <div class="menu1" ><div class="bull"></div>More Books</div>
+    </a>
+    <a href="set.html">
+    <div class="menu1" ><div class="bull"></div>Settings</div>
+    </a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+
+</div>	<div id="cover" style="position:absolute; z-index:-1;width:100%;">
+    	<div>
+<img id="co" class="im" src="images/bio_back_cover.jpg" />
+		</div>
+        </div>
+<div style="z-index:1;position:absolute; bottom:0px; width:100%; color:#FFF; ">
+<div style="max-width:400px;margin:auto;text-align:left;
+padding:5px;">
+A three volume comprehensive Practical activities / workbook <br />course specially written to cover the new <br />National Curriculum fo senior Secondary Schools.
+
+<div style="color:#F00; padding-top:12px;">
+Contains
+<div>
+    <div class="bull"></div>
+    <div class="bull_content">
+    Background information review in summary for every topic
+    </div>
+    <div class="bull"></div>
+    <div class="bull_content">
+    Elaborate diagrams and well illustrated practical activities.
+    </div>
+    <div class="bull"></div>
+    <div class="bull_content">
+    General questions covering every topic.
+    </div>
+    <div class="bull"></div>
+    <div class="bull_content">
+    Past SSCE questions using the topical approach.
+    </div>
+</div>
+    </div>
+    </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="js/jq.js">
+</script>
+<script type="text/javascript" src="js/content.js">
+</script>
+<script type="text/javascript">
+
+// font setting - handwritting setting
+
+//cover slide
+$(document).ready(function(){
+        $("#cova1").slideUp(3000);
+});
+/*
+$(document).ready(function(){
+    $("#cova").click(function(){
+        $(this).slideUp(3000);
+    });
+});
+*/
+</script>
+</html>

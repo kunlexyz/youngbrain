@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setting</title>
+<link rel="stylesheet" href="MobileTem.css" />
+<style type="text/css">
+
+</style>
+</head>
+
+<body>
+
+<div class="navig8">
+<!-- -->
+<div class="mCon2" style="right:0px;" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div> 
+		<img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    
+    <a href="index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    <a href="copyright.html">
+    <div class="menu1"><div class="bull"></div>© copyright</div>
+    </a>
+    <a href="1/content.html">
+    <div class="menu1" >
+    <div class="bull"></div>Book 1
+    </div>
+    </a>
+    <a href="2/content.html">
+    <div class="menu1" >
+    <div class="bull"></div>Book 2
+    </div>
+    </a>
+    <a href="3/content.html">
+    <div class="menu1" >
+    <div class="bull"></div>Book 3
+    </div>
+    </a>
+    <a href="hint.html">
+    <div class="menu1" >
+    <div class="bull"></div>Hint</div>
+    </a>
+    <a href="preface.html">
+    <div class="menu1" >
+    <div class="bull"></div>Preface</div>
+    </a>
+    <a href="ack.html">
+    <div class="menu1" ><div class="bull"></div>Acknowledgement</div>
+    </a>
+    <div class="menu1" onclick="showViewTab('chapx')"><div class="bull"></div>Last Reading</div>
+    <a href="1/diagram.html">
+    <div class="menu1" ><div class="bull"></div>Diagrams</div>
+    </a>
+    <a href="past/waec2018.html">
+    <div class="menu1" ><div class="bull"></div>Past Questions</div>
+    </a>
+    <a href="about.html">
+    <div class="menu1" onclick="showViewTab('backCover')"><div class="bull"></div>About the Book</div>
+    </a>
+    <a href="activate.html">
+    <div class="menu1" ><div class="bull"></div>Activate</div>
+    </a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+
+</div>
+
+<div id="seti" class=""> 
+    	<div class="content ce">
+<div class="headaChap">
+Reading Setting
+</div>
+        
+       <div class="pa"> Text Size:</div>
+    <div onclick="sizIN()" class="sBox sOrange">+</div>
+    <div onclick="sizDE()" class="sBox sOrange">-</div>
+       
+       
+       <div class="pa"> Themes:</div>
+<div><!-- (title,text,groundD,groundOdd,titleText) -->
+    <div onclick="theme2('#A85400','#000','#ffffa5','#ffc774','#fff',1)" class="sBox sOrange">
+    <div class="sBoxUp" style="background-color:#A85400; color:#FFF;"></div>
+    <div class="sBoxDown" style="background-color:#FC0; color:#000;">1</div>
+    </div>
+
+    
+    <div onclick="theme2('#F00','#000','#FFF','#fde','#fff',2)" class="sBox sOrange">
+    <div class="sBoxUp" style="background-color:#F00; color:#FFF;"></div>
+    <div class="sBoxDown" style="background-color:#FFF; color:#000;">2</div>
+    </div>
+
+    
+    <div onclick="theme2('#060','#000','#dFd','#afa','#fff',3)" class="sBox sOrange">
+    <div class="sBoxUp" style="background-color:#060; color:#FFF;"></div>
+    <div class="sBoxDown" style="background-color:#3F6; color:#000;">3</div>
+    </div>
+
+    
+    <div onclick="theme2('#C09','#000','#fbb8fb','#fb99fb','#fff',4)" class="sBox sOrange">
+    <div class="sBoxUp" style="background-color:#C09; color:#FFF;"></div>
+    <div class="sBoxDown" style="background-color:#F9F; color:#000;">4</div>
+    </div>
+
+    
+    <div onclick="theme2('#006','#000','#99F','#AAF','#FFF',5)"  class="sBox sOrange">
+    <div class="sBoxUp" style="background-color:#006; color:#FFF;"></div>
+    <div class="sBoxDown" style="background-color:#09F; color:#000;">5</div>
+    </div>
+
+    
+    <div onclick="theme2('#412','#DDD','#000','#111','#FFF',6)"  class="sBox sOrange">
+    <div class="sBoxUp" style="background-color:#000; color:#FFF;"></div>
+    <div class="sBoxDown" style="background-color:#111; color:#aaa;">6</div>
+    </div>
+    
+</div>
+
+       <div class="headaChap">Hand writing:</div>
+<select id="font" onchange="fontType()">
+  <option value="myFont2">Comic</option>
+  <option value="myFont3">Sylfaen</option>
+  <option value="myFont4">Swis</option>
+  <option value="myFont5">Freehand</option>
+  <option selected="selected" value="myFirstFont">Futura</option>
+</select> 
+    
+        </div>
+        <button onclick="reSet()" style="padding:6px">Reset</button>
+    </div>
+
+</body>
+<script type="text/javascript" src="js/jq.js">
+</script>
+<script type="text/javascript" src="js/content.js">
+</script>
+<script type="text/javascript">
+
+//...themes
+var them = 0;
+function theme2(title,text,groundD,groundOdd,titleText,T){
+	them = T;
+	localStorage.them = T;
+	$('.headaChap').css({"background-color":title,"color":titleText});
+	$('body').css({"background-color":groundD,"color":text});
+	$('a').css({"color":text});
+	$('.co').css({"background-color":groundD,"color":text});
+	$('tr:nth-child(odd)').css({"background-color":groundOdd,"color":text});
+	$('.pa:nth-child(odd)').css({"background-color":groundOdd,"color":text});
+	$('.pa').css({"background-color":groundD,"color":text});
+}
+
+function sizIN(){
+	H = H +3;
+	hs = hs + 3;
+	$('.headaChap').css({"font-size":H+"px"});
+	$('.pa').css({"font-size":hs+"px"});
+	localStorage.H = H;
+	localStorage.hs = hs;
+}
+function sizDE(){
+	H = H - 3;
+	hs = hs - 3;
+	$('.headaChap').css({"font-size":H+"px"});
+	$('.pa').css({"font-size":hs+"px"});
+	localStorage.H = H;
+	localStorage.hs = hs;
+}
+function fontType(ourFont){
+	var ourFont= document.getElementById('font').value;
+	$('.headaChap').css({"font-family":ourFont});
+	$('.pa').css({"font-family":ourFont});
+	ft = ourFont;
+	localStorage.font = ft;
+}
+function reSet(){
+	localStorage.removeItem('H');
+	localStorage.removeItem('hs');
+	localStorage.removeItem('font');
+	localStorage.removeItem('them');
+			window.location.reload();
+	
+}
+
+function Th(){
+	
+	if(typeof localStorage.them === 'undefined'){them = 0;}else{
+		them = localStorage.them;
+	}
+	
+	if(typeof localStorage.H === 'undefined'){}else{
+	H = localStorage.H;
+	hs = localStorage.hs;
+	
+	$('h3').css({"font-size":H+"px"});
+	$('h4').css({"font-size":H+"px"});
+	$('.pa').css({"font-size":hs+"px"});
+	}
+	
+	if(typeof localStorage.font === 'undefined'){}else{
+	ft = localStorage.font;
+	$('body').css({"font-family":ft});
+	$('h3').css({"font-family":ft});
+	$('h4').css({"font-family":ft});
+	$('.pa').css({"font-family":ft});
+	}
+	
+	if(them == 1 || them == '1'){
+			theme2('#A85400','#000','#ffffa5','#ffc774','#fff');
+	}else if(them == 2 || them == '2'){
+			theme2('#F00','#000','#FFF','#fde','#fff');
+	}else if(them == 3 || them == '3'){
+			theme2('#060','#000','#dFd','#afa','#fff');
+	}else if(them == 4 || them == '4'){
+			theme2('#C09','#000','#fbb8fb','#fb99fb','#fff');
+	}else if(them == 5 || them == '5'){
+			theme2('#006','#000','#99F','#AAF','#FFF');
+	}else if(them == 6 || them == '6'){
+			theme2('#412','#DDD','#000','#111','#FFF');
+	}
+}
+Th();
+
+var H = 18;
+hs = 15;
+ft = 'myFirstFont';
+</script>
+</html>
