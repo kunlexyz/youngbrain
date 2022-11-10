@@ -1,0 +1,774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <div class="menu1" onclick="showViewTab('verify')"><div class="bull"></div>Activate</div>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t le">
+New Senior School Biology Practical Activity &amp; Work Book Two
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">4</div>
+</div>
+	<div class="box_title" style="font-size:20px;">
+GASEOUS EXCHANGE<br /> AND <br />RESPIRATORY SYSTEMS
+	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="square">
+<li>Respiratory Structure and features that enhance gaseous exchange in them.
+</li><li>Gaseous exchange in lower organisms.
+</li><li>Ventilation and gaseous exchange in     vertebrates.  
+</li><li>Gaseous exchange in plants.
+</li></ul>
+</div>
+
+<div class="fig">
+<strong>fig4.1:</strong> Cross-section through the main parts of a insect’s respiratory system
+</div>
+<img src="images/fig4.1.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig4.2:</strong> Diagram of a sh showing ventilation structure (gills)
+</div>
+<img src="images/fig4.2.jpg" class="imn" />
+
+<div class="pa paj">
+<h4 class="h_bio">
+Background Information
+</h4>
+Respiration is a gaseous exchange process by which oxygen is made available to the body cell for the release of energy from food. In higher organisms of low surface area to volume ratio, oxygen does not nd its way to the cells by simple diffusion, thus to actualize the respiratory process, that involves oxygen, 
+</div>
+<div class="pa paj">
+<b>There must be intake and absorption of oxygen from the surroundings; the transport of oxygen to the various body cells and the utilization of oxygen for the release of ATP from food within the mitochondria of cells during creb’s cycle</b>
+</div>
+<div class="pa paj">
+Structures in organisms that enhance gaseous exchange process for respiration to take place are called gaseous exchange structures or respiratory structures. They include: Bodysurfaces, gills, tracheaeandlungs. A respiratory structure has some adaptative features that t them well for gaseous exchange. They include: large surface area; thin membrane at the exchange barrier, ventilation mechanism that maintains a steep diffusion gradient, and a close link between the exchange surface and the transport system or mechanism.
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+
+Gaseous Exchange in Lower Organism
+</h4>
+</div>Lower Organism, including simple unicellular and multicellular organisms carry out gaseous exchange process through their body surfaces. Such organisms include all protists, e.g. amoeba, sponges, Coelenterates, free living planarians etc.
+<div class="pa paj">
+<b>Ventilation and Gaseous Exchange in some Multicellular Organism and Vertebrates</b><br />
+In certain multicellular animal including vertebrates, respiration can be seen as a process that occurs in three sequential processes:
+</div>
+<div class="pa paj">
+<b>1. External Respiration:</b>   Exchange of gases between the atmosphere and the blood (which takes place at the lungs in mammals)
+</div>
+<div class="pa paj">
+<b>2. Internal Respiration:</b> Gaseous exchange between the blood and the body cells and
+</div>
+<div class="pa paj">
+<b>3. Cellular Respiration:</b> The breaking down of food (glucose) in the mitochondria of the cell so that energy can be released
+</div>
+<div class="pa paj">
+During external respiration, air or water from the external environment is continually circulated over the gaseous exchange structure. This is called ventilation.
+</div>
+<div class="pa paj">There are certain structures in organism that bring about ventilation. These structures include <strong>lungs, Gills, trachea</strong>
+</div>
+<h4 class="ce">
+Ventilation Movements in humans
+</h4>
+
+<div class="fig">
+<strong>fig4.3:</strong> The human lungs 
+</div>
+<img src="images/fig4.3.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig4.4:</strong> Alveoli 
+</div>
+<img src="images/fig4.4.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig4.5:</strong> Internal respiration in Alveoli 
+</div>
+<img src="images/fig4.5.jpg" class="imn" />
+
+<div class="pa paj">
+<h4 class="ce h_bio">
+Gaseous Exchange in  plants
+</h4>
+Gaseous exchange occurs in plants for photosynthesis and cellular respiration to take place. But plants do not have specialized structures for gaseous exchange as in the case of animals, rather gases enter in and leave the plants through the Stomata at the leaves,Lenticels on old stems and roots and root hairs in younger roots
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+General Questions
+</h4>
+
+</div>
+<div class="pa paj">
+1. Energy is vital for powering life processes of living things, but though it is contained in food, energy can not be released from food except through the process of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2. As growth is an anabolic process, respiration on the other hand is a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> process
+</div>
+<div class="pa paj">
+3. Respiratory structures must have gaseous exchange surfaces that are moist because 
+<span id="Q3"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('Q3')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">A liquid medium is required for air passage</div>
+    </div>
+	<div class="optionbox" onclick="opMark('Q3',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Gaseous diffusion at respiratory structues need to our in solution</div>
+    </div>
+	<div class="optionbox" onclick="opMark('Q3')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">A liquid is needed to clear the respiratory tract</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+4. To enhance gaseous exchange process in respiratory structures, The structure needs to have a large surface area and in most animals, it must be closely linked to the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> system
+</div>
+<div class="pa paj">
+5. Free living at worms, annelids, sponges and coelenterates carry out gaseous exchange process through their 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+6. Respiratory structures in insects are the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+7. In the Gills of a bony sh the gaseous exchange surface is found at the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+8. During external respiration in mammals, gaseous exchange surface in lung is found at the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+9. Within the thoracic cavity, each lung is surrounded by an inner and outer 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> which forms a water proof and air tight sac.
+</div>
+<div class="pa paj">
+10. Write down the two gaseous exchange structures in amphibians through which ventilation movement occurs 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+11.An example of an animal in which oxygen diffuses directly from the gaseous exchange structure into body cells is 
+<span id="Q11"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('Q11',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">amoeba</div>
+    </div>
+	<div class="optionbox" onclick="opMark('Q11')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">fish</div>
+    </div>
+	<div class="optionbox" onclick="opMark('Q11')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">lizard</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+Carefully study the diagram below and label the parts numbered 12-18
+</div>
+
+<div class="fig">
+<strong>fig4.6</strong> 
+</div>
+<img src="images/fig4.6.jpg" class="imn" />
+
+<ol type="1" start="12">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+<div class="pa paj">
+19. Write down one function of the rib during respiration 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+20. The trachea divides into two air passages in humans called  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+21. Gaseous exchange opening in the leaf surface of plants is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>, its opening and closing is controlled by 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+22.In stems and roots of plants, gaseous exchange can occur through the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+3.Diagram of the gaseous exchange structure mechanism in plants. Label Nos 23 –24
+</div>
+
+<div class="fig">
+<strong>fig4.7:</strong> 
+</div>
+<img src="images/fig4.7.jpg" class="imn" />
+
+<div class="pa paj">
+23. <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+<br />
+24. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+Expression Exercise
+</h4>
+1a. Within the table below, write down three differences between photosynthesis and respiration
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Photosynthesis</td><td>Respiration</td>
+</tr>
+<tr>
+<td>
+1<textarea class="w100"></textarea><span class="w100resp"></span></td><td>
+1<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>2
+<textarea class="w100"></textarea><span class="w100resp"></span></td><td>
+2<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>3 
+<textarea class="w100"></textarea><span class="w100resp"></span></td><td>
+3<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+<div class="pa paj">
+1b. Write down a chemical equation representing the process of respiration 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2a. State four ways or features that aids respiratory structures to properly carry out respiration function.
+
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+2b. Within the table below, write down the respiratory structures of each organism against it
+</div>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Organisms</td><td> Respiratory or Gaseous exchange structures</td>
+</tr>
+<tr>
+<td>Earth worm</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>Fish</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>Tadpole</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>Humans</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>Birds</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>Amoeba</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>Adult frog</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>Insects</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+</table>
+
+<div class="pa paj">
+3a. Label the parts indicated with the leading lines in the diagram in gure 4.8. Briey explain its role (the structure)  in respiration in  mammals
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig4.8:</strong> 
+</div>
+<img src="images/fig4.8.jpg" class="imn" />
+
+<ol type="i">Label the parts in the diagram in figure 4.8
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+<div class="pa paj">
+b. Within the table below, write down what happens to the parts of the body stated at the left side during inspiration and expiration
+</div>
+<h4 class="ce">
+During inspiration
+</h4>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>PARTS OF THE BODY</td><td>WHAT HAPPENS</td>
+</tr>
+<tr>
+<td>Ribs</td><td>
+<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>Intercostals muscles</td><td>
+<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>Diaphragm</td><td>
+<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>Thoracic cavity</td><td>
+<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+
+<h4 class="ce">
+During expiration
+</h4>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>PARTS OF THE BODY</td><td>WHAT HAPPENS</td>
+</tr>
+<tr>
+<td>Ribs</td><td>
+<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>Intercostals muscles</td><td>
+<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>Diaphragm</td><td>
+<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>Thoracic cavity</td><td>
+<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+<div class="pa paj">
+4. Explain the process of controlling the opening and closing of the stomata by the guard cells <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<h4 class="ce h_bio">
+Practical Activities
+</h4>
+<div class="pa paj">
+<b>1. Examining the respiratory organs of a sheep</b><br />Material/Apparatus required: A freshly killed sheep, which it’s respiratory organs is carefully removed:from the larynx to the trachea and bronchi to the lungs, A hand lens and a sharp knife.<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="u">Method</h4> 
+Observe the breathing system or respiratory organs of the organism under investigation carefully,identify the various parts as shown in the g.4.9. Locate the part where alveoli is located and observe it with hand lens after cutting off a portion of the lungs.
+</div>
+<h4 class="ce">
+Breathing Organs of the Sheep
+</h4>
+
+<div class="fig">
+<strong>fig4.9:</strong> 
+</div>
+<img src="images/fig4.9.jpg" class="imn" />
+
+<div class="pa paj">
+Draw a similar diagram as the one shown in g 4.9 in your practical note book based on your observations.
+</div>
+<div class="pa paj">
+
+<h4 class="ce">
+Questions
+</h4>
+(i) What is the purpose of the cartilage loops at the trachea and bronchi
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+What type of cartilage does it belong
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(ii) What type of structure did you observe at the alveoli? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+What takes place at the alveoli? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(iii)State two features of the alveoli that makes it well adapted for gaseous exchange
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+
+<div class="pa paj">
+
+<h4 class="ce h_bio">
+Test of Practical Work (Alternative to Practical)
+</h4>
+(A) Identify and label the air sac, spiracles, and tracheal in the diagram of insect’s respiratory system below which are indicated as (I), (ii) and (iii).
+</div>
+
+<div class="fig">
+<strong>fig4.91A:</strong> 
+</div>
+<img src="images/fig4.91A.jpg" class="imn" />
+
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+<div class="pa paj">
+B. “The tracheal system is not linked with the transport system in insects” what is the implication of this fact in the manner oxygen is being circulated to the cells in insects.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig4.91B:</strong> 
+</div>
+<img src="images/fig4.91B.jpg" class="imn" />
+
+<div class="pa paj">
+(i)Identify the diagram (B) and label its parts. Compare the diagram specimen in A and the one in BWrite down one functional difference in the manner gaseous exchange takes place using examples of organisms that respires through the structures.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+Where does gaseous exchange take place in B 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+Write down one other organism that possesses the structure in B apart from a sh
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<img src="images/fig4.9x.jpg" class="imn" />
+
+<ol type="i">
+<li>State what the above experimental set up is used for
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>What purpose does lime water serve in the experiment?<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>What is the purpose of reagent?<textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+<div class="pa paj">
+<h3 class="ce h_bio">
+GASEOUS EXCHANGE AND RESPIRATORY SYSTEMSSSCE PAST QUESTIONS
+</h3>
+<h4>June 1997 Q5 June 1999 Q2a,b,c,&amp;d</h4>
+1. Explain the signicance of homeglobin in respiration
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<strong>You are provided with the following specimens bony sh as specimen 1, and a Toad or frog asspeciment J</strong>
+</div>
+<div class="pa paj">
+2. (a)i. Identify specimens I and J without reasons
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+ii. Name the habitats of specimens I and J.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b). State three observable structural adaptations for movement possessed by specimen J
+<ul type="square">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+</div>
+<div class="pa paj">
+(c)i. Name one respiratory organ of specimen I and three respiratory organ of specimen J
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(ii)State four common features of the respiratory organs of specimens I and J
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Photosynthesis</td><td>Respiration</td>
+</tr>
+<tr>
+<td>
+1<textarea class="w100"></textarea><span class="w100resp"></span></td><td>
+1<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>2
+<textarea class="w100"></textarea><span class="w100resp"></span></td><td>
+2<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>3 
+<textarea class="w100"></textarea><span class="w100resp"></span></td><td>
+3<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>4 
+<textarea class="w100"></textarea><span class="w100resp"></span></td><td>
+4<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+<div class="pa paj">
+(d) Cut off one of the operculum of specimen I with the scalpel or small knife to expose the respiratory organ.  Make a labeled drawing about 8cm long of the head region up to the end of the pectoral n only to show its structures. (Draw in your practical note book)
+</div>
+<div class="pa paj">
+
+</div>
+<div class="carry ce">
+
+  <a href="chapter3.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter5.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 4;
+</script>
+</div>
+</body>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch4.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

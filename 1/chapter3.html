@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+                <div id="navig8">
+                                <!-- -->
+                                <div class="mCon2" onclick="openNav()">
+                                            <div class="menu_dash"></div>
+                                            <div class="menu_dash"></div>
+                                            <div class="menu_dash"></div>
+                                  </div>
+                                <!-- Pop_Out Menu Codes -->
+                                <div id="myNav" class="overlay">
+                                  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+                                                <img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+                                  <div class="overlay-content">
+                                  
+                                    <a href="../index.html">
+                                    <div class="menu1"><div class="bull"></div>Cover Page</div>
+                                    </a>
+                                    
+                                    <a href="content.html">
+                                    <div class="menu1" onclick="">
+                                    <div class="bull"></div>Table of Content
+                                    </div>
+                                    </a>
+                                    
+                                    <a href="diagram.html">
+                                    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+                                    </a>
+                                    
+                                    <a href="../about.html">
+                                    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+                                    </a>
+                                    
+                                    <a href="../more.html">
+                                    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+                                    </a>
+                                    
+                                    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+                                    
+                                    
+                                  </div>
+                                </div>
+                                <div class="overlay2" onclick="closeNav()">
+                                </div>
+<!-- -->
+</div>
+<div id="coHide">
+<img src="images/b3.jpg" class="imn" />
+<div class="titBox">
+
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ol>
+<li>
+Cellular basis of
+organization.</li><li>
+Levels of organization.</li><li>
+Germ layer and body
+symmetry.</li>
+</ol>
+</div>
+
+
+<div class="fig">
+<strong>fig3.1a:</strong> Animal Cell
+</div>
+<img src="images/fig3.1a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig2.4:</strong> Plant Cell
+</div>
+<img src="images/fig3.1b.jpg" class="imn" />
+<div class="pa paj">
+<div class="hh6">
+Background Information in Summary
+</div>
+Living things consist of both simple and complex organisms. There is an organizational
+arrangement in living organisms which begin from the simplest to the most complex.
+This is referred to as organization of life.
+Levels of organization: The levels of organization is the hierarchy of biological
+organization which begins with cell organelles to the complex organism.
+
+<img src="images/fig3.jpg" class="imn" />
+
+
+<!--
+
+Macromolecules
+ Organelles 
+ Cells complexity
+ Tissue
+ Organ
+ Organ systems
+ Organism
+ 
+ Order of increasing
+-->
+ 
+ 
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td colspan="2">Level of Organization</td><td>Examples</td>
+</tr>
+<tr>
+<td>Macromolecules
+(non living)</td><td>
+Macro molecules are non
+living components of
+living things which can
+carry out simple functions</td><td>
+Enzymes, DNA, RNA</td>
+</tr>
+<tr>
+<td>Organelle (non living)</td><td>
+Organelles are permanent
+structures in cells of living
+things which can carry out
+complex functions like
+photosynthesis, respiration
+etc.</td><td>
+Chloroplast, mitochondria,
+Endoplasmic reticulum</td>
+</tr>
+<tr>
+<td>Cells (living)</td><td>
+The cell is the basic unit of
+life which consists of
+macromolecule and
+organelles</td><td>
+Blood cells, nerve cells
+phloem cells, meristematic
+cells etc</td>
+</tr>
+<tr>
+<td>Tissue</td><td>
+A tissue consists of similar
+cells which are
+differentiated to carry out
+particular function</td><td>
+Bone, muscle,
+epidermis in plants</td>
+</tr>
+<tr>
+<td>Organs</td><td>
+Organs are parts of an
+organism which consist of
+several types of tissues that
+carry out specialized
+function.</td><td>
+Leaf in plants,
+heart in animals.</td>
+</tr>
+<tr>
+<td>Organsystem</td><td>
+Group of organs that
+perform related function</td><td>
+Circulatory system;
+root system in plants</td>
+</tr>
+<tr>
+<td>
+Organisms</td><td>
+Various organ systems
+performing co ordinated
+functions as a whole</td><td>
+Mammals, ﬂowering plants</td>
+</tr>
+</table>
+ 
+<h3 class="u">
+Germ Layers
+</h3>
+In sexual reproduction, fertilization results to the formation of a zygote. This forms the embryo by continuous
+cell division. In animals, the cells, which result from cell division or cleavage of the zygote, are differentiated into
+two or three germ layers. These are: <b>The ectoderm (outermost): the endoderm innermost and the
+mesoderm (middle).</b>
+<br />
+Mesoderm is present only in organisms from the flat worms to mammals. It is
+found between the ectoderm and endoderm. Such condition in living organism is
+described as Triploblastic in animals. Triploblastic animals are further subdivided
+into ceolomates (presence of body cavity) and aceolomates (Absence of body
+cavity). The platyhelminthes and nematods are examples of aceolomates while the
+annelids, arthropods, mulloscs and vertebrates are examples of ceolomates.
+Symmetry: Symmetry is the manner an organism or part of it may be divided into
+two halves that are similar in shape, size or structure.
+
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td></td><td colspan="2">Types of symmetry</td>
+</tr>
+<tr>
+<td>1</td><td>No symmetry or Asymetrical</td><td>Organism which are not
+madeupoftwolike halves
+e.g:Amoeba</td>
+</tr>
+<tr>
+<td>2</td><td>Spherical symmetry</td><td>
+Organisms that can be
+divided into equal halves
+by passing a plane 
+in any direction fhrough a centre</td>
+</tr>
+<tr>
+<td>3</td><td>Radial symmetry</td><td>Any line passing
+through the organism
+vertically through the
+centre in any direction of
+plane will divide it into two
+halves eg: hydra and
+starﬁsh.</td>
+</tr>
+<tr>
+<td>4</td><td>Bilateral symmetry</td><td>Animals that can be
+divided into equa helves
+only along a single plane
+eg: all vertebrates.</td>
+</tr>
+</table>
+
+<div class="pa">
+<h3 class="u">
+General Questions
+</h3>
+1. Among these organisms which of them is not a ceolomate.
+(i) Lizard
+(ii) Round worm
+(iii) Rabbit
+(iv) Earthworm<br />
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span><br />
+Write five examples of the following
+</div>
+<div class="pa">
+2a. Radially symmetrical organisms
+<div class="T_A_required"> Teacher's attention required</div> 
+
+<textarea class="w100"></textarea><span class="w100resp"></span><br />
+b. Bilaterally symmetrical organisms
+<div class="T_A_required"> Teacher's attention required</div> 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+3. Which of these organisms does not contain a mesoderm
+<ol type="i">
+<li>
+Liver fluke
+</li><li>
+Tapeworm
+</li><li>
+Hydra
+</li><li>
+Ascaris
+</li>
+
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</ol>
+
+</div>
+<div class="pa">
+4. Write five types of cells that are found in the body of a named animal
+<div class="T_A_required"> Teacher's attention required</div> <br />
+Name of the organism
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+<ol type="i">
+The cells
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+
+</div>
+<div class="pa">
+5. Write out which of these animals that is radially symmetrical
+<ol type="i">
+<li>(i) Centipede</li>
+<li>
+(ii) Mullusc</li>
+<li>
+(iii) Starfish</li>
+<li>
+(iv) Crab</li>
+<li>
+(v) Tapeworm</li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</ol>
+In the hierarchy of biological organization,
+
+</div>
+<div class="pa">
+
+6. The xylem belongs to a
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+
+</div>
+<div class="pa">
+7. A root belongs to a
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+
+</div>
+<div class="pa">
+8. A brain belongs to
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+
+</div>
+<div class="pa">
+9. What is Triplosblastic in living things,
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div> 
+
+</div>
+<div class="pa">
+
+10. Write two examples of organisms that do not have the two or three germ layers
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+</div>
+<div class="pa">
+11. What is an organelle
+<textarea class="w100"></textarea><span class="w100resp"></span><div class="T_A_required"> Teacher's attention required</div> 
+
+</div>
+<div class="pa">
+12. Write three example of organelles<div class="T_A_required"> Teacher's attention required</div> 
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa">
+
+13. Write two examples of tissues in plants<div class="T_A_required"> Teacher's attention required</div> 
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa">
+14. Write two examples of organisms that belong to the cell level of organization.<div class="T_A_required"> Teacher's attention required</div> 
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="carry ce">
+
+  <a href="chapter2.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter4.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch3.js">
+</script>
+</div>
+</body>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

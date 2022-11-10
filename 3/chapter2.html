@@ -1,0 +1,742 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+        <div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t2 le">
+New Senior School Biology Practical Activity &amp; Work Book 3
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">2</div>
+</div>
+	<div class="box_title" style="font-size:28px;line-height: 26px;">
+NERVOUS COORDINATION
+	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="disc">
+<li>Nervous system and its parts.</li>
+<li>The neurons.</li>
+<li>Transmission of nerve impulses.</li>
+<li>Actions and behaviour.</li>
+</ul>
+</div>
+
+<div class="pa paj">
+<h4>
+Background Information
+</h4>
+Activities of living organisms especially the higher ones require proper co-ordination of the various parts in line with the internal and external environments of the organism. This role of co-ordination is performed by <b>The nervous and endocrine systems.</b>
+</div>
+
+<div class="pa paj">
+The nervous system is the system of the body that is involved with the reception, transmission, integration and correlation of impulse through nerve cells.
+</div>
+
+<h4 class="ce h_bio">
+PARTS OF THE NERVOUS SYSTEM OF VETEBRATES
+</h4>
+<div class="pa paj">
+The nervous system of vertebrates is made up of two major parts:
+</div>
+<ul type="disc" class="trA">
+<li>The central nervous system and</li>
+<li>The peripheral nervous system.</li>
+</ul>
+<div class="pa paj">
+<b>The Central Nervous System:</b> This consists of <b>The brain and Spinal cord.</b>
+</div>
+
+<div class="fig">
+<strong>fig2.1:</strong> The Brain
+</div>
+<img src="images/fig2.1.jpg" class="imn" />
+
+<div class="pa paj">
+Both the brain an the spinal cord are centrally located in the body. They are covered by three protective membranes called <strong>Meninges.</strong>The outermost membrane is called <strong>dura mater,</strong>the innermost membrane is called pia mater,in between is the <strong>arachnoid's mater.</strong> Between the piamater and the arachnoid's mater is the  <strong>cerebro spinal fluid.</strong>
+</div>
+<div class="pa paj">
+<strong>This fuild cushions the brain and the spinal cord against shock and also helps to remove waste materials from the brain</strong> (being linked to capillary networks).
+</div>
+<div class="pa paj">
+Cerebro spinal fluid is also present at the spinal canal and ventriclesin the brain.
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+The Brain
+</h4>
+The brain can be divided into three regions: <strong>The fore brain, mid brain and hindbrain.</strong> The outer portion of the brain tissues is grey while the inner portion is white. The human brain is large and contains about 12billion neurons. It is the first tissues of the body that will first respond to low oxygen and glucose level in the blood.
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Parts of the brain</td><td>Function</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><b>(1) The fore brain</b></td>
+</tr>
+<tr>
+<td><b>(i). The cerebrum:</b><br /> Consists of the left and right Cerebral hemispheres connected together by corpus callosum. Each hemisphere has four indistinct lobes. The cerebral cortex at the surface is the most active part of the cerebrum.</td><td>Controls voluntary actions such as intelligience, memory, imagination and creativity. This also receive information from the sense organs.</td>
+</tr>
+<tr>
+<td><b>(ii). The Thalamus:</b><br />
+An ovoid structure which acts as an important relay centre.</td><td>Receiving information from other parts of the central nervous system (CNS), integrating and passing them to the concerned region at the cerebral cortex. Thalamus also arouse brain activity, it prevents sensory overload by screening stimuli before they get to the brain.</td>
+</tr>
+<tr>
+<td><b>(iii). Hypothalamus</b><br />
+It lies beneath the thalamus.Hypothalamus is the main coordinating center for the authonomic nervous system.</td><td>It controls sensation that are involved in homeotasis such as hunger and thirst, temperature, water balance.  It also controls blood pressure and release of many hormones.</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><b>The Mid brain</b></td>
+</tr>
+<tr>
+<td>Connects the hind brain with the fore brain</td><td>Controls certain reflexes invloved withhearing and sight.</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"><b>The Hind Brain</b></td>
+</tr>
+<tr>
+<td><br /><b>(i)     The cerebellum:</b> consists of two cerebellar hemospheres and a central portion linking them.<br /><b>(ii)   Pons varolii: </b>A band of fibre which connects the two cellebellar hemispheres.<br /><b>(iii). Medulla oblongata.</b></td><td>The <b>Cerebellum</b> controls body posture and muscular movements.<br />It helps the body to maintain balance.<br /><b>Medulla Oblongata</b> controls many involuntary actions such as<br /><strong> Breathing movement, heart beat and digestion, construction and dilation of blood vessels.</strong></td>
+</tr>
+</table>
+
+<div class="fig">
+<strong>fig2.2. </strong> <b>
+The mammalian spinal cord and spinal nerves in relation to the vertebrae columm<br />
+(Seen from one side)</b>
+</div>
+<img src="images/fig2.2.jpg" class="imn" />
+
+<div class="pa paj">
+<h4 class="ce h_bio">
+The Spinal Cord
+</h4>
+The spinal cord runs through the neural canal in the vertebrae. The vertebrae bones protect the cord from injury. The meninges which has three membranes within which the spinal cord is enveloped also gives it support and protection within. A narrow canal called spinal canal, runs through the central of the spinal cord. This canal is filled with cerebrospinal fluid. A transverse section of the spinal cord shows that it has a central grey portion (made up of cell bodies of neurons) and the white outer region (made up of nerve fibre of neurons). The spinal cord controls most reflex actions.
+</div>
+<div class="pa paj">
+Areflex action is an automatic, unthinking response to a stimules. The spinal cord also acts as a pathway between the spinal nerves and the brain.
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+The Peripheral Nervous system
+</h4>
+The peripheral nervous system consists of two parts: (i) <strong>The sensory system</strong> (which links the environment with the CNS) (ii) <strong>The motor system</strong> (Which links the effectors with the CNS). With the exception of the brain and spinal cord, all other parts of the nervous system belong to the peripheral nervous system
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+The Sensory System
+</h4>The sensory system consists of sensory receptors and sensory neurons (or afferent neurons). The sensory neurons connect receptors to the central  nervous system. They are part of the spinal and cranial nerves.
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">The Motor System:</h4>
+The motor system consists of <strong>the somatic nervous system</strong> and <strong>The Autonomic nervous system.</strong>
+</div>
+<div class="pa paj">
+<b>Somatic nervous system:</b> The somatic nervous system consists of motor neurons (efferent neurons) which link the CNS to the skeletal muscle. The motor neurons forms part of the spinal and cranial nerves whose cell bodies are located in the CNS while their nerve fibre extend to the skeletal muscles. The somatic nervous system controls voluntary action involving muscular movement like clapping and certain reflex movements like the knee jerk.
+</div>
+<div class="pa paj">
+<b>The Autonomic Nervous System:</b> This consists of motor neurons that connect the CNS with glands and involuntary muscles (involuntary muscles are cardiac muscles and smooth muscles). Its consists of network of nerve fibres that extends from the CNS to the ganglia to the effectors.<br />
+The autonomic nervous system is made up of two systems: <br />(i) The sympathetic nervous system<br />
+(ii) The parasympathetic nervvous system.<br />
+The sympathetic have their effects during relaxed periods while parasympathetics has its own effects in emergency and stress
+</div>
+
+<div class="fig">
+<strong>fig2.3:</strong> 
+</div>
+<img src="images/fig2.3.jpg" class="imn" />
+
+<div class="pa paj">
+The neurone is the basic structural and functional unit of the nervous system. They are specialized for transmission of information by electrical impulses. Unlike most cells, they do not posses the ability to regenerate.
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td colspan="3">Types of Neurones (According to their functions)</td>
+</tr>
+<tr>
+<td>i</td><td><strong>Sensory neuron</strong> which is also called <strong>afferent neurone</strong></td><td>It picks up information from the external environment from the receptors to the Central Nervous System (CNS).</td>
+</tr>
+<tr>
+<td>ii</td><td><strong>Motor neurones</strong>(efferent neurone)</td><td>which carry interpreted information to muscles and glands.</td>
+</tr>
+<tr>
+<td>iii</td><td><strong>Association neurones</strong> which are also referred to as relay neurones.</td><td>It connects the pathway of sensory and motor impules in the Central Nervous System (CNS).</td>
+</tr>
+</table>
+<div class="pa paj">
+<h4 class="ce h_bio">
+Actions and behaviours
+</h4>
+Actions: Actions can be referred to as responses to stimuli. It can be grouped into <strong>valuntary actions</strong> and <strong>involuntary actions(reflex actions).</strong>
+</div>
+<div class="pa paj">
+Voluntary actions are action that are thought upon before carrying out. Such action are controlled by thewill and they involve the cerebral cortex of the brain. Examples of such actions are learning, Reasoning, singing etc.Involuntary or Reflex actions are automatics and unthinking actions exhibited without a conscious involvement of the will. Examples of such action are sneezing, Jerking of the lower knee when the knee cap is tapped, blinking to a sudden movement in front of the eyes etc
+</div>
+
+<div class="fig">
+<strong>fig2.4:</strong> 
+</div>
+<img src="images/fig2.4.jpg" class="imn" />
+
+<div class="pa paj">
+<b>Behaviour:</b> The way or manner organism responds to changes in their environment make up their behaviours. Behaviour can be instintive behaviour or innate behaviour which can be inherited. It can also be a learned behaviour which is a non-instinctive  behaviour that is developed through use.
+</div>
+<div class="pa">
+<h4 class="ce h_bio">
+General questions
+</h4>
+1.  Two systems of the body that bring about coordination are 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2.  An electric sensation which is the main mechanism of transferring information along a nerve fibre is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+3.  The brain and spinal cord make up the  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> nervous system.
+</div>
+<div class="pa paj">4.  The protective membrane that covers the brain and the spinal cord is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+5.  The 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> in the brain regulates temperature.
+</div>
+<div class="pa paj">
+6.  The 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> part of the cerebral hemisphere is dominant in most people
+</div>
+<div class="pa paj">
+7.  Most simple reflex actions are controlled by the  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+8.  The most active region of the cerebrum is its outer layer called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+9. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> fluid cushions the brain against shock and also removes waste materials from the brain.
+</div>
+<div class="pa paj">
+10.  The
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> is the part of the hind brain that controls involuntary actions such as respiratory movements and heartbeat.
+</div>
+<div class="pa paj">
+11. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> prevents sensory overload in the brain by screening the stimuli coming to the cerebrum.
+</div>
+<div class="pa paj">
+12.  As activities of the somatic nervous system affects skeletal muscles, those of the autonomic nervous system affects 
+<span id="q9"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q9',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">  the glands, smooth muscles and cardiac muscles</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q9')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">limbs, skin, and joints</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q9')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">skeletal muscles, ball and socket joint</div>
+    </div>
+</div> 
+
+</div>
+
+<div class="fig">
+<strong>fig2.5:</strong> 
+</div>
+<img src="images/fig2.5.jpg" class="imn" />
+
+<div class="pa paj">
+13.  Caption and label the parts of figure 2.5
+<ol type="1">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+14.  What are the functions of the part labeled  8 and 5
+
+<ul type="circle">
+<li>v. <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>viii.<textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+</div>
+<div class="pa paj">
+15.  Across the synaptic gaps, nerve impulses passes by ___________
+<span id="q15"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q15')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">electrical means</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q15',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">chemical means</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q15')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">biochemical means</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+16.  The central gray portion of the spinal cord consists of
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> of neurones.
+</div>
+<div class="pa paj">
+17.  During transmission of impulse across the synapses, when an electric impulse reaches the end of the axon, it stimules the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> to secrete neurochemicals such  as 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> into synaptic gaps.
+</div>
+<div class="pa paj">
+18.  Which part of the autonomic nervous system have their dominant effects in emergency and stress? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+19.  The vagus nerve which is a cranial nerve is the main nerve of the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> nervous system.
+</div>
+<div class="pa paj">
+20. __________ is an example of a reflex action
+<span id="q20"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q20',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Jerking the lower leg when knee cap is tapped</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q20')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Smelling the aroma of food</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q20')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Touching a cold or wam water and keepng the hand there</div>
+    </div>
+</div> 
+
+</div>
+<h4 class="ce h_bio">
+Expression Exercise
+</h4>
+
+<div class="fig">
+<strong>fig2.6</strong> 
+</div>
+<img src="images/fig2.6.jpg" class="imn" />
+
+<div class="pa paj">
+The diagram in fig. 2.6  is a simpler reflex arc action in human, Use it to answer the questions that follow
+</div>
+<div class="pa paj">
+<ol type="a">
+<li>Label the parts numbered 1 – 5.
+<ol type="1">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol></li>
+<li>Use the diagram to explain how reflexes serve a protective function in human <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>
+(c) At what part in the diagram can we find relay neurons  <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+2.  Use the table below to differentiate between reflex and voluntary actions.
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Reflex Action</td><td>Voluntary Action</td>
+</tr>
+<tr>
+<td><textarea class="w100"></textarea><span class="w100resp"></span></td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+
+<div class="pa paj">
+Also in the table below write three differences between the somatic and the autonomic nervous systems.
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Somatic Nervous System</td><td>Autonomic Nervous System</td>
+</tr>
+<tr>
+<td><textarea class="w100"></textarea><span class="w100resp"></span></td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td><textarea class="w100"></textarea><span class="w100resp"></span></td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td><textarea class="w100"></textarea><span class="w100resp"></span></td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+<div class="pa paj">
+(4) Describe the process by which a nerve impulse starts and travels along the neuron <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+5.  How is the resting membrane potential restored after a nerve impulse has passed? <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<h4 class="ce h_bio">
+Practical Activities
+</h4>
+
+<div class="pa paj">
+Make a purchase of a small mammal and use its skull for this activities<br />
+Materials required: Scapel or table knife, hand lens. Formaline, Hydrochloric acid, and a small mammal (rat, rabbit or guinea pig).
+</div>
+<ol type="i">
+Procedure:
+<li>Place the animal in a formaline for up to three weeks.</li>
+<li>Put it in dilute hydrochloric acid for a whole day.</li>
+<li>Remove the skin from the head and back of the animal to expose the central nervous system.</li>
+<li>Examine the cerebral hemispheres and the tissue separating them.</li>
+<li>Observe the sutures of the skull and your teacher can help you to cut through the parietal suture and through to the posterior end of the skull to the neck and expose the whole brain structure.</li>
+</ol>
+<ol type="i"><b>
+Observe the inside using hand lens. From your activities and observations. Answer the following questions.</b>
+<li>Why was the animal treated with formalin.? <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>What purpose did hydrochloric acid serve in the prepration of the organism for the experiment? <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>What colour did you observe at the outer surface of the brain and that of the spinal cord? <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>What is responsible for the observed colours? <textarea class="w100"></textarea><span class="w100resp"></span></li>
+
+</ol>
+<h4 class="ce h_bio">
+Test of practical work
+</h4>
+
+<div class="fig">
+<strong>fig11.2:</strong> 
+</div>
+<img src="images/fig2.7.jpg" class="imn" />
+
+
+<div class="pa paj">
+i. Identify the diagram above <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+ii.  Nerve poisons also bring about their effects at synapses, write two examples of such poisons.
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+iii. Why is it that the neurochemical released is quickly destroyed by enzymes? <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig2.8:</strong> 
+</div>
+<img src="images/fig2.8.jpg" class="imn" />
+
+<div class="pa paj">
+Identify the diagram in figure 2.8
+</div>
+<div class="pa paj">
+2a.  Label the major parts of the diagram shown above
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(b)  Write down the function of I, ii, iii,
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa">
+<h4 class="h_bio">
+SSCE Past Questions on Nervous Coordiantion
+</h4>
+Nov 1990 Q5
+</div>
+<div class="pa paj">
+1. Study the diagram below and use it to answer question 1
+</div>
+
+<img src="images/fig2.9.jpg" class="imn" />
+
+<div class="pa paj">
+(a) Name the part labelled I – V 
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa">
+(b) Which number indicates a part of peripheral nervous system? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+Nov 1994 Q4<br />
+2. Which part of the brain controls breathing  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+June 1995 Q2
+<br />
+3. What part of the brain controls temperature regulation in the body 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="carry ce">
+
+  <a href="chapter1.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter3.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 2;
+</script>
+
+</div>
+</body>
+<script type="text/javascript" src="../js/jq.js">
+</script>
+<script type="text/javascript" src="js/ch2.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

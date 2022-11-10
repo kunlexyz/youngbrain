@@ -1,0 +1,609 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <div class="menu1" onclick="showViewTab('verify')"><div class="bull"></div>Activate</div>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t le">
+New Senior School Biology Practical Activity &amp; Work Book Two
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">11</div>
+</div>
+	<div class="box_title" style="font-size:25px;line-height: 25px">
+POLLINATION IN PLANTS
+	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="square">
+<li>Self pollination
+</li><li>Cross pollination
+</li><li>Pollinating agents
+</li><li>Insect pollination and wind pollination
+</li>
+</ul>
+</div>
+
+<div class="fig_1">
+<strong>fig11.1</strong> Pollen tube moving intothe ovary for fertilization
+</div>
+<img src="images/fig11.1.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig11.2</strong> Wind pollination
+</div>
+<img src="images/fig11.2.jpg" class="imn" />
+
+<div class="pa paj">
+Pollination is the transfer of pollen grains from anthers to stigmas. Pollination is the first step in the process of sexual reproduction in flowering plants. It is followed by fertilization and development of the zygote.
+</div>
+<div class="pa paj">
+<h3 class="h_bio">TYPES OF POLLINATION
+</h3>Pollination in plants are of two types: Self pollination andCross pollination
+</div>
+<div class="pa paj">
+<h3 class="h_bio">SELF POLLINATION</h3> Self pollination is the transfer of pollen grains from anthers to a receptive stigma of the same flowers on the same plants. Resultant offspring through self pollination show very little genetic variation. Prolonged self pollination among individual species results to weakened individuals.
+</div>
+<div class="pa paj">
+<h3 class="h_bio">
+FEATURES OF FLOWERING PLANTTHAT FAVOUR SELF POLLINATION
+</h3>
+There are cases in flowering plants where self pollination can occur 
+</div>
+<div class="pa paj">1.    In Bisexual flowers: flowers that contain both sexes       (i.e. stamens and carpels) in same flower.
+</div>
+<div class="pa paj">2.   In monoecious plants with unisexual flowers       (monoecious plants are plants that contain male and female flowers on the same plant)
+</div>
+<div class="pa paj">
+Also Homogamy - Maturation of stamen and carpels at the same time in bisexual flowers and Cleistogamy - Bisexual flowers which never open but have their pollen grains discharged directly into the receptive stigmas favour self pollination.
+</div>
+<div class="pa paj">
+<h3 class="h_bio">CROSS POLLINATION</h3>Cross pollination is the transfer of matured pollen grain from the anthers of one plant to stigma of another plant of the same or closely related species. Cross pollination is risky and wasteful. Cross pollination brings about stronger genetic variability with well adapted and healthy offspring.
+</div>
+
+<h3 class="ce h_bio">
+FEATURES IN FLOWERING PLANTS THAT FAVOUR CROSS POLLINATION
+</h3>
+<div class="pa paj">
+1. <b>Unisexuality:</b> unisexuality promotes cross pollination especially in dioecious plants like pawpaw.         Here only cross pollination can occur as the male and female flowers are borne on separate         plants. Even in monoecious plants with unisexuality, self pollination can be hindered by         Positioning of female flowers above the male flowers below and by the ripening or maturation         of male and female flowers at different times.
+</div>
+<div class="pa paj">
+2. Dichogamy: dichogamy is condition in bisexual flowers whereby the stamens and carpels         mature at different times. Such condition usually prevents self pollination. Such flowers         function as male flowers when only the stamens are matured and as females when only the         carpels are matured. We can identify two types of dichogamous conditions in flowers:
+</div>
+<div class="pa paj">
+<ul type="disc"><li>
+<strong>Protandry:</strong> In this condition the stamens of the flower mature earlier than the carpels of the         same flower or of other flowers of the same plant. The stigmas only become receptive when the         pollen in stamen has been completely shed off. Okra, Sunflower and Cotton are examples of         such plants where this occurs.
+</li></ul>
+</div>
+<div class="pa paj">
+<ul type="disc"><li>
+<strong>Protogyny:</strong> Here the carpels of the flower mature earlier than its stamens and stamens of other         flowers of the same plant. Examples of such plants are Figs and certain Palms.
+</li></ul>
+</div>
+
+<div class="pa paj">
+3.     Self-incompatibility: self-incompatibility is an inherited condition in some species of bisexual         flowers. In such condition stamens and carpels borne by the flowers which mature at the same         time will have pollen grains which fall on the stigma of the same flower or flowers of the same         plant unable to germinate. Examples of such plants are Tea and Passion flower.
+</div>
+
+<div class="fig">
+<strong>fig11.3</strong> female pawpaw flower
+</div>
+<img src="images/fig11.3.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig11.4:</strong> male pawpaw flower
+</div>
+<img src="images/fig11.4.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig11.5:</strong> Zea mays Tassel (Male Inflorescence)
+</div>
+<img src="images/fig11.5.jpg" class="imn" />
+
+<div class="pa paj">
+<h3 class="ce h_bio">
+AGENTS OF POLLINATION
+</h3>
+Pollinating agents includes;            
+<ul type="disc">
+<li>Wind
+</li><li>Water
+</li><li>Insects
+</li><li>Other animals such as Squirrels, Birds, Bats, Snails etc
+</li>
+</ul>
+</div>
+<div class="pa paj">
+Among other pollinating agents, wind and insects are most common. Flower do show characteristic features in line with its agent of pollination.
+</div>
+<div class="pa paj">
+<h3 class="h_bio">INSECT POLLINATION</h3>
+Insects bring about pollination in the cause of searching for food and nectar. Common insects that are agents of pollination includes; Butterflies, Moths, Bees, Wasps, Beetles and Ants. Insect pollinated flowers are called Entomophilous flowers.
+</div>
+<div class="pa paj">
+<h3 class="ce">
+CHARACTERISTIC OF INSECT POLLINATED FLOWERS (ENTOMOPHILOUS FLOWERS)
+</h3>
+</div>
+<ul type="disc">
+<li>
+Large and conspicuous flowers, large inflorescence in cases of small flowers. Examples are       Sunflower, Clitoria etc
+</li>
+</ul>
+
+<div class="fig">
+<strong>fig11.6:</strong> Sun flower (insect pollinated flower)
+</div>
+<img src="images/fig11.6.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig11.7:</strong> Insect pollination
+</div>
+<img src="images/fig11.7.jpg" class="imn" />
+
+<ul type="disc">
+<li>
+Large and brightly coloured petals or petal-like structures. This makes them attract insects example Banana.
+</li>
+</ul>
+
+<ul type="disc">
+<li>
+The flowers are usually bisexual.
+</li>
+</ul>
+
+<ul type="disc">
+<li>
+Scented and nectar containing flowers. Nocturnal insects are attracted by the scent in the flowers while the nectar is food to insects.
+</li>
+</ul>
+
+<ul type="disc">
+<li>
+Elaborate structural modification that suits the insect pollinators.
+</li>
+</ul>
+<div class="pa ">
+<h3 class="ce">
+WIND POLLINATION
+</h3>
+</div>
+<div class="pa paj">Wind brings about the pollination of several plants. Examples are grasses which includes cereal plants, sedges and palm. Wind pollination is a wasteful pollination process as only a small portion of millions of produced pollen grain in a plant eventually gets to a receptive stigma.
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+CHARACTERISTIC OF WIND POLLINATED FLOWERS (ANEMOPHILOUS FLOWER)
+</h4>
+
+<ul type="disc">
+<li>
+Individual small and inconspicuous flowers which are borne in large inflorescence well above the leaves.
+</li>
+<li>
+Unisexual flowers with male and female flowers found on the same plant or on separate plants with male flowers on the excess.
+</li>
+<li>
+Pale or dull coloured sepals and petals, also for any other associated or accessory floral parts.
+</li>
+<li>
+No scent or nectaries.
+</li>
+<li>
+Simple flower structure, non elaborate floral parts.
+</li>
+<li>
+The stamens and stigmas hang outside the flower, attachment of the anthers enables them to swing freely in the breeze. The stigmas are branched and feathery, they are borne on long flexible styles, thus providing a large surface area for receiving pollen grains.
+</li>
+</ul>
+</div>
+
+<div class="fig">Grass flowers (examples of wind pollinated flowers)<br />
+<strong>fig11.8A</strong> 
+</div>
+<img src="images/fig11.8A.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig11.8B:</strong> 
+</div>
+<img src="images/fig11.8B.jpg" class="imn" />
+
+<div class="pa paj">
+<h3 class="ce h_bio">
+General Questions On Pollination
+</h3>
+1. The process by which matured pollen grains are transferred from anthers to receptive stigmas in       flowering plants is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2. The resultant offsprings of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> pollination show little genetic variation which       can lead to weakened individual after prolonged process over many generations.
+</div>
+<div class="pa paj">
+3. When mature pollen grains from the anther of a flower fall on the stigma of the same flower        or that of another flower of the same plant we say 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> pollination has taken       place.
+</div>
+<div class="pa paj">
+4.  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> pollination causes the male gamete and female gamete of two different        parent plants to fuse together.
+</div>
+<div class="pa paj">
+5.    Offsprings of greater genetic variability, healthy and better adapted in their environment are       achieved through 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> pollination.
+</div>
+
+<div class="pa paj">
+6. When pollen grain lands on a mature stigma of the same type of flower, it germinates to form  a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+7.    In a unisexual flower of a dioecious plant, what type of pollination can occur       there?  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+8.    Homogamy and cleistogamy bring about  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>pollination.
+</div>
+<div class="pa paj">
+9.    Dichogamy and self incompatibility favours 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> pollination.
+</div>
+<div class="pa paj">
+10. Which of the following flowers is wind pollinated <br />(a) Rattle box <br />(b) Maize flower <br />(c) Sunflower? 
+<br />
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+11.  Elaborate structure modifications, large and bright colouration and nectaries are characteristics       that are found in 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> pollinated flowers.
+</div>
+<div class="pa paj">12. Which of these characteristics in flowers favour wind pollination<br />
+(a) Bisexuality (b) Scent and nectaries (c) Unisexuality (d) Large and brightly coloured petals       (e) Flowers borne in large inflorescence
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+13.  In rattle box flower, the nectar favour insect pollination but in maize flower, the inflorescences       are adapted for 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> pollination.
+</div>
+<div class="pa paj">
+14.  In maize, male inflorescences usually mature before the cobs in order to prevent 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+15. Dull accessory floral parts are features that favour wind pollination in flowers. What agent of       pollination is favoured by no scent and nectarines features 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">Expression Exercise</h4>
+1. Why is cross pollination a wasteful process 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2. Write down one advantage of cross pollination and also one advantage of self pollination 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="pa">
+3. Write down two conditions that can hinder self pollination in a monoecious plant with       unisexuality like maize 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+4. Why is it that only cross pollination can occur in a pawpaw plant 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+5. What do you understand by the following: (a) Protandry (b) Protogyny
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+6.    (a) Write down four agents of pollination
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+ (b) Why is pollination important in flowering plants?<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+7.    (a) Write down four characteristic of insect pollinated flowers
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+(b) Write down one example of such flowers
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+8.    (a) Write down four characteristic of wind pollinated flowers 
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+(b) Write down one example of such flower <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj"> 9.  Why do you think that a bee cannot pollinate maize flower? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="ce">Practical Activities</h4>
+</div>
+
+<div class="fig">
+<strong>fig11.9A</strong> 
+</div>
+<img src="images/fig11.9A.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig11.9B:</strong> 
+</div>
+<img src="images/fig11.9B.jpg" class="imn" />
+
+<div class="pa paj">
+1.    Study the diagram in fig 11.9A and fig 11.9B carefully<br />(a) What agent of pollination are the flowers adapted to for their pollination 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+ (b) State two characteristics you observed that favoured such pollinating agent 
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+2. You are presented with two specimen flowers            
+<ul type="circle">
+<li>Specimen A - Grass flower</li>
+<li>Specimen B - Sunflower</li>
+</ul>
+</div>
+<div class="pa paj">
+Examine both flowers carefully, describe their general features. State the mode of pollination each flower is adapted to based on your observation of their physical features <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3. Which of these flowers below will likely be pollinated by wind <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="fig"> 
+<strong>fig11.91 i - iv</strong> <br /> i
+</div>
+<img src="images/fig11.91i.jpg" class="imn" />
+
+<div class="fig">  ii
+</div>
+<img src="images/fig11.91ii.jpg" class="imn" />
+
+<div class="fig">  iii
+</div>
+<img src="images/fig11.91iii.jpg" class="imn" />
+
+<div class="fig">  iv
+</div>
+<img src="images/fig11.91iv.jpg" class="imn" />
+
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="carry ce">
+
+  <a href="chapter10.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="../past/waec2018.html">
+  <div class="btnRed btnC">Past Questions</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 11;
+</script>
+</div>
+</body>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch11.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

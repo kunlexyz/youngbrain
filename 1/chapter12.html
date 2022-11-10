@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>chapter12</title>
+<link rel="stylesheet" href="../MobileTem.css">
+<link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+    <div id="navig8">
+        <!-- -->
+        <div class="mCon2" onclick="openNav()">
+                    <div class="menu_dash"></div>
+                    <div class="menu_dash"></div>
+                    <div class="menu_dash"></div>
+          </div>
+        <!-- Pop_Out Menu Codes -->
+        <div id="myNav" class="overlay">
+          <div class="closebtn close3" onclick="closeNav()">&times;</div>
+            <img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+          <div class="overlay-content">
+          
+            <a href="../index.html">
+            <div class="menu1"><div class="bull"></div>Cover Page</div>
+            </a>
+            
+            <a href="content.html">
+            <div class="menu1" onclick="">
+            <div class="bull"></div>Table of Content
+            </div>
+            </a>
+            
+            <a href="diagram.html">
+            <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+            </a>
+            
+            <a href="../about.html">
+            <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+            </a>
+            
+            <a href="../more.html">
+            <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+            </a>
+            
+            <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+            
+            
+          </div>
+        </div>
+        <div class="overlay2" onclick="closeNav()">
+        </div>
+<!-- -->
+</div>
+<div id="coHide">
+<img src="images/b12.jpg" class="imn" />
+
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="square">
+<li>Energy loss in Biosphere
+</li><li>Laws of Therrmodynamic
+</li></ul>
+</div>
+
+<div class="fig_1">
+<strong>Sunlight:</strong> <br />
+ The sources of energy for photosynthesis 
+</div>
+<img src="images/fig12.1.jpg" class="imn" />
+
+<div class="fig">
+<strong>Producers:</strong><br />Green plants (e.g. cabbage)make food by photosynthesis 
+</div>
+<img src="images/fig12.2.jpg" class="imn" />
+
+<div class="fig">
+<strong>Primary Consumers:</strong> <br />Herbivores (e.g. caterpillar) eat plants
+</div>
+<img src="images/fig12.3.jpg" class="imn" />
+
+<div class="fig">
+<strong>Secondary Consumers:</strong><br /> carnivores (e.g. thrush) eat herbivores
+</div>
+<img src="images/fig12.4.jpg" class="imn" />
+
+<div class="pa paj">
+<h3 class="h_bio">
+SOLAR RADIATION:<br />
+ITS INTAKE AND LOSS AT THE EARTH SURFACE
+</h3>
+The sun is the ultimate source of energy for the ecosystem. Of the solar energy that
+reaches the earth, only a fraction if it is captured for photosynthesis. The rest of the
+energy are lost in transpiration, evaporation of water bodies in the environment,
+other heat activities and reflection or absorption.
+</div>
+<div class="pa paj"><b>
+Energy in the Biosphere:</b> the biosphere is a part of the atmosphere where life is
+sustained. The biosphere thus consists of a large ecosystem. Living things require
+energy for their metabolic activities (anabolic and catabolic process). About 1 to
+10% of the solar energy that reaches the earth can be available for the primary
+producers (autotrophs) for photosynthesis in most ecosystems. Not all the
+available energy is utilized for photosynthesis as energy is lost in the process.
+Light energy is transformed to chemical energy in the plant which is fed during
+photosynthesis. The plant uses about 30% of the energy in this food for its own
+metabolic activities. The rest (or net) is retained or stored as chemical energy in the
+plant that will be available for the next tropic level in the food chain i.e. the primary
+consumers. This level in the food chain is the primary consumers. This available
+food is called net food production. The rate at which primary producers
+manufacture food per unit area per unit time is called gross primary productivity of
+the ecosystem. After about 30% of it is utilized for the plants metabolic activities
+the remainder that is stored is called the net primary productivity.
+</div>
+<div class="pa paj">
+Primary consumers which feed on the primary producers do not feed on all the
+NPP of the primary producers. The ecosystem of it is broken down by
+decomposers when the plant dies. Thus much of the energy is lost before being
+passed on to the primary consumer.
+</div>
+<div class="pa paj">
+The primary consumer in its own case lose much of the energy it gets from the
+primary producer in its own metabolic activities and other heat energy loses
+leaving a very smaller energy stored or available for the next trophic level (the
+secondary consumer).
+</div>
+<div class="pa paj">
+
+This can be illustrated as follows, taking that only about 10% of the
+energy an organism takes in is stored in the tissue of that organism. Therefore,
+when a primary consumer such as a mouse eats grass, it stores about 10% of the
+energy available from the grass. When a secondary consumer such as a snake eats
+the mouse, its stores only about 10% of the mouse energy which is equivalent to
+1% of the grass energy (or NPP). When a tertiary consumer like a Hawk eats the
+snake, the Hawk stores only 10% of the snake energy or 0.1% of the grass energy.
+Such energy transfer in a food chain can be illustrated as an energy pyramid. In the
+energy pyramid, the producers contain most of the energy in the pyramid, the
+primary consumers have less and the secondary consumers have even much less
+and the tertiary consumers have the least.
+</div>
+<div class="pa paj">
+<h3 class="ce h_bio">
+LAWS OF THERMODYNAMICS
+</h3>
+The Laws of thermodynamics can be used to explain energy lose in the Biosphere.
+The transformation of energy from light to heat and chemical energies conform to
+the 1st law of thermodynamics <strong>which states that energy can neither be created
+nor destroyed but can be converted (or transformed) from one form to another.</strong>
+Moreover, during energy transformation in the biosphere, for instance, from
+chemical to mechanical for movement. The process may not be complete or
+efficient as some energy may be used to overcome other forces on the system and
+nd may be given off as heat energy. This is also in the line with the 2 law of
+thermodynamics. <strong>It states that the energy transformations which occur during
+work are never completely efficient; some energy must escape as heat energy.</strong>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+GENERAL EXERCISE
+</h4>
+<div class="T_A_required"> Teacher's attention is required for this exercise</div> 
+1.‘The ultimate source of energy for the ecosystem is the  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa">
+2. Solar energy can be lost in form of  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+ and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> before even being utilized for photosynthesis by green plants?
+</div>
+<div class="pa paj">
+3. Energy stored in living cells is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> energy?
+</div>
+<div class="pa">
+4. Living cells obtain energy from food through the process of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+5. In a functioning ecosystem, a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> level is said to exist whenever there is transfer in a food chain or food web
+</div>
+<div class="pa paj">
+6. The laws of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> can be used to explain energy loses in the biosphere within the ecosystem
+</div>
+<div class="pa paj">
+7. A secondary consumer stores only about 10%of the energy of the primary consumer which is equivalent to 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> percent of the energy of the producer
+</div>
+<div class="pa paj">
+8. Energy transfer in a food chain can be graphically illustrated using 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+9. Energy transformation in a food chain is noted to be inefficient due to energy losses in form of heat etc.. this is in line
+with the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> law of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+10. In an energy pyramid, most of the energy is contained in the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+<h4>
+EXPRESSION EXERCISE
+</h4>
+Explain photosynthesis as an anabolic process 
+
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+</div>
+<div class="pa paj">
+State the laws of thermodynamics
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+Explain energy transfer and energy loss in a food chain using the laws of thermodynamics 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+</div>
+<div class="fig ce">
+<strong>
+Diagram of energy pyramid</strong> 
+</div>
+<img src="images/fig12.5.jpg" class="imn" />
+<div class="pa paj">
+
+Explain why the third order consumers are having the least
+energy in the energy pyramid shown above
+<textarea class="w100"></textarea><span class="w100resp"></span>
+What percentage energy of the producer may likely be available for transfer to the primary consumer.
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+<h4>
+PRACTICAL ACTIVITIES
+</h4>
+Below is a food chain:
+</div>
+<div class="pa ce">
+Green plants(160)
+<br />&darr;<br />
+Herbivorous plants (50)
+<br />&darr;<br />
+Carnivorous animals (16)
+</div>
+<div class="pa paj">
+1 (i). Give practical explanation to the decrease in number of organism along the chain
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<ol type="i" start="2">
+<li>Use the chain to draw an energy pyramid
+</li><li>Explain the decrease in energy along the food chain from the producers to secondary consumers.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li></ol>
+</div>
+<div class="carry ce">
+
+  <a href="chapter11.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter13.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 12;
+</script>
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch12.js">
+</script>
+</div>
+</body>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

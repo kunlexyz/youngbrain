@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+<link rel="stylesheet" href="../MobileTem.css">
+<link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+</div>
+<div id="coHide">
+<img src="images/b17.jpg" class="imn"  />
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul>
+<li>Characteristic of various terrestial habitats.
+</li><li>Organisms and their adaptation in a
+terrestrial habitat.
+</li><li>Distribution of organisms in a terrestrial
+habitat.
+</li>
+</ul>
+</div>
+<div class="pa paj">
+<h4>
+Background information
+</h4>
+Various types of terrestrial habitat exist Terrestrial habitats
+are recognized mainly by their vegetations which are
+determined by rainfall and temperature. Terrestrial
+habitats include: <b>Marsh, Forest, grassland, </b>and <b>arid
+land.</b>
+</div>
+<div class="pa paj">
+<b class="u">Marsh:</b> This is a low land habitat featuring the growth of
+grasses and shrubs and the presence of flood. A marsh can
+be considered to be a habitat that exist in between as we
+depart from aquatic to terrestrial habitat.
+</div>
+<h4 class="ce h_bio">
+Characteristic of a marsh
+</h4>
+<ol type="1" class="ul_style">
+<li>Most of the time the land is flooded
+</li><li>Lowland
+</li><li>The soil is usually soft, wet and water logged
+</li><li>High relative humidity in the atmosphere
+over the habitat.
+</li><li>Sometimes the water bodies contain decaying organic
+matters, this affects oxygen content of the habitat and
+also change its chemical composition.
+</li>
+</ol>
+</div>
+<div class="pa paj">
+<h3 class="h_bio">
+Formation and Types of Marshes
+</h3>
+Marshes can be formed by the following ways:
+</div>
+<ol class="paj"><li>
+Overflowing of river banks during rainy season
+coupled with the heavy rainfall makes them results
+into a marsh habitat.
+</li><li>At hightide, sea water overflows into the lagoon and
+may fill it to overflowing. The overflowing water
+may eventually flood.. The surrounding low land
+resulting to a marsh habitat.
+</li><li>Rivers also flow into lagoons as a result of rainfall
+during rainy season. This addition of large volume of
+river water to the lagoon can cause the overflowing
+of the lagoon thus giving rise to a marsh habitat at
+the surrounding or adjoining low land.
+</li><li>The partial filling up of a lake by debris. A marsh can
+be either a salt water marsh or a fresh water marsh.
+</li></ol>
+
+<div class="u headaChap hh7">ORGANISMS FOUND IN A MARSH AND THEIR ADAPTIVE FEATURES</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>FEATURE</td><td>ORGANISMS</td><td>ADAPTIVE FEATURES</td>
+</tr>
+<tr>
+<td>SALT WATER MARSH</td><td>Mangrove-crab, lagoon crab, hermit crab, mudskipper fish, oysters, barnacles, angel fish etc. </td><td>Features that tolerate salinity of the soil and water, also features to tolerate low oxygen condition.</td>
+</tr>
+<tr>
+<td>FRESHWATER MARSHES</td><td>Algae, water lettuce, lemona, salvinia, various ferns, varieties of sword grass frogs, toads and fishes</td><td>Saprophytic organisms have feature that adapt to anaerobic conditions.</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<b class="u">
+FOREST:</b> A forest is a biome which consists mostly of trees. The main forest biomes include: <b>Tropical rainforests,
+temperate deciduous forests and the coniferous forests.</b> In Nigeria the major type of forest is the rain forest. It is
+influenced by rainfall, temperature and humidity which are abiotic factors.
+</div>
+<h3 class="h_bio ce">CHARACTERISTICS OF THE RAINFOREST</h3>
+<ol>
+<li>
+Mesophyte mostly of tree species with broad leaves
+</li><li>Storeys or layers pattern of vegetation arrangement.
+</li><li>There use to be dim light on the forest floor due to foliage cover or canopy of trees.
+</li><li>Little vegetation at the forest floor
+
+</li><li>Presence of many climbing plants and epiphytes.
+</li></ol>
+<h3 class="ce h_bio">
+Five main vegetative layers or strata are identified in a rain forest</h3>
+<ol>
+<li>
+Ground floor layer of non-woody herbaceous plants, lichens, fungi, mosses and liverworts.
+</li><li>Lower layer which consists of various shade loving dwarf trees, shrubs and palms.
+</li><li>A middle layer of smaller trees which have elongated narrow crowns.
+</li><li>Upper layer which consists of tall trees with their crowns forming a continuous canopy or foliage
+cover.
+</li><li>Emergent trees which occur at intervals high or above the canopy
+</li></ol>
+
+<div class="hh8 u ce">
+ORGANISMS IN A RAIN FOREST AND THEIR ADAPTATIONS
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td>ORGANISMS</td><td>ADAPTIVE FEATURES</td>
+</tr>
+<tr>
+<td>PLANTS</td><td>Many types of trees such as mahogany, iroko, abura, cola etc, ferns, wild oil palm, Raphia, ginger, parasites like mistletoe and figs, Epiphytic orchids ferns, lichens, decomposer such as fungi are also found at the forest floor</td><td>Water retaining features. Well developed root system for attachment to the soil. Well developed strengthening tissues, adaptations for climbing in climbing plants such as the method of as twining, scrambling hooks or roots, adaptation for carrying out photosynthesis under dimlight by shade plants.</td>
+</tr>
+<tr>
+<td>ANIMALS</td><td>Earth worms, termites, mole crickets, neamatodes, burrowing snakes, spiders ants, beetles, millipedes butterflies, frogs, toads, guinea fowl chameleon, squirrels, bats.</td><td>* Flying adaptations<br />*Climbing adaptations such as presence of opposite fingers in monkeys, prehensible tails in chameleons, grasping pads in tree frogs etc.<br />*Well developed sense of hearing among    underground dwellers.</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<b>
+A GRASS LAND:</b> Biome in which grasses are dominant is called grassland. Rainfall and temperature mostly determine
+the vegetation of a grassland.
+
+<h4 class="ce">Characteristics of grassland</h4>
+<ol type="i">
+<li>Rainfall ranges from moderate to low.
+</li><li>There use to be intense sunshine
+</li><li>During dry season, bush fire usually occur
+</li><li>The soil use to be sandy.</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4>
+Types of grasslands
+</h4>
+There is tropical grassland and also a temperate grassland<br />
+The tropical grassland is divided into: southern guinea savanna, Northern guinea savannah, sahel savanna and derived
+savannah
+</div>
+<h4 class="ce"><strong>
+Plants and animals distributions in a savanna and their adaptations
+</strong></h4>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Plants</td><td>Adaptations</td>
+</tr>
+<tr>
+<td>Mostly grasses but scarcity of trees, termites, rat, squirrels,  deer, porcupines, gazelles, leopard, lions, cheetahs, grass cutters etc.</td><td>Presence of tick bark to reduce water loss and protect the plant from bush fires. Shedding of leaves during dry season to reduce transpiration. Underground stems in grasses helps them to survive dry seasons adaptation of the protoplasm of the organisms to recover after drying. Ability to regenerate new shoots after bush fires.</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h3 class="h_bio">
+ARID LANDS
+</h3>
+Lands where water is very scarce and difficult to obtain are called arid lands: it is the driest habitat that exist. Major arid
+lands include: tropical deserts, warm temperate deserts and the arctic tundra.
+</div>
+
+<h4 class="ce h_bio">
+Characteristics of a tropical desert
+</h4><ol type="i">
+<li>Scarcity of water (rainfall is scarce)
+</li><li>High temperature during the day and low temperature at night;
+</li><li>Rocky or sandy soil texture
+</li><li>Strong dry wind which erodes the land
+</li><li>There is intense sunshine due to little vegetation.
+</li>
+</ol>
+
+<h4 class="ce h_bio">
+Characteristic of warm temperate desert
+</h4><ol type="i">
+<li>Winter temperature that is usually below freezing point with the exception of the southern
+continents.
+</li><li>Scarcity of rainfall, which usually occurs in summer but fall every year.
+Characteristic of Artic tundra
+</li><li>Summer is very short (about 3 month) with observable longer days.
+
+</li><li>Very low temperature of 10<sup>0</sup> c in summer.
+</li><li>Few centimeters part of soil is frozen
+</li><li>Muddy water logged soil is present
+
+</li><li>Winter is long, dark and is very cold below –15<sup>0</sup>C
+</li></ol>
+
+
+<h4 class="ce h_bio">
+Organisms distribution in arid lands and their adaptations.
+</h4>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Organisms</td><td>Adaptations</td>
+</tr>
+<tr>
+<td>Plants<br />
+Grasses, thorn shrubs, plants of cacti familyAloe
+</td><td>Plants<br />Drought resisting annuals survive dryness in form of seeds which germinates after a down pour and complete its life circle before the water dries. The drought resisting suceulants withstand dryness by its water storage tissues, shallow widespread roots, reduced leaves, thick water proof cuticle and stomata that closes tightly.</td>
+</tr>
+<tr>
+<td>Animals<br />
+Insects, scorpions, spiders, snakes, lizards, birds, hare, jerboa, fox, antelopes</td><td>Animals<br />They rest in the day and become active at night in order to reduce water loss, structural adaptive features for burrowing e.g the sands lizard and enlarged claws of desert scorpions. Efficient water absorbing excretory system; protoplasms that can withstand extreme drying up like that of a camel.</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h3 class="h_bio">
+General Questions
+</h3>
+1. In a forest habitat, the dominant plant communities are 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2. The three important abiotic factors in a forest habitat are  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>, 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>, 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+3. In a marsh, decrease in oxygen content of the water is due to 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+4. The major type of forest in Nigeria is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+5. _______________ is an example of an epiphite found in a forest habitat.
+
+<span id="QQ17"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('QQ17',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Epiphitic orchids</div>
+    </div>
+	<div class="optionbox" onclick="opMark('QQ17')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Yam plants
+	</div>
+    </div>
+	<div class="optionbox" onclick="opMark('QQ17')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Bean Plants </div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+6. In a rain forest strata, the top layer or storey is made up of tallest trees over 40m tall called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+7. In a rain forest food chain, the herbs, shrubs and trees are the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+while the civet cats and chameleon and snakes can be the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+8. In west Africa, tropical grassland is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+9. A cold land which are cold deserts is also called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig17.1a:</strong>
+</div>
+<img src="images/fig17.1a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig17.1b:</strong>
+</div>
+<img src="images/fig17.1b.jpg" class="imn" />
+
+<div class="pa paj">
+10. Identify the organism in fig 17.1b  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+Write two adaptive features of the organism to arid environment
+11. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+12.  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+13. Identify the organism the on in 17.1a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+14. Does it live on ground or trees ? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+15. what do we call forest animals that live on trees 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<div class="pa paj">
+<h3 class="ce h_bio">Expression Exercise</h3>
+1. Write five characteristics of a marsh habitat
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+
+<div class="pa paj">
+2. Write down two adaptations each for plants and animals in the savanna
+</div>
+<ol type="i">
+Plants: 
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+
+<ol type="i">Animals:
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol> 
+
+<div class="pa paj">
+<h3 class="ce h_bio">
+Practical Activities
+</h3>
+Observation of organisms in a marsh habitat<br />
+Procedure: Visit a nearby marsh habitat (if any in your locality) and observe the distribution of organisms in the area,
+observe their adaptative features, then construct a food chain for the organisms identified.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="pa paj">
+<h4 class="ce u">Observation of organisms in a forest habitat</h4>
+Procedure: Visit any nearby forest habitat if any. Watch out and observe the following:
+<ul type="square">
+<li>
+The strata in the forest habitat
+</li><li>The type of plants present on the forest floor,
+</li><li>The climbing plants
+</li><li>The extent sunlight penetrates the forest floor.
+</li><li>Watch out for animals in the forest
+</li>
+</ul>
+</div>
+
+<div class="pa paj">
+<h4 class="u">
+From your observations
+</h4>
+Answer these questions
+<ol type="a">
+<li>
+Compare your observation of animal distribution in a marsh habitat and that of a forest habitat.<br />
+Then explain the reason for any remarkable difference
+<textarea class="w100"></textarea><span class="w100resp"></span> 
+</li><li>
+Try to construct a food web using the organisms you identified in the forest habitat.(Do it in your practical
+notebook)
+</li></ol>
+</div>
+
+<h4 class="ce">
+Test of practical work
+</h4>
+
+<div class="fig">
+<strong>fig17.2:</strong> 
+</div>
+<img src="images/fig17.2.jpg" class="imn" />
+
+<div class="pa paj">
+2. Write down ten animals and five plants that can be found in such a habitat.
+</div>
+<h4 class="ce">animals</h4>
+<ol type="i" class="ul_style">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+
+<h4 class="ce">Plants</h4>
+<ol type="i" class="ul_style">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+
+<div class="pa paj">
+3. Identify with a label the emergents.<br />
+Write down three plant and three animals that can be found at the floor
+</div>
+<h4 class="ce">Plants</h4>
+<ol type="i" class="ul_style">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+<h4 class="ce">Animals</h4>
+<ol type="i" class="ul_style">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+
+<div class="pa">
+<h3 class="ce h_bio">
+SSCE Past Questions
+</h3>
+<b>
+JUNE 2002 Q8</b><br />
+
+1. List four characteristics each of:
+<ol type="a">
+(i) Trees of the Tropical Rain Forest
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+
+<ol type="a">
+(ii) Trees/Shrubs of the savanna
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="carry ce">
+
+  <a href="chapter16.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter18.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 17;
+</script>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch17.js">
+</script>
+</div>
+</body>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

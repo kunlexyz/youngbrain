@@ -1,0 +1,783 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+<link rel="stylesheet" href="../MobileTem.css">
+<link rel="stylesheet" href="../css/biology.css">
+<style>
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div><div id="navig8">
+    <!-- -->
+    <div class="mCon2" onclick="openNav()">
+                <div class="menu_dash"></div>
+                <div class="menu_dash"></div>
+                <div class="menu_dash"></div>
+      </div>
+    <!-- Pop_Out Menu Codes -->
+    <div id="myNav" class="overlay">
+      <div class="closebtn close3" onclick="closeNav()">&times;</div>
+        <img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+      <div class="overlay-content">
+      
+        <a href="../index.html">
+        <div class="menu1"><div class="bull"></div>Cover Page</div>
+        </a>
+        
+        <a href="content.html">
+        <div class="menu1" onclick="">
+        <div class="bull"></div>Table of Content
+        </div>
+        </a>
+        
+        <a href="diagram.html">
+        <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+        </a>
+        
+        <a href="../about.html">
+        <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+        </a>
+        
+        <a href="../more.html">
+        <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+        </a>
+        
+        <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+        
+        
+      </div>
+    </div>
+    <div class="overlay2" onclick="closeNav()">
+    </div>
+<!-- -->
+</div>
+<div id="coHide">
+<img src="images/b8.jpg" class="imn" />
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ol type="i">
+<li>
+ Nutrition as one of the life process
+in living things.
+</li><li>
+Plant nutrition: Photosynthesis.
+</li><li>
+Chemistry of photosynthesis.
+</li><li>
+Conditions necessary for
+photosynthesis and products of
+photosynthesis.
+</li><li>
+Leaf adaptation to photosynthesis.
+</li><li>
+Importance of photosynthesis.
+</li><li>
+Mineral nutrition in plants.
+</li>
+</ol>
+</div>
+
+<div class="fig">
+    <strong>fig8.1</strong> Mineral nutrition
+    </div>
+    <img src="images/fig8.1.jpg" class="imn" />
+
+<div class="fig">
+    <strong>fig8.2</strong>
+</div>
+    <img src="images/fig8.2.jpg" class="imn" />
+    
+
+<div class="pa paj">
+<div class="hh7">
+Background Information
+</div>
+Nutrition is the series of processes by which living things obtain foods and use them to
+provide energy and materials fortheir life activities. It is an anabolic process. (Building up process).
+</div>
+<div class="pa paj">
+Nutrition in plants is an Autotrophic mode of nutrition (building complex organic
+substances from simple inorganic materials)
+Nutrition processes in green plants involve photosynthesis and mineral uptake and utilization.
+</div>
+<div class="pa paj">
+<h3 class="h_bio">
+Photosynthesis
+</h3>
+Photosynthesis is the process by which green plants use carbon dioxide and waterto
+produce sugar in the presence ofchlorophyll using solar energy.
+Although the chemistry of photosynthesis can be summarized in the chemical
+equation:
+</div>
+<div class="pa paj">
+6Co<sup>2</sup> + 6H &rarr; C<sup>6</sup>H<sup>12</sup>O<sup>6</sup>+6O<sup>2</sup>
+</div>
+<div class="pa paj">
+Details of the process are really complex. lt involves two stages of reactions called lightand dark reactions.
+</div>
+<div class="pa paj">
+<h3>
+Light Reaction (Photophase)
+</h3>
+During the light reaction, light energy excites the electrons of chlorophyll and the
+accessory pigments.
+These excited electrons are passed along an electron transport chain, where
+some ofthe energy is captured inATP (Adenosine triphosphate)
+During the reaction, the bonds of water molecule are split, producing hydrogen
+and oxygen (Photolysis of water). The hydrogen is accepted by NADP (Nicotinamide
+Adenine Dinucleotide phosphate) thus fomwing NADPH. Oxygen is released as a bye
+product.
+
+</div>
+<div class="pa paj">
+<h3>
+Dark Reaction
+</h3>
+The dark reaction involves a process of carbon ﬁxation, which occurs in the
+stoma in the mesophyll. During this process, the NADPH and ATP formed during the
+light reaction are used to power a complete series of reactions, which is catalyzed by enzymes in the stroma. In carbon fixation (dark reaction) carbon from molecules of carbon (IV) oxide combines with hydrogen from NADPHto form glucose.
+</div>
+<div class="pa paj">
+<h3 class="ce">
+Conditions and Materials Necessary for Photosynthesis
+</h3>
+The presence of sunlight and chlorophyll are conditions necessary for
+photosynthesis. Carbondioxide and water are materials necessary in photosynthesis.
+</div>
+<div class="pa paj">
+<h3>
+Leaves Adaptation to Photosynthesis
+</h3>
+Although all the green parts of a plant can carry out photosynthesis, the leaves
+are the major photosynthetic organs. The following are its adaptive features for
+photosynthesis.
+</div>
+<div class="pa paj"><ol type="i">
+<li>Numerous chloroplast— structures which contain chlorophyll.
+</li><li>The presence ofstomata and air spaces in leaves which provide pathways
+fordiffusions of oxygen into and carbondioxide out ofthe leaf.
+</li><li>Network of veins by which water circulates to cells of the leaf.
+</li><li>Flat broad surface of lea ves for adequa te sunlight receptivity.
+</li><li>The perpendicular positioning ofthe leaf to the sun with little overlapping.
+</li>
+</ol>
+</div>
+<div class="pa paj">
+Rates of photosynthesis can be affected by light intensity , temperature, relative
+humidity and amount of water available.
+
+</div>
+<div class="pa paj">
+Fate of Photosynthetic Products and Importance of
+Photosynthesis to Life
+The products of photosynthesis are utilized in the following ways;
+</div>
+<ol type="i">
+<li>As a source cf food (i.e. the sugar and starch) for plants and animals
+</li><li>As starting point forthe building ofother products like protein.
+</li></ol>
+
+<div class="pa paj">
+<h3 class="h_bio">
+NUTRIENT CYCLES
+</h3>
+The continuous movement or circulation of atoms of essential elements from the environment is called nutrient cycle.
+</div>
+<div class="pa paj">
+A typical example of nutrient cycle in plants is Nitrogen Cycle. Nitrogen cycle is the natural continuous circulation
+ of nitrogen atoms through the atmosphere, living things, soil and water in a cyclic manner.
+</div>
+<div class="pa paj">
+ <h4 class="ce">
+General Questions
+ </h4>
+ 1. The diagram below(fig 8.3) is the internal structure of a leaf showing its transverse section, observe the structure and answer the
+ questions that follow
+ 
+<ol type="a">
+<li>Label the diagram in figure 8.3. for part tagged A B C and D
+<ol type="A">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</li><li>Identify and write the structures where photosynthesis occurs
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div>
+</li><li>What is the use of water in the substomatal air chamber
+</li><li>Distinguish between the palisade mesophyll and the spongy mesophyll
+
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div></li></ol>
+</div>
+<div class="pa paj">
+2. Write four structural modifications of the leaf for photosynthetic activities(I)
+
+<ol type="i">
+<div class="T_A_required"> Teacher's attention required</div> 
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+
+<div class="fig">
+    <strong>fig8.3</strong>
+</div>
+    <img src="images/fig8.3.jpg" class="imn" />
+    
+
+<div class="pa paj">
+3. Figure 8.1 shows apparatus for water culture experiment. Observe the diagram carefully and answer these questions
+ Label the diagram according to the letters used
+<ol type="a">
+<div class="T_A_required"> Teacher's attention required</div> 
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+4a. What is water culture experiment used for 
+
+<span id="c4"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('c4')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">To Study growth in plants</div>
+    </div>
+	<div class="optionbox" onclick="opMark('c4')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">To find out importance of photosynthesis</div>
+    </div>
+	<div class="optionbox" onclick="opMark('c4',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">To study the effects of mineral deficiency(or their importance in plants</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+4b. What is the function of the cuttonwool in the water culture experiment
+<span id="b4"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('b4',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">To prevent stem of the experiment plant from rotting</div>
+    </div>
+	<div class="optionbox" onclick="opMark('b4')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">To tighten the plant stem on the clamp</div>
+    </div>
+	<div class="optionbox" onclick="opMark('b4')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">To help the plant to be free from undue pressure</div>
+    </div>
+</div> 
+</div>
+<div class="pa paj">
+5. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> are the two products of photosynthesis.
+</div>
+<div class="pa paj">
+6. The splitting of water during the light reaction in photosynthesis is called
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+7. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> in green parts of plants absorbs or captures energy from the sun for photosynthesis.
+</div>
+<div class="pa paj">
+8. When a plant is kept in total darkness for a few days, its leaf when tested for starch will prove negative because
+
+<span id="c8"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('c8',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Photosynthesis did not take place due to absence of sunlight</div>
+    </div>
+	<div class="optionbox" onclick="opMark('c8')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Not much oxygen is give off</div>
+    </div>
+	<div class="optionbox" onclick="opMark('c8')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Carbondioxide was not available for photosynthesis during darkness</div>
+    </div>
+</div> 
+</div>
+<div class="pa paj">
+9. <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> is necessary for photosynthesis.
+</div>
+<div class="pa paj">
+10. There are leaves of plants that appear multi coloured with parts green and others yellow or white such leaves are called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+ leaves.
+</div>
+<div class="pa paj">
+11. A leaf that is yellow as a result of mineral deficiency is said to be
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+12. The conversion of atmospheric nitrogen to amino compounds and protein by the action of bacteria and fungi is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+13. During Nitrification Ammonia is converted to nitrite by Nitrosomonas bacteria while nitrites are converted to nitrates by 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> bacteria.
+ </div>
+ Complete this table
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>ELEMENT LACKING</td><td>RESULT OFDEFICIENCY</td><td>ROLE OF THE ELEMENT IN PLANT</td>
+</tr>
+<tr>
+<td>(14) Surlphur</td><td></td><td>constituent of certain proteins in the cell protaplasm</td>
+</tr>
+<tr>
+<td>Nitrogen</td><td>poor growth, leaves become decoloured to orange or brown</td><td></td>
+</tr>
+<tr>
+<td>Phosphorus</td><td></td><td></td>
+</tr>
+<tr>
+<td>Iron</td><td></td><td></td>
+</tr>
+</table>
+<div class="T_A_required"> Teacher's attention required</div>
+ 
+<div class="pa paj">
+<div class="T_A_required"> Teacher's attention is required for all the answers in the followng practical activities</div>
+<h3 class="ce">
+ PRACTICAL ACTIVITIES
+</h3>
+<b>Problems Under Investigation:</b> To find out the bye products of photosynthesis.
+</div>
+<div class="pa paj">
+Experiment (i): oxygen as one of the bye-products of photosynthesis.<br />
+<b>Material / Apparatus required:</b> Freshly collected water plant (example elodea) ,two test tubes, two beakers, sodium or potassium
+hydrogen trixocarbonate IV and water, filter funnel, lump of plasticine or clay, retort stand and clamp and wooden splint.
+
+</div>
+<div class="pa paj">
+<ol>Procedure in steps
+<li>
+Place the plant under a glass filter funnel.
+</li><li>Rest the funnel securely on the beaker by means of plasticine, which has been inside a sink or bucket of water as shown in the
+diagram.
+</li><li>Fill a test tube with water and invert it over the arm of the funnel.
+</li><li>Remove the assembled apparatus from under water.
+</li><li>Add some sodium or potassium hydrogen trixocarbonate (IV) to the beaker of water. Stir gently until the trixocarbonate IV is
+dissolved.
+Label the apparatus A and leave it under sunlight for a few hours.
+Set up a similar experimental set up as a control but place it in the dark and label it as C.
+</li><li>After few hours test for the presence of oxygen in the test tubes using a glowing splint.
+</li></ol>
+</div>
+
+<div class="pa paj">
+ <h3 class="ce">Questions:</h3>
+<ol type="i">
+<li>
+State your observations on the surface of the leaves of the experiments
+</li><li>State your observation on inserting glowing splinter into test tube A and test tube B respectively.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li></ol>
+</div>
+
+<div class="fig">
+    <strong>fig8.4</strong> Experiment A.
+</div>
+    <img src="images/fig8.4.jpg" class="imn" />
+
+<div class="fig">
+    <strong>fig8.4b</strong> Experiment B.
+</div>
+    <img src="images/fig8.4b.jpg" class="imn" />
+
+
+<ol type="i" start="3">
+<li>
+Conclusion: What conclusions can you draw from the above experiment?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li><li>Label the diagrams of the experimental set up.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li><li>What is the use of the control experiment and what factor is the variable?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li><li>Why was sodium or potassium hydrogen trixocarbonate (IV) added at the beginning of the experiment?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li><li>
+Why was the experimental set up under water?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li></ol>
+
+<div class="pa paj"><strong>
+<h4>Experiment 2: To find out if starch is a product of photosynthesis.
+</h4>
+Materials /Apparatus required:</strong> Alcohol, iodine, test, tube beaker, water, white slab, petri-dish, Bunsen burner and tripod stand ,and
+leaves of a potted plant e.g. cocoyam leaf (the leaf in its plant must have been exposed to sunlight for hours.
+</div>
+<div class="pa paj">
+<ol type="1">
+<strong>
+Experimental procedure in steps:
+</strong>
+<li>Dip the leaf in boiling water for half a minute to kill the cells.
+</li><li>Dip the leaf in a hot alcohol, which is contained in a test tube being boiled by water bath as shown. Caution - Because of the
+ inflammability of alcohol, care should be taken not to allow the test tube containing the alcohol to touch the bottom of the water
+bath. Also the test tube should be occasionally lifted out of water to avoid over heating as that can result to sudden spurting of
+the hot alcohol.</li><li>
+Dip the decolorized leaf in hot water to soften it and wash it in cold water to remove remaining traces of alcohol.
+</li><li>Place the leaf on a tile or petri dish and add drops of iodine solution to it
+</li></ol>
+</div>
+<div class="pa paj">
+<h3>
+Questions
+</h3>
+1. Record your observations
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2. Briefly describe how you can set up a control experiment for experiment 2.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3. State two reasons why leaf cells has to be killed in boiling water.
+
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+4. Why must the leaf for experiment 2 be plucked after its plant has been exposed to sunlight for few hours? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+</div>
+
+<div class="fig">
+    <strong>fig8.5</strong> 
+</div>
+    <img src="images/fig8.5.jpg" class="imn" />
+
+<div class="pa paj">
+5. What conclusions can you draw from the test and control Experiments 2.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+6. State the food substance produced immediately during photosynthesis and why is the product not tested for in the leaf to show that
+photosynthesis has occurred.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4>
+PROBLEM UNDER INVESTIGATION :
+</h4>
+Conditions necessary for photosynthesis.<br />
+<b>Experiment 3<br />
+Materials required:</b> Variegated leaf plucked after its plant has been exposed to sunlight for some hours, 70% ethanol,iodine
+solution, petri dishes, thin white sheet of paper, transparent sheet of paper and pencil.
+<ol type="i">
+Experimental procedure in steps:
+<li>
+Take the Variegated leaf and place a transparent sheet of paper over it on a table.
+</li><li>Draw the outline of the edges of the leaf. Also draw the outline of the green
+ areas of the leaf.
+</li><li>Test the leaf for starch.
+</li><li>Place the traced drawing again over the leaf.
+</li></ol>
+</div>
+<div class="pa">
+<h4>
+Questions
+</h4>
+1. Write your observation
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+
+2. Write the factor under investigation in the <strong>Experiment 3</strong>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+3. What possible conclusion can you draw from your observation
+<textarea class="w100"></textarea><span class="w100resp"></span>
+ 
+</div>
+
+<div class="fig">
+    <strong>fig8.6</strong>
+</div>
+    <img src="images/fig8.6.jpg" class="imn" />
+ 
+<div class="pa">
+4. Describe how you can set up a control experiment to <strong>Experiment 3</strong>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<h5>
+<strong>Experiment 4 : To show that carbon(IV) oxide is necessary for photosynthesis.</strong>
+</h5>
+<b>Materials required:</b> A potted plant, whose leaves have been destarched, retort stand and clamp, caustic soda solution (Sodium hydroxide),
+conical flask, Vaseline, split cork, materials and apparatus to test for starch in a leaf.
+<ol type="a">
+<h5>Experimental procedure in steps:</h5>
+<li>Keep the detached plant in the dark for several hours until
+you confirm it to be destarched by testing it for starch.
+</li><li>Expose some of the plant’s leaves to air and sun (for several hours)
+with one leaf dipped inside the conical flask that contains caustic
+ soda solution. Make sure the flask neck
+is well corked and made air tight using Vaseline.
+</li><li>Take one of the leaves that have been exposed to light and test
+it for starch.
+</li><li>Take the leaf that is dipped into the flask and test it for starch.
+</li></ol>
+</div>
+
+<div class="fig">
+    <strong>fig8.7</strong>
+</div>
+    <img src="images/fig8.7.jpg" class="imn" />
+ 
+<div class="pa paj">
+<h4>
+Questions
+</h4>
+1. Write your observations in steps 3 and 4.
+<ol type="i">
+<li>Steps 3<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Steps 4<textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+2. What was the role of caustic soda in the experiment?<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3. Write the possible occurrence or observation in Step 4 if the caustic soda were replaced with sodium hydrogen trixocarbonate (IV)
+ (sodium bicarbonate)<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+4. What conclusions can you draw from your observations in Steps 3 and 4.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+5. In your practical notebook, draw a labeled diagram to show another way of carrying out <strong>Experiment 4</strong>
+</div>
+<div class="pa paj">
+
+<h5>Experiment 5. To show that a certain factor is necessary for photosynthesis.
+</h5>
+<b>Materials/Apparatus required:</b> Apotted plant, paper clips, two stripes of black paper, pair of scissors, materials and apparatus for testing the
+presence of starch in a leaf
+<ol>
+Experimental procedure in steps:
+<li>Make a hole of any shape on the surface
+of the black paper strip.
+</li><li>Clip the paper strip with hole on the upper
+surface of a leaf of the potted plant.
+</li><li>Make sure the plant is well watered
+and is destarched.
+</li><li>Place the plant under sunlight for about
+4 hours.
+</li><li>Detach the leaf to which has been
+clipped the black paperstrip with hole and
+test the leaf for starch after removing the paper.
+</li></ol>
+</div>
+
+<div class="fig">
+    <strong>fig8.8</strong>
+</div>
+    <img src="images/fig8.8.jpg" class="imn" />
+
+<div class="pa paj">
+<h4>
+Questions
+</h4>
+1. Record your observation in Step 5
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2. What factor is being shown to be necessary for photosynthesis from your observation in Experiment 5?
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+3. Why is it good to start the experiment early in the morning?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+4. Label the diagrams of leaves in Experiment 5 (in the space above) showing the portions where there is starch and portions where
+ there is no starch. Is the colour of the part where starch is not present green? If not how does the portion look like? (label it in the
+ drawing)?
+</div>
+<div class="pa paj">
+5. What is the use of black paper in the experiment?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+</div>
+<div class="pa paj">
+<h3>
+PROJECT/CHALLENGE
+</h3>
+<ol>
+<li>
+Check up the experiments on plant growth performed by the Belgian Scientist Jan Baptist Van Helmont.
+Design an experiment to demonstrate his result using a fast growing plant.
+</li></ol></div>
+<div class="carry ce">
+
+  <a href="chapter7.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter9.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 8;
+</script>
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+</div>
+</body>
+<script type="text/javascript" src="js/ch8.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology glimpse 5</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <div class="menu1" onclick="showViewTab('verify')"><div class="bull"></div>Activate</div>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t le">
+New Senior School Biology Practical Activity &amp; Work Book Two
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">5</div>
+</div>
+	<div class="box_title" style="font-size:20px;">
+EXCRETORY SYSTEM<br /> AND <br />MECHANISMS
+	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="square">
+<li>
+Excretion and 
+</li><li>Excretory products.
+</li><li>Excretory structures and excretory     System   in  mammals.
+</li><li>Excretion in plants.
+</li>
+</ul>
+</div>
+
+<div class="pa paj">
+<h4>
+Background Information
+</h4>
+By-products of metabolic activities, excess food, water and substances that cannot be stored in the body and other unwanted materials by the body but which were present in absorbed food, all constitute waste substances. The removal of these wastes from the body of living things is what is known as <b>excretion.</b>
+</div>
+<div class="pa paj">
+Excretory substances in some organisms include carbon dioxide, water, urea, uric acid, mineral salts etc. most of these are by-products of body metabolism.
+</div>
+<div class="pa paj">
+Excretion and the process of water balance (Osmoregulation) are closely related both are involved in maintaining a constant internal environment (homeostasis).
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Organism</td><td>Excretory Structure and Products</td><td>Mechanism of the Process of Excretion in the Organism</td>
+</tr>
+<tr>
+<td>Acellular organisms e.g. <b>Amoeba, paramecium, Euglena, Chlamydomonas etc</b></td><td>
+<b>contractile Vacuole</b>excess water, carbon (iv)oxide, and nitrogenous waste are the main excretory products.</td><td>
+Simple diffusion process. Excess water which collects at the contractileVacoule enlarge it and causes it to expand and empty its content through the plasma membrane</td>
+</tr>
+<tr>
+<td>Planaria (atworm)</td><td>
+<b>Flame cells</b> (pronephridium)<br />Ammonia, carbon dioxide and  water are excretory product of the planaria</td><td>Each ame cell receive waste products from surrounding cells (this process is thought to be aided by the agella) into the tubules from which the uid is passed out.</td>
+</tr>
+<tr>
+<td><b>Anelids:</b> Earthworm</td><td>A pair of nephridia Nitrogenous wastes, carbon(iv) oxide, mineral salts.</td><td>Urea is extracted from the blood within the capillaries surrounding the nephridia into the nephridia Also waste collected into the nephrostone (cilliated funnel) from the body cavity. They move along te tubes of the nephridia along which salts and other useful substances can be reabsorbed through the walls of the tube while the rest are passed out as urine through the relaxation of the sphincter muscle.<br />Carbon iv oxide is excreted by diffusion from blood vessels in the epidermal cells and also together with mineral salts in form of calcium carbonate through the gut</td>
+</tr>
+<tr>
+<td>Crustaceans</td><td>
+<b>Green gland</b>excretory products are nitrogenous wastes, water, mineral salts and carbon dioxide. Gills can also perform excretory function as in craysh through which carbon (iv) oxide is excreted.</td><td>Excess water, salts and nitrogenous wastes are excreted by the green gland after ultra ltration for the passage of water and salts into the end sac and selective reabsorption of salts and glucose through the walls of the white tube.The urine formed is collected in the urinary bladder and passed out by contraction of the walls of the bladder.</td>
+</tr>
+<tr>
+<td>Insects</td><td>
+<b>Malpighian Tubule</b><br />Excretory products include uric acid, carbon dioxide. Excretion by storage can also occur in insects. Here uric acid is stored harmlessly in some special fat bodies within the insect</td><td>At the distal part of the malpigian tube, nitrogen wastes and water from the haemocoel (body cavity) are absorbed. The nitrogenous waste is converted to uric acid at the proximal end of tubule towards the gut by the addition of carbon dioxide. uric acid is precipitated while sodium and potassium ions are reabsorbed (iv). The uric acid is passed to the rectum through the ileum. water is reabsorbed at the rectum and uric acid mixed with faeces is passed out.</td>
+</tr>
+<tr>
+<td>Vertebrates</td><td><b>Kidneys, liver, lungs and, Skin. </b>Water, salts, nitrogenous waste and bilirubin constitute the major excretory wastes</td><td>The kidneys maintains water balance and excretes nitrogenous wastes and water, the lungs excrets carbon dioxide while water and salts are excreted through the skin.</td>
+</tr>
+</table>
+
+<h3 class="ce h_bio">
+THE HUMAN URINARY  SYSTEM
+</h3>
+
+<div class="fig">
+<strong>fig5.1:</strong> 
+</div>
+<img src="images/fig5.1.jpg" class="imn" />
+
+<div class="pa paj">
+
+<h4 class="ce h_bio">
+Excretory System in Mammals
+</h4>
+Excretory system in mammals consists of the following organs:
+</div>
+<div class="pa paj">
+<strong>The Kidneys:</strong> which excretes nitrogenous wastes, water and mineral salts it also performs an osmoregulatory function.
+</div>
+<div class="pa paj">
+<strong>The Lungs:</strong>The lungs excrete carbon dioxide and water, which are waste products of cellular respiration.
+</div>
+<div class="pa paj">
+<strong>The Liver :</strong>  which excretes bilirubin through the bile.
+</div>
+<div class="pa paj">
+<strong>The Skin:</strong> It is involved in the excretion of water, mineral salts and urea. The skin is a minor excretory organ, its main function is the regulation of body temperature. The rst three are the major excretory organs in mammals.
+</div>
+<h4 class="ce">Mechanism of urine formation
+</h4>
+
+<div class="fig">
+<strong>fig5.2:</strong> 
+</div>
+<img src="images/fig5.2.jpg" class="imn" />
+
+<div class="pa paj">
+The Kidney is a bean shaped organ which is in pair and it is positioned at the lower part of the vertebral column. The <b>renal arteries</b> carry blood into the kidneys while puried blood leave the kidneys through <b>renal veins.</b>
+</div>
+<div class="pa paj">
+The kidney produces or forms urine. The urine ows to a tube called <b>urethra</b> to the <b>bladder</b> which is a storage organ. The bladder them empties the urine to the outside through the <b>urethra</b>
+</div>
+<div class="pa paj">
+<h4 class="ce">Internal structure of the kidney and mechanism of urine formation</h4>
+Structurally each kidney consists of the outermost part called <b>renal cortex;</b> below the part, in the inside is the <b>renal medulla</b> and then the <b>renal pelvis.</b>
+</div>
+<div class="pa paj">
+Filtration of blood and urine formation takes place at the cortex and medulla while the pelvis is a large cavity where urine  collects and then drained by the urethra. The renal cortex and <b>renal medulla</b> has over a million microscopic structures called <b>nephrons</b> within which blood is puried and urine is formed.
+</div>
+<div class="pa paj">
+The table below explains, the functions of different parts of the nephron as regards urine formation and osmoregulatory function of the kidneys.
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA"><td></td>
+<td>Part / Location</td><td>Functions</td>
+</tr>
+<tr>
+<td>1</td><td>Renal artery (at the cortex)</td><td>Branches into small blood vessels, each of them end in a group of capillaries called glomerulus’s, then branches into a capillary net work around the tubes before joining to the renal vein.</td>
+</tr>
+<tr>
+<td>2</td><td>Renal Vein (at the cortex)</td><td>It continues from the carpillaries from the renal artery surrounding the tubules. It arries puried blood from the kidneys.</td>
+</tr>
+<tr>
+<td>3</td><td>Glomerulus’s (at the cortex) </td><td>A knot of blood carpillaries located at the bowman’s capsule within which untralteration takes place (water, urea, mineral salts, Sugar and plasma solutes are ltered through into the capsular space).</td>
+</tr>
+<tr>
+<td>4</td><td>Bowman’s capsule (at the cortex)</td><td>Glomerular ltrate lter into its space (the capsule and glomerulus form the malpighian corpuscle a high pressure of the blood at the gomerulus enhances).</td>
+</tr>
+<tr>
+<td>5</td><td>Proximal Tubule (just behind the    bowman’s capsule at the renalcortex)</td><td>The process of untratration into the capsule. Selective reabsorption takes place, water is reabsorbed , also amino acids salts and glucose are reabsorbed into the blood capillaries by active transport.</td>
+</tr>
+<tr>
+<td>6</td><td>The henlee’s loop (it dips into the medulla and back to the cortex)</td><td>Same as in (5) above</td>
+</tr>
+<tr>
+<td>3</td><td>Distal tubule (at the renal cortex)</td><td>
+Here there is tubular secretion. Waste molecules like creatinine are secreted in the tubule. Also if need be ions of H+, K+ and Hco are secreted into the tubule to maintain an osmotic balance, on the other hand more sodium ion can also be reabsorbed into the capillaries thus causing more water to be absorbed into the blood  capillaries by osmosis.</td>
+</tr>
+<tr>
+<td>8</td><td>Collecting Duct</td><td>Sodium ion can be pumped back into the blood capillaries by active transport with more water owing into the blood capillaries by osmosis. In this way, the blood recovers up to 99% of the water and sodium that is ltered into the bowman’s capsule leaving a concentrated urine to ow to the urethra through the pelvis.</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h4 class="ce h_bio">Excretion in plants</h4>
+The main excretory wastes in plants are <b>water, carbon dioxide</b> and <b>oxygen</b> which diffuse through the stomata (via the intercellular spaces in tissues) in leaves and young stems, pass out through lenticel in old stems and through root surfaces in roots.
+</div>
+<div class="pa paj">
+Also in plants excess water is excreted by the process of transpiration in form of water vapour or as droplets through the process of guttation. Minor plant wastes such as calcium oxalate, calcium trioxocarbonate(iv) tannins, glycosides, alkaloids and plant oil can be stored in harmless insoluble forms. Poisonous stored excretory products are removed during leaf fall.
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+General Questions
+</h4>
+1. The nitrogenous compound which is the most poisonous of the metabolic wastes is  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2. Contractile vacuole in amoeba and paramecium carry out excretory and  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> function.
+</div>
+
+<div class="fig">
+<strong>fig5.3:</strong> 
+</div>
+<img src="images/fig5.3.jpg" class="imn" />
+
+<div class="pa paj">
+3. The excretory structure in fig 5.3 is a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+it  can be found among 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+4. Write down three excretory products that can be excreted through the excretory structure in 3 above 
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+5. In an earth worm urea can be excreted through an excretory structure called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+6. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> is an excretory and Osmoregulatory structure among crustaceans.
+</div>
+<div class="pa paj">
+7.Insects respire by means of trachea but they excrete by means of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+8.Among insects, nitrogenous wastes are excreted in form of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+9.Which blood vessel carries blood to the kidney? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> is this blood an oxygenated blood or deoxygenated blood? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+10.Where does ultraltration take place in the kidney? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+11.Each kidney is made up of  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> in its cortex and medulla within which urine formation takes place
+</div>
+<div class="pa paj">
+12.Write down one excretory product that the liver removes 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+13.Write down the name of the cup shaped structure that receives the products of ultra ltration 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+14.Write down the three main excretory organs in mammals
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+15. Where does both tubular secretion and selective re-absorption take place in the kidney? 
+<span id="q15"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q15',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Distal tubule at the renal cortex</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q15')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Proximical tubule</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q15')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">glomerulus</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+16. Selective re-absorption of sodium ion from the kidney tubules back to the blood occurs by a process called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+17.Write down three excretory structures in plants 
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+18.Write down the three main excretory products of plant
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+19.Excess water is removed as water vapour from plants leaf surface by a process called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+
+<h4 class="ce h_bio">
+Expression Exercise
+</h4>
+1.(a) Write down three factors that enhances selective reabsorption of substances at the tubules in the nephron which is a process involved in urine formation.
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(b)Write down against each process the part or parts the process occurs in the urinary system
+<ol type="i">
+<li>Ultra ltration
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>Selective reabsorption
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>Tubular secretion
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>Collection of urine formed
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+
+</div>
+<div class="pa paj">
+2.(a)During the glomerular ltration, why is it that not all the substances present in the blood are  ltered off into the Bowman’s capsule? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b)Write down up to four of such substances that are not ltered off
+ 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c) Identify and label the following in the kidney diagram below
+
+<ol type="i">
+<li>
+The part where ultra ltration take place
+</li><li>The part where selective reabsorption take place
+</li><li>The part of tubular secretion
+</li><li>The part that carries puried blood from the kidneys
+</li>
+</ol>
+</div>
+
+<div class="fig">
+<strong>fig5.4:</strong> 
+</div>
+<img src="images/fig5.4.jpg" class="imn" />
+
+<div class="pa">
+3.(a)What is osmoregulation?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b)Explain how the excretory function of the kidneys relate to their osmoregulatory function.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<h4 class="ce h_bio">
+Test of practical works/Alternative to practical 
+</h4>
+
+<div class="fig">
+<strong>fig5.6:</strong> A
+</div>
+<img src="images/fig5.6A.jpg" class="imn" />
+A.  
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+<div class="fig">
+<strong>fig5.6</strong> B
+</div>
+<img src="images/fig5.6B.jpg" class="imn" />
+B.  
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+<div class="pa">
+Identify each of the structures above and an example of an animal where each can be found.Compare the structures and functions of A and that of B.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+ (b)What are the contents of the nitrogen waste produced in B?
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig5.7</strong> B
+</div>
+<img src="images/fig5.7.jpg" class="imn" />
+
+<div class="pa paj">
+Identify the diagram of the excretory structure above and state one animal where it can be found?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="ce u">
+Find out
+</h4>
+Why the right kidney is slightly lower that the left kidney? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+How many times each day, the entire human blood is filtered by the kidneys
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="ce">
+EXCRETORY SYSTEMS AND MECHANISMSPAST SSCE Questions
+</h4>
+<h4>JUNE 1994Q10</h4>
+1 .Study the diagram below and use it to answer question 1a and (b)
+</div>
+
+<div class="fig">
+<strong>fig5.8</strong> B
+</div>
+<img src="images/fig5.8.jpg" class="imn" />
+
+<div class="pa paj">
+(a)Name the pairs labeled I and VI 
+</div>
+<ul type="disc">
+<li>
+I. <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+VI.<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ul>
+</div>
+<div class="pa paj">
+and their functions<br />
+I
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<br />
+VI
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b) State the functions of the parts labeled II and V 
+</div>
+<div class="pa paj">
+(c) In which organ in the mammalian body is urea formed? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+<h4>June 1996 Q3a,b,c,&amp;d</h4>
+Study the diagram below and use it to answer Question 3
+</div>
+
+<div class="fig">
+<strong>fig5.9:</strong> 
+</div>
+<img src="images/fig5.9.jpg" class="imn" />
+
+<div class="pa paj">
+Name the structure illustrated above
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+<ol type="A">Name the parts labeled A-D above
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+
+<ul>
+<li>(c) State the function of the part labeled C
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>(d) In which group of animals is this structure found
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ul>
+
+<div class="pa paj">
+
+</div>
+<div class="pa paj">
+
+</div>
+<div class="pa paj">
+
+</div>
+<div class="carry ce">
+
+  <a href="chapter4.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter6.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 5;
+</script>
+</div>
+</body>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+<script type="text/javascript" src="js/ch5.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

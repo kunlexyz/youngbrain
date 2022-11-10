@@ -1,0 +1,762 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+<link rel="stylesheet" href="../MobileTem.css">
+<link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+    <div id="navig8">
+        <!-- -->
+        <div class="mCon2" onclick="openNav()">
+                    <div class="menu_dash"></div>
+                    <div class="menu_dash"></div>
+                    <div class="menu_dash"></div>
+          </div>
+        <!-- Pop_Out Menu Codes -->
+        <div id="myNav" class="overlay">
+          <div class="closebtn close3" onclick="closeNav()">&times;</div>
+            <img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+          <div class="overlay-content">
+          
+            <a href="../index.html">
+            <div class="menu1"><div class="bull"></div>Cover Page</div>
+            </a>
+            
+            <a href="content.html">
+            <div class="menu1" onclick="">
+            <div class="bull"></div>Table of Content
+            </div>
+            </a>
+            
+            <a href="diagram.html">
+            <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+            </a>
+            
+            <a href="../about.html">
+            <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+            </a>
+            
+            <a href="../more.html">
+            <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+            </a>
+            
+            <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+            
+            
+          </div>
+        </div>
+        <div class="overlay2" onclick="closeNav()">
+        </div>
+<!-- -->
+</div>
+<div id="coHide">
+<img src="images/b13.jpg" class="imn" />
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ol>
+<li>1.Usefulness of Biology to
+Agriculture.
+</li><li>2. Classification of plants.
+
+</li><li>3. Agricultural Activities and
+their effect on Ecological
+System.
+
+</li><li>4. Agricultural, Plants and
+Animal Pests.
+
+</li><li>5. Food Preservation and
+Population Growth.
+</li>
+</ol>
+
+</div>
+
+
+<div class="fig_1">
+<strong>fig13.1:</strong>
+</div>
+<img src="images/fig13.1.jpg" class="imn" />
+<h3 class="headaChap">
+AGRICULTURE, FOOD SUPPLY, POPULATION GROWTH
+</h3>
+
+<div class="pa paj">
+<div class="hh7">
+Background information
+</div>
+Agriculture which is the art of growing plants and rearing of farm animals for human
+needs is one of the areas where biological studies and research is applied. In agricultural
+activities, biological knowledge gives information on the structures, functions and
+nutrition among plants and animal, diseases, soil structure and composition.
+Biological studies also find its relevance in the application of ecological systems and
+genetic information to improve crops and livestock yield.
+</div>
+<div class="pa paj">
+<h4 class="hh7">
+Classification of plants
+</h4>
+Biological classification of plants is of very little importance to a farmer.
+Classifications of plants, which are of agricultural usefulness and relevance, are:
+</div>
+<ol type="i">
+<li>
+(i) Classification based on life cycle:
+Annuals: - Life cycle expires in one growing season within a year e.g.
+m a i z e ,
+melon.
+Biennials:- Life cycle expires in two growing seasons e.g. turnip, carbage.
+Perennials:- Life cycle is completed in many years. They live for many years e.g.
+orange, oil palm, mango
+
+</li><li>Classification based on agricultural importance
+Root crops, vegetable crops, forage crops, fruits, beverages and drugs spices,
+cereals/grain crops, fibre crops, legumes, oil crops and cash crops.
+ Note: Acrop is any plant that is cultivated by man for its usefulness.
+</li><li>Classification based on the sizes of the full grown plant:-
+ These are: -
+Herbs:- Small plants with fleshly stems e.g. potted plant. Talinium triangulare
+(waterleaf plant).
+Shrubs:- Medium sized plants with woody stems e.g. hibiscus plant.
+Trees:- Big plants with woody trunks and branches e.g. iroko, mahogamy trees.
+</li></ol>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>
+Agricultural
+activity</td><td>
+Manner or nature
+of the activity</td><td>
+Effects on the
+Ecosystem</td>
+</tr>
+<tr>
+<td>
+Bush
+Clearing</td><td>
+Cutting and removing the
+vegetation of a land to
+prepare it for the growth
+of new crops.</td><td>
+Removes cover on the soil;
+Exposes the soil to
+temperature. Increases
+erosion and leaching;
+Removes soil organisms;
+Desertification in low rainfall</td>
+</tr>
+<tr>
+<td>
+Bush
+Burning</td><td>
+Clearing an area of
+bush for cultivation by
+burning the vegetation
+on it.</td><td>
+Loss of soil fertility as
+humus is burnt. Useful
+soil organisms are burnt.
+Soil exposure and erosion are
+promoted;
+Burning of certain useful
+crops on land.</td>
+</tr>
+<tr>
+<td>
+Tillage</td><td>
+The act of breaking up a
+cleared soil by digging,
+ploughing or other means
+so as to loosen the soil.</td><td>
+Breaks up and loosens the
+cleared soil
+by digging, soil for young
+plants;
+ploughing or other means
+improves water capillary so as to
+loosen the soil. rise, helps to mix
+humus into the soil; plant cover
+is removed and erosion is
+increased.</td>
+</tr>
+<tr>
+<td>Fertilizers</td><td>
+Artificially prepared
+chemical compounds for
+increasing soil fertility.</td><td>
+It can kill useful soil organisms;
+pollution problem which can
+lead to loss of aquatic lives.
+Development of poor soil
+structure after prolonged use.</td>
+</tr>
+<tr>
+<td>Pesticides</td><td>
+Chemicals used to
+control plant pests and
+diseases
+Herbicides: for controlling
+weeds Insecticides: for
+controlling insects
+Muluscicides: for
+controlling
+muluscsFungicides: for
+controlling fungi.</td><td>
+Aerosol chemicals pollute
+the atmosphere.
+Useful insects can be killed.
+Pollution may lead to death of
+useful soil organisms.
+Contamination of crops edible
+by man. Crops can even be
+killed by non-selective
+herbicides.</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h3>
+Farming activities
+</h3>
+Types of farming include monoculture, continuous cropping, shifting cultivation/bush following, nomadic herding,
+crop rotation mixed cropping and mixed farming.
+
+</div>
+<div class="pa paj">
+<h3>
+Plant Pests and Diseases
+</h3>
+In agricultural activities, pests and diseases hinder crops and livestock from attaining optimum yield. There are
+plant pests and animal pests. Plant pests are weeds while animal pest can be insects, nematodes, snails, birds
+and rodents. Animal pests, which transmit disease-causing agents, are called vectors.
+</div>
+<div class="pa paj">
+<h3>
+Pest Control
+</h3>
+There are both preventive and treatment measures in controlling of pests. Methods involved include:-
+Preventive Measures: - Prohibition, Quarantine, Pest resistance Varieties, Cultural and drying methods.
+Treatment Measures: - Biological Control, Chemical and Physical methods.
+</div>
+<div class="pa paj">
+<h3>
+Diseases of Crops and Farm Animals
+</h3>
+Crops diseases can be grouped or classified according to the organisms that cause them. They are:-<br />
+Fungal diseases e.g. Smut, rust, downy mildew and root rot in plants.<br />
+Protozoa causing disease like coccidiosis in animals e.g. poultry.
+Viral diseases e.g. Chlorosis, Necrosis, Mosaic mottling in plants and Rinderpest in animals e.g. cattle.
+Bacteria diseases e.g. bacterial blight, leaf spots, bacterial galls, soft rot in plants and Bovine dermatophilosis in
+animals like cattle.
+</div>
+<div class="pa paj">
+Crop diseases; can be controlled by physical methods, cultural methods and chemical methods. Diseases
+of plants and farm animals are carried and transmitted by pests and parasites like: Ticks, Trypanosomes, Liver
+fluke, insects like Aphids etc.
+</div>
+<div class="pa paj">
+Controlling farm animal diseases can be done by provision of good shelter, rotational grazing, good
+sanitation, seeking the attention of a veterinary doctor, medical administration etc.
+</div>
+<div class="pa paj">
+<h3>
+Food Supply
+</h3>
+In a country food production and supply keeps the inhabitants of that country well fed, provides gainful employment
+and serves as a means of foreign earnings through export.<br />
+Food supply is always being affected by availability of arable land, livestock yields, food preservation and storage
+methods and food wastage.
+</div>
+<div class="pa paj">
+<h3>
+Methods of Food Preservation
+</h3>
+Methods of Food Preservation include drying, refrigeration, freezing, freeze-drying, canning, pasteurization,
+chemical preservation, fermentation and irradiation.
+</div>
+<div class="pa paj">
+Crop yields can be increased by maintaining the fertility of the land, effective control of crop pests and diseases and
+using improved crop varieties. Livestock productivity can as well be increased by effective and improved life stock
+breeds and controlling their pests and diseases. With the human population growing at an exponential rate, food
+shortage crisis becomes a problem that needs urgent solution especially in developing countries.
+</div>
+<div class="pa paj">
+Human population growth is affected by birth rates. Controlling population of a country to a level whereby the
+available food supply and production can meet the need of its inhabitants can solve the problem of food
+shortage. This can be achieved by education and family planning (birth control) programmes. But the
+ultimate way of solving food shortage problem is to increase food production.
+</div>
+<div class="pa paj">
+<h3>
+General Questions
+</h3>
+1.a Write three examples ofeach of the following
+</div>
+a. Annuals
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+b. Biennials
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+c. Perennials.
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+
+<div class="pa paj">
+2.a The following is a list of various crops write each under the class it falls in {based on its agricultural importance} in the spaces below.
+Rice, maize, colanut, groundnut, water melon, rubber, tomatoes, cocoa, guava, mango, onion, garden egg, yam, coconut, Soya beans,
+cotton, pepper, cowpea, ginger, banana, jute, tea, sisal, tobacco.
+<ol type="i">
+<li>
+Rootcrops:
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>Vegetable crops:
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>Cereal fgrain crops:
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+Legumes:
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+Fibre crops:
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>Oil crops:
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>Latex crops:
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>Beverages/Stimulants:
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>Fruits crops:
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>Spices:
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>Forage crops:
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+
+</div>
+<div class="pa paj">
+b. Classiﬁcation of plants into herbs, shrubs and trees is based on 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+<h3>
+PRACTICAL ACTIVITIES
+</h3>
+Take a trip (your teacher can take you down) to varieties of farmlands where different crops are grown carry out the following activities
+<ol type="a">1
+<li>Give a name tag to the farm lands you visited in alphabetical order e.g. farm A, farm B etc.
+</li><li>Collect specimens of the different crops you found in these farms and identify each of them with their names.
+</li></ol>
+Tabulate your report as shown below
+</div>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td>
+The farms</td>
+<td>Various lives stock and crops specimen found there</td>
+</tr>
+<tr>
+<td>Farm A</td><td></td>
+</tr>
+<tr>
+<td>Farm B</td><td></td>
+</tr>
+<tr>
+<td>Farm C</td><td></td>
+</tr>
+<tr>
+<td>Farm D</td><td></td>
+</tr>
+<tr>
+<td>Farm E</td><td></td>
+</tr>
+</table>
+<div class="pa paj">
+C List all the varieties of crops in the various farms with each type of crop appearing only once
+Then classify them into:
+</div>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Ammuals</td><td>Biennials</td><td>Perennials</td>
+</tr>
+<tr>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td></td><td></td><td></td>
+</tr>
+</table>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Legumes</td><td>Fruits</td><td>Spies</td>
+<td>Vegetables</td><td>Latex</td><td>Root crops</td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</table>
+<div class="pa paj">
+1. Write out the various live stocks seen in these farms identifying them with their names. Make a table in your biology practical note
+book showing the pests and disease that attack each ofthe live stock and methods that can be used to control them.
+</div>
+<div class="pa paj">
+2. Tabulated below are figures obtained in the study ofthe relationship between available food and population growth. Using four
+ripped bananas which have their skins removed and pound together, put in a bottle and kept where it will attract
+fruit flies. Then record is taken on the number of flies attracted at intervals of few days. (Note the mouth of the
+bottle is opened and closed with a piece of cloth using rubber band at intervals of the days.)
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Days interval</td><td>2nd day</td><td>4th day</td>
+<td>6th day</td><td>8th day</td><td>10th day</td><td>12th day</td><td>14th day</td>
+</tr>
+<tr>
+<td>Numbers of filies</td><td>10</td><td>15</td><td>25</td><td>38</td><td>45</td><td>58</td><td>65</td>
+</tr>
+</table>
+
+<ol type="i"><li>
+Draw a graph in your practical notebook or within the space provided, the population growth of the fruit
+flies in the bottle at regular intervals.
+</li><li>
+What is the likely cause of the population increase?
+</li><li>
+What do you think would happen if the wrong type of food were suddenly introduced into the bottle?
+</li></ol>
+<ol type="1" start="3">
+<li>Name three methods of preventing food spoilage.
+</li><li>State three advantages of vegetation to the soil.
+</li><li>List four crop diseases.
+</li><li>State two ways in which agricultural practices can affect an ecological system.
+</li>
+</ol>
+
+<div class="pa paj">
+8. List four crop diseases
+
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+
+<div class="pa paj">
+<h4>
+Nov 1990 SSCE Biology 1 Practical Q7&amp;8
+</h4>
+7. List two diseases that may be spread as a result ofpoor irrigation system
+
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+8. List three factors that can affect population growth
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4>
+June 1996 practical question 8
+</h4>
+<strong>(you are provided with bean or cowpea as specimen A and maize grain as specimen B)<br />
+each infested by certain crop pests</strong>
+</div>
+<div class="pa paj">
+8. 
+Identify specimen A and B without reason<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(b) State the agricultural classiﬁcation of each of the specimens A and B based on their uses.<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+
+<div class="pa paj">
+(c) Name one pest each that is likely to have put the specimens A and B in the activity of the named pests during storage<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa">
+<h4>
+1997 SSCE BIOLOGY PRACTICAL QUESTION 7a & b
+</h4>
+What is a pest?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+(b) List three plant pests and name the plant attacked by each
+</div>
+<div class="pa">
+<h4>
+JUNE 1998 SSCE BIOLOGY 1 PRACTICAL QUESTION 13b
+</h4>
+13(b) Copy and complete the table below into your answer booklet. Put a tick( &radic; ) where appropriate.
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Specimen</td><td>Annuals</td><td>Perennial</td><td>Cashcrop</td><td>Foodcrop</td>
+</tr>
+<tr>
+<td>
+F- Maize</td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>
+G-Onion</td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>
+H-Ginger</td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>
+I-Cowpea</td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>
+J -Cocoyam</td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>
+K-Oil palm/coconut</td><td></td><td></td><td></td><td></td>
+</tr>
+</table>
+<div class="carry ce">
+
+  <a href="chapter12.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter14.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 13;
+</script>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch13.js">
+</script>
+</div>
+</body>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

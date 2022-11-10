@@ -1,0 +1,668 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t2 le">
+New Senior School Biology Practical Activity &amp; Work Book 3
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">8</div>
+</div>
+	<div class="box_title" style="font-size:45px;line-height: 20px; padding-top:32px;">
+GENETICS	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="disc">
+<li>Mendelian Genetics.</li>
+<li>Cellular basis for heredity.</li>
+<li>Transmission of characters.</li>
+<li>Ammendment of mendelian genetics.</li>
+<li>
+Application of genetics.</li>
+</ul>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Background Information
+</h4>
+<strong>The law of Segregation of genes and (ii) The law of independent assortment of genes</strong> (Mendel did not use the word genes rather he used the wordfactors).
+</div>
+
+<div class="pa paj">
+Law of Segregation of genes: The law can be summarized below
+</div>
+<div class="pa paj">
+*Heritable characters of an organism are determined by factors (genes) which are discrete (No mixing or blending) unit of inheritance .
+</div>
+<div class="pa paj">
+*Agene for a character may have alternative formscalledalleleswhichshowsthecharacter in different ways.
+</div>
+<div class="pa paj">
+*In an organism with diploid number of chromosomes, each character is controlled by two copies of each gene. This may be identical alleles <strong>(homozygous)</strong> or different alleles <strong>(heterozygous).</strong>
+</div>
+<div class="pa paj">
+Also if a diploid organism has two different alleles (heterozygous) for a character, one allelecanbedominant,dictatingtheexpression of the character while the other (the recessive allele) has it’s character not in appearance.
+</div>
+<div class="pa paj">
+*In a diploid organism that is heterozygous, the two alleles during meiosis separate (segregate) from each other going randomly to a different gamete.
+</div>
+<div class="pa paj">
+<h4 class="h_bio">Law of independent  Assortment</h4>
+The first law was as a result of monohybrid crossing (crossing involving only one pair of alleles)mendels law of independent assortment <strong>which states that: the inheritance of alleles for one characteristic does not affect the inheritance for alleles for other characteristic.</strong> This means that, whether a plant is short or tall, for instance , has no effect on whether its seed are smooth or wrinkled, but all the characters separate independently.
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Cellular Basis for Heredity</h4>One major reason why mendel was neglected for so long was because scientists at that time, had no understanding of cellular basis for heredity. For now the study of the cellular process in sexual reproduction has linked mendels conclusion to the structure of the cell.
+</div>
+<div class="pa paj">
+The cell structure has nucleus which contains chromosomes. It is also common scientific knowledge of the present day that there ia a <strong>body cell</strong> and there is a <strong>sex cell.</strong> Abody cell (somatic cell) has a diploid number of chromosomes 2n. In humans it is 46. Asex cell (gamete) has a haploid number of chromosomes n.In humans it is 23 in number. The matching pairs of chromosomes in a diploid cell are said to be <b>homologous.</b>
+</div>
+<div class="pa paj">
+The chromosome theory tells us that different genes lay on different chromosomes. It is this chromosome theory that gives cellular basis for heredity (and even mendels laws). According to the chromosome theory, chromosomes contain genes which occur in pairs. Only characters controlled by genes can be transmitted. The sum of the genes an offspring inherits from parents is known as its <strong>genotype or genetic make up.</strong> This determines or constitutes the inherited character of an individual, The actual physical expression of the characters is the organisms <strong>phenotype.</strong>
+</div>
+
+<h4 class="ce h_bio">
+TRANSMISSION AND EXPRESSION OF CHARACTER FROM PARENTS TO OFFSPRING
+</h4>
+
+<div class="pa paj">
+Agene for a particular character (for instance colour) may have alternative form that will express the character in different ways (say red and white) each alternative form of a gene (red or white for example) is called<strong> allele.</strong>  Such pair of genes is called alleles or an allelic pair. During sexual reproduction, thousands of genes are passed by parents to their offsprings. Though one cannot easilly observe how several thousands of characters are transmitted from generation to generation one can easily monitor the inheritance pattern of a single pair of genes. This is called <strong>single factor inheritance.</strong> Singlefactorinheritance can be studied by a plant that breads true in two contrasting characters e.g Red and white flowered pea plants. The ones that give rise to red flowered pea plants consistently by crossing them among themselves has two genes for red <b>RR</b> which are homozygous. The same thing is application to the white flowered pea plant, on true breed. They give rise to rr for that character. This can be explained by the fact that all the gametes that are a product of the true breed were homozygous for their different flower colours.<strong> An individual is said to be homozygous for a character that has more than one form, if the two copies of the gene controlling that character are identical.</strong> If a monohycrid cross (cross between alleles of one specific character. Flower colour in this case) is carried out by crossing a pure stock of white flowered pea plant. This offspring gives all red flowered pea plant. This offspring gives all red flowered pea plants in the first filial generation.
+</div>
+<img src="images/fig8.1.jpg" class="imn" />
+<div class="pa paj">
+Seeing only red flower colour in the F<sub>1</sub>  generation we can conclude that red flower form of flower colour character is dominant white colour characted is <b>recessive.</b>
+</div>
+<div class="pa paj">
+Two copies of alleles now appear RR which is homozygous and Rr which is heterozygous. Crossing F<sub>1</sub> individuals by self pollination to give rise to F<sub>2</sub> generation gives a mixture with roughly ¾ bearing red flower forms and ¼ white flowers.
+</div>
+<img src="images/fig8.2.jpg" class="imn" />
+<img src="images/fig8.3.jpg" class="imn" />
+<div class="pa paj">
+<h4>Ammendments to mendelian genetics</h4>
+Although mendels experiments and works form the basis of understanding inheritance, there are however certain findings that do not agree with his inheritance pattern such findings include:
+
+<ul type="square">
+<li>Incomplete dominance</li>
+<li>Co-dominance</li>
+<li>Linkage</li>
+<li>Sex determination</li>
+<li>Sex linked characters</li>
+<li>Multiple Alleles</li>
+<li>Polygenic inheritance and</li>
+<li>Mutations.</li>
+</ul>
+</div>
+<div class="pa paj">
+<h4>Incomplete dominance:</h4> This is a situation whereby two alleles produce a heterozygous phenotype that is different from the two homozygous phenotypes. Example of this crossing of a pure stock red-flowered four 0'cock plant (RR) with a pure stock of white flowered (rr) ones to give rise to pink-flowered (Rr) which is a blending of colour character.
+</div>
+<div class="pa paj">
+<h4>Co-dominance:</h4> In this case, there is a full expression of the character of each allele in the heterozygous individual which result to three distinct phenotypes. This is different from incomplete doominance in that the effect of each allele is not modified by the presence of the other. An example is the inheritance of human <b>ABO</b> blood groups in which two alleles 1^,1<sup>B</sup> in a heterozgous individual gives rise AB blood group. 
+</div>
+<div class="pa paj">
+<h4>Linkage:</h4> A situation whereby genes for characters located on the same chromosomes segregate together in a genetic cross e.g. Body colour and wing shape. In humans, there are 23 linkage groups while <strong>drosophila</strong> there are four linkage groups.
+</div>
+<div class="pa paj">
+Sex determination: In sex determination, the female have two copies of X chromosomes while males have one X and one Y. Female eggs has only X chromosomes and another with X chromosomes both are in equal numbers. Thus offspring's sex depends on whether it is the X bearing sperm or Ybearing sperm that fertilizes the egg. In humans Y-chromosomes has only a few of its genes active. They also have a few genes not found on the X chromosomes. Many of the genes on the X chromosomes behaves as if they are present in singles and not in pairs as stated in mendels law.
+</div>
+<div class="pa paj">
+<h4>Sex Linkage characters:</h4> characters that are detemined by genes on only the X-chromosomes are observed to be sex-linked because they show a different pattern of inheritance in both males and females.
+</div>
+<div class="pa paj">
+<h4>Multiple Alleles:</h4> There are genes that have more than two alleles. Such genes are called multiple alleles. Example is the gene that controls the ABO blood group in humans.
+</div>
+<div class="pa paj">
+<h4>Polygenic inheritance:</h4>Polygenicinheritance is a pattern of inheritance that shown by a character that is controlled by many genes residing at different loci. Such characters show a more or less continuous variation in its expression. Examples of such is skin colour and height in humans.
+</div>
+<div class="pa paj">
+<h4>Mutations:</h4> This is an error in the replication of a genetic material. It is a permanent change in DNA structure that can give rise to a new character. It can also destroy a given character.
+</div>
+<div class="pa paj">
+<strong>Sickle cell anaemia</strong>and <strong>haemophilia</strong> are due to mutations. Mutation can also be advantageous. Such mutations provide needed raw materials for evolution
+</div>
+
+<h4 class="ce h_bio">
+Non Disjunction
+</h4>
+
+<div class="pa paj">
+This is a serious genetic disorder, which is due to the failure of chromosomes to separate properly during meiosis. When this occurs, the resulting egg or sperm will carry an unusual number of chromosomes. A study of human karyotype (A photograph of the arrangement of chromosomes of a cell, in order, from largest to smallest) shows that non disjunction may occur in any of the human chromosomes. Non disjunction of a given chromosomes causes a particular group of symptoms called <strong>syndrome.</strong>
+</div>
+<div class="pa paj">
+This include 
+</div>
+<div class="pa paj">
+<b>(i) Down's Syndrome</b> (caused by non disjunction of the 21<sup>st</sup> chromosome). stIndividuals with such syndrome have extra copy of 21<sup>st</sup> chromosomes. Such individuals are characterized by abnormal eyelids, large tongues short and broad hands, short stature, mental retardation. Many have deformed hearts.
+</div>
+<div class="pa paj">
+<b>(ii) Klinefelter's Syndrome</b> (non disjunction of <b>X</b> chromosomes resulting to a male with extra Xchromosomes (ie <b>XXY</b> genetype instead of <b>XY</b>) such man will be sterile and have less than normal intelligence.
+</div>
+<div class="pa paj">
+<b>(iii) Turner's Syndrome</b> (Also caused by non disjunction of <b>X</b> chromosomes). This result to female with missing <b>X</b> chromosomes (with genotype <b>XO</b> instead of <b>XX</b>). Such women will have large necks, their organs and breasts do not develop to adult stage as such they will be sterile.
+</div>
+<div class="pa paj">
+<h4 class="h_bio">Applications of the principles of heredity</h4>
+Genetic principles discovered in the transmission of traits from parents to offsprings can be applied in Agriculture, such as <b>controlled breeding</b> which is allowing only those plants or animals with particular traits to reproduce. This produce offspring with desirable genetics trait.
+</div>
+<div class="pa paj">
+Controlled breeding includes: Inbreeding<strong></strong> and <strong>Hybridization.</strong>
+</div>
+<div class="pa paj">
+<strong>Cloning and Recombination</strong> of DNA are other ares of application of genetics principles (<strong>the use of recombinant DNA and Cloning is commonly called genetic enginering</strong>).
+</div>
+<div class="pa paj">
+Genetics can also be applied in medicine, in providing counseling for <strong>genetic disorder</strong>  among humans <strong>Rhesus factor, genetic therapy, Amniocentesis</strong> among married couples etc.
+</div>
+
+<h4 class="ce h_bio">
+General Questions
+</h4>
+<div class="pa paj">
+1. Write down the law that states that the inheritance of one characteristic does not affect the inheritance of other characteristics 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2. An organism's set of alleles for gene is referred to as 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+3. What word can be used to describe an organism that contain two alleles that are alike 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+4. An organism's appearance constitutes what is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+5. A cell that contains a matching pair of each type of chromosomes has a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> number of chromosomes.
+</div>
+<div class="pa paj">
+6. At what stage of meiosis do chromatids segregate 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+7. The theory that states that genes are located on the chromosomes is referred to as 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa">
+8. What is a hybrid? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+9. What  is monohybrid crossing 
+<span id="q9"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q9')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">A dihybrid crossing in one phase</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q9',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">A genetic cross involving only one pair of alleles</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q9')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">A genetic cross invoving two pair of alleles</div>
+    </div>
+</div> 
+</div>
+<div class="pa paj">
+10. The ability of DNA to make exact copy of itself is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+11. In mendels experiment, by allowing the hybrid offsprings he obtained from crossing true breeding sets of plants showing altrnative forms of a trait in F1 to self pollinate and produce offspring's in F2. <br />
+He was always having a dominant recessive ratio of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+12. A 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> is the location of a gene on a chromosome.
+</div>
+<div class="pa paj">
+13. In 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> cros, inheritance pattern of two characters, each determined by two alleles of a gene is being studied.
+</div>
+<div class="pa paj">
+14. The inheritance pattern of a character controlled by a single pair of gene is called __________
+<span id="q14"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q14')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">double factor inheritance</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q14',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">single factor inheritance</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q14')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">single inheritance factor</div>
+    </div>
+</div>
+
+</div>
+<div class="pa paj">
+15. An offspring produced by breeding two pure lines ia called a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+16. In <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> heterozygous individuals express traits that are a blend of the phenotypes of two alleles, for instance the case of two alleles for the <strong>Andulusian fowl.</strong>
+</div>
+<div class="pa paj">
+17.  In sex determination, among humans, it is the gamete contributed by the <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> that determines the sex of the baby.
+</div>
+<div class="pa">
+18. In human, of all the 23 pairs of chromosomes, 22 pairs are <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> while one pair is sex chromosomes.
+</div>
+<div class="pa paj">
+19. A character that is determined by a gene located on only the X chromosome is said to be <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+20. State two genetic disorders that are caused by sex linked characters on the X chromosomes 
+<span id="q16"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q16')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">River blindness, Scuvy</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q16')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Sickle cell; Dwafism</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q16',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Haemophlia; colour blindness</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+21. Non disjunction of a pair of autosomes can give rise to zygotes that are either trisomic (having three chromosomes of one type) or 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> (which is having only one chromosome of one type).
+</div>
+<div class="pa paj">
+22. People who have the Rhesus antigen on the surface of the red blood cells are said to be  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> They may be homozygous for the dominant allele RR or heterozygous for the recessive allele 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+In table below write down three disorders, their symptoms and defects. Also state wheather it is dominant or recessive genes that cause them.
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td>Disorder</td><td>Symptom</td>
+<td>Defect</td><td>Dominant or Recessive</td>
+</tr>
+<tr>
+<td>23</td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>24</td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>25</td><td></td><td></td><td></td><td></td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h4 class="ce h_bio">
+Expression Exercise
+</h4>
+1a. Outline four points in mendels law of segregation of genes.
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa">
+b. Write down the seven pairs of traits studied by Mendel and explain how he arrived at his dominant recessive ration of 3:1 <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+2a. What is an autosome <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+b. What is co dominance? Illustrate your answer with a practical example <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3a. What is the significance of meiosis in inheritance? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+b. Explain briefly the meaning of the following in genetic terms:
+<ol type="i">
+<li>Linkage: <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Linkage: <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Incomplete dominance: <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Mutation: <textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+4a. Compare the process of sex determination in fruits flies, butterflies and humans. Identify which parent determines the sex of the offspring in each of the organisms.
+</div>
+<div class="pa">
+Fruits Flies <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+Butterflies <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">Humans
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+5a.i. What is the cause of sickle cell disorder?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(ii)  Explain what is meant by the term multiple Allele. Give one example of a trait the has such. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+b.  Briefly explain the following
+<ol type="i">
+<li>Down's Syndrome<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Klinefelster's Syndrome<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Turner's  syndrome<textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+
+<h4 class="ce h_bio">
+PRACTICAL ACTIVITIES
+</h4>
+<h4 class="ce u">
+Interpreting a pedigree chart
+</h4>
+<img src="images/fig8.4.jpg" class="imn" />
+
+<div class="pa paj">
+Carefully study the pedigree chart above: The shaded symbols represent individuals with the ability to roll the tongue while the unshaded symbols cannot roll the tongue.
+</div>
+<div class="pa paj">
+Interprete the chart and use it to answer these questions
+</div>
+<div class="pa">
+(i) In a pedigree chart, circles represents 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>  while square represents 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(ii) State how many generations that are represented here 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(iii) How many children does Paul have? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(iv) What are Alex and Chidi's genotype for tongue  rolling? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(v) Who are Deborah's uncles and Auntys? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2. Draw a pedigree of your family for a given inherited trait. Such should include your grand parents, uncles, Auntys., brothers, sisters and your very self also.<br />
+(Do this in your Biology practical note book)
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+Test of practical work
+</h4>
+A colour blind man marries a woman who has normal red green vision. The couples have two daughters and one son. The son has colour blindess, one daughter is colour blind while the other has normal vision.
+
+</div>
+<div class="pa paj">
+Draw a pedigree showing the phenotypes of the parents and children. Shade those symbols representing colour-blind individuals. Leave the symbols for normal colour vision blank.
+</div>
+<div class="pa paj">
+State the genotype of the father 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+Also state the genotype of the mother 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+2. Explain the different between the way A. B. O. Blood groups are inherited and the way skin colour is inherited 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3. A woman having blood type A marries a man that has blood type B. they have five children among whom two sons have blood type O. One daughter's blood type is AB while the other daughter own is A, and the third daughter's type is B.
+</div>
+<div class="pa paj">
+(a) Draw a pedigree showing the blood types of the parents and of their offspring (you can  use letter to represent the individual blood types in the pedigree symbols)
+</div>
+<div class="pa paj">
+(b) Try to find out and write down the genotypes of the parents and the children 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<h4 class="ce h_bio">
+SSCE PAST QUESTIONS ON GENETICS
+</h4>
+
+<div class="pa paj">
+1a. Name the nucleic acid that carries inherited traits.
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+b. Name four elements found in the named nucleic acid.
+<span id="q4b"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q4b',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">carbon, nitrogen, oxygen, phosphorus</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q4b')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">manganese, mercury, zinc, boron</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q4b')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">neon, boron, calcium, zinc</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+
+</div>
+<div class="pa paj">
+
+</div>
+<div class="carry ce">
+
+  <a href="chapter7.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="pastquestion.html">
+  <div class="btnRed btnC">Past Question</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 8;
+</script>
+
+
+</div>
+</body>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+<script type="text/javascript" src="js/ch8.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

@@ -1,0 +1,1387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t2 le">
+New Senior School Biology Practical Activity &amp; Work Book 3
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">6</div>
+</div>
+	<div class="box_title" style="font-size:20px;line-height: 20px;">
+DEVELOPMENT OF NEW<br />ORGANISMS FRUITS<br />AND SEEDS
+	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="disc">
+<li>Organism development (complete and incomplete metamorphosis)</li>
+<li>Fertilization and development of zygote in animals and flowering plants</li>
+<li>Germination.</li>
+<li>
+Fruits and seeds.</li>
+</ul>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Background Information
+</h4>
+In sexual reproduction, development of a new individual of species begins with the zygote after fertilization has taken place. The zygote after undergoing certain processes which included cell division and cell differentiation grows into an embryo which eventually grows and develops into a new organism
+</div>
+<div class="pa paj">
+In oviparous animals, the young ones are hatched from the eggs, in such organism, the new organism can undergo several other changes in stages before it can be like the adult in form and structure.
+</div>
+<div class="pa paj">
+This is called <b>metamorphosis.</b> In some others, where the eggs hatch into a miniature (adult) an organism that looks like the adult. It is called <strong>incomplete metamorphosis,</strong> but if it hatches into a larva, it undergoes complete metamorphosis. In most mammals where viviparity occurs, the young ones develop into feotus in the womb before they are born, after birth they begin to develop into infant stage, adolescence stage and full grown adult.
+</div>
+
+<h4 class="ce h_bio">
+Development of new Organisms in insect
+</h4>
+
+<div class="pa">
+1. The life cycle of a grasshopper, and butterfly.
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>The Insect</td><td>Mating and fertilization</td><td>Egg Laying</td><td>Metemorphosis</td>
+</tr>
+<tr>
+<td colspan="4"><b>1. Grasshopper</b></td>
+</tr>
+<tr>
+<td>
+A male grasshopper uses sound to attract a female. He rubs the thighs of his hind legs against his fore wings to produce the sound.</td><td>
+Apenis like structure introduces a sperm consisting sac into the female reproductive tract.The sperm reaches the sperm pouch inside the Abdomen of the female where they are stored. The eggs are fertilized by the sperm as they pass through the sperm pouch during the time they are being laid.</td><td>The female deposits the eggs in a hole. It produces a sticky substance which is to form a protective covering around the eggs. The whole structure in which the egg is contained is called egg pod.</td><td>Within about 2 to 3 days, in the presence of sufficient warmth and moisture,the eggs hatch out the nymphs. The nymphs are light brown with a measurement up to 6mm in length.They look like the parent although they are wingless. This is a case of incomplete metamorphosis.</td>
+</tr>
+<tr>
+<td colspan="4"><b>2. Butterfly.</b></td>
+</tr>
+<tr>
+<td>Here both visual and smell signals are used to attract each other for mating. The male hassexual attractants on their wings while the female release chemicals, posses colour pattern and flight behaviour. These are what it uses to attract the males</td><td><br />After a courtship flight, which lasts within a short time, the male hold the female abdomen with his claspers.Fertilization occurs internally like case of the grasshopper.</td><td>The egg is spherical and whitish. It is laid on the upper surface of young leaves of citrus plants. The eggs are laid one by one and glued with cement to the leaf surface.</td><td>The egg hatches into larva (caterpillar) which develops into a pupa and then from  pupa to adult. This is a case of complete metamorphosis.</td>
+</tr>
+</table>
+
+<div class="fig">
+<strong>fig5.8:</strong> Life History of a Butterfly
+</div>
+<img src="images/fig6.1a-d.jpg" class="imn" />
+
+<h4 class="ce h_bio">
+Development of New Organism in Frogs or Toads
+</h4>
+<img src="images/fig6.2a-hPreview.jpg" class="imn" />
+
+<div class="fig">
+<strong> A - Egg</strong>
+</div>
+<img src="images/fig6.2a.jpg" class="imn" />
+
+<div class="fig">
+<strong> B Embryo</strong>
+</div>
+<img src="images/fig6.2b.jpg" class="imn" />
+
+<div class="fig">
+<strong> C One day after hatching</strong>
+</div>
+<img src="images/fig6.2c.jpg" class="imn" />
+
+<div class="fig">
+<strong>D Three weeks old</strong>
+</div>
+<img src="images/fig6.2d.jpg" class="imn" />
+
+<div class="fig">
+<strong>E One Month old</strong>
+</div>
+<img src="images/fig6.2e.jpg" class="imn" />
+
+<div class="fig">
+<strong>F Two Months old</strong>
+</div>
+<img src="images/fig6.2f.jpg" class="imn" />
+
+<div class="fig">
+<strong>G Three months old</strong>
+</div>
+<img src="images/fig6.2g.jpg" class="imn" />
+
+<div class="fig">
+<strong>H Adult frog</strong>
+</div>
+<img src="images/fig6.2h.jpg" class="imn" />
+
+<h4 class="ce h_bio">
+Development of young Ones in Humans.
+</h4>
+
+<div class="pa paj">
+After fertilization at the upper part of the oviduct, It takes around days 14 – 21 of the menstrual cycle for the zygote formed to be developed into an embryo and get implanted in the uterus. This stage is the pregnancy stage and as the embryo grows, the uterus becomes bigger to contain it. The embryonic membranes, amnion and chorion begin to form. Within 10 – 12 weeks, all major organs are formed in the embryo and from that time onwards the embryo becomes a foetus.
+</div>
+
+<div class="fig">
+<strong>fig6.3a:</strong> Uterus during pregnancy
+</div>
+<img src="images/fig6.3a.jpg" class="imn" />
+
+<div class="pa paj">
+<h4 class="h_bio">
+Placenta:
+</h4>
+This is a disc shaped structure formed where the chorionic villi is embedded in the uterine endometrium tissue. It is linked to the foetus by the umbilical cord.
+</div>
+<div class="pa paj">
+Arteries from the foetus move through the umbilical cord to the placenta, in the villi of the chorion, there are capillaries which branch from this artery. Materials pass from the blood into the capillaries in the villi. Umbilical veins carry the blood to the foetus.
+</div>
+<div class="pa paj">
+The circulatory system of the feotus (embryo) is separate from that of the mother. The (foetus) embryo's blood stays within the capillaries of the chorionic villi as illustrated or shown in figure5.4. The blood stream of the foetus and that of the mother do not mix.
+</div>
+
+<ul type="disc">
+<b></b>
+<li>The placenta serves as a lung by removing oxygen from the mothers blood and passing carbon(iv)oxide to the mothers blood.</li>
+<li>It also acts like the digestive system by bringing dissolved food nutrient from the mothers blood into the foetus (embryo).</li>
+<li>It also carries out the work of the kidney by removing nitrogenous wastes from the foetus blood which eventually gets out through the mother excretory system.</li>
+</ul>
+
+<div class="fig">
+<strong>fig6.3b:</strong> 
+</div>
+<img src="images/fig6.3b.jpg" class="imn" />
+
+<div class="pa paj">
+
+</div>
+<div class="pa paj">
+<h4 class="ce">
+BIRTH
+</h4>
+During the last week of pregnancy, Oestrogen level in the women rises, Also oxytocin, a hormone secreted by the posterior pituitary gland together with the oestrogen rise, bring about the contraction of the uterus over and over. This is called labour. This labour contraction pushes the baby's head against the cervix, stretching and passing through the cervix, the baby eventually is pushed out of the mother through the vagina.
+</div>
+
+<h4 class="ce h_bio">
+Fertilization and Zygote Development in Flowering plants
+</h4>
+
+<div class="fig">
+<strong>fig6.4a:</strong> A Stamen
+</div>
+<img src="images/fig6.4a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.4b:</strong> B Anther cut open
+</div>
+<img src="images/fig6.4b.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.4c:</strong> C Anther cut open after bursting
+</div>
+<img src="images/fig6.4c.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.4d:</strong> D Fertilization
+</div>
+<img src="images/fig6.4d.jpg" class="imn" />
+<img src="images/fig6.4dx.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.4e:</strong> </div>
+<img src="images/fig6.4e.jpg" class="imn" />
+
+<div class="pa paj">
+After pollination, the male gametes will still need to move to the egg in the ovary which is still far from the stigma. To reach the egg cell, the pollen grain germinates to produce a pollen tube, which grows to reach the egg cell. Before germinating, the intine of the pollen grain grows out as a pollen tube through a pore or rupture at the exine.
+</div>
+<div class="pa paj">
+Energy is required for this and it is obtained from stored food in the pollen grain. The pollen tube grows through the loosely packed cells of the style, into the ovary, it secretes enzymes which digest the cells  inorder to provide it with necessary nutrients and energy for growth. When the pollen tube enters the embryo sac through the micropyle of the ovule, the tube nucleus disintegrates. The two male nucleus are now released into the embryo sac. Immediately one fuses with the egg cell to form a diploid (2n) zygote; the other migrates to the center of the embryo sac where it fuses with the two fused polar nucleus to form a triploid (3n) primary endosperm cell. This is called <strong>double fertilization</strong> and it is common but peculiar to flowering plants. Only one pollen tube enters an ovule. If the ovules are many or more than one, separate pollen tubes enter each separately.
+</div>
+<div class="pa paj">
+After fertilization, <b>the zygote develops into an embryo, the primary endosperm develops into endosperm tissue, the ovule becomes a seed while the ovary turns to a fruit.</b>
+</div>
+
+<h4 class="ce">
+Certain Types of Fruits
+</h4>
+
+<div class="fig">
+<strong>fig6.5: A</strong> Mango fruit (longitudinal section)
+</div>
+<img src="images/fig6.5a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.5: B</strong> Tomato fruit (longitude section)
+</div>
+<img src="images/fig6.5b.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.5: C</strong> A fruit (grain) zea mays
+</div>
+<img src="images/fig6.5c.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.5: D</strong> 
+</div>
+<img src="images/fig6.5d.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.5: E</strong> Undehisced Legume
+</div>
+<img src="images/fig6.5e.jpg" class="imn" />
+
+<div class="pa paj">
+<b>Germination:</b> Seeds can remain alive for long in a dry condition without germinating. They are said to be in dormancy period or resting period at such time. During favourable conditions, seeds can germinate into seedlings.
+</div>
+<div class="pa paj">
+Germination of seeds refers to all changes that take place when the embryo in a seed starts its growth and development to become an independent seedling.
+</div>
+<div class="pa paj">
+Conditions necessary for germination<br />
+<b>External conditions: Sufficient water; suitable temperature, and adequate oxygen supply.</b>
+</div>
+<div class="hh8 ce">
+Types of Germination
+</div>
+<div class="carry">
+
+<h3 class="trA ce">
+Types of Fruit
+</h3>
+(i). True and False fruits.
+<h3 class="trA ce">
+Examples
+</h3>
+
+<div class="fig_1">
+<strong>fig6.6I</strong>  True Fruit(Mango) 
+</div>
+<img src="images/fig6.6I.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.6II:</strong> False Fruit (Tomato)
+</div>
+<img src="images/fig6.6II.jpg" class="imn" />
+
+<h3 class="trA ce">
+Types of Fruit
+</h3>
+(ii). Simple
+<h3 class="trA ce">
+Examples
+</h3>
+
+<div class="fig_1">
+<strong>fig6.6III</strong> Simple fruit (Maize grain) 
+</div>
+<img src="images/fig6.6III.jpg" class="imn" />
+
+<h3 class="trA ce">
+Types of Fruit
+</h3>
+(iii). Fresh and Dry fruits.
+<h3 class="trA ce">
+Examples
+</h3>
+
+<div class="fig_1">
+<strong>fig6.6IV:</strong> Fresh fruit (orange) 
+</div>
+<img src="images/fig6.6IV.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.6V</strong> Dry fruit (Okro) 
+</div>
+<img src="images/fig6.6V.jpg" class="imn" />
+
+<h3 class="trA ce">
+Types of Fruit
+</h3>
+(iv). Dehiscent and undehiscentfruits.
+
+<h3 class="trA ce">
+Examples
+</h3>
+
+<div class="fig">
+<strong>fig6.6VI</strong> Dry fruit (Okro) 
+</div>
+<img src="images/fig6.6VI.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.6VII</strong> Dry fruit (Okro) 
+</div>
+<img src="images/fig6.6VII.jpg" class="imn" />
+
+</div>
+<div class="pa paj">
+
+<h4 class="h_bio">
+Dispersal of fruits and seeds
+</h4>
+Seed dispersal helps to reduce competition among members of the same species. It also produces favourable environmental conditions for the survival of the species.
+</div>
+<ol type="i">
+Methods of seed dispersal
+<li>Dispersal by wind.</li>
+<li>Dispersal by water.</li>
+<li>Dispersal by explosive mechanism</li>
+<li>Disperal by animals.</li>
+</ol>
+
+<h4 class="h_bio ce">
+General Questions
+</h4>
+
+<div class="pa paj">
+1. After fertilization, a zygote is formed which develops into <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> after a few days
+</div>
+<div class="pa paj">
+2. A development that involves these steps<br />
+Egg      &rarr;      Larva      &rarr;      Pupa &rarr;             Imago is a case of phase of development in an organisms called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+3. The whole structure containing the egg in the geasshopper is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+4. The eggs of a cockroach hatches out into a <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> which looks like the adult except that it is wingless.
+</div>
+<div class="pa paj">
+For question 5 – 9 write down in the spaces provided what the larva of eachof the insects are called.
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Insects</td><td>Larva</td>
+</tr>
+<tr>
+<td>Mosquito</td><td> 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>Butterfly/Moth</td><td> 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>Housefly</td><td> 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>Weevil/Beetle</td><td> 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>Ant, bee, wasp</td><td> 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+</table>
+<div class="pa paj">
+10. Development or metamorphosis of amphibians is controlled by the hormone 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+11. At what stage of development of a toad does the coiled intestine appear ?  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+12. Write two functions of the jelly covering in the egg of a toad 
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+
+<div class="fig">
+<strong>fig6.6a:</strong> A
+</div>
+<img src="images/fig6.6a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.6b:</strong> B
+</div>
+<img src="images/fig6.6b.jpg" class="imn" />
+
+<div class="pa paj">
+13. What stages of development of a frog is shown in the figure 5.8 a and b above ?
+<ol type="a">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+14. At what stage of development in a frog does it breath like a fish? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+15. The caterpillar has 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> pairs of spiracles.
+</div>
+<div class="pa paj">
+16. The structure called Osmeterium in  caterpillar is for 
+<span id="q16"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q16')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">feeling on leaves</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q16')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">breathing</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q16',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">defence when the caterpillar is disturbed</div>
+    </div>
+</div> 
+
+</div>
+
+<div class="fig">
+<strong>fig6.6c:</strong> 
+</div>
+<img src="images/fig6.6c.jpg" class="imn" />
+
+<div class="pa paj">
+18. Label the major parts of the diagram of the pupal stage of a butterfly shown above 
+
+<ul>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ul>
+
+</div>
+<div class="pa paj">
+19. How many times does a female Tse-Tse fly need to mate in a life time
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+For questions 20 – 26, write into the space provided in the table, the type of metamorphosis carried out by each of the insects in the table.
+</div>
+<table class="tabler bg_white">
+<tr class="trA"><td></td>
+<td>Insects</td><td>Type of metamorphosis</td>
+</tr>
+<tr>
+<td>20</td><td>Housefly</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>21</td><td>Mosquito</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>22</td><td>Cockroach</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>23</td><td>Aphids</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>24</td><td>Tsetsefly</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>25</td><td>Termites</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>26</td><td>Rice weevil</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+</table>
+<div class="pa paj">
+Diagram of the Amniotic egg of a chicken showing its development
+</div>
+
+<div class="fig">
+<strong>fig6.6d:</strong> 
+</div>
+<img src="images/fig6.6d.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.6e:</strong> 
+</div>
+<img src="images/fig6.6e.jpg" class="imn" />
+
+<div class="pa paj">
+Use the diagram to answer question 26 to 28
+</div>
+<div class="pa paj">
+Label the: (26) air space; (27) The amniotic fluid; (28) The embryo.
+<ol type="1" start="26">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+
+</div>
+<div class="pa paj">
+29. In mammals, the baby receives nourishment from the mother through the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+30. The two hormones that are involved in labour which results to birth are 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+31. After fertilization in flowering plants, the zygote develops into an embryo while the primary endosperm gives rise to endosperm tissue, the ovule becomes a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>and the ovary itself turns to a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+32. Write down three main functions of a seed
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+Expression Exercise
+</h4>
+1a. What is moulting in an insect? 
+<span id="q1a"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q1a',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Periodic shedding of the outer covering(exoskeleton) of the insects as a periodic part of growth</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q1a')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">The process of fortifying insects with calcium and magnesium</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q1a')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Mounting up of fresh wings to fly during rainy season. </div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+b. What hormone is involved in the process of moulting? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+c. State two similaries and two differences in the life cycle of a cockroach and that of a butterfly
+
+<ul type="square">Similarities:
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+<ul type="square">Differrence: 
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+</div>
+<div class="pa paj">
+2a. What is parthenocarpy? <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+b. Explain how an Aphid reproduces parthenogenetically: <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+c. Write one similarity in the life cycle of a housefly and that of a mosquito <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3a. Write three functions of the placenta in the development of foetus in the uterus
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+b. How does a flowering plant carry out double fertilization? <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+4a. How does epigeal germination differ from hypogeal germination? <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+b. Write three examples of plants that carry out epigeal germination and three examples of plants that carries out hypogeal germination. <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig6.7a:</strong> 
+</div>
+<img src="images/fig6.7a.jpg" class="imn" />
+
+<div class="pa paj">
+(a) Identify the type of dry fruit in the diagram above and label the parts indicated
+</div>
+<div class="pa paj">
+(b) Write two differences between a legume and a capsule dry fruits.
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td></td><td>Legume</td><td>Capsule</td>
+</tr>
+<tr>
+<td>1</td><td></td><td></td>
+</tr>
+<tr>
+<td>2</td><td></td><td></td>
+</tr>
+<tr>
+<td>3</td><td></td><td></td>
+</tr>
+<tr>
+<td>4</td><td></td><td></td>
+</tr>
+</table>
+
+<div class="fig">
+<strong>fig6.7b:</strong> 
+</div>
+<img src="images/fig6.7b.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.7c:</strong> 
+</div>
+<img src="images/fig6.7c.jpg" class="imn" />
+
+<div class="pa paj">
+Label each of the diagrams in figure 6.7B and 6.7C
+</div>
+<div class="pa paj">
+b. Write two example each, of the various types of fruits listed below
+<ol type="i">
+<li>
+True fruits
+<ol type="a">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+
+</li>
+<li>
+False fruits
+<ol type="a">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+
+</li>
+<li>
+Simple fruits
+<ol type="a">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+
+</li>
+<li>
+Aggregate fruits
+<ol type="a">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+
+</li>
+<li>
+Composite fruits
+<ol type="a">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+
+</li>
+</ol>
+
+</div>
+
+<div class="pa paj">
+<h4 class="ce h_bio">
+Practical Activities
+</h4>
+Finding and Examining toad eggs and Tadpoles
+</div>
+<div class="pa paj">
+Materials/Apparatus<br />Glass jars, hand lens
+</div>
+<div class="pa paj">
+Method/ procedure
+<ol type="i">
+<li>Pair up your selves and discuss where you are most likely to see toad eggs and tadpoles.</li>
+<li>You can visit any nearby and suitable pond or stream close to the school compound.</li>
+<li>Collect strings of toad eggs, feel them and gently place them with pond water in the glass jar after careful observation.</li>
+<li>Also collect as many tadpoles as you can, but put pond weed in the jar containing the tadpoles.</li>
+<li>Examine the stages of development of the tadpoles with the hand lens and see if you can observe various stages of development among the tadpoles.</li>
+<li>Also use the hand lens to examine the eggs, note the colour and also the smell.</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Questions
+</h4>
+1(i) Write down where you found the strings of eggs? <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(ii) What did you observe about the different sizes of the tadpoles and their stages of development 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(iii) Why do you have to put pond weed into the glass jar containing the tadpoles 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(iv) What is the colour and smell of the eggs (if you perceived any smell) 
+<ol type="a">
+<li><textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(v) What does your observation of the tadpoles in the pond or stream lead you to conclude about parental care among toads 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2.  Discovering the parts of a fruit
+</div>
+<div class="pa paj">
+<b>Material/Apparatus needed</b><br />
+Certain fruits such as mango, tomato, Coconut, Scalpel or knife
+</div>
+<div class="pa paj">
+Method/procedure
+<ol type="i">
+<li>Using the scalpel or knife, cut each of the fruits into two equal halves. Using the fruit stalk as the starting point.</li>
+<li>Observe each section carefully and compare them with the drawings in figure 6.8A-C</li>
+<li>Try to identify all laballed parts</li>
+<li>Try to draw each section of the fruits you cut and label your diagram carefully using the diagram in fig 5.95 as a guide.</li>
+</ol>
+</div>
+
+<div class="fig">
+<strong>fig6.8</strong> A: Coconut
+</div>
+<img src="images/fig6.8a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.8</strong> B: Mango
+</div>
+<img src="images/fig6.8b.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.8</strong> C: Tomato 
+</div>
+<img src="images/fig6.8c.jpg" class="imn" />
+
+<div class="pa paj">
+<h4 class="h_bio">
+Questions
+</h4>
+(i) What type of fruit can each of the fruits be categorized into. State the category in the space below.
+<ol type="i">
+<li>Coconut<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>Mango<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>Tomato<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(ii) Which parts  of the flower is represented as shriveled remains on the tomato fruit. 
+</div>
+<div class="pa paj">
+(iii) State two ways by which tomato differes from the other fruits
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+Test of Practical Work
+</h4>
+</div>
+
+<div class="fig_1">
+<strong>fig6.8:</strong> Okro
+</div>
+<img src="images/fig6.9a.jpg" class="imn" />
+
+<div class="fig">
+Cashew
+</div>
+<img src="images/fig6.9b.jpg" class="imn" />
+
+<div class="fig">
+Palm fruit
+</div>
+<img src="images/fig6.9c.jpg" class="imn" />
+
+<div class="fig">Guava
+</div>
+<img src="images/fig6.9d.jpg" class="imn" />
+
+<div class="pa paj">
+Classify each of the fruits displayed in the diagram according to the following
+</div>
+<ul type="square">
+<li>Dehiscent fruits<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Dry Fruits<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Fleshy fruits<textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+<div class="pa paj">
+State one method of seed dispersal for the plants whose fruits are shown in a, b, c, and d.
+<ol type="i">
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+
+<h4 class="ce h_bio">
+Development of the Foetus
+</h4>
+
+<img src="images/fig6.9e.jpg" class="imn" />
+<img src="images/fig6.9f.jpg" class="imn" />
+
+<div class="pa paj">
+(a) The diagram above is divided into A and B, state the right name for A and B
+<ol type="A">
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(b) What class or groups of vertebrates can they be found?
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">Can they be found in males or females? 
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c) How does exchange of gases take place in the foetus? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(d) How is the foetus blood neatly separated from having direct contact from that of the mother though exchange of materials still take place? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<h4 class="ce h_bio">
+SSCE Past Questions on Development of New Organisms Fruits and Seeds
+</h4>
+
+<div class="pa paj">
+<b>Nov 1990q3</b><br />
+1. Study the diagrambelow and use it to answer question 1
+</div>
+
+<img src="images/fig6.9g.jpg" class="imn" />
+
+<div class="pa paj">
+(a) Name the parts labelled I - V
+<ol type="i">
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(b) In which of the labelled parts is food stored 
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<b>June 1994Q7 a-b</b><br />
+3. Study the diagram below and use it to answer Question 3
+</div>
+
+<img src="images/fig6.9h.jpg" class="imn" />
+
+<div class="pa paj">
+(a) Name the parts labelled I - V
+<ol type="i">
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(b) What is the function of the part labelled I 
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<b>May/June 2001 Q1</b><br />
+4. You are provided with Specimen A: Tadpole with internal gill and limb; <br />specimen B: Mosquito pupa.
+</div>
+<div class="pa paj">
+(a) Identify  Specimen A and B without reasons 
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b)i Examine the ventral part of specimen A and list four observable feature
+<ol type="1">
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(ii) Suggest the diet of specimen A, giving reasons
+</div>
+<div class="pa paj">
+(iii) Identify one feature on the ventral part of specimen A which is not used by the organism at this stage. Give a reason for your answer. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c) Describe two observable features in each specimens A and B which suggest their Habitats.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(d) Make a labelled drawing of 4cm – 10cm long of the lateral view of specimen A.<br />
+(Draw in your biology practical note book).
+</div>
+<div class="pa paj">
+<b>June 2003 Q 1</b><br />
+5. You are provided with specimen A in group H a bony fish (Tilapia) and specimen B in group I
+</div>
+<div class="pa paj">
+a Tadpole
+<ol type="a">
+<li>Name the adult stage of specimen B 
+
+ <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>List four external features common to specimen A and B
+
+<ol type="1">
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</li>
+
+</ol>
+</div>
+<div class="pa paj">
+ii. In a tabular form, list four observable differences between specimens A and B
+</div><table class="tabler bg_white">
+<tr class="trA">
+<td></td><td>Specimens A</td><td>Specimens B</td>
+</tr>
+<tr>
+<td>1</td><td></td><td></td>
+</tr>
+<tr>
+<td>2</td><td></td><td></td>
+</tr>
+<tr>
+<td>3</td><td></td><td></td>
+</tr>
+<tr>
+<td>4</td><td></td><td></td>
+</tr>
+</table>
+<div class="pa paj">
+iii Make a labelled drawing of 8cm to 10cm long of specimen A to show its external features <br />
+(Draw in your practical biologgy note book)
+</div>
+<div class="pa paj">
+iv. State, how four of its external features adapt the specimen A to its environment
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+V Name two classes of food that specimen A provides in human nutrition.
+<ol type="i">
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4>June 2000 Q1</h4>
+6. Specimen A: Bean seed Specimen B: Fresh fruit of pride of Barbados/Bean pod
+</div>
+<div class="pa paj">
+(a)i. Identify specimen A and B without reasons 
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+ii. Give four differences between specimens A and B
+<ol type="1">specimens A
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+<ol type="1">specimens B
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+Using sharp knife, scalpel or blade, cut specimen B into two equal halves to expose the internal structure;
+</div>
+<div class="pa paj">
+(b)i. Make a labelled drawing of 8cm to 10cm to show the observable internal structures of specimen B.<br />
+ (Draw in your Biology practical note book)
+</div>
+<div class="pa paj">
+ii.  State the dispersal mechanism of specimen B 
+
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+<h4>June 1997 Q1b</h4>
+7. Define Metamorphosis
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+
+<h4>JUNE 2000 WASSCE BIOLOGY PRACTICAL - QUESTION</h4>
+
+</div>
+<div class="pa paj">
+You are provided with a bean seed as specimen A, a pride of barbados fruit (pod) as specimen B
+</div>
+<div class="pa paj">
+1(a) (i) Identify specimens A and B without reasons[2marks] 
+</div>
+<div class="pa paj">
+ (ii) Give four differences between specimens A and B [4marks].
+</div>
+<div class="pa paj">
+Using a sharp knife, scarpel or blade, cut specimen B into two equal halves to expose the internal structures;
+</div>
+<div class="pa paj">
+ (b) (i) Make a labeled drawing of 8cm to 10cm long to show the observable internal structures of specimen B. [9marks] 
+</div>
+<div class="pa">
+(ii) State the dispersal mechanism of specimen B. [1mark]
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+
+</div>
+<div class="pa paj">
+
+</div>
+<div class="carry ce">
+
+  <a href="chapter5.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter7.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 6;
+</script>
+
+
+</div>
+</body>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+<script type="text/javascript" src="js/ch6.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

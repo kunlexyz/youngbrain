@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+<link rel="stylesheet" href="../MobileTem.css">
+<link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+    <div id="navig8">
+        <!-- -->
+        <div class="mCon2" onclick="openNav()">
+                    <div class="menu_dash"></div>
+                    <div class="menu_dash"></div>
+                    <div class="menu_dash"></div>
+          </div>
+        <!-- Pop_Out Menu Codes -->
+        <div id="myNav" class="overlay">
+          <div class="closebtn close3" onclick="closeNav()">&times;</div>
+            <img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+          <div class="overlay-content">
+          
+            <a href="../index.html">
+            <div class="menu1"><div class="bull"></div>Cover Page</div>
+            </a>
+            
+            <a href="content.html">
+            <div class="menu1" onclick="">
+            <div class="bull"></div>Table of Content
+            </div>
+            </a>
+            
+            <a href="diagram.html">
+            <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+            </a>
+            
+            <a href="../about.html">
+            <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+            </a>
+            
+            <a href="../more.html">
+            <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+            </a>
+            
+            <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+            
+            
+          </div>
+        </div>
+        <div class="overlay2" onclick="closeNav()">
+        </div>
+<!-- -->
+</div>
+<div id="coHide">
+<img src="images/b11.jpg" class="imn" />
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="square">
+<li>Organisms and food relationships.
+</li><li>In an ecosystem.
+</li><li>Energy flow and energy changes.
+</li><li>Ecological pyramids.
+</li><li>Energy transformations in nature.
+</li><li>Nutrient cycling in nature
+</li>
+</ul>
+</div>
+
+<div class="fig_1">
+<strong>fig11.1:</strong> 
+</div>
+<img src="images/fig11.1.jpg" class="imn" />
+
+<div class="pa paj">
+A functioning ecosystem is made up of the <strong>living</strong> and <strong>non living components</strong> which
+not only interract among themselves but are closely linked by various biological,
+chemical and physical processes.
+</div>
+<div class="pa paj">
+The <b>biotic (living)</b> component of an ecosystem comprises of the Autotrophs but
+the <b>abiotic (non living)</b> component consists of the non living materials like carbon
+dioxide, oxygen, mineral salts and water which are inorganic materials, food substances
+which are organic materials and energy.
+</div>
+<div class="pa paj">
+In a given ecosystem, energy and nutrients are transfered sequentialy (step by
+step) among organisms in a feeding pathway (trophic level). This feeding pathway
+always begins with <strong>primary producers</strong> which are <b>Autotrophs,</b> followed by one or more
+consumers then ends with<b> decomposers</b>. <strong>A linear feeding relationship among
+organisms in the same community in which each organism feeds on the one
+before it in the sequence is called a food chain.</strong> In nature, there are more complex
+feeding relations than food chain shows. <strong>A complex feeding relationship consisting
+of a network of interrelated food chains is called food web.</strong> Each level in a feeding
+path way is called trophic level. A given feeding relationship (food chain or food web)
+shows energy and nutrients transfer from organism to organism in a feeding pathway.
+</div>
+<div class="pa paj">
+<h4>
+Energy flow and energy changes
+</h4>
+In an ecological system, energy source is usually from the sun .Energy flow takes place
+unidirectionally starting from the producer e.g.. grass which traps energy from the sun.
+st this energy flows right from the producer (1 trophic level) to the secondary or tertiary
+consumer. But as it flows it is only a certain amount of the original energy that is
+transferred from one trophic level to the next. Part of the energy in a given trophic level is
+lost as heat energy during the orgainsms metabolic activities. Thus we say that there is
+an inefficient energy transfer process from the producer to the tertiary consumer which
+is in line with the <b>laws of thermodynamics.</b>
+</div>
+<div class="pa paj">
+This means that for the survival of the biotic component of an ecosystem, there is
+need for a constant supply of energy from outside it. This outside energy source is the
+sun. Without this energy source life on earth will cease.
+
+</div>
+<img src="images/fig11.1x.jpg" class="imn" />
+
+<div class="pa paj">
+<h4>
+Ecological Pyramids
+</h4>
+Feeding relationships in an ecosystem can be represented graphically using
+<strong>ecological pyramid of numbers, pyramid of biomass and pyramid of energy.</strong>
+</div>
+<div class="pa paj">
+<b class="u">Pyramid of numbers:</b> The pyramid of numbers represents the number of
+individuals in a given (each) trophic level of a food chain at a given time. The length
+of each bar in the pyramid gives appoximate measure of the number of individuals
+at that particular trophic level. Generally in most ecosystems the number of
+individual organism decreases up the trophic level (from the producer)in the food
+chain while the size of the individuals increases. However equal status accorded to
+each individual without mindng their great variations in sizes and wide ranges in
+figure between producers and consumers introduces odd-shape pyramids of
+numbers. These bring in a limitation and disadvantage to the method.
+</div>
+<div class="pa paj">
+<b class="u">Pyramid of biomass:</b> This represents the sum of the wet or dry masses of the
+organisms in each trophic level. Biomass gives a more accurate representation of
+the relatioships between the organisms at the various trophic levels in the food
+chain than a pyramid of numbers. This can be bacause biomass takes both the size
+and the numbers into consideration. Inconsistences that can arise due to equal
+status accorded to small sized producers with short life span and large sized
+consumers with long life span introduces odd shaped biomass.
+</div>
+<div class="pa paj">
+<b class="u">
+Pyramid of energy:</b> The rate of energy flow through each trophic level of a food chain can be represented with pyramid of energy. The pyramid
+of energy gives the best way of representing relationship between organisms in the various trophic levels of a food chain. Hence there is always
+a great loss of useful energy as food is transferred from one trophic level to the next one up, Apyramid of energy is always upright. 
+</div>
+
+<div class="fig">
+<strong>fig11.2:</strong> 
+</div>
+<img src="images/fig11.2.jpg" class="imn" />
+<div class="fig">
+<strong>fig11.3:</strong> 
+</div>
+
+<img src="images/fig11.3.jpg" class="imn" />
+<div class="pa paj">
+<h3 class="h_bio">
+Practical Activities
+</h3>
+1. A decay process yields carbondioxide, hydrogen sulphide and ammonia. Write briefly one after the other,
+how you can identify each of these gases that occur during a decay process.
+
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+
+<div class="fig">
+<strong>fig11.4:</strong>
+</div>
+<img src="images/fig11.4.jpg" class="imn" />
+
+<div class="pa paj">
+The diagram above is an illustration of a community. Draw two possible food chains that occur in the community.
+
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+(4a) Write three habitat you can identify in the diagram (i). 
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+
+(b) What is the trophic level of the toad in the community 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+
+</div>
+<div class="pa paj">
+<h4 class="h_bio ce">General Questions</h4>
+1. The role of an autotroph in a food chain is
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2. What name can you call a unit which comprise of a living community and its physical factors 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+3. Every food chain must begin with a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+4. An ecological 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> describes the occupation of an organisms in an ecosystem.
+</div>
+<div class="pa paj">
+5. What is the ultimate source of energy in a food chain 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+6. A unit of the biosphere in which organisms interract with themselves and their physical environment is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+7. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> is a measure of the total mass of the dry organic matter produced in a given area.
+</div>
+<div class="pa paj">
+8. A 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> can be used to graphically illustrate the transfer of energy in a food chain.
+</div>
+<div class="pa paj">
+9. In a functional ecosystem, pyramid of numbers, energy flows, mineral salts in the soil, humus and trophic level are associated with
+food chain or food web except 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+10. In the food chain illustrated here:<br /> 
+Guinea grass &rarr; grasshopper  &rarr; Toad  &rarr; snake. Which of the
+organisms is the secondary consumer and what trophic level does it belong 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+11. Examine the food chain drawn here:<br /> 
+Diatom   &rarr; paramecium   &rarr; water flea  &rarr;  fish. <br />
+What type of habitat can this food chain be found?
+What is the role of the diatom in the food chain?
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+12. A complex feeding relationship which consist of interrelated food chains is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+13. Identify the diagram in figure 11.2 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+ State two limitations in using the diagram to represent food relationships as answer to questions 14 and 15<br />
+14.  
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+15. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+16. Energy transformations in nature are in line with the first and second laws of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+17. Name three nutrients cycling in nature 
+
+<span id="q17"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q17',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Carbon Cycle (ii) Nitrogen Cycle (iii) Water cycle</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q17')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Kreb cycle (ii) Citric Acid cycle (iii) Phosphorous cycle</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q17')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Sulphur cycle (ii) Hydrogen cycle (iii) Citric Acid cycle</div>
+    </div>
+</div>
+
+</div>
+<div class="pa paj">
+18. Write the function of nitrogen fixing bacteria during Nitrogen cycle 
+<span id="q18"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q18')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Conversion of protein to inorganic nitrogenous compound</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q18',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Converts atmospheric nitrogen into amino compounds and proteins </div>
+    </div>
+	<div class="optionbox" onclick="opMark('q18')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Converts nitrites to nitrates</div>
+    </div>
+</div>
+
+</div>
+<div class="pa paj">
+19. Which of the ecological pyramids gives the best way of representing relationship between organisms in the various levels of a food chain. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+20. The rate at which primary producers manufacture food per unit area per unit time is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div> and the
+remainder that is stored is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<div class="pa paj">
+<h3 class="h_bio ce">
+Expression Exercises
+</h3>
+<div class="T_A_required"> Teacher's attention required</div> 
+1
+<ol type="i">
+a. State the first and second laws of thermodynamics
+<li>1st law<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>2nd law<textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+b. Write two differences between food chain and food web
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td></td><td>Food Chain</td><td>Food web</td>
+</tr>
+<tr>
+<td>1</td><td></td><td></td>
+</tr>
+<tr>
+<td>2</td><td></td><td></td>
+</tr>
+</table>
+
+<div class="pa paj">
+2a. Study the food web shown in figure 11.3, label and put in the arrow heads.<br />
+<div class="T_A_required">Teacher's attention required</div>
+</div>
+<div class="pa">
+2b. Draw the pyramid of energy using the food chain below.<br />
+Grass --> grasshopper --> toad --> hawk
+</div>
+<div class="T_A_required">Teacher's attention required</div>
+<div class="pa paj">
+2c. Write three differences between energy flow and nutrient cycle in an ecological system.
+</div>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td></td><td>Energy flow</td><td>Nutrient cycle</td>
+</tr>
+<tr>
+<td>1</td><td></td><td></td>
+</tr>
+<tr>
+<td>2</td><td></td><td></td>
+</tr>
+<tr>
+<td>3</td><td></td><td></td>
+</tr>
+</table>
+
+<div class="pa paj">
+d. State three differences between pyramid of energy and pyramid of numbers.
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td></td><td>Pyramid of energy</td><td>Pyramid of numbers</td>
+</tr>
+<tr>
+<td>1</td><td></td><td></td>
+</tr>
+<tr>
+<td>2</td><td></td><td></td>
+</tr>
+<tr>
+<td>3</td><td></td><td></td>
+</tr>
+</table>
+<div class="carry ce">
+
+  <a href="chapter10.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter12.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 11;
+</script>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch11.js">
+</script>
+</div>
+</body>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

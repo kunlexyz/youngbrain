@@ -1,0 +1,942 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+<link rel="stylesheet" href="../MobileTem.css">
+<link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+    <div id="navig8">
+        <!-- -->
+        <div class="mCon2" onclick="openNav()">
+                    <div class="menu_dash"></div>
+                    <div class="menu_dash"></div>
+                    <div class="menu_dash"></div>
+          </div>
+        <!-- Pop_Out Menu Codes -->
+        <div id="myNav" class="overlay">
+          <div class="closebtn close3" onclick="closeNav()">&times;</div>
+            <img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+          <div class="overlay-content">
+          
+            <a href="../index.html">
+            <div class="menu1"><div class="bull"></div>Cover Page</div>
+            </a>
+            
+            <a href="content.html">
+            <div class="menu1" onclick="">
+            <div class="bull"></div>Table of Content
+            </div>
+            </a>
+            
+            <a href="diagram.html">
+            <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+            </a>
+            
+            <a href="../about.html">
+            <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+            </a>
+            
+            <a href="../more.html">
+            <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+            </a>
+            
+            <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+            
+            
+          </div>
+        </div>
+        <div class="overlay2" onclick="closeNav()">
+        </div>
+<!-- -->
+</div>
+<div id="coHide">
+<img src="images/b9.jpg" class="imn" />
+<div class="titBox">
+Notable Concepts
+<ol type="i">
+<li>
+What animal nutrition is about
+</li><li>Food and its uses
+</li><li>Food Substances and their
+ classes
+</li><li>Diet and balanced diet
+</li><li>Enzymes</li>
+</ol>
+</div>
+
+
+<div class="fig_1">
+<strong>fig9.1:</strong>
+</div>
+<img src="images/fig9.1.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig9.2:</strong>
+</div>
+<img src="images/fig9.2.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig9.3:</strong>
+</div>
+<img src="images/fig9.3.jpg" class="imn" />
+
+<div class="pa paj">
+<div class="hh7x">Background Information.</div>
+
+</div>
+<div class="pa paj">
+<h3 class="h_bio">Animal Nutrition</h3>
+All animals depend on plants directly or indirectly for their foods. In other words
+they feed on already made food. Animal nutrition has to do with the sum total of the
+processes involved in food intake,digestion, absorption, and its utilization.
+</div>
+<div class="pa paj">
+<h3 class="h_bio">Food and its uses</h3>
+Food is any substance which when taken in, serves as a source of energy or
+source of new protoplasm for growth and repair of worn out body tissues. Animals generally
+eat food to grow, for health and energy and to replenish or repair worn out body tissues.
+</div>
+<div class="pa">
+<h3 class="h_bio">Classes of Food Substances</h3>
+<ol type="1">
+Food substances are divided into six classes: -
+<li>
+Carbohydrates</li><li>
+Fats and oil (Lipids)</li><li>
+Protein</li><li>
+Mineral Salts</li><li>
+Vitamins and</li><li>
+Water.
+</li></ol>
+</div>
+<div class="pa paj">
+The first three together with nucleic acid constitutes the basic building block of an
+organism.
+
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>FoodClass</td><td>Chemical Constituent/Forms.</td><td>Sources</td><td>Uses</td>
+</tr>
+<tr>
+<td>1. Carbohydrates</td><td>Made up of:<br /> Carbon, oxygen and hydrogen. e.g. sugars, starch, cellulose glycogen</td><td>
+Cassava<br />
+Yam<br />
+Rice<br />
+Bread</td><td>
+For energy.</td>
+</tr>
+<tr>
+<td>2. Fats and oil</td><td>
+Made up of:<br />
+Cabon, oxygen, hydrogen e.g fatty acids and glycerol.
+</td><td>
+Egg yolk, Margarine Palm oil Vegetable oil etc.
+</td><td>
+More energy
+than
+carbohydrates,
+part of oell
+membrane,
+conduction of
+nerve impulses,
+insulation of
+the body.</td>
+</tr>
+<tr>
+<td>3. Protein</td><td>
+Carbon, hydrogen,
+oxygen, nitrogen,
+sulphur and phosphorus
+e.g.Amino acids,
+pepiones, polypeptides.</td><td>
+Egg while
+(albumen), ﬁsh
+milk, and meat.</td><td>
+Building new
+protoplasm for
+growth;
+repairing ofcells,
+controlling of
+bio-chemical
+reactions.</td>
+</tr>
+<tr>
+<td>4. Mineral Salts</td><td>
+Calcium, sodium,
+Chloride, potassium,
+Magnesium, iodine, Iron</td><td>
+Milk, salt,
+Fruits,
+chocolate,
+Sea fccd,
+Meats.</td><td>
+Tooth and bone
+formation,
+transmission
+of nerve
+impulses,
+regulation of
+heart beat etc.</td>
+</tr>
+<tr>
+<td>5. Vtamins </td><td>Co enzymes (substances
+that help enzymes in
+their activities.
+A, B, C, D, E and K)</td><td>
+Egg, Meat,
+Yeast, citrus
+fruits,
+Vegetables,
+Fish etc.</td><td>
+Healthy
+Qmwih.
+Healthy skin,
+Balsam
+(carbohydrate)
+metabolism,
+Proper nerves
+heart and
+muscle
+functioning,
+healthy eyes
+etc.</td>
+</tr>
+<tr>
+<td>6. Water</td><td>
+Hydrogen and Oxygen
+</td><td>
+Rain water<br />
+Spring water</td><td>
+90% content of
+ protoplasm;
+90% plasma
+Content;
+required for
+body
+biochemical
+activities,
+helps for food
+digestion,
+excretion,
+circulation of
+blood, formation
+of liquid, in
+the eye etc.</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h3 class="h_bio ce">Diet</h3>
+The meal someone takes in daily constitutes his or her diet. A balanced diet is a
+meal, which contains all the six classes of food in their right proportions. Malnutrition,
+which results due to starvation or not eating balanced diet, can lead to food
+deficiency diseases.
+
+</div>
+<div class="pa paj">
+<h3 class="h_bio ce">Enzymes</h3>
+For food substances to be utilized in a Holozoic animal, there is need for
+digestion. Digestion of foods occurs with the help of enzymes. Enzymes are organic
+catalysts, which are produced by specialized cells in organisms. Enzymes that are
+involved in food digestion are called digestive enzymes.
+
+</div>
+<div class="pa paj">
+<h3 class="ce h_bio">
+Modes of nutrition: - Two Principal Modes
+</h3>
+
+<h5 class="">1. Autotrophic mode of nutrition :</h5>
+A type or mode of nutrition in which an organism produces its own complex
+organic food substances from simple inorganic substances e.g. photosynthesis
+and chemosynthesis.
+</div>
+<div class="pa paj">
+<h5>
+2. Heterotrophic mode of nutrition :
+</h5>
+A mode of nutrition in which an organism takes in or feeds on already made
+complex food substances and is incapable of making its own food from simple
+inorganic substances.
+</div>
+<div class="pa paj">
+
+Other modes of nutrition include <b>parasitism, symbiosis, saprophytism
+and insectivorous plant</b>
+
+</div>
+
+<div class="fig">
+<strong>fig9.4:</strong>
+</div>
+<img src="images/fig9.4.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig9.5:</strong>
+</div>
+<img src="images/fig9.5.jpg" class="imn" />
+
+
+<div class="pa paj">
+<h3>
+GENERAL QUESTIONS
+</h3>
+1.Identify fig 9.1 and fig 9.2. What mode of nutrition in the organs is applicable 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2. State the three classes of energy producing nutrients
+
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+3.(a) What do you call the amino acids which unless the body has them at the same time it cannot make protein and<br/>
+(b) how many are they in number
+
+<ol type="a">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+4. 
+Cellulose is important in the diet because it provides 
+<span id="4q"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('4q',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Roughage in food which aids digestion</div>
+    </div>
+	<div class="optionbox" onclick="opMark('4q')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Give protein to the body</div>
+    </div>
+	<div class="optionbox" onclick="opMark('4q')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">body building nutrients</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+5. When hydrogen sulphide is not available, colourless sulphur bacteria oxidize sulphur to sulphates according to the equation <br />
+2S + 2H<sub>2</sub>0 + 30<sub>2</sub>colourless sulphur bacteria 
+2H<sub>2</sub>SO<sub>4</sub> + energy
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<br />
+This is an example of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> mode of nutrition.
+</div>
+<div class="pa paj">
+6. Write three chemosynthetic organisms you know
+<span id="6q"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('6q')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Earthworm (ii) Sponges (iii) Hydra</div>
+    </div>
+	<div class="optionbox" onclick="opMark('6q',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Nitrosomonas (ii) Nitrobacker (iii) iron bacteria</div>
+    </div>
+	<div class="optionbox" onclick="opMark('6q')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Euglena (ii) Yeast (iii) Mushroom</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+7. Write two examples of Ectoparasites and two examples of Endo parasites
+you know
+<ol type="i">
+<div class="T_A_required"> Teacher's attention required</div>
+<li><textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(i). Label the diagram in fig 9.6
+<span id="QQ4"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('QQ4',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Scolex (ii) Suckers (iii) Neck (iv) Proglotide</div>
+    </div>
+	<div class="optionbox" onclick="opMark('QQ4')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Head (ii) Jaw (iii) Mouth (iv) Appendages</div>
+    </div>
+	<div class="optionbox" onclick="opMark('QQ4')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Eye (ii) Mouth (iii) Thorax (iv) Joint</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">.<ol type="i">
+(ii.) State how i ii and m are adapted to parasitic life in its host.
+
+<div class="T_A_required"> Teacher's attention required</div>
+
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+8. Cellulose digesting bacteria in the alimentary canal of a herbivore is an example of
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+9. Use the table below to answer question 10 just fill the gaps with the right answers.
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td>Enzymes</td><td>
+Source </td><td>
+Food it can digest </td><td>
+Result of its action on the food<br />(i.e. the action of the enzyme)</td>
+</tr>
+<tr>
+<td>i</td><td>
+Ptyalin</td><td>
+Salivary gland </td><td>
+Starch </td><td>
+Maltose</td>
+</tr>
+<tr>
+<td>ii</td><td>
+Lipase</td><td>
+Pancreatic Juice </td><td>
+Fats and Oil </td><td>
+Fatty acids and glycerol</td>
+</tr><td>
+iii</td><td>
+Pepsin</td><td>
+Intestinal wall glands </td><td>
+Protein </td><td>
+Peptides</td>
+<tr><td>
+iv</td><td>
+Maltase</td><td>
+Intestinal wall </td><td>
+Maltose </td><td>
+Glucose</td>
+</tr>
+<tr>
+<td>v</td><td>Rennin</td><td>GastricJuice</td><td>Milk</td><td>Curdled Milk</td>
+</tr>
+</table>
+<h3 class="ce">
+FILL IN THE GAPS IN QUESTION 11
+</h3>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td>Vitamins</td><td>Source</td><td>Funcﬁon</td><td>Symptoms</td>
+</tr>
+<tr>
+<td>i</td><td>A</td><td>
+Egg yolks, butter, fish,
+liver oil</td><td>
+Proper functioning of
+epithelial tissue. Clear vision</td><td>
+Night blindness, changes in
+epithelial cells</td>
+</tr>
+<tr>
+<td>ii</td><td>
+B,(thiamin)</td><td>
+Yeast, Ricebran
+Beans, Groundnut, Liver</td><td>
+Carbohydrate metabolism,
+proper heart and
+nerve function</td><td>
+Beriberi;
+Stunted growth</td>
+</tr>
+<tr>
+<td>iii</td><td>
+C (Ascorbic acid)</td><td>
+Citric fruit, leafy vegetable</td><td>
+for healthy connect tissue of dentine</td><td>
+Scurvy</td>
+</tr>  
+<tr>
+<td>iv</td><td>D</td><td>
+Egg, Yolk, Sun Ultra Violet rays</td><td>calculation and hardening of bones</td><td>Poor tooth development, rickets</td>
+</tr>
+<tr>
+<td>v</td><td>K</td><td>Liver Vegetables</td><td>Blood clotting and liver function</td><td>slow clotting of blood</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h3 class="ce">
+PRACTICAL ACTIVITIES
+</h3>
+</div>
+<div class="pa">
+<h5 class="h_bio">
+PROBLEMS OR FACTORS UNDER INVES TIGATION: -
+</h3>
+Investigating the presence of carbohydrates, proteins, fats and oil in different food substances.
+</div>
+<div class="pa paj">
+<b>Experiment 6:</b><br />
+To test for the presence of certain food nutrients.
+</div>
+<div class="pa paj">
+<b>Materials/Apparatus needed:</b><br />
+Five test tubes, cooked rice, bread, glucose, sucrose or a complex sugar, distilled water, iodine solution, Benedicts solution, Fehling
+solutions A and B, Hydrochloric acid, source of heat through water bath, paper tapes.
+</div>
+<div class="pa paj">
+<b>Experimental Procedure:</b><br />
+<ol>
+<li>Prepare a solution (not true solution) of the cooked rice, bread in separate test tubes and label them as ExperimentA and B
+respectively.</li>
+<li>Dissolve the glucose and the complex sugar (sucrose). each in separate test tubes using the distilled water. Label each of them as
+Experiment‘ C and D respectively.</li>
+<li>Prepare another complex sugar solution in a test tube with the sugar provided and label it<strong> Experiment E.</strong>
+</li></ol>
+</div>
+<div class="pa paj">
+<strong>Then carry out the tests as tabulated below, and record your observation and conclusions in the spaces provided.</strong>
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td>Experiments</td><td>Observations</td><td>Conclusion</td>
+</tr>
+<tr>
+<td>i</td><td>A + Benedicts solution in equal volume</td><td></td><td></td>
+</tr>
+<tr>
+<td>ii</td><td>A+ Iodine solution in few drops. </td><td></td><td></td>
+</tr>
+<tr>
+<td>iii</td><td>B + Iodine solution.</td><td></td><td></td>
+</tr>
+<tr>
+<td>iv</td><td>C + Benedicts solution + Heat undera boiling water bath.</td><td></td><td></td>
+</tr>
+<tr>
+<td>v</td><td>C + Fehling solutions Aand B in equalvolume + Heat as in iv.</td><td></td><td></td>
+</tr>
+<tr>
+<td>vi</td><td>D + Benedicts solution.</td><td></td><td></td>
+</tr>
+<tr>
+<td>vii</td><td>D + Fehling solutions Aand B + Heatas in iv.</td><td></td><td></td>
+</tr>
+<tr>
+<td>viii</td><td>Take E to a boiling water bath and subjectit to heat after adding dilute HCLinto it. </td><td></td><td></td>
+</tr>
+<tr>
+<td>ix</td><td>To Experiment viii, add few drops of causticsoda.</td><td></td><td></td>
+</tr>
+<tr>
+<td>x</td><td>Add Benedict’s solution and heat under aboiling water bath.</td><td></td><td></td>
+</tr>
+</table>
+
+<h5 class="ce">
+Fill  in the food substance involved in the experiments in the table below also write in your observation and conclusion.
+</h5>
+    
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td>Food Substance</td><td>Test (Experiment.)</td><td>Observation</td><td>Conclusion</td>
+</tr>
+<tr>
+<td>1</td><td></td><td>Add about 1cmof dilutesodium hydroxide to about32cmof Specimen Aandshake,  then add 1 to 2 drops ofcopper (ii) tetraoxosulphate(iv) solution and shake</td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>2</td><td></td><td>Smear small amount ofspecimen B or pour drops ofsubstance of specimen c ona white paper or boil withosmic acid. </td><td></td><td></td>
+</tr>
+<tr>
+<td>3</td><td></td><td>To the test tube which containssmall amounts of specimen A,add million reagent and shakewell then heat.</td><td></td><td></td>
+</tr>
+</table>
+<div class="pa paj">
+4. In your biology practical notebook, similarly tabulate but fill in other methods of experimental test to identify the presence of the food
+substances you wrote down.</div>
+<div class="pa paj">
+5. Why is Sudan (iii) test no longer popular or not very suitable for identifying oil in a food substance e.g. Palm oil? <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+6. What colour do you obtain when a biuret test is carried out on a pepton solution?
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></div>
+<div class="pa ce">
+<strong>Consider and observe the diagrams in figure 9.3, 9.4, 9.5, and 9.6 in page 72 and 73 carefully and use them to answer questions 7</strong>
+</div>
+<div class="pa paj">
+7a. Which of these organisms has parasitic mode of nutrition
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div>
+</div>
+<div class="pa paj">
+ 7b. Which of them is endoparasite
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div>
+</div>
+<div class="pa paj">
+ 7c.Figure 9.4 shows red blood cells with plasmodium parasite inside. What harmful effect does this parasite have to man
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div>
+</div>
+<div class="pa paj">
+ 8a. Figure 9.5 shows a feeding relationship that takes place in root nodules of leguminous plants. Write the name of the feeding
+ relationship 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+ 8b. State two other examples of the feeding relationship 
+<ol type="i">
+<div class="T_A_required"> Teacher's attention required</div>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+
+<div class="fig">
+<strong>fig9.7:</strong>
+</div>
+<img src="images/fig9.7.jpg" class="imn" />
+<div class="pa paj">
+9b. What mode of nutrition does the plant exhibit
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+9c. Write the names of two other plants that carryout the same feeding habit
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+<h4 class="h_bio ce">
+Nutrition Practical Questions S S C E
+</h4>
+1. A food substance was put in two test tubes labelled (i) and (ii). In test tube (i). Fehling’s solution A and B were added and
+the mixture warmed. A negative result was obtained. In test tube II, dilute hydrochoric acid was added and the mixture was
+boiled, after which few drops of sodium hydroxide were added. Then fehling’s solutions A and B were added. A positive
+result was obtained in test tube (ii) after warming.
+<ol type="a" class="ul_style">
+<li>
+What colour should indicate a positive result in test tube II?
+<textarea class="w100"></textarea><span class="w100resp"></span></li><li>
+What food substance must have given the positive result in test tube ll?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li><li>What role did dilute hydrochloric acid play in the test tube ?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div>
+
+</li><li>Why was sodium hydroxide added to test tube ll? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div>
+
+</li><li>Why was a negative result obtained in test tube l? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div>
+
+</li><li>Suggest the food substance in the original samples tested.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li></ol>
+</div>
+<div class="pa paj">
+<h6 class="u ce">
+June 1995 Question (answer in your biology practical note book)</h6>
+2. In the test for starch, why is the green leaf boiled in 
+<br />(a) Water 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<br />(b) Alcohol?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div>
+
+</div>
+<div class="pa paj">
+<h6 class="u ce">
+June 1994 Questions
+</h6>
+3. you are provided with specimens A and B. (a) (I) cut a piece of specimen A. put a drop of iodine on it. Record your observation
+(ii) From your observation what food nutrient does specimen A contain? (iii) Give reasons for your answer. (b) put a drop of
+specimen B on the top right hand corner of your question paper, using a glass rod spread the drop. Clean the glass rod, to remove
+every trace of specimen B. then put only a drop of water on the top left hand corner of your question paper, using a glass rod. Spread
+the drop. Allow both drops of specimen B and water to dry. (I) Record your observation. (ii) from your observation what food nutrient does specimen B contain? (iii) Give reasons for your answer. (c) (I) Put 4cm<sup>3</sup> of specimen B in a test tube and add 5cm<sup>3</sup> of water.
+
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div>
+
+</div>
+<div class="pa paj">
+Record your observation. (ii) shake the contents of the test tube thoroughly and leave it for 3 minutes to settle. Record your
+observation. (d) (I) Add 2cm<sup>3</sup> of sodium hydroxide to 5cm<sup>3</sup> of specimen B in a clean test tube. Shake thoroughly and observe the
+mixture. Record your observation. (ii) What substance in the alimentary canal plays the same role during digestion in mammals as
+sodium hydroxide in this experiment?
+
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div>
+
+</div>
+<div class="pa paj">
+<h6 class="u ce">
+June 1993 Questions(answer in your biology practical note book)
+<br />Section A
+</h6>
+4. State the importance of the following elements to plants: (a) iron; (b) phosphorus; (c) calcium; (d) potassium.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<div class="T_A_required"> Teacher's attention required</div>
+
+</div>
+<div class="pa paj">
+5. Give one example each of the following: 
+<ol type="a">
+<div class="T_A_required"> Teacher's attention required</div>
+
+<li>plant parasite;
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li><li>saprophytic plant;
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> 
+</li><li>carnivorous plant;
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+6. List two structural modifications each of one named bird which feeds on:
+<ol type="a">
+<div class="T_A_required"> Teacher's attention required</div>
+
+<li>nectar
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>flesh;
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4 class="u ce">
+Section B
+</h4>
+7. The amount of starch hydrolysed by the enzyme ptyalin over a period of time at three different temperatures are given in
+the table below.
+
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Time in minutes</td><td colspan="3">Volume of starch Hydrolysed at different temperatures</td>
+</tr>
+<tr>
+<td></td><td>15<sup>o</sup>c</td><td>25<sup>o</sup>c</td><td>45<sup>o</sup>c</td>
+</tr>
+<tr>
+<td>5</td><td>10.0cm<sup>3</sup></td><td>21.5cm<sup>3</sup></td>
+<td>40.0cm<sup>3</sup></td>
+</tr>
+<tr>
+<td>10</td><td>20.0cm<sup>3</sup></td><td>40.0cm<sup>3</sup></td>
+<td>6.50cm<sup>3</sup></td>
+</tr>
+<tr>
+<td>15</td><td>30.0cm<sup>3</sup></td><td>56.5cm<sup>3</sup></td>
+<td>10.0cm<sup>3</sup></td>
+</tr>
+<tr>
+<td>20</td><td>40.0cm<sup>3</sup></td><td>68.5cm<sup>3</sup></td>
+<td>17.0cm<sup>3</sup></td>
+</tr>
+<tr>
+<td>25</td><td>50.0cm<sup>3</sup></td><td>70.0cm<sup>3</sup></td>
+<td>19.0cm<sup>3</sup></td>
+</tr>
+</table>
+<div class="pa paj">
+
+<ol type="a">
+<li>
+Placing time on the horizontal axis and the amount of starch hydrolysed on the vertical axis, plot the data given for the different
+temperatures on the same graph.
+</li>
+<li>
+from the grahp deduce the effect (s) of temperature on the action of ptyalin on starch.</li>
+</ol>
+</div>
+<div class="carry ce">
+
+  <a href="chapter8.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter10.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 9;
+</script>
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+
+
+
+
+</div>
+</body>
+<script type="text/javascript">
+var chapter = 8;
+</script>
+<script type="text/javascript" src="../js/jq.js">
+</script>
+<script type="text/javascript" src="js/ch9.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

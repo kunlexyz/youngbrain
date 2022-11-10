@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>E-Math</title>
+        <link rel="stylesheet" href="MobileTem.css">
+<link rel="stylesheet" type="text/css" href="css/testcord3.css" />
+        <style>
+.heada1G, .overlay, .bull, .cirCh{background-color:#0b6f08;}
+.hh7{color:#0b6f08;}
+.menu_head:hover{background-color:#090;}
+.heada{font-size:20px;}
+.mCon{padding-top:2px;}
+table{border:none;}
+#bdy{z-index:-1;}
+.tabco tr{cursor:pointer;}
+
+.qcontainer{display:block;;}
+		</style>
+    </head>
+<body>
+<div id="past2" class="">
+    <div id="star" class="ce main">    
+        <p>
+        <font style="font-size:36px;" onClick="star()">START
+        </font>
+        <br />      30mins  <br />
+        when you ready touch/click on start   
+        </p>
+        
+    <a href="../biology.html">
+		<button class="gbtn">&larr;Back | Menu</button>
+    </a>
+    </div>
+<div id="alat" class="ce"></div>
+<div id="quePanel" style="display:none;">
+<table style="background:none; width:100vw; min-height:80px;"><tr style="background:none;"><td  valign="middle" style="background:none; vertical-align:middle;">
+
+        <div id="main" style="text-align:center;">    
+            <p>
+            <font size="+3" onClick="star()">START </font>
+            <br />      Time : Unlimited  <br />
+            when you ready touch/click on start xx  
+            </p>
+        </div>
+</td></tr></table>
+    <div class="optionbox" onclick="opBtn('A')">
+    <img src="images/Abtn.png" class="imageOpt" />  
+    <div id="opa" class="op">x12ooking for special center 
+    </div>
+    </div>
+    <div class="optionbox" onclick="opBtn('B')">
+    <img src="images/Bbtn.png" class="imageOpt" />
+    <div id="opb" class="op">BB</div>
+    </div>
+    <div class="optionbox" onclick="opBtn('C')">  
+    <img src="images/Cbtn.png" class="imageOpt"  />
+    
+    <div id="opc" class="op">C</div> 
+    </div>
+    
+    <div class="optionbox" onclick="opBtn('D')">	
+    <img src="images/Dbtn.png" class="imageOpt" />
+    <div id="opd" class="op">D </div>
+    </div> 
+    
+    <div id="EE" class="optionbox" onclick="opBtn('E')" style="display:none;">	
+    <img src="images/Ebtn.png" class="imageOpt" />
+    <div id="ope" class="op">E </div>
+    </div>  
+    <a href="../index.html">
+	<button class="btnRed">Quit</button>
+    </a>
+</div>
+<table id="sco" style="margin:auto;">
+</table>
+
+</div>
+
+<div id="mathMe">
+
+</div>
+</body>
+
+<script type="text/javascript" src="js/jq.js">
+</script>
+<script type="text/javascript" src="MobileScript.js"></script>
+<script id="mys" type="text/javascript"></script>
+<script type="text/javascript" src="js/engine.js"></script>
+
+<script type="text/javascript" src="js/gov2018.js"></script>
+
+
+<script type="text/javascript">
+
+
+function myFunction()
+{
+var array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49];
+var random, result = [];
+
+for (a = array, i = a.length; i--; ) {
+random = a.splice(Math.floor(Math.random() * (i + 1)), 1)[0];
+result.push(random);
+}
+// now we got our expected result into an array named "result" // we can do whatever we want with it.
+
+//document.getElementById("mathMe").innerHTML=result;
+var disp = '';
+for(i = 0; i < chx[0].length; i++){
+	disp += '<div class="qcontainer"><div class="lcont">'+[(i+1)]+'<br />'+
+	chx[0][result[i]][0]+'<br />'+
+	chx[0][result[i]][1]+'<br />'+
+	chx[0][result[i]][2]+'<br />'+
+	chx[0][result[i]][3]+'<br />'+
+	chx[0][result[i]][4]+'<br />'+'</div></div>';
+	
+}
+document.getElementById('mathMe').innerHTML=disp;
+}
+//myFunction();
+/*
+var disp = '';
+for(i = 0; i < chx[0].length; i++){
+	disp += '<div class="qcontainer"><div class="lcont">'+(i+1)+'<br />'+
+	chx[0][i][0]+'<br />'+
+	chx[0][i][1]+'<br />'+
+	chx[0][i][2]+'<br />'+
+	chx[0][i][3]+'<br />'+
+	chx[0][i][4]+'<br />'+'</div></div>';
+	
+}
+document.getElementById('mathMe').innerHTML=disp;
+
+//another for mass display
+
+var disp = '';
+for(i = 0; i < chx[0].length; i++){
+	disp += (i)+', ';
+	
+}
+document.getElementById('mathMe').innerHTML='['+disp+']';
+*/
+
+var old='tip';
+old2='YearCon';
+x= '';
+//Year = [gov2014];
+//document.getElementById('bdy').innerHTML = chx;
+
+//document.getElementById('mys').src = 'js/gov2015.js';
+</script>
+</html>

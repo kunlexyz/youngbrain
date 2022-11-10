@@ -1,0 +1,622 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+        <div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t2 le">
+New Senior School Biology Practical Activity &amp; Work Book 3
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">4</div>
+</div>
+	<div class="box_title" style="font-size:20px;line-height: 20px;">
+ECOLOGY OF POPULATIONS/<br />BALANCE IN NATURE
+	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="disc">
+<li>Succession</li>
+<li>Balance in nature and</li>
+<li>Population growth.</li>
+</ul>
+</div>
+
+<div class="pa paj">
+<h4 class="h_bio">
+Background Information
+</h4>
+</div>
+
+<div class="pa paj">
+<h4 class="h_bio">
+Ecological Succession
+</h4>
+Agiven biotic community undergoes changes. Such changes can be seasonal which follows the same pattern each year. But there is another kind of change, which is a change in species due to changing habitatic conditions and competition for resources. This change is a progressive change in which earlier community are replaced by latter ones. After many years, the community becomes a forest, savannah or any biotic community as the case may be. When the vegetation reaches its highest development; the same species of organism appear or exist from year to year.Such a community becomes <strong>a climax community. A climax community is a community that remains the same or stable in its composition and size over a long period of time.</strong> It is a maximum community which a given habitat can support.
+</div>
+<div class="pa paj">
+The sequential and gradual replacement of communities which leads to a climax community is called <b>succession.</b>
+</div>
+<div class="pa paj">
+Two types of succession are recognized by ecologists <br /><strong>(i)Primary Succession and <br />(ii) Secondary Succession.</strong>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">Primary succession:</h4> 
+Primary succession occurs where there is no prior existence of a community and it can begin on a new soil, an aquatic environment or rock. The first settlers are refered to as primary colonizers. Green microscopic algae, lichens etc. can be primary colonizers on a heap of sub soil.
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Secondary succession:</h4>
+Secondary succession occurs when an existing community is interfered with or disturbed by human activities or other factors such as floods, droughts and fire. In this case, already existing organisms may still be present in such habitat.
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+
+Over crowding  
+</h4>Overcrowding is an effect of population growth. 
+</div>
+<div class="pa paj">
+<strong>Population is the total number of organisms of a given species in a habitat at as given time.</strong> The average number of organisms of a species per unit area of a habitat is called <strong>population density.</strong>
+</div>
+<div class="pa paj">
+Increase in population beyond a certain point results to overcrowding. Over crowding occurs when the available space per individual organism is too small for its well being. Overcrowding can be caused by the following factors:
+</div>
+
+<ol type="1">
+<li>Increase in growth of population in a restricted area.</li>
+<li>Increase in population of organisms with social habit within their colonies</li>
+<li>Lack of proper dispersal</li>
+<li>When there are no predators</li>
+<li>Immigration</li>
+</ol>
+<div class="pa paj">
+<h4 class="h_bio">
+Effects of overcrowding:
+</h4>
+<ol type="i">
+<li>Food shortage</li>
+<li>Restlessness</li>
+<li>Aggression and other anti social behaviours</li>
+<li>Reduction in reproduction rate due to the unfavourable environmental conditions.</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Adaptations to avoid overcrowding
+</h4>
+<ol type="i">
+<li>Territorial behavior as in lizards and baboons</li>
+<li>Proper dispersal of seeds, fruits and even animals</li>
+<li>Swarming to form a new colony as in bees and termites.</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Food Shortage
+</h4>
+Food shortage is an effect of overcrowding and certain other factors such as drought, disease, crop pests, floods and natural disaster, improper and inadequate means of food storage and preservation.
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Effects of food shortage
+</h4>
+<ol type="i">
+<li>Competition</li>
+<li>Emigration</li>
+<li>Reduction in reproduction rate</li>
+<li>Increased motality rate</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Balance in nature
+</h4>
+Biotic and abiotic factors which affect population such as natural disaster like flood, availability of food, water, space, light, temperature, competition, parasites, predators etc do so through their effects on mortality and natality.
+</div>
+<div class="pa paj">
+The population sizes of species of organism in a habitat, depending on available resources at a given time, tends towards a state of dynamic equilibrium which is called <strong>Balance in nature.</strong>
+</div>
+<div class="pa paj">
+It happens that if any factor affects the population size of any of the species in dynamic equilibrium, a compensating change will occur in the population size of other species. For instance carnivores( which are predators) regulate the size of their prey by feeding on them while the prey in turn regulate the size of the carnivores through their availability for food.
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Human Population Growth
+</h4>
+A factor, which limits population growth, is called a limiting factor. The summation of all the limiting factors in referred to as environmental resistance.
+</div>
+<div class="pa paj">
+In nature, population of living things grow exponentially until they stabilize due to environmental resistance. Human populations owing to their ability to control their environmental factors are an exception to this usual trend.
+</div>
+<div class="pa paj">
+Human beings can control their population sizes in various ways such as:
+
+<ol type="i">
+<li>Increasing their mortality through improved hygiene</li>
+<li>Increased food production.</li>
+<li>Improved natality rate and fertility</li>
+<li>Reduction in infant mortality rate etc.</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Human population Control
+</h4>Among humans the only universally acceptable means of population control is by decreasing birth rate through family planning.
+</div>
+<div class="pa paj">
+Natural birth control methods include:
+</div>
+<div class="pa paj">
+Rhythm method and withdrawal method. Use of spermicidal creams; contraceptive pills; intra- uterine device and sterilization are artificial means of birth control in family planning.
+</div>
+<h4 class="h_bio">
+General Questions
+</h4>
+<div class="pa paj">
+1. A stable community which has same kind of species in appearance and composition is called a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2. Atype of succession which takes place when an existing community is disturbed due to human activities or natural disaster is referred as 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">3. Perennial herbs, shrubs and trees and annual weeds can exist in a given habitat of abandoned farmland at different time. Arrange the community in order of progression that will be followed to attain a climax community.
+<ul>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ul>
+</div>
+<div class="pa paj">
+4. On a heap of subsoil, green microorganisms(algae) and lichen which may be observed the first year constitutes the first settler called  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span><div class="pa paj">
+5. In a given habitat, the average number of individuals of a species per unit area of habitat is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+6. Absence of proper dispersal can cause population growth problem called  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+7. Write down two effects of overcrowding 
+
+<span id="q7"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q7')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Food security; growth</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q7')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">food suplus; percking order</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q7',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">restlessness; aggression</div>
+    </div>
+</div> 
+
+</div>
+</div>
+<div class="pa paj">8. One adaptation in agama lizards to avoid overcrowding is territorial behavior while in bees and termites 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> can be adaptation to avoid overcrowding. 
+
+</div>
+<div class="pa paj">9. _________ , _________ and _________ are causes of food shortage. 
+
+<span id="q8"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q8',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Drought; diseases, natural disaster</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q8')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Mortality rate; extinction; territoral behaviour</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q8')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Aggresive behaviour; presence of predators swarming</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+10. All factors such as availability of food, environmental factors etc that affect population do so through their effects on _________ and _________
+
+
+<span id="q10"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q10',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Mortality(death rate) and natality(birth rate) </div>
+    </div>
+	<div class="optionbox" onclick="opMark('q10')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Environmental resistance and migration</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q10')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">aggresive behaviuor and restlessness</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+11. A factor which limits population growth is called a limiting factor while the sum of all limiting factors is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+12. Write down three natural birth control methods 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Expression Exercises
+</h4>
+1. Write four general characteristics of succession
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+2.    Write five causes of food shortage
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+
+<h4 class="ce h_bio">
+Practical Activities
+</h4>
+
+<div class="pa paj">
+ 1.    Investigation what happens to a cleared patch of land left till several years in a building sight.
+</div>
+
+<ol type="i">
+<b class="u">Procedure</b>
+<li>Clear a small area of land near your house or school compound. Clear it to the point of removingevery existing community that is noticeable there</li>
+<li>Leave the ground for months without doing anything there, but observe it periodically.</li>
+<li>Record and identify plants that grow there periodically and study succession from yourobservations.</li>
+</ol>
+
+<div class="pa paj">
+<h4 class="h_bio">
+Questions
+</h4>
+(i) What type of succession have you observed in  your investigation? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(ii) Write down the type of plants that are first found there 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(iii) From your observations, when did you begin to see the same species of plants and animalsconsistently in that place. Try to write down such plants and animals 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+2.          Studying overcrowding
+</h4>
+Material required:<br />
+Tomatoes seeds, 2 plants pots, water, soil
+</div>
+
+<ol type="i">
+<b class="u">Procedure</b>
+<li>Put some amount of soil in each of the two plants pots.</li>
+<li>Plant just  very few( about four seeds) tomatoes seed in one  pot and plenty of it up to fifty seedsin other pot.</li>
+<li> Water the planted seeds and continue to water them until they germinate and grow intoseedlings, continue the watering till one month while you observe the seedlings every day.</li>
+<li>Observe with comparism, the two seedlings in the different pots.</li>
+</ol>
+
+<div class="pa paj">
+<h4 class="h_bio">
+Answer the following questions
+</h4>
+(i) From your observation write two effects of overcrowding on growing seedlings in the  second pot
+<ol type="a">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(ii) Write down four factors that may cause overcrowding in a given habitat.
+<ol type="a">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<h4 class="ce h_bio">
+Test of practical  work
+</h4>
+<div class="pa paj">
+State four factors that can result to secondary succession in a forest habitat
+<ol type="a">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+
+<h4 class="ce h_bio">
+ECOLOGY OF POPULATIONSPAST SSCE QUESTION
+</h4>
+
+<div class="pa paj">
+<b>November 1990 Q8</b><br />
+1. List three factors that can affect population growth
+<ol type="a">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4>June 2007 WASSCE BIOLOGY 1 PRATICAL-QUESTION</h4>
+2. Specimen B is a Lizard, specimen C is a grasshopper, specimen D is a grass, specimen E is garden soil and specimen F is a branch of cactus plant.   
+</div>
+<div class="pa paj">
+(a)(i) Mention the habitats of specimens B,C and F. [3marks]
+</div>
+<div class="pa paj">
+(ii) state three  observable features which adapt specimen F to its environment. [6marks]
+</div>
+<div class="pa paj">
+ (iii) Construct a food chain using at least three of the given specimens.[2marks] 
+</div>
+<div class="pa paj">
+(b)(i) Classify specimen B,C,D,E and F into biotic and abiotic factors. [2marks]
+</div>
+<div class="pa paj">
+(ii) What is the significance of specimen E in the ecosystem? [3marks]
+</div>
+<div class="pa paj">
+(e) Make a drawing 8 to 10cm long of the lateral view of specimen C and label fully. (9marks)
+</div>
+<div class="pa paj">
+
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+
+</div>
+<div class="pa paj">
+
+</div>
+
+<div class="carry ce">
+
+                <a href="chapter3.html">
+                <div class="btnRed btnC">« Previous</div>
+                </a>
+                <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+                <a href="chapter5.html">
+                <div class="btnRed btnC">Next »</div>
+                </a>
+                
+                </div>
+                <div class="pa"></div>
+                <div class="pa"></div>
+                <div class="pa"></div>
+              <script type="text/javascript">
+              var chapter = 4;
+              </script>
+
+</div>
+</body>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+<script type="text/javascript" src="js/ch4.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

@@ -1,0 +1,930 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css" />
+        <link rel="stylesheet" href="../css/biology.css" />
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+        <div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_O">
+<div class="trA smal_t2 le">
+New Senior School Biology Practical Activity &amp; Work Book 3
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">1</div>
+</div>
+	<div class="box_title" style="font-size:20px;">
+REGULATION OF THE INTERNAL ENVIRONMENT
+	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="disc">
+<li>Homeostasis Processes.</li>
+<li>Organs of homeostasis.</li>
+<li>Hormones.</li>
+</ul>
+</div>
+
+<div class="pa paj">
+<h4>
+Background Information
+</h4>
+The internal environment of multicellular organisms are made up of body fluids such as tissue fluid, blood and lymph. Cell live in the internal environment. For efficient functioning of the cells, the components of the internal environment need to operate within and around certain optimal conditions. Such conditions include physical and chemical conditions such as pH level, osmotic pressure, temperature, concentration of ions and dissolved substances like urea, food substances, carbon(iv)oxide, oxygen etc. Any wide deviation of these conditions from the optimum level required for a given organism can harm the cells or even bring about their death. In multicellular organisms (especially the higher ones) these conditions have to be regulated within an allowable range for a given organisms so as to maintain a steady internal environmental condition. The maintenance of this internal steady environment is called HOMEOSTASIS. Homeostasis is achieved by homeostasis process, which involves:
+</div>
+
+<ul type="disc">
+<li>The sensory detectors, which stimulates relevant body parts, for control on recognizing of a change in a given condition.</li>
+<li>Relevant body parts which receive the signal from sensory detectors, interpret it and send out instruction to the effector organs. (example glands).</li>
+<li>The effector organs, which restore the condition to normal.</li>
+</ul>
+
+<h4>Organs and Parts Involved in Homeostasis</h4>
+<ul type="disc">
+
+<li>The brain which has overall  control of homeostasis.</li>
+<li>The kidneys</li>
+<li>The liver</li>
+<li>The skin and</li>
+<li>The hormones.</li>
+</ul>
+<div class="carry">
+
+<h3 class="ce h_bio">
+Organs of homeostatsis
+</h3>
+
+<div class="fig">
+<strong>fig1.1:</strong> 
+<div class="box_O trA round_corner">
+The Kidney Nephron
+</div>
+</div>
+<img src="images/fig1.1.jpg" class="imn" />
+<div class="pa paj">
+<h4 class="h_bio">Kidney disease</h4>
+
+<ol type="i">
+<li>Glomerular nephritis</li>
+<li>Kidney stones</li>
+<li>Duiresis</li>
+<li>Oedema</li>
+</ol>
+</div>
+<h3 class="trA ce">
+Functions and Homeostasis role of the organ or (part of the body).
+</h3>
+<div class="pa paj">
+
+<b>The Kidneys</b><br />
+The Kidneys carries out its homeostatic throughitsexcretoryandosmoregulatory functions.<br />In performing these functions, the kidneys maintains water balance and constant osmotic pressure in the blood and tissue fluid. Osmoreceptors at the hypothalamus in the brain detects changes in osmotic pressure as blood circulates, they send nerve impulses to the pituitary gland which releases antidiuretic hormone from its posterior part. When osmotic pressure is high.<br /> This hormone increases the permeability of the distal tubules and collecting dusts thus causing increased reabsorption of water by the tubules into the blood stream, in order to bring down the osmotic pressure. When normal osmotic pressure is attained it is again detected by osmoreceptors, the pituitary gland is stimulated by the nerve impulse from the receptors to stop releasing the antiduiretic hormone. The kidney also helps to maintain normal pH level of the blood by controlling excretion of H<sup>+</sup> and Hco<sub>3</sub> <sup>-</sup>ions.
+</div>
+
+<div class="fig">
+<strong>fig1.1:</strong> 
+<div class="box_O trA round_corner">
+The Liver
+</div>
+</div>
+<img src="images/fig1.2.jpg" class="imn" />
+<div class="pa paj">
+<h4 class="h_bio">Liver diseases</h4>
+<ol type="i">
+<li>Jaundice</li>
+<li>Gallstones</li>
+<li>Viral hepatitis</li>
+<li>Cirrhosis</li>
+<li>Amobic liver Abscess.</li>
+</ol>
+</div>
+<h3 class="trA ce">
+Functions and Homeostasis role of the organ or (part of the body).
+</h3>
+<div class="pa paj">
+The liver through its numerous functions  outlined below performs important roles in the homeostasis.
+</div>
+
+<ol type="1">
+<li>It controls blood glucose level and keeps it within normal limit by converting excess glucose to glycogen (a process stimulated by insulin) and also by converting glycogenintoglucosewhenthere is deficiency of glucose in the blood (a process stimulated by glucagon)</li>
+<li>Releasing required amount of amino acid into general circulation and carrying out <strong>deamination.</strong></li>
+<li>Breaking down lipids to glucose and other substances to meet body needs, It can also convert glucose to fats for storage after its glycogen storage capacity is exceeded.</li>
+<li>Bile production.</li>
+<li>Storage of vitamins and minerals.</li>
+<li>Storage of blood.</li>
+<li>Inactivation of hormones.</li>
+<li>Formation and breakdown of red blood cells.</li>
+<li>Detoxication</li>
+<li>Production of heat.</li>
+</ol>
+
+<div class="fig">
+<strong>fig1.1:</strong> 
+<div class="box_O trA round_corner">
+The Skin
+</div>
+</div>
+<img src="images/fig1.3.jpg" class="imn" />
+
+<div class="pa paj">
+Two main layers are recognized in the skin.<b>(1) The Epidermis</b> and <b>(2) The Dermis</b>
+</div>
+<ol type="i">
+(1) The epidermis consist of:
+<li>The inner malpighian layer</li>
+<li>The middle gramular layer and</li>
+<li>The outer cornified layer.</li>
+The Dermis consists of a layer of connective fissues, <strong>hair follicles, Sweat glands, Sebaceous gland, Fats cells and Sensory nerve endings.</strong>
+</ol>
+
+<h3 class="trA ce">
+Functions and Homeostasis role of the organ or (part of the body).
+</h3>
+<div class="pa paj">
+Apart from protection, production of vitamin D and sensitivity functions of the skin,the skin has a temperature regulatory function in warm blooded animals. It also functions as an excretory organ. These last two functions make the skin an organ of homeostasis. Whenever there is a distortion in the temperature balance of the body (either by intense physical activity or changes in environmental temperature), the skin together with the hypothalamus in the brain help to Restore the balance. The hypothalamus monitors the temperature of the blood that flows through it and detects changes there in. Also it receives information on the external environmental temperature changes through thermo receptors in the skin.A rise in temperature stimulates heat loss center of the hypothalamus to initiate a process that will reduce the heat while temperature decrease stimulates the heat gain center of the hypothalamus to initiate the process that will raise the heat.
+
+</div>
+
+</div>
+<div class="pa paj">
+<h3 class="h_bio ce">
+Hormones
+</h3>
+Hormones are secretions of the endocrine glands, which act as chemical messenger by evoking responses at target organs.
+</div>
+<div class="pa paj">Hormones effects at target organs can be to excite, inhibit, it can also be to alter. Such effects can be achieved by affecting cell permeability to certain substance, promoting protein synthesis or by increasing the activity of certain enzymes.
+</div>
+
+<div class="fig">
+<strong>fig1.4:</strong> 
+</div>
+<img src="images/fig1.4.jpg" class="imn" />
+
+<h4 class="ce">
+Important hormones in animals and their Functions
+</h4>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Hormones</td><td>Functions/Production</td>
+</tr>
+<tr>
+<td>1.  Pituitary gland hormones<br />(Anterior)</td><td>Produced by the pituitary gland through stimulation by hypothalamus</td>
+</tr>
+<tr>
+<td>(i)  Adreno corticotropic hormone (ACTH)</td><td>Stimulates adrenal cortex to produce its hormones</td>
+</tr>
+<tr>
+<td>(ii)  Thyroid stimulating hormone (TSH)</td><td>Stimulates thyroid gland to produce its hormones.</td>
+</tr>
+<tr>
+<td>(iii)  Follicle stimulating hormone (FSH)</td><td>Stimulates follicle to ripe</td>
+</tr>
+<tr>
+<td>(iv)  Growth hornmones</td><td>(GH) stimulates growth of long bones</td>
+</tr>
+<tr>
+<td>(v)  Prolactin</td><td>Induces milk production in pregnant women</td>
+</tr>
+<tr>
+<td>(vi)  luteinizing hormone (LH)</td><td>Causes ovulation in women and stimulates secretion of testosterone in testis.</td>
+</tr>
+<tr>
+<td>(Posterior)</td><td></td>
+</tr>
+<tr>
+<td>(I)  Anti-diuretic hormone (ADH)</td><td>Increases absorption of water at the kidney tubules. It also raises blood pressure by constricting the arterioles</td>
+</tr>
+<tr>
+<td>(ii)  Oxytocin</td><td>Inducces labour in childbirth and also induces milk secretion from nipples.</td>
+</tr>
+<tr>
+<td><b>2i  Thyroid hormone</b> (thyroxine is the most important).<br />
+ii  Calcitonin
+</td><td>Produced by the thyroid. Thyroxin regulates growth and development of all body cells. It also increases basal metabolic rate.</td>
+</tr>
+<tr>
+<td>3. Parathyroid hormone</td><td>Produced by the parathyroid gland (it regulates blood calcium level in conjunction with calcitonin a thyroid hormone it raise blood calcium level.</td>
+</tr>
+<tr>
+<td><b>4. Pancreatic hormone<br />i. Insulin<br />ii. Glucagon</b></td><td>Produced by <b>islet of langerhans</b>  at the pancreas. Insulin promotes uptake of glucose by cells and its conversion to glycogen while glucagon converts glycogen to glucose when there is low glucose content in blood.</td>
+</tr>
+<tr>
+<td>5.  Oestrogen</td><td>Produced by the ovaries. It produces female secondary sexual characteristics.</td>
+</tr>
+<tr>
+<td>6  Progesterone</td><td>Also produced by the ovaries, it inhibits ovulation during pregnancy, brings about development of placenta and prevents the uterus from contracting.</td>
+</tr>
+<tr>
+<td>7  Male testosterone</td><td>Produced by the testes, it gives rise to male secondary sexual characteristics</td>
+</tr>
+<tr>
+<td><b>Adrenal hormones</b><br />
+(i)  Glucocorticoids<br />(ii)  Mineralocorticoids<br />(iii)  Adrenaline<br />(iv)  Noraldrenaline</td><td>
+Adrenal hormones are produced by the adrenal glandsThe Adrenal cortex produces (i) and (ii).Glucocorticoids raise blood glucose level by promoting the convertion of non carbohydrate e.g amino acid to glucose.<br /> Mineralocorticoids regulates levels of Calcium and Potassium in body fluids. (iii) and (iv) are produced by the adrenal medulla. They are emergency hormones.</td>
+</tr>
+</table>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td>Undersecretion</td><td>Oversecretion</td>
+</tr>
+<tr>
+<td>(i)    Growth hormones</td><td>Dwarism</td><td>Gigantism</td>
+</tr>
+<tr>
+<td>(ii)   Thyroxin</td><td><strong>Cretinism</strong> (before adulthood)<br />
+<strong>Myxoedema</strong>(at adulthood)<br />
+<strong>Hyperplasticgoitre</strong> (which occurs when thyroid gland comes under prolonged stimulation)</td><td><strong>
+Exophthalmic giotre
+</strong></td>
+</tr>
+<tr>
+<td>(iii)  Pancreatic hormones</td><td>
+<b>Diabetes mellitus</b> due to under secretion of insulin</td><td>Insulin shock results when too much insulin is taken</td>
+</tr>
+</table>
+<div class="ce hh8 u">
+Plant Hormones
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Plant Hormone</td><td>Function</td>
+</tr>
+<tr>
+<td><b>i.  Auxin</b><br />
+Produced in shoots apices.The most important natural auxin is indoleacitic acid</td><td>Influences growth and development.Stimulates cells division, elongation and differentiation. It inhibits growth of lateral buds (apical dominance ) it also inhibits abscission. Auxins can allow flowers develop into fruits without fertilization. This is called <strong>parthenocarpy</strong></td>
+</tr>
+<tr>
+<td><b>ii.  Gibberellins</b>
+<br />Found in root and stem apices.</td><td>This stimulate stem growth by cell division and elongation inducing germination in seeds, growth of dormant auxiliary buds and increasing of fruit size.</td>
+</tr>
+<tr>
+<td><b>iii.  Cytokinins</b><br />
+They are produced in roots</td><td>They stimulate cell division that leads to normals roots and stem growth. They also stimulate lateral buds unlike auxins. They also delay aging in plant organs.</td>
+</tr>
+<tr>
+<td><b>iv.  Abscisic acid</b><br />
+Produced in mature green leaves, fluid and root caps</td><td>It acts as a growth inhibitor. Its effects are opposed to those of i, ii, and iii. Its effects enables plants to withstand adverse environmental conditions.</td>
+</tr>
+<tr>
+<td><b>v.  Ethene</b><br />Produced in leaves, stems and in young fruits</td><td>It hinders lateral bud development and hastens the ripening of fruits.</td>
+</tr>
+</table>
+<div class="pa paj">
+<h4 class="ce h_bio">
+General Questions
+</h4>
+
+</div>
+<div class="pa">
+1. The 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> , 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> make up the internal environment of a higher multicellular organism.
+</div>
+<div class="pa paj">
+2. For the maintainance of a steady internal environment human beings require a temperature condition that does not deviate much from 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> <sup>o</sup>c
+</div>
+<div class="pa paj">
+3. PH (Hydrogen ion concentration ) of the blood is normal at a value of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+4. In Homeotasis, a cycle of actions in which the final event inhibits the first event is referred to as 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+5. The 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> controls homeostasis.
+</div>
+<div class="pa paj">
+6. The pitiutary gland depends on the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> in the brain for information and stimulation .
+</div>
+<div class="pa paj">
+7. High osmotic pressure in the blood can result to the release of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> hormone from the pituitary gland.
+</div>
+<div class="pa paj">
+8. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> is the kidney disease which occurs due to streptococcal (a bacterial) infection.
+</div>
+<div class="pa paj">
+9. Drugs that increase urine output can be referred to as  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+10. A patient suffering from kidney failure can be kept alive by 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+11. What will happen if blood glucose level falls below 40g/100cm<sup>3</sup> 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+12. During deamination by the liver, nitrogen containing amino part is converted to 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> while the keto acids (which is a carbon compound) is converted to 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+13. The parasite which causes Amoebic liver abscess is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+14. Jaundice is caused by 
+<span id="q14"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q14')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">an increase in the blood fluid</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q14')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">an increase in level of urea in the blood</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q14',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">an increase in the blood bilirubin level</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+15. The layer of the skin which contain melanin pigment is the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig1.5:</strong> 
+</div>
+<img src="images/fig1.5.jpg" class="imn" />
+
+<div class="pa">
+<strong>Use the diagram above to answer question numbers 17 to 20.</strong><br />
+Properly and clearly label the parts numbered 17 – 20 and write their functions.
+
+<ol type="1" start="17">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+Write their functions.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+</div>
+<div class="pa paj">
+21. Over secretion of thyroxine results to 
+<span id="q21"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q21')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">dwarfism or lack of growth</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q21')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">non secretion of growth hormones</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q21',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">enlarged thyroid gland. A condition known as exophthalmic goitre</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+22. Apart from thyroxine another hormone secreted by thyroid gland is 
+<span id="q22"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q22',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">calcitonin</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q22')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Di-iodothyronine</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q22')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Adreneline</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+23. Write down the plant hormone that is a growth inhibitor 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+24.Write down two emergency hormones 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+25. Two hormones that can be produced by the ovary are 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<h4 class="ce h_bio">
+Expression Excercise
+</h4>
+<div class="pa paj">
+
+1. What is the name of the diagram below? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="fig">
+<strong>fig1.6:</strong> 
+</div>
+<img src="images/fig1.6.jpg" class="imn" />
+
+<div class="pa paj">
+2. How often should the machine be used for purifying the blood of a kidney failure patient 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3. Briefly explain how the machine works as a remedy for kidney failure 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3a. What is feed back mechanism? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b) In a negative feed back illustrated below, what effect does the final action have on the first event. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig1.7</strong> 
+</div>
+<img src="images/fig1.7.jpg" class="imn" />
+
+<div class="pa paj">
+4. Write down five functions of the liver 
+
+<ul type="square">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+</div>
+<div class="pa paj">
+5a. Write down four liver diseases 
+<ul type="square">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+</div>
+<div class="pa paj">
+(b)  Write five effects of liver diseases 
+<ul type="square">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+</div>
+<div class="pa paj">
+6 The diagram below illustrates one form of heat regulation by the skin. Use it to answer the questions that follow<br />
+Identify and write down the part that is involved in vasoconstriction 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+What happens to the hair and the errector muscles during Vasoconstriction? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig1.8:</strong> 
+</div>
+<img src="images/fig1.8.jpg" class="imn" />
+
+<h4 class="ce h_bio">
+Practical Activities
+</h4>
+<div class="pa paj">Your teacher wil help you to cut and open a rat or rabbit or guinea pig and expose the abdomenal internal structures which includes the liver, intestine pancreas etc.
+<ol type="i">
+<strong>Procedure/Method</strong>
+<li>First locate the position of the liver and pancreas</li>
+<li>Also try to locate the position of the kidneys.</li>
+<li>Observe those organs carefully</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Questions
+</h4>
+(i) What is the colour of the liver 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(ii) What is the shape and manner of positioning of the liver in respect to the stomach 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(iii) What structure connects the liver to the pancrease   
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(iv) What hormone does the pancreas produce? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(v) State three liver diseases 
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+2. Compare the way you feel thirsty on a sunny dry day and the way you feel thirsty on a rainy cold day. Also compare the way you urinate on a cold rainy day and the way you do not do the same on a bright sunny day when you are actively engaged in moving up and down<br />
+Explain your observations using your knowledge of homeostasis and osmoregulatory functions of the kidneys 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<h4 class="ce h_bio">
+Test of Practical Work / Alternative to Practical
+</h4>
+
+<div class="fig">
+<strong>fig1.9:</strong> A
+</div>
+<img src="images/fig1.9a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig1.9:</strong> B
+</div>
+<img src="images/fig1.9b.jpg" class="imn" />
+
+<div class="pa paj">
+Diagram A and B shown in fig. 1.9 represents the reaction of some structure of the mammalian skin in different environmental conditions. Use them to answer the questions that follow.
+</div>
+<div class="pa paj">
+(i) Which diagram represents the reactions of the skin to cold conditions? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(ii) List four observations from the diagrams to support your answer. 
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+(iii) What is vasodilation? <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(iv) What is the difference between homeothermic animals and poikilothermic animals? <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(v) Apart from temperature controls, state four other functions of the skin.
+<ul type="square">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+</div>
+
+<div class="fig">
+<strong>fig1.95:</strong> 
+</div>
+<img src="images/fig1.95.jpg" class="imn" />
+
+<div class="pa paj">
+(i) At what part of the diagram does ultrafilteration take place? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(ii) Explain the role of ADH (antidiuretic hormone) and osmoreceptors in water re-absorption by the kidney tubules
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<h4 class="ce h_bio">
+Regulation of the internal environment<br />
+(Past SSCE Questions)
+</h4>
+1979 Q3
+<div class="pa paj">
+1. Why is sugar contained in the urine of a person with diabetes mellitus? <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2. Which hormone controls water re-absorption in the kidney? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+3. Specimen B among group I is a fresh liver of a small mammalExamine the specimen carefully.
+</div>
+<div class="pa paj">
+(i) Describe the specimen 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(ii) Mention the name of the structure you can see apart from liver lobe 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+Pierce the structure with a clean sharp dissecting pin or office pin
+</div>
+<div class="pa paj">
+(iii) Test the oozing content with a red litmus paper. Record your observation and state the pH of the content. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(iv) Name the oozing substance and where it is manufactured. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(v) State three functions of the substance named in 3 (ii) and (iv) above
+<ul type="circle">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+</div>
+<div class="pa paj">
+(vi)  List three functions and two diseases of the liver
+<ul type="circle">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+<ul type="circle">Liver Diseases:
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ul>
+</div>
+<div class="pa paj">
+(vii)  Suggest the system in the mammalian body associated with specimen B. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<h4 class="ce h_bio">
+Regulation of the internal environment<br />
+(Past SSCE Questions)
+</h4>
+<div class="pa paj">
+2. A farmer applied different concentrations of cytokinins to his pineapple plants and observed the development of new shoots over a period of time. The result of his observation shown below.
+</div>
+<table class=" bg_white ce tabler">
+<tr class="trA">
+<td>S/No.</td><td>Concentration of<br /> cytokinin in mg/litre</td><td>Number of new shoots</td>
+</tr>
+<tr>
+<td>1</td><td>0</td><td>2</td>
+</tr>
+<tr>
+<td>2</td><td>1</td><td>5</td>
+</tr>
+<tr>
+<td>3</td><td>2</td><td>8</td>
+</tr>
+<tr>
+<td>4</td><td>3.5</td><td>12</td>
+</tr>
+<tr>
+<td>5</td><td>4</td><td>18</td>
+</tr>
+<tr>
+<td>6</td><td>4.5</td><td>25</td>
+</tr>
+<tr>
+<td>7</td><td>5</td><td>20</td>
+</tr>
+<tr>
+<td>8</td><td>6</td><td>10</td>
+</tr>
+<tr>
+<td>9</td><td>7.5</td><td>8</td>
+</tr>
+<tr>
+<td>10</td><td>8</td><td>6</td>
+</tr>
+<tr>
+<td>11</td><td>9</td><td>5</td>
+</tr>
+<tr>
+<td>12</td><td>10</td><td>5</td>
+</tr>
+</table>
+<div class="pa paj">
+(a) Plot a graph to show the relationship between cytokinin concentration and shoot development. [15marks] 
+</div>
+<div class="pa paj">(b) Use the graph to describe the effect of cytokinin concentration on shoot development.[4marks]<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">(c) What advice should be given to the farmer based on the results from the graph?[2marks]<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">(d) List (i) two substances in plants, (ii) two substances in animals which have similar effect as cytokinins.[4marks]<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="carry ce">
+
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter2.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+
+
+</div>
+<script type="text/javascript">
+var chapter = 1;
+</script>
+</body>
+<script type="text/javascript" src="../js/jq.js">
+</script>
+<script type="text/javascript" src="js/ch1.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 14</title>
+<link rel="stylesheet" href="../MobileTem.css">
+<link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+                <div id="navig8">
+                                <!-- -->
+                                <div class="mCon2" onclick="openNav()">
+                                            <div class="menu_dash"></div>
+                                            <div class="menu_dash"></div>
+                                            <div class="menu_dash"></div>
+                                  </div>
+                                <!-- Pop_Out Menu Codes -->
+                                <div id="myNav" class="overlay">
+                                  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+                                                <img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+                                  <div class="overlay-content">
+                                  
+                                    <a href="../index.html">
+                                    <div class="menu1"><div class="bull"></div>Cover Page</div>
+                                    </a>
+                                    
+                                    <a href="content.html">
+                                    <div class="menu1" onclick="">
+                                    <div class="bull"></div>Table of Content
+                                    </div>
+                                    </a>
+                                    
+                                    <a href="diagram.html">
+                                    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+                                    </a>
+                                    
+                                    <a href="../about.html">
+                                    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+                                    </a>
+                                    
+                                    <a href="../more.html">
+                                    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+                                    </a>
+                                    
+                                    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+                                    
+                                    
+                                  </div>
+                                </div>
+                                <div class="overlay2" onclick="closeNav()">
+                                </div>
+<!-- -->
+</div>
+<div id="coHide">
+<img src="images/b14.jpg" class="imn"  />
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ol>
+<li>Micro organisms around us
+</li><li>Culture: A technique for growing
+micro organisms
+</li><li>
+Identification of micro organnisms
+</li><li>
+Micro organisms in our bodies and
+food
+</li><li>
+Beneficiary and hormful effects of
+micro organisms</li>
+</ol>
+</div>
+
+<div class="fig_1">
+<strong>fig14.1:</strong> Plasmodium falciparum
+</div>
+<img src="images/fig14.1.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig14.2:</strong> bacterium
+</div>
+<img src="images/fig14.2.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig14.3:</strong> Influenza virus
+</div>
+<img src="images/fig14.3.jpg" class="imn" />
+
+<div class="pa paj">
+<div class="hh6">
+Background information
+</div>
+Micro organisms are very minute living things which can not be seen individually by
+the human eyes. They are commonly called germs and microbes and they can be
+seen and studied with the aid of a microscope.
+</div>
+<div class="pa paj">
+Micro organisms include all viruses, bluegreen algea, protists and certain
+fungi. They can be found in the air, water, soil, on surface of objects and within living
+organisms.
+</div>
+<div class="pa paj">
+<div class="hh7">
+Culture: A Technique for growing micro organisms
+</div>
+Micro organisms can be grown in the laboratory in special media using the culture
+technique. The nutrient agar is used for culture of most bacteria. To culture
+organisms, the procedure of aseptic technique is applied so as not to contaminate
+the culture media with microbes from the surroundings or clothes or even the
+apparatus used.
+</div>
+<div class="pa paj">
+<h4 class="hh7x">
+Identification of micro organisms
+</h4>
+Micro organisms can be identified by: <strong>
+<ol type="i">
+<li>observing their forms and structure
+through a microscope. </li><li>Staining technique with various types of stains and
+observing their reaction through the microscope </li><li>colony characteristics
+using various types of culture media, </li><li>Their oxygen requirements especially
+bacteria </li><li>Applying biochemical tests so as to identify the activities of micro
+organisms and identify it through that.
+</li></ol></strong>
+</div>
+<div class="pa paj">
+<h4 class="hh7x">
+Micro organisms in our bodies and foods
+</h4>
+Apart from the presence of micro organism in air, water, surface of objects and certain
+living things, micro organism exists in human body and food substances.
+</div>
+<div class="pa paj">
+<b>Micro organisms in the body include:</b><br />
+<strong>
+The normal microflora in the body, pathogenic micro organisms in the body,</strong><br />
+<b>Normal microflora</b> start to colonize the body of infants few hours after birth. They
+prevent or interfere with the invasion of the body by pathogens by producing
+subtances which interfere with the survival or multiplication of certain pathogens. But
+microflora can become pathogens due to low resistance or due to a relocation or
+change in environment of the bacteria in the body.
+</div>
+<div class="pa paj">
+<b>Pathogenic micro organisms</b> are the micro organisms that usually establish them
+selves in human bodies and cause diseases. Such can occur due to (I) low body
+<strong>resistance, disruption of normal microflora in the body by antibody therapy and
+delay in the establishment of normal microflora in infants.</strong>
+</div>
+<div class="pa paj">
+Micro organisms have food as their ideal medium in which they grow and multiply. The
+characteristics of a given food determines the type of micro organisms that grow and
+multiply in it.
+</div>
+<div class="pa paj">
+When food is contaminated, micro organisms multiply rapidly in it if the food is
+not cooked long enough to kill micro organisms, and their spores and to break down
+the toxins. Disease causing micro organisms are called<strong> disease vectors.</strong> The
+method, used by the disease vector in circulating the disease can be <strong>mechanically, biologically.</strong>
+</div>
+<div class="pa paj">
+<h3 class="hh7x">
+Beneficial effects of micro organisms
+</h3>
+<ol>
+<li>
+Maintenance of soil fertility and recycling of nutrients in the ecosystem through
+their decomposing activities
+</li><li>Micro organisms used in chemical processes lowers the operating cost of the
+process. Example: enzyme technology and genetic engineering.
+</li><li>Biological control of pests and biodegradation of pollutants
+</li></ol>
+</div>
+<div class="pa paj">
+<h4>
+General questions on micro organism around us
+</h4>
+
+
+
+1. State the other three groups of living things apart from virus and bacteria in which micro organisms belong
+
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+2. Among the microorganisms, a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> is not capable ofgrowing on its own except in a living medium
+</div>
+<div class="pa paj">
+
+3. In preparing a culture medium,  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> technique is applied in orderto avoid microbial contamination.
+</div>
+<div class="pa paj">
+4. Micro organisms that cause diseases in our bodies are called   
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+
+</div>
+<div class="pa paj">
+5. Write four ways through which micro organisms can enter into the body of man
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+10. Animals that carry disease causing micro organisms are called   
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+<ol type="i">
+Write four disease vectors you know
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+15. Bacteria is harmful to humans in two major ways.
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</div>
+<div class="pa paj">
+16. The micro organism that is involved in alcoholic fermentation is    
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and it belongs to the group of kingdom of living things called   
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+
+</div>
+<div class="pa paj">
+17. Normal 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> of the human body are micro organisms that colonize the body of human infants just a few hours after birth.
+
+</div>
+<div class="pa paj">
+18. Female Anopheles mosquito is a vector of malaria fever while tsetse fly is a vector of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+19. Cholera is a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> borne disease.
+</div>
+<div class="pa paj">
+20. Virus, Rhizopus, plasmodium, tapeworm are micro organisms except 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<h4 class="ce">
+Expression Exercise
+</h4> 
+</div>
+<div class="ce">
+1a. Fill in the empty spaces in the table below using the example of number one
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td>Disease</td><td>
+Micro organisms that causes it</td><td>The disease vector</td><td>Symptoms and effects</td>
+</tr>
+<tr>
+<td>i</td><td>
+Malaria</td><td>Plasmodium (protozoa) </td><td>Female Anopheles mosquito</td><td>
+Shivering high fever, with irregular
+bouts of sweating.
+high temperature, headache,
+vomiting, backache and jaundice</td>
+</tr>
+<tr>
+<td>ii</td><td>
+Yellow fever</td><td>
+Arbovirus</td><td> Aedes Mosquito</td><td>
+High temperature, headache,
+vomiting, backache and jaundice</td>
+</tr>
+<tr>
+<td>iii</td><td>
+Sleeping 
+sickness</td><td>
+Trypanosoma (protozoa)</td><td>Tsetse fly</td><td>
+Persistent feeling of sleepiness
+fever and headaches</td>
+</tr>
+<tr>
+<td>iv</td><td>
+Cholera</td><td>
+Vibrocholera</td><td>Houseﬂy</td><td>
+Diarrhoea and vomiting</td>
+</tr>
+</table>
+
+<div class="pa paj">
+1b.<ol type="i">
+<li>State four different media through which pathogenic organisms can reach their animal hosts.
+<ul type="square">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ul>
+</li><li>Brieﬂy explain three ways microorganisms can be useful in the food industries.
+<ol type="a">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</li></ol>
+</div>
+<div class="ce">
+2a Write down the virus responsible for each of the disease listed below, the manner of attack ofthe disease and its method of spread
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>
+Disease</td><td>
+Manner of attack</td><td>
+Method of spread</td>
+</tr>
+<tr>
+<td>
+Smallpox</td><td></td><td></td>
+</tr>
+<tr>
+<td>
+Common cold</td><td></td><td></td>
+</tr>
+<tr>
+<td>
+Rabies</td><td></td><td></td>
+</tr>
+<tr>
+<td>
+HapatitisA</td><td></td><td></td>
+</tr>
+<tr>
+<td>
+infective hapatitis</td><td></td><td></td>
+</tr>
+<tr>
+<td>
+Acquired imune deficiency
+Syndrome or Aids.</td><td></td><td></td>
+</tr>
+</table>
+<div class="pa paj">
+2b Write four techniques that can be used to identify micro organisms 
+
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+d. What micro organisms is responsible for the fermentation process.
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span><br />
+Draw the organism
+</div>
+<div class="pa paj">
+2. Obtain some pasteurized milk. Taste it and test its PH with a universal indicator paper. Take 10cm<sup>3</sup> of the milk in a test tube and add
+
+1cm<sup>3</sup> drop of yoghurt. Test the PH of the pasteurized milk again if there is any little change in PH. Stopper the tube,
+incubate it at 37<sup>0</sup>c for 24hours.
+Taste a sample of the milk again and check its PH again. Based on your observation answer the questions below.
+</div>
+<div class="pa paj">
+1 
+<ol type="a">
+<li>What type of taste did you observe in the milk before and after adding the yoghurt. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+ b What was the PH of the milk before and after adding the yoghurt 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+The yoghurt used contains a micro organisms called Lactobacillus. Is this organisms a bacteria or virus or fungi? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>d Write what was responsible for the taste you observed after adding the yoghurt. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+2. 
+a(i)
+
+<ul type="circle">
+List two diseases each of plants and animals caused by bacteria.
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+(ii) state three ways in which bacteria are useful.
+
+<ul type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+ (b) state three
+methods by which mosquitoes can be controlled and state the reason for each method. 
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>(c) Describe an experiment to
+ demonstrate the presence of bacteria under the finger nails.
+ <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="carry ce">
+
+  <a href="chapter13.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter15.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 14;
+</script>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch14.js">
+</script>
+
+
+</div>
+</body>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

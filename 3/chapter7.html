@@ -1,0 +1,974 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t2 le">
+New Senior School Biology Practical Activity &amp; Work Book 3
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">7</div>
+</div>
+	<div class="box_title" style="font-size:18px;line-height: 20px;font-weight: normal;">
+VARIATION, ADAPTATION<br /> FOR <br />SURVIVAL AND EVOLUTION
+	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="disc">
+<li>Organism development (complete and incomplete metamorphosis)</li>
+<li>Fertilization and development of zygote in animals and flowering plants</li>
+<li>Germination.</li>
+<li>
+Fruits and seeds.</li>
+</ul>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Background Information
+</h4>
+In a given species of organism several structural and functional similarities exist, even similarities in appearance are commonly observed even more closely when such organisms are from the same parents.
+</div>
+
+
+<div class="pa paj">
+But no matter how similar in various respects, organisms of the same species do display remarkable differences even when of the same parents. It is such differences that are referred to as variation. <strong>Variatio</strong>n are differences observed in species of living thing which are caused by <strong>genetic inheritance</strong> and  <strong>acquired characteristic</strong> due to environmental factors.
+</div>
+<div class="pa paj">
+<strong>Variation due to genetic inheritance are due to New genetic combination during meiosis and fertilization in sexual reproduction and Spontaneous changes that occur in genes called Mutation.</strong>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">Types of Variation</h4>
+In a given population; Variations can show in characteristic feature and trait of an individual. Such variations are grouped into:
+<ol type="i">
+<li>Morpholical variations and</li>
+<li> Physiological variations.</li>
+</ol>
+</div>
+<div class="pa paj">
+Morphological variations is variation in physical or outward appearance of an organism. Examples of such variations are weight, height, colour, facial features, finger prints etc. Physiological variation is variation in behaviour, activities and bodily functions of organisms . For instance ability to roll tongue, behaviour patern, blood groups etc.
+</div>
+<div class="pa paj">
+Variation can as well be categorized into <strong>continuous and discontinuous variations.</strong>
+</div>
+<div class="pa paj">
+<b class="u">Continuous Variation:</b> are those that have intermediate forms or features between one extreme and the other. Example are size, height, colour etc.
+</div>
+<div class="pa paj">
+<b class="u">Discontinuous variation:</b> are variation in those characteristic that have no intermediate form. Example Tasting <strong>T.T.C, tongue rolling, ear lobes etc.</strong>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">Application of Variation</h4>
+Knowledge derived from variation are applied in
+<ol type="i">
+<li>Crime detection</li>
+<li>Blood transfusion and</li>
+<li>Determination of paternity</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4>Crime detection:</h4> Here fingerprint of an individual which is usually not exactly alike (except that of identical) are used. Amore reliable means is the DNAfingerprints. This is done by collecting the body cells left at the scene of the crime and its DNApattern is analysed. The method is very expensive.
+</div>
+<div class="pa paj">
+<h4>Blood Transfusion:</h4> People have different blood groups. Groups A, B, AB and O are the existing known group. Proper administering of blood transfusion requires that the right group should be administered to the recipient from the donor. Donor recipient compatibility which is tabulated below, helps to administer the right blood group during blood transfusion.
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Group</td><td>Can donate blood to</td><td>Antigen in red blood cell</td><td>Can receive from</td><td>Antibody in a plasma</td>
+</tr>
+<tr>
+<td>A</td><td>A and AB</td><td>A</td><td>A and O</td><td>Anti B</td>
+</tr>
+<tr>
+<td>B</td><td>A and AB</td><td>B</td><td>B and O</td><td>Anti A</td>
+</tr>
+<tr>
+<td>AB</td><td>Only AB</td><td>A and B</td><td>All group</td><td>None</td>
+</tr>
+<tr>
+<td>O</td><td>All group</td><td>None</td><td>Only group O</td><td>Anti A and B</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h4>Detection of Paternity:</h4>
+In this ease, Variation caused by inherited characteristic such as blood group, tongue rolling, DNAfingerprint etc can be used to know the paternity of a child when it is under dispute. Among all the methods that can be used, the best is DNAfingerprint.
+</div>
+<div class="pa paj">
+<h4>Adaptation for Survival</h4>
+Adaptation is known as a process by which a living thing become fitted to its environment so as to live successfully and reproduce. Organisms adaptation for survival are being affected by factors like <strong>variation, competition</strong> and <strong>natural selection.</strong>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">Types of adaptations:</h4>Adaptation can be seen as modification or changes in form, structure, functions and behaviours of organism which enables it to withstand environmental factors in its natural and changing environment. Adaptation can be in <strong>structure of an organisms (structural adaptation); It can be in behaviour (behavioural adaptations), It can also be in form of colour (adaptive colouration). </strong>
+</div>
+<div class="pa paj">
+<h4>Structural Adaptation</h4>
+Organisms can have body parts which are modified to fit its mode of life and activities such as obtaining food, conservation of water, regulation of body temperature, escape from predators and defense from invading enemies, securing mates etc.
+</div>
+<h4 class="ce">
+Structural Adaptation of Certain Organisms
+</h4>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Functions and Activities</td><td>Specific examples and ways the organism performs the functions</td><td>Adaptive Features</td>
+</tr>
+<tr>
+<td>Obtaining food (feeding)</td><td>
+<strong>Birds;</strong>They tear,crush and swallow food which consists of insects, seeds, fish, worms, necter etc.<br /><strong>Insect:</strong> Insects feed on solid foods like leaves and liquid fluid such as necter and blood.
+</td><td>
+<strong>Beaks, feet, claws</strong> are adapted to suit the particular feeding habbit of the type of bird.<br />
+They have mouth parts adapted for chewing, crushing, some have mouth parts adapted for piercing sucking etc.
+</td>
+</tr>
+<tr>
+<td>Conservation of water</td><td>Terrestial organism like insects and some desert or arid organisms.</td><td>
+Insect,have their excretory system and mechanism modified to conserve water.</td>
+</tr>
+<tr>
+<td>Regulation of body temperatures</td><td>
+Mammals and birds regulate their body temperatures regardless of the temperature of the surrounding.</td><td>Skin covered with hairs and feathers: layers of fats under the skin, <strong>streamline bodies</strong> of birds.</td>
+</tr>
+<tr>
+<td>Escape and defence</td><td>Certain caterpillars and insects escape predators by concealing their colours. Atortoise defends itself from enemies by its shell that protects it.</td><td>
+Concealing colouration in insects which is a camourflage mechanism.<br />
+Physical defense like spines in Sea Urchin horny amour in anteater, shell of toitoise</td>
+</tr>
+<tr>
+<td>Securing mates</td><td>
+Mammals, and birds have certain behavoural display that enables them to attract mates.</td><td>
+<strong>Visual display and signals.</strong><br /> Males are conspicuous with bright appearance so as to attract female mates etc</td>
+</tr>
+</table>
+
+<h4 class="ce h_bio">
+Behavioural Adaptation
+</h4>
+
+<div class="pa paj">
+Behavioural adaptations involves the mode of life of an organism and its response to changes on its environment. This includes:
+</div>
+<div class="pa paj">
+Tropic, tactic and Nastic movements in plants such as movement of plant shoot to the direction of light, insect trapping movements of the leaves of the venus flytrap etc. behavioural adaptation in <strong>obtaining food</strong> such as <strong>foraging behaviour</strong> among organism like cheetah, which is a hunting carnivore, a spider which set traps for other smaller animals etc.
+</div>
+<div class="pa paj">
+<strong>Escape and defence behaviour</strong> like rolling into a ball shape by a  hedgehog when attacked; erratic flying of a butterfly to escape enemies,
+</div>
+<div class="pa paj">
+<strong>Behavioural adaptations for withstanding unfavourable condition</strong> such as Hibernation aestivation and migration among ground squirrels toads and birds respectively.
+</div>
+<div class="pa paj">
+<strong>Communication behaviour</strong> such as croaking of male toad to inform female toads of its identity and mating intension; bee dance on the surface of the honey combs of the hive informing other worker bees the distance and direction of food etc.
+</div>
+<div class="pa paj">
+<strong>Caring for the young or parental care</strong> among birds and mammals.
+</div>
+<div class="pa paj">
+<strong>Behaviours in finding males</strong> like the display of a peacock before a peahen etc
+</div>
+<div class="pa paj">
+<b>Adaptive Colouration:</b> Adaptive colouration in organisms can be categorized into concealing <strong>coloration, warning colourations and mimicry.</strong>
+</div>
+<div class="pa paj">
+<b>Concealing colouration:</b> This can be used in camourflage to enable both prey and predators not to be notified. Examples are : The green cuticle of the grasshopper which blends it with the grass; concealing colouration can also take the form of disruptive coloration as in the spots and stripes of the <strong>leopard, giraffe, tiger, zebra, counter shading, and colour change as in chameleon.</strong>
+</div>
+<div class="pa paj">
+<b>Warning Colouration:</b> A colour signal which serves to warn or inform would be predators to avoid such animals because they have undesirable features, for instance colourful spotted marks on the wing cases of the foul tasting lady bird beetles, vivid green and orange patterns of some south American forest frogs which have deadly neuromuscular poisons.
+</div>
+<div class="pa paj">
+<b>Mimicry:</b> Here colours and colour pattern are used by animals to feign to be another thing or another organism inorder to escape being prayed upon by predators to being notice as a predator.
+</div>
+<h4 class="ce h_bio">
+Evolution
+</h4>
+<div class="pa paj">
+Organic evolution (evolution of living things) is the whole lot of adaptive changes over a long period of time which leads to the development and transformation to a new species from earlier ones.
+</div>
+<div class="pa paj">
+<b>Theories of Evolution:</b> The present day theories on evolution which is refered to as <strong>neo-Darwinism</strong> combines <strong>darwin's theory</strong> with our present day knowledge of genetics and molecular biology. 
+</div>
+<div class="pa paj">
+<b>Darwins Theory:</b> Darwings theory of natural selection whereby enivornmental pressure imposes a constrain in a population of organisms and those individuals with herited characteristics different from others (inherited variation) can withstand such pressure, survive and continue existence while other  may go into extinction.
+</div>
+<div class="pa paj">
+The theory can be itemized below in six points.
+<ul type="circle">
+<li>Species are capable of producing a large number of offsprings.</li>
+<li>There is limited resources in nature</li>
+<li>Competition is inevitable for survival of offsprings in each generation.</li>
+<li>There is great variability in populations of organisms that no two individuals are the same. Much of this variability are inherited.</li>
+<li>The organisms that survive and produce offsprings are those that have inherited the most valuable traits for surviving in that particular environment.</li>
+<li>As this process continues for many generations, the population gradually becomes better adapted to the environment.</li>
+</ul>
+</div>
+<div class="pa paj">
+Darwin knew nothing about the modern day genetics but after this, modern day research and knowledge of genetics has led to <strong>modern view of evolution (Neo-Darwinism).</strong>
+</div>
+<div class="pa paj">
+New Darwinism explains natural selection as a function of genetic variation but also goes on to identify mutation, Gene flow and gene drift as other natural forces that are responsible for evolutionary changes.
+</div>
+<div class="pa paj">
+Evidence of evolution
+<ol type="i">
+<li>Fosil records</li>
+<li>Biochemical similarities.</li>
+<li>Molecular records</li>
+<li>Comparative anatomy and</li>
+<li>Embryology </li>
+</ol>
+</div>
+<div class="pa paj">
+The above stated evidences has been proven to support the theory of evolution.
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+General Questions
+</h4>
+1. Variation due to inherited characteristics are made possible by new genetic combinations that take place in sexual reproduction and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2. Classify each of these characteristic features and behaviours into the group they belong in the 
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td>Charasteristic feature/behaviour</td><td>Morphological variation</td><td>Physiological variation</td>
+</tr>
+<tr>
+<td>3</td><td>Height</td><td></td><td></td>
+</tr>
+<tr>
+<td>4</td><td>Finger print</td><td></td><td></td>
+</tr>
+<tr>
+<td>5</td><td>Ability to roll tongue</td><td></td><td></td>
+</tr>
+<tr>
+<td>6</td><td>Aggressiveness</td><td></td><td></td>
+</tr>
+<tr>
+<td>7</td><td>Skin colour</td><td></td><td></td>
+</tr>
+</table>
+<div class="pa paj">
+8. The anti A serum would cause blood containing 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> with antigen A to clump.
+</div>
+<div class="pa paj">
+9. If a blood sample neither clumps with anti A serum nor with anti B serum, that blood sample will belong to group 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> 
+</div>
+<div class="pa paj">
+10. The clumping of red blood cells is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+11. Group the following characteristics and behaviours into continuous ad discontinuous variation
+<ol type="i">
+<li>Tongue rolling,</li>
+<li>Size</li>
+<li>Colour</li>
+<li>Ear lobes</li>
+<li>Ability to taste PTC (phenylthiocarbamide).</li>
+</ol>
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Continuous Variations</td><td>Discontinuous Variations</td>
+</tr>
+<tr>
+<td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>
+
+</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+</table>
+<div class="pa paj">
+16 In crime detection and prove of paternity <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> is most reliable
+</div>
+<div class="pa paj">
+17 In blood transfusion, Group
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> is a universal recipient.
+</div>
+<div class="pa paj">
+18 Aggressive behaviour and territoriality are kinds of interference an organism exhibit on another to obtain a resource. They are observed in 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> Competition
+</div>
+<div class="pa paj">
+19 Variation which helps organisms to survive in their natural environments are said to have 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> value.
+</div>
+<div class="pa paj">
+20 Competition among members of the same species is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> while that among members of different species is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+21 Write three structural features that are involved in regulating temperature in the body.
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+22. A chameleon displays an adaptive colouration of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> 
+</div>
+<div class="pa paj">
+23. Peck order is found among vertebrate societies while  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> systems are found among insect societies.
+</div>
+<div class="pa paj">
+24 State the four caste of a termite colon
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+25. State three ways by which bees communicate with each other<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+26. An error in the replication of genetic material which results to a spontaneous change in the genes is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+27. Certain substances and conditions that can increase the rate of mutation are called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+28. The best known mutagen is 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+29. Wolves live in family units known as 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+30. __________ is the mutant Hemoglobin gene which though harmful, is naturally selected in west Africa sub region because  of the immunity it provides against malaria.
+
+<span id="QQ4"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('QQ4',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">HB<sup>A</sup>HB<sup>A</sup></div>
+    </div>
+	<div class="optionbox" onclick="opMark('QQ4')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">HB<sup>S</sup>HB<sup>S</sup></div>
+    </div>
+	<div class="optionbox" onclick="opMark('QQ4')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">HB<sup>A</sup>HB<sup>S</sup></div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+Expression Exercise
+</h4>
+1a. List three applications of variation
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+b. The bar chart below shows frequencies of ABO blood group in a particular country.
+<br />
+Use it to answer the questions that follow
+</div>
+<img src="images/fig7.jpg" class="imn" />
+
+<div class="pa paj">
+c. Which blood group has the highest frequency of occurance?
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+d. Are anitigens found in the red blood cell of the blood group? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+e. Explain why ABO (system) blood group is said to be a discontinuous variation 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+2a What is competition? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+b. Explain when variation is said to have a survival value 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+c Write down three animals that carry out concealing colouration in their adaptations.
+<ol type="i">
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+3a. Write two remarkable differences between the behaviours and life history of a honey bee and those of a termite.
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+b. Explain the principles of natural selection in Darwins theory of evolution. <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+4. Explain what is NeoDarwinism
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+b. Write down four biological evidences to prove the reality of evolution.
+<ol type="i">
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+Practical Activities
+</h4>
+Finding out whether every body in the class can roll the tongue
+</div>
+
+<ol type="i">Procedure
+<li>Attempt to roll your tongue</li>
+<li>Check up among your class members, those who can roll their tongues and those who can not</li>
+<li>Record your observation in a tabulation like the one below. Put yes if the person can roll tongue and No if he or she can not.</li>
+</ol>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td>Names of class members</td><td>Can or cannot roll tongue</td>
+</tr>
+<tr>
+<td>1</td><td></td><td></td>
+</tr>
+<tr>
+<td>2</td><td></td><td></td>
+</tr>
+<tr>
+<td>3</td><td></td><td></td>
+</tr>
+<tr>
+<td>4</td><td></td><td></td>
+</tr>
+<tr>
+<td>5</td><td></td><td></td>
+</tr>
+</table>
+<div class="pa paj">
+(iv) Use your record to draw a bar chart showing the frequency of occurance of tongue rollers and non tongue rollers in the whole population of the class.
+</div>
+<div class="pa paj">
+(v) What type of varaition did you investigate? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2. To find out variation in height
+</div>
+<div class="pa paj">
+<b>Materials Needed</b><br />
+Black board and chalk, centimeter scale graph paper 
+</div>
+<div class="pa paj">
+
+<ol type="i">
+<li>Pair up yourselves and let your partner read off your height in centimeter from a scale marked on the wall.</li>
+<li>The teacher will write your height and that of other class members who equally did the same in pairs.</li>
+<li>The same record from another class can also be taken by the teacher.</li>
+<li>Group your records and use it to construct a histogram on graph paper<br />
+(Do this in your biology practical note book), then answer the questions below.</li>
+<li>By how much does height vary in the sample? 
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+(ii) What is the proportion of very short or tall student compared to those of average height? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(iii) Does this variation investigated belong to morphological varaiation
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(iv) Also is it continuous or discontinuous? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3. <b class="u">Discovering how finger prints vary</b>
+</div>
+<div class="pa paj">
+<b>Material/Apparatus required</b>
+<ol type="i">
+<li>Board and chalk or marker</li>
+<li>Ink pad</li>
+<li>Plain white paper</li>
+<li>Hand lens</li>
+<li>Ruler</li>
+</ol>
+</div>
+<div class="pa paj">
+<b>Methods</b>
+
+<ol type="i">
+<li>Wash your hand and dry it thoroughly.</li>
+<li>Draw series of (or many ) squares of 2cm dimension on the piece  of plain  paper.</li>
+<li>Press the thumb of your right hand on the ink pad so as to impress on it.</li>
+<li>Thumb print on the square space you drew. Cause some (at least up to 20) other student to do the same.</li>
+<li>Use the hand lens to examine the various finger prints and to categorize each of them according to how they look like (or very closely look like ) the ones on print on the book below.</li>
+</ol>
+</div>
+<img src="images/fig7.1.jpg" class="imn" />
+<div class="pa paj">
+(V) Your teacher can record the type of print made by each class member on the board
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+Questions
+</h4>
+(i) Is your own finger print (thumb print) a loop whorl, double loop or arch?
+</div>
+<div class="pa paj">
+(ii) State one use of finger print as in application of variation 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(iii) From your findings and observations did two or more students fingerprints match each other in similarity? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(iv) Explain your answer in line with your knowledge of variation 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+Test of Practical Work
+</h4>
+1a. What will be the result of treating a blood with antigen B in its red blood cell with a serum containing anti B 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+ b. With which other blood group can you still obtain similar practical result.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+c. Why is knowledge of blood group of an individual necessary before blood transfusion?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2.(b) Explain the significance of each type of bee dance and what it communicates to other bees (or worker bees)? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c) How does each dance differ from each other in terms of the information it carries 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<h4 class="ce h_bio">
+S S C E Past Questions
+</h4>
+
+<div class="pa ce">
+Variation, Adaptation for Survival and Evolution
+</div>
+<div class="pa paj">
+<b>NECO SSCE 2001</b>
+<br />
+1. The weights, in kilograms, of a number of students in the same class were measured as shown
+</div>
+<table class="tabler bg_white smal_t">
+<tr>
+<td>45</td><td>65</td><td>60</td>
+<td>48</td><td>65</td><td>45</td>
+<td>49</td><td>50</td>
+</tr>
+<tr>
+<td>50</td><td>55</td><td>65</td>
+<td>55</td><td>65</td><td>55</td>
+<td>50</td><td>60</td>
+</tr>
+<tr>
+<td>52</td><td>55</td><td>60</td>
+<td>65</td><td>58</td><td>50</td>
+<td>65</td><td>55</td>
+</tr>
+<tr>
+<td>65</td><td>59</td><td>49</td>
+<td>58</td><td>55</td><td>65</td>
+<td>54</td><td>54</td>
+</tr>
+<tr>
+<td>60</td><td>68</td><td>62</td>
+<td>60</td><td>65</td><td>68</td>
+<td>62</td><td>68</td>
+</tr>
+</table>
+<div class="pa paj">
+(a)i Group the data frequencies, using a class interval of five. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(ii) Placing the frequency along the y-axis and weight (kg) along the axis, prepare a histogram for the data. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(iii) How many students were weighted? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(iv) How many students fall within modal class? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(v) Calculate the average weight of the class 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b) what type of variation does this depict? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2. Place the thumb of your right hand, face-down on ink pad, exerting little bit of pressure on it.Press the same treated thumb on your answer script, still exerting a little pressure. Observe the result on your answer script. Wash your thumb immediately after the experiment.
+</div>
+<div class="pa paj">
+b. What name is given to the observation on your answer script? Mention one use of it to mankind give reason. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+c. What area in the study of biology is your observation associated with?  
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3a. What type of variation is height<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3b. Mention three other examples of the type of variation in 3a
+</div>
+<ol type="i">
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+<div class="pa paj">
+<b>June 2000 Q2</b><br />
+4. 2. The heights(cm) of 20 students in a class are as follows: 155, 157, 151, 169, 162, 151, 149,  165, 169, 176, 169, 179, 173, 169, 157, 155, 165, 157, 197 and 162.
+</div>
+<div class="pa paj">
+Use them to answer the following questions:
+</div>
+<div class="pa paj">
+(a) Make a frequency distribution table of class intervals of five of the different heights.<br />(Draw in your biology practical notebook).
+</div>
+<div class="pa">
+(b) What is:  
+<ol type="i">
+<li>The modal height?<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Median height?<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Mean height?<textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+(c)i Construct a histogram showing the variation of height, among the students with the heights on the horizontal axis and number of students on the vertical axis
+</div>
+<div class="pa paj">
+ii. How many student fall into each of the height extremes? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+iii. How many students have height between the shortest and the tallest student
+</div>
+<div class="pa paj">
+iv. Find the difference in height between the shortest and the tallest student
+</div>
+<div class="pa paj">
+(d)i. What type of variation is height? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+ii. Mention three other examples of the types of variation in (d)(i) above. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<b>June 2009</b> WASSCE BIOLOGY 1 PRATICALS-QUESTION
+</div>
+<div class="pa paj">
+You are provided with water lettuce as specimen A, Cactus as specimen B, Talinum (waterleaf) as specimen C
+</div>
+<div class="pa paj">
+1. Study specimens A,B and C carefully and use them  to answer questions (a) to (d). <br />
+(a) State the habitats of specimens A,B and C. [3marks]
+</div>
+<div class="pa paj">
+(b) State (i) two observable features each of specimens A, B,C;<br />
+(ii) how the features in 1(b)(i) adapt the specimens to their habitats.[12marks] 
+</div>
+<div class="pa paj">
+(c) State three observable differences between specimens A,and C. [3marks]
+</div>
+<div class="pa paj">
+(d) Make a drawing 8-10cm long of specimen C and label fully. [7marks]
+</div>
+<div class="pa paj">
+
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+
+</div>
+<div class="pa paj">
+
+</div>
+<div class="carry ce">
+
+  <a href="chapter6.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter8.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 7;
+</script>
+
+</div>
+</body>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+<script type="text/javascript" src="js/ch7.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

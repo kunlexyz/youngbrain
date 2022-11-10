@@ -1,0 +1,726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+<link rel="stylesheet" href="../MobileTem.css">
+<link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+</div>
+<div id="coHide">
+<img src="images/b16.jpg" class="imn" />
+
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="square">
+<li>Subdivisions of Aquatic habitat and their
+characteristic
+</li><li>Distribution of organisms in various
+aquatic habitats
+</li><li>General adaptative features of organisms
+to the various aquatic habitats
+</li>
+</ul>
+</div>
+<div class="fig_1">
+<strong>fig16.1:</strong> Mushroom
+</div>
+<img src="images/fig16.1.jpg" class="imn" />
+
+<div class="pa paj">
+<h4 class="hh7">
+Background Information
+</h4>
+A habitat is a place an organisms naturally lives. It
+is broadly classified into two: <strong>Aquatic</strong> and
+<strong>Terrestrial habitats.</strong>
+</div>
+<div class="pa paj">
+Aquatic habitats are further subdivided into three
+kinds:<strong>Marine or saltwater habitats, freshwater
+habitats, estuarine orbrackish water habitats.</strong>
+</div>
+<div class="pa paj">
+<h3>
+The Marine habitat
+</h3>
+The marine habitat is characterized by the
+following : *A large body of water which
+contains dissolved ions like sodium, potassium,
+magnesium, calcium, phosphate, iodine,
+Hydrogen trioxocarbonate IV, chloride,
+tetraoxosulphate IVand trioxonitrate (V)ions
+</div>
+<ul type="square">
+<li>
+High salinity of up to 35 parts per one
+ thousand
+</li><li>A density that is higher than that of ordinary
+water. It is about 1.28glcm3.
+</li><li>A temperature, which falls with, increase in
+sea depth and pressure which increase with
+ in crease in sea depth
+
+An oxygen concentration, which decrease
+with depth.
+</li><li>ApH of about 8.0 to 8.5 (Alkaline)
+</li><li>The presence or occurances of waves,
+ocean currents and tides.
+</li>
+</ul>
+<div class="pa paj"><strong>
+Note:Waves are temporary movements of
+surface waters of the sea which can occur in any
+direction while an ocean current is a movement
+of the surface water that has concentrated
+direction. Tides are alternate rise and fall of the
+sea surface which happens approximately twice
+a day.</strong>
+</div>
+<div class="pa paj">
+<h4>
+Major Ecological Zones of the Marine habitat
+</h4>
+The marine habitat consists of the seashore and
+the open sea water body itself. It is broadly
+categorized into two: The littoral zone and the
+benthic zone.
+</div>
+<div class="pa paj">
+<b>The Littoral Zone:</b> This region extends from the
+base substratum. It consists of supratidal or splash
+zone, intertidal zone and subtidal zone.
+</div>
+<div class="pa paj">
+<b>The Bentic Zone:</b> This extends from the end of the
+continental shelf. There is the bathyal zone which
+is down to 2000m, The hadal zone which is beyond
+7000m deep. It extenD down to the sea floor.
+</div>
+<div class="pa paj">
+<h4>
+The Fresh water habitat
+</h4>
+Fresh water is categorized into:<br />
+Stagnant waters called <b>Lentic water</b>/eg ponds and
+lakes and flowing water which is called lotic water
+(example spring and streams and rivers)
+</div>
+<h3 class="ce pa">Characteristic of fresh water habitat</h3>
+<ul type="square">
+<li>No significant amount of salt is present
+</li><li>Water body is relatively small when compared to
+that of marine habitat.
+</li><li>Seasonal variation in water volume, turbidity and
+speed of flow of water, all these increases during
+rainy season and fall during dry season.
+</li><li>
+
+Relatively shallow water that light penetrates through.
+</li><li>Temperature difference at the surface and bottom is not
+much
+</li><li>Oxygen is available more at the surface though
+completely circulated through
+</li></ul>
+<div class="pa paj">
+<h3>
+Ecological Zones of a fresh water habitat
+</h3>
+ There is the littoral zone which is the shallower part (No
+supratidal and intertidal) there is also the bentic zone
+which is the deeper part.
+</div>
+<h3 class="pa">
+Estuarine Habitat
+</h3>
+<ul type="square">
+Characteristics
+<li>
+Relatively shallow water body when
+compaired to that of marine water.
+</li><li>Mild wave action or its complete absence
+</li><li>Soft substratum which is poorly aerated
+</li><li>Denser than fresh water
+</li><li>Salinity varies and undergoes seasonal
+changes.
+</li></ul>
+<div class="ce hh7">
+Distribution of Organisms in Aquatic habitat
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>HABITAT</td><td>ORGANISMS DISTRIBUTION</td>
+</tr>
+<tr>
+<td>
+Marine<br />
+Splash zone<br />
+Interidal zone<br />
+Suntidal zone<br />
+Nenlic zone
+Oceanic zone</td><td>Sand crab, ghost crab, bivalves, annelids <br />Annelids, muluscs, Barnacles<br />Snails, Crabs, Crayfish, Lobsters<br />Plankton, Fish (Nektons)Plankton and Fishes (Nektons)</td>
+</tr>
+<tr>
+<td>
+Freshwater</td><td>Plants such as water lily, grasses, floating plants, such as water lettuce; microscopic plants like diatoms, blue green algae, clamydomonas. Animals such as fishes, amphibian, reptiles, Birds, hippopotamus.</td>
+</tr>
+<tr>
+<td>
+Estuarine</td><td>Hermit crab hairy mangrove crab, mud skipper, algae, bacteria; Plants like red mangrove and white mangrove.</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h3 class="ce h_bio">
+Adaptative features of organisms in an aquatic habitat
+</h3>
+<h3>
+MARINE
+</h3>
+Stream line shape, presence of fins, light body and flat
+shape; presence of gills and body surface as gaseous
+exchange structure ; Laying of numerous eggs, external
+fertilization, Digging into the sand and mud, withdrawing
+into shells as in snails, protective colouration as in
+mudfish.
+</div>
+<div class="pa paj">
+<h3>
+FRESH WATER
+</h3>
+<ul type="square">
+<li>Presence of air bladder, expanded shape and
+light weight among floating plants.
+</li><li>Presence of gills for respiration in water and
+lungs for respiration under dry condition for
+lung fish.
+</li></ul>
+</div>
+<div class="pa paj">
+<h3>
+ESTUARINE
+</h3>
+<ul type="square">
+<li>
+Stilt roots in red mangrove which gives rise
+to numerous absorbing rootlets which have
+airspace for conducting air to the tissues of
+the roots breathing roots in white mangrove
+which projects upwards from water logged
+
+soil and used for oxygen absorption.
+</li></ul>
+</div>
+<div class="pa paj">
+<h3 class="ce h_bio">
+GENERAL QUESTIONS
+</h3>
+1. State the three kinds of aquatic habitat 
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+
+</div>
+<div class="pa paj">
+2. The pH of a marine habitat shows that it is an 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> medium
+
+</div>
+<div class="pa paj">
+3. Alternate rise and fall of the surface of the sea
+approximately twice a day is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+4. Waves differ from ocean currents because waves
+are temporary movements of the surface waters of
+the sea which can take place in any direction,
+while ocean current are movement of surface
+water of the ocean which has 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+5. Part of the littoral zone which extends from the
+low tide mark to a depth of about 200 meters is
+called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+6. The water of the continental shelf is called
+ <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> while that beyond the shelf is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+7. Fresh water habitat which are stagnant and calm are
+called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> While those that are flowing are called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+
+</div>
+<div class="pa paj">8. Part of the littoral zone where water from the sea
+splashes when waves break at the shore is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+
+</div>
+<div class="pa paj">9. The surface water of the ocean supports two
+main groups of organisms called plankon and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa">
+10. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> , 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+are examples of fresh water habitat.
+</div>
+<div class="pa">
+11. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+influences the distribution of animals in an estuarine habitats.
+</div>
+<div class="pa paj">
+12. A red mangrove is the main species of flowering plants found in estuaries. It has stilt roots while the
+white mangrove has  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> roots
+</div>
+<div class="pa paj">
+13. Write down two adaptative features of freshwater habitat animals 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<ol type="1" start="14">
+State four organisms that can be found in a brackish water habitat
+
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li><li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li><li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li><li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li><li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li></ol>
+
+<div class="pa">
+<h3 class="ce h_bio">
+Expression Exercise
+</h3>
+1. 
+<ol type="i">
+State four adaptations of organisms to a marine habitat
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+2a What is a continental shelf? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+<ol type="i">
+(b) Draw two examples of a food chain in a fresh water habitat showing producers, primary consumer,
+secondary consumers and tertiary consumers.
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+3a. Write down three groups a swamp vegetation can be grouped into
+
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(b) Write three characteristic of an estuarine habitat
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+<h3 class="h_bio ce">
+Practical Activities
+</h3>
+1. Studying some aquatic habitats select the following habitats:
+<ol type="i"><li>A marine habitat example a sea environment
+</li><li>A fresh water habitat example: The pond water, a nearby river or stream
+</ol>
+</div>
+<div class="pa paj">
+<ul><li>
+Observe the types of plants and animals present in each of the habitats
+</li><li>Collect some samples of plants and animals in the habitat
+</li></ul>
+</div>
+<div class="pa paj">
+<h3 class="ce h_bio">
+Questions
+</h3>
+Write down the various plants and animals you saw and observed in each of the habitats
+<hr />
+<h4>
+Marine habitat
+</h4>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+</div>
+<div class="pa">
+Fresh water habitat
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+Construct a sample food chain of the community of organisms observed for each of the aquatic habitat
+</div>
+<div class="pa">
+Aquatic Food Chain 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+Fresh water food chain 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+2. Measurement of some habitat factors in a marine and freshwater habitat.<br />
+Apparatus : Meter rule; Secchi disc, thermometer, measuring tape, pH meter
+<ol type="i">
+Procedure: Measure the following habitat factors in the various habitats
+<li>The clarity of the waters using secchi disc
+</li><li>The temperature of the water bodies using thermometer
+</li><li>Height of the water at the study period
+</li><li>Measure the pH of the water bodies using the pH meter
+</li></ol>
+</div>
+<div class="pa">
+Questions
+Record your measurements for both marine habitat and freshwater habitat
+<textarea class="w100"></textarea><span class="w100resp"></span>
+ 
+</div>
+<div class="pa">
+ 
+Compare both values for each aquatic habitat and state any observable difference
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+</div>
+<h3 class="ce h_bio">
+Test of practical work (alternative to Practical)
+</h3>
+
+<div class="fig">
+<strong>fig16.2:</strong> 
+</div>
+<img src="images/fig16.2.jpg" class="imn" />
+<ol type="A">
+Write down the names of the various aquatic layers indicated by the alphabets A B C and D
+
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+<div class="fig">
+<strong>fig16.3:</strong> 
+</div>
+<img src="images/fig16.3.jpg" class="imn" />
+<div class="pa">
+(i) Identify what is illustrated in the marine habitat above <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+(ii) Indicate and write down the littoral zone and benthic zone
+
+<ul type="square">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul>
+</div>
+<div class="pa">
+(iii) Among the water levels indicated by A,B,C, where would you likely observe the highest number of community. <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+<h4 class="u ce">
+AQUATIC HABITATS<br />
+SSCE PAST QUESTIONS
+</h4>
+
+<div class="hh8">JUNE 2002 Q3,a,b,&amp; c</div>
+
+1. A student carried out an investigation, using a pond containing many water plants, to determine change in the level of
+oxygen (0<sup>2</sup>) and carbon (IV) oxide (C0<sup>2</sup>) in the pond with time. The data is recorded as shown in the table below. Use
+the data to answer questions (a) to (c)
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>
+Time of Day (Hours GMT)</td><td>Oxygen</td><td>Carbon(IV)Oxide</td>
+</tr>
+<tr>
+<td>
+24.00 (Midnight)</td><td>38</td><td>32</td>
+</tr>
+<tr>
+<td>
+2.00</td><td>27</td><td>36</td>
+</tr>
+<tr>
+<td>4.00</td><td>16</td><td>43</td>
+</tr>
+<tr>
+<td>
+6.00 (Dawn Morning)</td><td>11</td><td>46</td>
+</tr>
+<tr>
+<td>
+8.00</td><td>14</td><td>46</td>
+</tr>
+<tr>
+<td>
+10.00</td><td>27</td><td>38</td>
+</tr>
+<tr>
+<td>
+12.00 (Noon)</td><td>60</td><td>17</td>
+</tr>
+<tr>
+<td>
+14.00</td><td>72</td><td>16</td>
+</tr>
+<tr>
+<td>
+16.00</td><td>87</td><td>14</td>
+</tr>
+<tr>
+<td>
+18.00 (Dusk)</td><td>82</td><td>19</td>
+</tr>
+<tr>
+<td>
+20.00</td><td>71</td><td>28</td>
+</tr>
+<tr>
+<td>
+22.00</td><td>60</td><td>28</td>
+</tr>
+<tr>
+<td>
+24.00 (Midnight)</td><td>44</td><td>38</td>
+</tr>
+</table>
+
+<div class="pa">
+
+(a) Using the data above, plot two graphs on a single sheet of graph paper, one to show the oxygen level and the other to
+show the carbon (IV) oxide level; with time on the horizontal axis and the level of gases on the vertical axis.
+<div class="hh7x">
+(Note: Histogram not accepted)
+</div>
+</div>
+<div class="pa">
+(b) Using the plotted graph, indicate when the level of oxygen started to increase and stopped increasing.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+(c) Explain why the levels of oxygcn and carbon (iv) oxide rose and fell at different times of the day
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="carry ce">
+
+  <a href="chapter15.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter17.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 16;
+</script>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch16.js">
+</script>
+
+</div>
+</body>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

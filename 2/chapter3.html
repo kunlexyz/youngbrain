@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <div class="menu1" onclick="showViewTab('quote')"><div class="bull"></div>Diagrams</div>
+    <div class="menu1" onclick="showViewTab('backCover')"><div class="bull"></div>About the Book</div>
+    <div class="menu1" onclick="showViewTab('verify')"><div class="bull"></div>Activate</div>
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+    <div class="trA smal_t le">
+    New Senior School Biology Practical Activity &amp; Work Book Two
+    </div>
+    <div class="box_head">
+    Chapter
+    <div class="box_head2">3</div>
+    </div>
+      <div class="box_title" style="font-size:20px;">
+          TRANSPORT SYSTEM<br /> AND <br />MECHANISMS
+      </div>
+    </div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="square">
+<li>Reasons for transport in living things
+</li><li>Transport in Animals
+</li><li>Transport in plants
+</li></ul>
+</div>
+
+<div class="pa paj">
+Living things transport materials within them in orderr to utilize water and food substances, actualize the process of excretion and respiration; circulate hormones in higher organisms etc. Method or mechanism of transport in an organisms will depend on the size of the organism, surface area to volume ratio which in turn depends on the size of the organism. Simple unicellular, Organism like amoeba for instance, make do with simple diffusion process for material transport while higher organisms require a more specialized mechanism for transport.
+</div>
+<div class="pa paj">
+<h4>
+Transport in Animals
+</h4>
+Animals are higher organisms. Their low surface area to volume ratio as a result of their sizes cannot allow simple diffusion which occurs in much more smaller organisms like amoeba to be their means of transport. Special structures and mechanisms are developed for such purpose. These structures include: <strong>Gills, lungs,.</strong> <b class="u">heart</b> etc Besides this, animals have a transport system where a uid carries materials through  out the body <strong>(mass ow system)</strong>
+</div>
+<ol type="i">
+Features of a transport system
+<li>A circulating uid (usually blood in most cases)
+</li><li>A pumping device (the heart) Which drives the        uid through its pumping action
+</li><li>Connecting vessels or system of branched         tubes within which the uid circulate.
+</li></ol>
+<div class="pa paj">
+In a given animal, Transport system which is also referred to as the circulatory system can be open circulation (in which the heart pumps blood into blood vessels which opens into spaces in the body cavity) or a closed circulation (where blood does not have a direct contact with the body cavity but ows through blood vessels)
+</div>
+<div class="pa paj">
+Open circulation is found among insects, muluscs etc while closed circulation is found among all vertebrates.
+</div>
+<div class="pa paj">
+<h4 class="ce">Circulatory system in vertebrates</h4>
+Circulatory system in Vertebrates is by closed circulation. It has the following features:
+</div>
+<div class="pa paj">
+<ol type="i">
+<li>A distinct Muscular heart which is ventrally         positioned </li><li>Arteries which carry blood away from the heart </li><li>Veins which carry blood back to the heart(iv) Blood capillaries between the veins and the Arteries</li></ol>
+</div>
+<div class="pa paj">
+The circulatory system in vertebrates is further divided into two categories:
+</div>
+<ul type="square">
+<li><b>Single circulation</b> in which blood passes     once through the heart and goes into      general body circulation and</li>
+<li>
+<b>Double circulation</b> in which blood passes through the heart twice before going into general body circulation. The rst is called <b>Pulmonary circulation</b> (blood circulation from the heart to the lungs and back to the heart).The second is <b>systemic circulation</b>(circulation from the heart to all other parts of the body and back to the heart). Among vertebrates A sh has single circulation while all mammals has double circulation</li>
+</ul>
+
+<div class="pa paj">
+<h4>Circulatory System in Mammals</h4>
+The circulatory system in mammals is double circulation. It consist of
+</div>
+
+<strong>
+<ol type="i">
+<li>The transporting media and material       which are the blood, lymph and intercellular uid</li>
+<li>The muscular four chambered heart and</li>
+<li>The blood vessels</li>
+</ol>
+</strong>
+
+<div class="pa paj">
+<h4>The blood</h4> 
+<i><strong>The blood is a tissue, which consists of the liquid part, called blood plasma,</strong> and the solid part made up of <strong>blood cells, or corpuscles and platelet.</strong></i>
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Various blood parts</td><td>Features</td><td>Functions</td>
+</tr>
+<tr>
+<td><b>Blood plasma</b> (liquid part of the blood which contain dissolved substances like plasma protein, Hormones, antibodies, enzymes, gases, salts, digested food and waste materials)</td><td>A pale yellow liquid. Approximately 6-8% plasma is protein some of which consists of antibodies.
+</td><td>
+*Antibodies in the plasma attack and neutralize substances that are foreign to the body.<br />*It provides the medium through which digested food, water hormones, Coand 2urea are transported.
+</td>
+</tr>
+<tr>
+<td>
+<b>Red blood</b> cell (Erithrocytes)In 1cm of blood, there are up to 5 million red blood cells. There produced at the bone marrow
+</td><td>
+*Disc shaped with depression on each side. Each cell looks yellow when viewed singly<br />*There is absence of nucleus in mature cells<br />*Short life span of about 3 mouths.<br />*Its inside is lled with haemoghobin which gives its clump a characteristic red colour.
+</td><td>
+Transportation of oxygen from the lung to the various cells of the body.
+</td>
+</tr>
+<tr>
+<td>
+<b>While blood cells</b> more numerous than red 3blood cells. 1cm containing up to 7000 cells. They are of two broad groups the phagocytes and the Lymphocytes.
+</td><td>
+*They contain nucleus. Short life span of few days.<br />*The phagocytes (of the group) perform amoboid characteristic in its actions.
+</td><td>
+*They protect the body and defend it against foreign and harmful materials and against diseases.
+</td>
+</tr>
+<tr>
+<td>
+<b>The platelets</b> <br />They are pieces of cytoplasm which are broken 3off from special cells in the bone marrow 1cm contains about 250000 of it.
+</td><td>
+*Tiny irregular cell fragments*Contains no Nucleus.
+</td><td>
+They produce important factors the initiates blood clotting.
+</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h4>
+Lymph and Intercellular Fluid
+</h4><b>
+Intercellular Fluid (Tissue Fluid):</b> This is the uid found in the immediate surrounding of the cell. The intercellular uid is the plasma that lters out through the capillary walls and occupies the cells surrounding. The Lymph: The lymph is the uid in the lymphatic vessel
+</div>
+<div class="pa paj">
+<h4 class="ce">The Heart</h4>
+<b>Location:</b>At the chest region in between the two lungs and embedded within the pericardium membrane.
+</div>
+<div class="pa paj">
+<b>Shape and form:</b> Conical in shape but hollow and muscular in form.
+</div>
+<div class="pa paj">
+<b>Functional features and structure:</b> The heart is made up of special muscles called cardiac muscles (an involuntary muscle), which sustain contraction and relaxation of the heart twenty-four hours each day, and for life. The non stop operation of the heart also requires a good supply of blood to provide oxygen and food. This function is performed by the coronary arteries and veins. The heart of mammals is made up of four chambers. The left atrium (left auricle), right atrium (right auricle), left ventricle and right ventricle.
+</div>
+<h4 class="ce">
+Vertical section of the human Heart
+</h4>
+
+<div class="fig">
+<strong>fig3.1:</strong> 
+</div>
+<img src="images/fig3.1.jpg" class="imn" />
+
+<div class="pa paj">
+The <b>atria</b> which are at the upper region or part are collecting chambers. They hold the blood till it enters the auricle. Their walls are thinner than those of the ventricles
+</div>
+<div class="pa paj">
+The <b>Ventricles</b> which are the lower chamber are larger and more muscular being the chamber that pumps blood to all parts of the body and lungs. The right ventricle pumps blood to the lungs only. Valves in the heart prevents blood from reversing its direction of ow
+</div>
+
+<div class="fig">
+<strong>fig3.2:</strong> 
+</div>
+<img src="images/fig3.2.jpg" class="imn" />
+
+<div class="pa paj">
+<h4 class="u">Transport in plants</h4>
+The main transport media in plants are <b>cytoplasm</b> in simple plants like algae, <b>plant sap</b> and cell sap, which are contained in vascular bundle, and <b>latex tubes</b> for higher plants (vascular plants).The sap in vascular tissues consists of water up to 98% and a mixture of organic and inorganic solutes dissolved in it.
+</div>
+<div class="pa paj">
+The major materials being transported in plants are <b>carbon dioxide, water vapour, oxygen, water, mineral salts, manufactured food, hormones and pigments</b>
+</div>
+<div class="pa paj">
+anufactured food, hormones and pigmentsGases are transported in and out. Water vapour diffuses out through stomata at the leaves. Carbon dioxide and oxygen diffuses both in and out of the plant through the stomata in the leaves and lenticels on stems and roots.
+</div>
+<div class="pa paj">
+Water and mineral salts are absorbed by the root hairs of plants. Absorption of water by root hairs takes place by diffusion while the absorption and uptake of mineral salts involves active transport. Water and mineral salts being absorbed by the roots eventually gets to the zylem. Water can also get through to the zylem vessel through the cell wall and cytoplasm by diffusion and capillary action.
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">TRANSPORT OFWATER BYTHE ZYLEM TISSUE</h4>
+<ol type="i">
+<li>(i)Root pressure and capillary action: This causes water to move up to a particular height but not up to the leaves.
+</li><li>Transpiration pull: This is a pull that continuously draws water in columns from the zylem vessel to the leaves. This gives rise to transport stream
+</li></ol>
+</div>
+<div class="pa paj">
+Evaporation of water vapour from the leaf surface of plants which is transpiration and  The high osmotic pressure due to photosynthesis in the leaves enhances this process
+</div>
+<div class="pa paj">
+<b class="u">TRANSLOCATION OF FOOD:</b> This is the transportation of food in plants. It is carried out by the phloem.
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">General Questions</h4>
+1.Organisms with high surface area to volume ratio like simple unicellular organism can carry out the process of material exchange by 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> process
+</div>
+<div class="pa paj">
+2.Among animals with mass ow systems, the main transporting medium is the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+3. In 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> circulatory system, blood pumped from the heart enters into the body cavity through blood vessel
+</div>
+<div class="pa paj">
+4.   Distribution of materials in simple unicellular organisms like amoeba and paramecium take place by  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> of the cytoplasm.
+</div>
+<div class="pa paj">
+5.  In insects, oxygen is transported by 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and not by the blood.
+</div>
+<div class="pa paj">
+6.  In  double circulation, the transport of blood from the heart to the lungs is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+7. The pale yellow medium which is the transporting medium in the blood is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+8.Red blood cells are produced at the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+9.A clump of red blood cell has red colour instead of yellow for each single cell because of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+11.The blood cell that defends the body against foreign substances and diseases is the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+12.Blood clotting usually starts with structures in the plasma called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+13.During blood clotting, for prothrombin to change into thrombin 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> ions must be present
+</div>
+<div class="pa paj">
+14.The human heart sits between the lungs and above the diaphragm. It is surrounded by a protective membrane called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+15.Rhythmic contraction and relaxation of the heart is by the cardiac muscle while a good supply of blood for oxygen and nutrients to the heart is by the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+16.The opening of the left auricles into the left ventricle is guarded by the  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> valve
+</div>
+<div class="pa paj">
+17. Write down one structural difference between the tricuspid valve and the mitral valve 
+<span id="q17"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q17')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Mitral value have holes while tricuspids value does not</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q17')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Mital value is smaller than the tricuspid value</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q17',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Mitral value has two flaps while tricuspid value has three flaps</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+18. The relaxed or resting period of the heart chambers especially the ventricles is called diastole while the contraction of the heart chamber especially the ventricle is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+19. The liver receives double blood supply from the heart through the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+20.Arteries usually carry oxygenated blood except the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+21.The phloem is a tissue that is responsible for translocation in plants, it consists of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+22.Transport or uptake of water in zylem tissue is due to
+<span id="q22"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q22',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Root pressure, capillary action and transpiration pul</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q22')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Suction pressure, peristalsis, gravitational pull and air pressure</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q22')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Air presssure, Atmospheric pressure, suction pressure and gravitational pull</div>
+    </div>
+</div> 
+
+</div>
+
+<div class="fig">
+<strong>fig3.3:</strong> 
+</div>
+<img src="images/fig3.3.jpg" class="imn" />
+
+<div class="pa paj">
+23. Write down two biological processes that are involved in the operation illustrated in the diagram above  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+24. Identify and label the root hair and zylem vessel in the diagram and using a pencil sketch an arrow, trace the path of water and mineral salts from the soil to zylem tissue
+</div>
+<div class="pa paj">
+25. In plants the main transport media are:
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+
+<h4 class="ce h_bio">
+Expression Exercises on Transport Systems and Mechanisms
+</h4>
+1.Write down four differences between arteries and veins in the table below
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td></td><td>Arteries</td><td>Veins</td>
+</tr>
+<tr>
+<td><textarea class="w100"></textarea><span class="w100resp"></span></td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+<div class="pa paj">
+(a)Briefly explain how blood becomes oxygenated 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2.(a)Write down ve functions of the blood 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b)Why is the circulating uid (blood) in insects colourless 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c )Explain the mechanism of blood clotting 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3.(a)What roles do valves play in auricles and ventricles 
+<textarea class="w100"></textarea><span class="w100resp"></span> 
+</div>
+<div class="pa paj">
+(b)The sap in vascular tissues of plants contains about 98% water and a complex mixture of both organic and inorganic substances, which are, dissolved solutes with it. Write down ten of such substances 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h3 class="ce h_bio">Practical Activities</h3>
+<b class="u">
+1. Examining the heart of a sheep or  goat</b>
+<br />
+Materials and Apparatus required<br />
+Sheep heart, Scalpel or knife, Scissors, Mounted needles
+<ol type="i">
+<li>
+Carefully observe and study the specimen (the heart of a sheep or goat) especially the external features like the muscular walls and the coronary blood vessels.
+</li><li>
+Compare your observation with the diagram of the heart below using the diagram as a guide to identify other features like the auricles and ventricles.
+</li>
+</ol>
+</div>
+
+<div class="fig">
+<strong>fig3.4</strong> 
+</div>
+<img src="images/fig3.4.jpg" class="imn" />
+
+<div class="pa paj">
+<ol type="i" start="3">
+<li>
+Use the knife or Scalpel to make a longitudinal section of the heart rst from the pulmonary artery down into the right ventricle then cut through from the aorta and down into the left ventricle.
+</li><li>
+Now carry out a more careful examination to identify and locate the various chambers of the heart, the tricuspid valves, pulmonary artery and its semi-lunar valve, bicuspid valve, aorta and its semi lunar valve.
+</li><li>
+</ol>
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+Questions
+</h4>
+</div>
+<ol type="a">
+<li>From your observations which ventricle has a thicker muscular wall? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></li>
+<li>Is there any opening link between the right and left sides of the heart chambers? Give reasons for your answer 
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>In which part of the heart can we nd oxygenated blood? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></li>
+</ol>
+<div class="pa paj">
+2. <b class="u">Demonstrating Blood ow in Arteries</b>
+Apparatus:Stopwatch
+</div>
+
+<ol type="a">
+Method
+<li>Locate your pulse rate just about 8cm below the wrist bone on your hand by pressing your middle ngers on those arteries that are about 8cm below your wrist bone. Place your palm on your fore head so as to perceive the pulse rate distinctly.</li>
+<li>Using the stopwatch count how many times blood pulse through the artery at the point you placed your ngers within 30minutes.</li>
+<li>Now repeat the process thrice while you are at rest in a relaxed mood and nd the average.</li>
+<li>Run round the school eld two times and come back to the laboratory and the process again for another three times and nd the average count.</li>
+</ol>
+<div class="pa paj">
+Tabulate your readings in your practical note book but answer the questions that follows
+</div>
+<div class="pa paj">
+(a) What does the observed pulse signify 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b) Explain the reason for the difference in pulse rate when at rest and after an exercise 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c) Explain the similarity between the pulse rate in the artery and the heart beat at the heart 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3. <b class="u">To Find out which part of the stem conducts water</b><br />
+Materials/Apparatus: Talinum Triangulare or A balsam plant (herbaceous plants), Red ink or eosin solution, large beaker or any other container, scalpel or razor blade, clean slide and cover slip and microscope
+
+<ol type="i">Method/Procedure
+<li>
+Inside a container of eosin or ink solution, put the herbaceous plant (having washed soil off its roots) and leave it mounted in the solution
+</li><li>Leave it till the following day and then cut out a thin transverse or cross section of the stem using the scalpel or razor blade.
+</li><li>Mount this section on a slide and put the coverslip.
+</li><li>Then view with the microscope to nd out stain of the tissue (i.e. stain with the colour of the ink or eosin solution).
+</li>
+</ol>
+</div>
+<ol type="a">
+From your observation, answer the following questions:
+<li>Which tissue of the plant is stained? 
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>What conclusion can you draw from the experiment concerning transport in plants 
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Write down at least two processes that caused or led to you observation in (a) above 
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+
+<div class="pa paj">
+4. <b>To show that phloem cell translocates food and the direction it does that<br />
+Materials/Apparatus</b>
+Knife, woody twig, that roots easily from stem cutting. Hibiscus is a good example, two roots containing soil or saw dust.
+</div>
+
+<ol type="i">
+<li>Take two of the woody twigs and cut off a portion of the bark (make it like a ring of about 5cm) of one of the twigs and leave the other.</li>
+<li>Plant each twig in a pot of moist soil or sawdust.</li>
+<li>Water the plants daily for up to four weeks</li>
+<li>After this period remove each plant after careful observation of  both stems of the twigs.</li>
+</ol>
+	
+<img src="images/fig3.5.jpg" class="imn" />
+	
+<div class="pa paj">
+(a)Explain your observation 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b)What purpose is experiment B serving 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c)What was the cause of the swelling above the ring of the in experiment A  
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(d)What happen to the root system of the twigs in A? and why did such a thing occur 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="h_bio ce">
+Test of practical work/Alternative to practical
+</h4>
+Observe the experimental setup below carefully
+</div>
+
+<div class="fig">
+<strong>fig3.6:</strong> 
+</div>
+<img src="images/fig3.6.jpg" class="imn" />
+
+<img src="images/fig3.6x.jpg" class="imn" />
+
+<div class="pa paj">
+1a. Label the diagrams 1 and 2
+</div>
+<div class="pa paj">
+b How do you identify drops of liquid in the jar if you are carrying out the experiment in the laboratory. What type of liquid is that?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+And where does the liquid come from?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2a. Identify the diagram of the instrument or apparatus in g 3.7
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+b. What is it used for 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+c.State the aim of the experiment set up above 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+d.Under what physical condition in the environment can the plant transpire most under such experiment 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj"> e.List two uses of transpiration to plants
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig3.7:</strong> A Potometer
+</div>
+<img src="images/fig3.7.jpg" class="imn" />
+
+<h4 class="ce h_bio">
+TRANSPORT SYSTEM AND MECHANISMS (SSCE PAST QUESTIONS)
+</h4>
+
+<div class="pa paj">
+<h4>November 1989 Q5a</h4>
+1. Name the vessel that carries blood from the wall of the small intestine to the liver
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4>JUNE 1992 Q3abc</h4>
+2. Study the diagram below and use it to answer question (a)-(d)
+</div>
+
+<div class="fig">
+<strong>fig3.8:</strong> 
+</div>
+<img src="images/fig3.8.jpg" class="imn" />
+
+<ol type="a">
+<li>Name the set-up illustrated in the diagram. 
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>What is the apparatus used for?  
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>What is contained in the part of the apparatus labeled IV?  
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li> From which part(s) of the apparatus would the reading (s) be taken after the experiment?
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+<div class="pa paj">
+<h4>JUNE 1994 Q1,2,3</h4>
+3. In what direction does translocation occur in plants?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+4. Name two tissues that are likely to be removed when a stem is ringed 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+5.(a)  Name the last blood vessels that will transport glucose to the heart if glucoe solution is injected through the arm. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b) Which chamber of the heart will rst receive the glucose solution?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4>JUNE 1994 Q8</h4>
+6.Study the diagram below and use it to answer question 6 (a) and (b)
+</div>
+
+<div class="fig">
+<strong>fig3.9:</strong> 
+</div>
+<img src="images/fig3.9.jpg" class="imn" />
+
+<div class="pa paj">
+(a) What is the set-up used for?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b) Why is the leafy shoot cut under water when setting up the experiment
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c) Name the instrument used for measuring the turbidity of water 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4>June 1997 Q2</h4>
+7. Why is the wall of the left ventricle of the heart thicker than that of the right ventricle?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+</div>
+<div class="carry ce">
+
+  <a href="chapter2.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter4.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 3;
+</script>
+</div>
+</body>
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch3.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

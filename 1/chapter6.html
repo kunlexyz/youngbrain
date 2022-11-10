@@ -1,0 +1,1129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+<link rel="stylesheet" href="../MobileTem.css">
+<link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+                <div id="navig8">
+                                <!-- -->
+                                <div class="mCon2" onclick="openNav()">
+                                            <div class="menu_dash"></div>
+                                            <div class="menu_dash"></div>
+                                            <div class="menu_dash"></div>
+                                  </div>
+                                <!-- Pop_Out Menu Codes -->
+                                <div id="myNav" class="overlay">
+                                  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+                                                <img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+                                  <div class="overlay-content">
+                                  
+                                    <a href="../index.html">
+                                    <div class="menu1"><div class="bull"></div>Cover Page</div>
+                                    </a>
+                                    
+                                    <a href="content.html">
+                                    <div class="menu1" onclick="">
+                                    <div class="bull"></div>Table of Content
+                                    </div>
+                                    </a>
+                                    
+                                    <a href="diagram.html">
+                                    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+                                    </a>
+                                    
+                                    <a href="../about.html">
+                                    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+                                    </a>
+                                    
+                                    <a href="../more.html">
+                                    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+                                    </a>
+                                    
+                                    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+                                    
+                                    
+                                  </div>
+                                </div>
+                                <div class="overlay2" onclick="closeNav()">
+                                </div>
+<!-- -->
+</div>
+<div id="coHide">
+<img src="images/b6.jpg" class="imn" />
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ol>
+* Nutritional requirement of a cell<br />
+* Cellular respiration.<br />
+* Excretion, growth and irritability<br />
+* Reproduction
+</ol>
+</div>
+
+<div class="pa paj">
+<div class="hh7">
+Background Information
+</div>
+The various biochemical reactions going on in a living cell
+determines its properties and functions. Metabolism (which is
+the summation of the chemical activities in a living cell) can be
+divided into Anabolism (a building process) and Catabolism (a
+breaking down process) Cellular properties and functions fall
+into either of the two categories.
+</div>
+<div class="pa paj">
+Nutritional Requirement of a Cell : Nutrition is an anabolic
+process. Since there is cell membrane and protoplasm in all
+cells, all cells have similar nutrition needs. This needs however
+vary according to structure and complexity of the cells and
+according to the special function of the cell as in cells that
+perform specialized function in multicellular organisms.
+The various nutritional need of cells are listed below into
+essential elements (Major elements) and Trace elements (Minor
+elements).
+</div>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td> Major Elements </td><td>Trace Elements</td>
+</tr>
+<tr>
+<td><b>Needed in grams</b><br />
+Carbon, hydrogen, oxygen,</td><td>
+Manganese, iron,cobalt, copper, zinc, Molybdenum boron, fluorine and iodine
+</td>
+</tr>
+<tr>
+<td>
+<b>Needed in Milligrams</b><br />
+Potassium, Sodium, Magnesium,Calcium,Chlorine.
+</td><td></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+</table>
+
+<div class="pa paj">
+<div class="hh7">
+Cellular Respiration
+</div>
+Respiration is a catabolic (breaking down) process<br />
+This is the means by which living things obtain energy for their
+activities. The immediate source of cellular energy is the energy
+stored up in the chemical bonds of organic materials. These are
+called food molecules and the most common of them is Glucose
+which is a sugar molecule.
+</div>
+<div class="pa paj">
+Acell however cannot use the energy in sugar directly to meet its
+energy needs. inorder to use this energy, a cell must transfer the
+energy in its sugar molecule into a substance called<b> Adenosine
+triphosphate (ATP)</b> :- This ATPcome from the complete break
+down of glucose during cellular respiration. cellular respiration
+occurs in two stages: the first does not require oxygen while the
+second does.
+</div>
+<div class="pa paj">
+First stage occurs at the cytoplasm. Here a molecule of glucose
+is broken down to 3-carbon compound called Pyruvic acid.
+The process is called glycolysis.The net result of this phase is 2
+molecule of ATP, Co is released also 2
+<b>The 2 second stage Citric-Acid or Kreb’s cycle is an aerobic
+stage</b><br />
+The pyruvic acid formed during glycolysis is transported into
+the mitochondria. In the presence of oxygen, the pyruvic acid is 
+broken down into a 2-carbon compound called acetic acid
+and a molecule of carbon (iv) oxide which is released as a
+waste product.
+</div>
+<div class="pa paj">
+The acetic acid then, combines with a Coenzyme A to form
+acetyl COA also NADH is formed. NADH is <strong>nicotinamide
+adenine nuleotide</strong> which accepts hydrogen and two
+electrons. The acetyl COA eventually enters the citric acid
+cycle. The end result of the cycle is 36 ATP, Co and water, 2
+which are given off. Some organisms do not have the
+enzymes necessary to break down pyruvic acid through
+aerobic respiration. Such organisms obtain the food through
+the anaerobic process. The breaking down of glucose
+without oxygen into lactic acid or alcohol is called
+<b>Fermentation.</b>
+</div>
+<div class="pa paj">
+Alcohol fermentation takes place in microorganisms e.g.
+yeasts while lactic acid fermentation occurs in bacteria and
+animals.
+</div>
+<div class="pa paj">
+<h4>
+Excretion
+</h4>
+Metabolic activities in the cell results to bye products which
+must be removed from the cell as its continued stay would be
+poisonous. Also excess or unwanted substances in the cell,
+are regarded as wastes and their removal is necessary.
+Removal of unwanted substances from the cell is called
+excretion.
+</div>
+<div class="pa paj">
+Wastes products from the cell include:Carbondioxide and water from cellular respiration Excess water and salts, Oxygen
+from photosynthesis and Nitrogenous wastes.
+</div>
+<div class="pa paj">
+<b class="u">Growth:</b> Growth is increase in protoplasmic content of the cell. Growth in a cell can take place due to cell division. It is
+an anabolic process. In multicellular organisms, growth results to cell enlargement and differentiation (specialization)
+most specialized cells loose their abilities to grow.
+</div>
+<div class="pa paj">
+<h3>
+CELL DIVISION (MITOSIS)
+</h3>
+The type of cell division that results to growth is called mitosis. Mitosis takes place in somatic cell (Body cell not
+involved in gamate production).
+Mitosis has been divided into four divisions: Prophase, Metaphase, Anaphase and Telophase. The period between mitotic
+divisions is called interphase. The table below
+Diagrammatically illustrate mitosis.
+</div>
+
+<h3 class="trA">Various stages</h3>
+1. Prophase
+<h3 class="trA">Features</h3>
+<ul type="square">
+<li>
+The chromosomes becomes shorter                                    and thicker
+</li><li>                              Two identical copies of each chrom-                                  osomes (sister chromatids) are  attached by a protein structure called                                  kinetochore or centromeres.
+</li><li>                              The centroles begin to separate.</li>
+</ul>
+<h3 class="trA">Diagram of structural features</h3>
+<div class="fig_box">
+<strong>fig6.1a:</strong>
+</div>
+<img src="images/fig6.1a.jpg" class="imn" />
+<hr />
+
+
+<h3 class="trA">Various stages</h3>
+2. Metaphase
+<h3 class="trA">Features</h3>
+<ul type="square">
+<li>
+Nuclear membrane disappears, chromo-                                  somes line up accross the 
+</li><li>become attached at the spindle fibre at                                   the centromeres. 
+</li>
+</ul>
+<h3 class="trA">Diagram of structural features</h3>
+<div class="fig_box">
+<strong>fig6.1b:</strong>
+</div>
+<img src="images/fig6.1b.jpg" class="imn" />
+<hr />
+
+
+<h3 class="trA">Various stages</h3>
+3. Anaphase
+<h3 class="trA">Features</h3>
+<ul type="square">
+The sister chromatids begin to move                                  away from each other to opposite ends                                 (poles) of the cell as the spindle fibre                                            contract
+</ul>
+<h3 class="trA">Diagram of structural features</h3>
+<div class="fig_box">
+<strong>fig6.1c:</strong>
+</div>
+<img src="images/fig6.1c.jpg" class="imn" />
+<hr />
+
+
+<h3 class="trA">Various stages</h3>
+4. Telophase
+<h3 class="trA">Features</h3>
+
+<ul type="square">
+<li>
+ The spindle fibre disappear
+</li>
+<li>
+The nucleolus reappears
+</li>
+<li>
+ A nuclear membrane forms round each set of chromatid and the cell divided into daughter cells.
+</li>
+</ul>
+<h3 class="trA">Diagram of structural features</h3>
+<div class="fig_box">
+<strong>fig6.1d:</strong>
+</div>
+<img src="images/fig6.1d.jpg" class="imn" />
+<hr />
+
+
+<div class="pa paj">
+<b>Response to stimuli: </b>A change in the environment which can bring about a change in activity of the cell is referred to as
+stimulus. The cells change in activity is called response. Stimuli can be change in light intensity, temperature change,
+change in osmotic pressure, change of humidity, change in presence of food, water or other chemicals etc.
+</div>
+<div class="pa paj">
+<h4 class="hh7">Types of Responses:</h4> In most cases responses to external stimuli is done by movement. Such movement can be Nastic,
+<strong>Tactic</strong> or <strong>Tropic movements</strong>
+</div>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Type of Response</td><td>Nature and manner of the response</td><td>Examples</td>
+</tr>
+<tr>
+<td>1. Nastic movement</td><td>A response by a plant part to a non
+directional stimulus like temperature,
+light intensity, humidity etc. it can be-
+caused by changes in tug pressure
+of plant cells and changes in growth
+rate.</td><td>(i). Folding of the leaﬂets of
+a mimosa plant when it is
+touched.<br />
+(ii). Closing of the morning glory
+ﬂower due to low light
+intensity.</td>
+</tr>
+<tr>
+<td>2. Tactic movement (Taxis)</td><td>In this case a whole organism or living thing moves
+to the direction of the stimulus. It can
+be positive or negative to the direction
+of the stimulus.</td><td>(i). Movement of amoeba to the
+direction of food.<br />
+(ii). Movement of sperm etc.</td>
+</tr>
+<tr>
+<td>3. Tropic movement</td><td>Here the part of plant moves in resp-
+onse to a directional stimulus. lt is a
+growth movement and can be caused
+and controlled by concentration of growth hormone
+</td><td>
+(I) Shoots of green plants moving to the direction of light.<br />
+(ii) Bending of roots towards
+gravity.</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<b class="u">Movement :</b> The contents of the cell are not only functioning, they are also in constant movement. This
+movement can be <b>Protoplasm Streaming</b> (Cyclosis) which can be produced by the contraction of the
+<b>Microfilaments.</b> Cyclosis can be performed by amoeba. Paths along which materials move within the cell can
+be provided by M<b>icrotubules.</b> Microtubules also move chromatids and chromosomes during cell division.
+Other structures for cell movements include cilia and flagella in unicellular organisms.
+</div>
+<div class="fig">
+<strong>fig6.2:</strong>
+</div>
+<img src="images/fig6.2x1.jpg" class="imn" />
+<img src="images/fig6.2x2.jpg" class="imn" />
+<img src="images/fig6.2x3.jpg" class="imn" />
+
+<div class="pa paj">
+<h3 class="h_bio">
+REPRODUCTION:
+</h3>
+Reproduction is the ability of a living thing to give rise to another of its kind. It can be sexual or asexual.
+</div>
+<div class="pa paj">
+<b class="u">Asexual reproduction:</b> This includes fission, budding, spore formation, fragmentation, vegetative propagation etc.
+</div>
+<div class="pa paj">
+<b class="u">Sexual reproduction:</b> All sexual reproduction must involve the fussion of sex cells (gamates). This forms the zygote
+which gives rise to a new organism.
+</div>
+
+<div class="pa paj">
+<h4 class="hh7">
+General Questions
+</h4>
+1. State two examples of anabolic processes that goes on in a living cell<span id="Q1"></span>
+
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('Q1')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Respiration (ii) Digestion</div>
+    </div>
+	<div class="optionbox" onclick="opMark('Q1',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Nutrition (Photosynthesis) (ii) Growth</div>
+    </div>
+	<div class="optionbox" onclick="opMark('Q1')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Digestion (ii) Ventilation</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+2. Write down seven types of substances that make up a living cell
+
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+3. Write down six major elements needed for life in a very large amounts (in grams )
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+
+</div>
+<div class="pa paj">
+4. Write down the three main organic substances in food which are known as macronutrients
+<ol>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+5. The absence of the element 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>in green plants can result to the inability of
+the cells to synthesize chlorophyII.
+</div>
+<div class="pa paj">
+6. Obesity is a condition caused by <span id="Q6"></span>
+
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('Q6')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Less Protein</div>
+    </div>
+	<div class="optionbox" onclick="opMark('Q6',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Excess carbonhydrate</div>
+    </div>
+	<div class="optionbox" onclick="opMark('Q6')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Excess fat</div>
+    </div>
+</div> 
+</div>
+<div class="pa paj">
+7. To meet energy needs cells must transfer energy in sugar molecules into 
+
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+8. Cellular respiration which involves an aerobic process takes place in the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> while the one
+that is anaerobic occurs in the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> of the cell.
+</div>
+<div class="pa paj">
+9. During glycolysis a 6-carbon sugar molecule is broken down to a 3-carbon compound called
+ 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+
+10. During glycolysis, two molecules of ATP are formed while during citric acid cycle 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+molecules of ATPare formed.
+</div>
+<div class="pa paj">
+11. In animals cells that respires anaerobically, pyruvic acid is converted into 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa">
+12. Write down the overall equation for respiration 
+<span id="Q12"></span>
+<div class="option_bio smal_t">
+	<div class="optionbox" onclick="opMark('Q12')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">C6H<sub>12</sub>O6+6O &rarr; 6Co<sub>2</sub>+6Ho+Energy</div>
+    </div>
+	<div class="optionbox" onclick="opMark('Q12',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">C<sub>6</sub>H12O<sub>6</sub>+6O<sub>2</sub> &rarr; 6Co<sub>2</sub>+6H<sub>2</sub>o+Energy</div>
+    </div>
+	<div class="optionbox" onclick="opMark('Q12')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">
+        C<sub>4</sub>H12+6O<sub>2</sub> &rarr; 6Co<sub>2</sub>+6H<sub>2</sub>o+Energy</div>
+    </div>
+</div> 
+</div>
+<div class="pa paj">
+13. The cell division that brings about growth in living things is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+14. In humans, somatic cell has 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> diploid number of chromosomes.
+</div>
+<div class="pa paj">
+15. The last phase in mitotic cell division is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+16. Movements or responses displayed by part of a plant to non directional stimuli is called
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+17. The movement of plant roots towards gravity is an example of geotropism while the bending of shoots toward light is
+an example of
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">18. Asexual reproduction does not involve fussion of nuclei, it requires mitosis; thus asexual reproduction results to
+offsprings called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+which are identical to the parents
+</div>
+<div class="pa paj">
+19. As budding is an example of asexual reproduction, conjugation is an occurrence in 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+20. The DNAcode is copied by the process of 
+
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+Expression Exercise
+</h4>
+1.a Write down the products of fermentation in plants and yeasts.
+
+<ol type="i">
+<div class="T_A_required"> Teacher's attention required</div>
+<li>
+<input type="text" placeholder="type the answer here" class="" onkeyup="check_it('plant')" /><span class=""></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="" onkeyup="check_it('plant')" /><span class=""></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+ (b) Compare Alcoholic fermentation and lactic acid fermentation 
+
+<div class="T_A_required"> Teacher's attention required</div>
+</div>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td></td><td>Alcoholic fermentation</td><td>Lactic acid fermentation</td>
+</tr>
+<tr>
+<td>1</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>2</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>3</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+<div class="pa ">
+2. Write down two things that can happen during interphase
+<ol type="a">
+<div class="T_A_required"> Teacher's attention required</div>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+
+<div class="fig">
+<strong>fig6.3:</strong>
+</div>
+<img src="images/fig6.3.jpg" class="imn" />
+<div class="pa paj">
+
+(c) Identify the phase in cell division shown in the diagram and write
+down two things that characterizes the phase
+<ol type="i">
+<div class="T_A_required"> Teacher's attention required</div>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa">
+3(a) What is differentiation?
+<span id="3a"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('3a')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">A process of cell division</div>
+    </div>
+	<div class="optionbox" onclick="opMark('3a',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">A process of cell specialization</div>
+    </div>
+	<div class="optionbox" onclick="opMark('3a')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">A process of cellular metabolism</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+(b) Write down four examples of asexual reproduction in organisms
+
+<span id="3b"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('3b',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">1-Binary fusion 2-Budding 3- Sore formation 4-Vegeative propagation.</div>
+    </div>
+	<div class="optionbox" onclick="opMark('3b')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">1-Variation 2-Heredity 3-Genetics 4-Meiosis</div>
+    </div>
+	<div class="optionbox" onclick="opMark('3b')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">1-Meiosis 2-Conjugation 3-Fertilization 4-Pollination</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+4 (a) Write down two examples of tactic movement 
+
+<span id="4a"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('4a')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Geotropism (ii) Hydrotroism</div>
+    </div>
+	<div class="optionbox" onclick="opMark('4a',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Phototaxis (ii) Chemotaxis</div>
+    </div>
+	<div class="optionbox" onclick="opMark('4a')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Nastc movement (ii) Phototroism</div>
+    </div>
+</div> 
+
+ (b) Write down three important hormones that stimulate growth
+
+<span id="4b"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('4b',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Auxins Gibberellins cytokinins</div>
+    </div>
+	<div class="optionbox" onclick="opMark('4b')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Tyroxin, Adranalin, Pancreatic juice</div>
+    </div>
+	<div class="optionbox" onclick="opMark('4b')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Testoterone, Oestrogene, Paratyroxine</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+5 (a) Write down the structures that bring about movement in the following organisms or cell in the table below
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td></td><td>Organisms</td><td>Structures</td>
+</tr>
+<tr>
+<td>i</td><td>Amoeba</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>ii</td><td>Paramecium</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>iii</td><td>Euglena</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>iv</td><td>Clamydomonas</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>v</td><td>Spermatozoa</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+</table>
+
+<div class="pa paj">
+(b)<br />
+(i) What is a perennating organ in plants?
+
+<span id="5b"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('5b')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Organs that enable plants to reproduce</div>
+    </div>
+	<div class="optionbox" onclick="opMark('5b')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Organs that enable plants to grow</div>
+    </div>
+	<div class="optionbox" onclick="opMark('5b',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Organs of plants that enable them to survive from one growing season to the other. </div>
+    </div>
+</div> 
+
+ (ii) Write down five examples of such organs 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h3 class="h_bio">
+Practical Activities
+</h3>
+<b class="u">Activity 1:</b> To find out if energy (heat energy) is given out in respiring seeds<br />
+<b class="u">Materials/Apparatus required</b><br />
+40g Germinating been seed; 40g Bean seeds killed by soaking the seeds in formalin
+2 vacuum flasks; 2 Thermometers, Adisinfectant, cotton wool, Retort stand and clamp
+</div>
+<div class="pa paj">
+<h4 class="hh7">
+Procedure/Method
+</h4>
+1. Set up the apparatus as shown in the figure below with flask A containing germinating beans and flask B containing
+dead bean seeds after washing the seeds in a dilute solution of dettol.
+</div>
+<div class="pa paj">
+2. Record the temperature in each of the flasks at the beginning of the experiment.
+</div>
+<div class="pa paj">
+3. Continue to record the temperature every morning and evening till about one week
+</div>
+
+<div class="fig">
+<strong>fig6.4a:</strong>
+</div>
+<img src="images/fig6.4a.jpg" class="imn" />
+<div class="fig">
+<strong>fig6.4b:</strong>
+</div>
+<img src="images/fig6.4b.jpg" class="imn" />
+
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Flask A</td><td>Flask B</td>
+</tr>
+<tr>
+<td>1<sup>st</sup> day morning</td><td></td>
+</tr>
+<tr>
+<td>2<sup>st</sup> day morning</td><td></td>
+</tr>
+<tr>
+<td>3<sup>st</sup> day morning</td><td></td>
+</tr>
+<tr>
+<td>4<sup>st</sup> day morning</td><td></td>
+</tr>
+<tr>
+<td>5<sup>st</sup> day morning</td><td></td>
+</tr>
+<tr>
+<td>6<sup>st</sup> day morning</td><td></td>
+</tr>
+<tr>
+<td>7<sup>st</sup> day morning</td><td></td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h4>
+Questions
+</h4>
+1. Why do we need to wash all the seeds with disinfectant
+<div class="T_A_required"> Teacher's attention required</div>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2. Conclude the result of the experiment based on which flask that showed greater increase in
+temperature
+<div class="T_A_required"> Teacher's attention required</div>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+Activity 2: To find out anaerobic respiration in a living cell
+<br />
+<b class="u">Apparatus/materials</b>
+<ol type="i">
+<li> 10% glucose solution it can be boiled and cooled 
+</li><li>10% yeast solution (the water is boiled and cooled before the
+yeast is added.</li><li>
+2vacuum flasks; (iv) 2 thermometers, cotton wool, groundnut oil; Dropper pipette.
+</li>
+</ol>
+<b class="u">Procedure</b> 
+<ol><li>
+Set up the apparatus as shown above
+</li><li> Boil 100cm of the glucose solution to drive off air. Then allow it to cool
+</li><li>Put 50cm each of glucose solution to flask Aand Flask B respectively
+ and immediately add about 5cm of the oil to each flask.
+ </li></ol>
+</div>
+
+<div class="fig">
+<strong>fig6.5a:</strong> Mushroom
+</div>
+<img src="images/fig6.5a.jpg" class="imn" />
+<div class="fig">
+<strong>fig6.5b:</strong> Mushroom
+</div>
+<img src="images/fig6.5b.jpg" class="imn" />
+
+<div class="pa paj">
+<ol type="i" start="4">
+<li>
+Using the dropper pipette, add the yeast solution below the oil layer in flask A</li><li>
+Put a thermometer in each flask using cotton wool to keep it in position at the ‘neck’of the flask.</li><li>
+Record the temperature in each flask at the beginning of the activity, then check the temperature at each
+flask at intervals of one hour and record your readings in your
+practical note book.
+</li></ol>
+From your experimental activity and findings (observations) answer the questions below:
+
+<ol type="i" start="4">
+<li>
+(i) Write down the conclusion you are able to reach from your result
+
+<textarea class="w100"></textarea><span class="w100resp"></span></li><li>
+(ii) What was the purpose of the oil layer in each flask?
+<textarea class="w100"></textarea><span class="w100resp"></span></li><li>
+(iii) What purpose does the flask B set up serve in the experiment?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li></ol>
+</div>
+<div class="pa paj">
+<b class="u">Activity 3</b>
+Materials to be provided.
+Onion bulb, Pineaple, Cocoyam corms, Sugar cane stem, Yam tuber with new tendril
+</div>
+
+<div class="fig">
+<strong>fig6.6a:</strong>
+</div>
+<img src="images/fig6.6a.jpg" class="imn" />
+<div class="fig">
+<strong>fig6.6b:</strong>
+</div>
+<img src="images/fig6.6b.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.6c:</strong>
+</div>
+<img src="images/fig6.6c.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.6d:</strong>
+</div>
+<img src="images/fig6.6d.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.6e:</strong>
+</div>
+<img src="images/fig6.6e.jpg" class="imn" />
+
+<div class="pa paj">
+<h4 class="ce">Examine all the given specimen</h4>
+
+(i) What type of asexual reproduction is common to all of them?
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span><br />
+
+(ii) Why are organs shown here referred to as perennating organs?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+(iii) Write the names of those perennating organs 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<img src="images/fig6.6bx1.jpg" class="imn" />
+
+<img src="images/fig6.6bx2.jpg" class="imn" />
+
+<img src="images/fig6.6bx3.jpg" class="imn" />
+
+<div class="pa paj">
+1a What type of sexual reproduction does the diagram above illustrate
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span><br />
+b. At what stage does fertilization occur?
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span><br />
+c. Compare the diagram above with the one below and identify two similarities in both
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Fig 6.7a</td><td>Fig 6.7b</td>
+</tr>
+<tr>
+<td>
+<textarea class="w100"></textarea><span class="w100resp"></span></td><td>
+<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+
+<div class="fig">
+<strong>fig6.7a:</strong> 
+</div>
+<img src="images/fig6.7a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig6.7b:</strong>
+</div>
+<img src="images/fig6.7b.jpg" class="imn" />
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Fig 6.7a</td><td>Fig6.7b</td>
+</tr>
+<tr>
+<td>* Both are reproducing by Vegetative Propagation</td><td></td>
+</tr>
+<tr>
+<td>* Both are perenating Organs</td><td></td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h3 class="h_bio ce">
+CELL PROPERTIES AND FUNCTION (PAST SSCE QUESTIONS)
+</h3>
+<b>November 1990 Q4 June 1993Q8bc</b>
+1. Name two organisms that produce by budding
+
+<span id="1q"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('1q')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Earthworm; Snail</div>
+    </div>
+	<div class="optionbox" onclick="opMark('1q',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Yeast; Hydra</div>
+    </div>
+	<div class="optionbox" onclick="opMark('1q')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Tapeworm; Snail</div>
+    </div>
+</div> 
+</div>
+
+<div class="fig">
+<strong>fig6.8a</strong>
+</div>
+<img src="images/fig6.8a.jpg" class="imn" />
+<div class="pa paj">
+2. In an experiment it was found that auxin was concentrated more on the shaded side
+of the shoot as shown in the diagram. Answer questions (a) to (c)
+<ol type="a">
+<li> From which direction did light reach the shoot?
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li> Towards which of the directions. Side A or side B will the tip grow
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li> Suggest a title for this experiment
+<div class="T_A_required"> Teacher's attention required</div>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li></ol>
+</div>
+
+<div class="pa paj">
+<h3 class="h_bio">JUNE 94 Q5</h3>
+3. The diagram below illustrates two homologous chromosomes during meiosis. Use it
+to answer question 3.
+<div class="T_A_required"> Teacher's attention required</div>
+</div>
+
+<div class="fig">
+<strong>fig6.8b:</strong>
+</div>
+<img src="images/fig6.8b.jpg" class="imn" />
+
+<div class="pa paj">
+<ol type="a">
+<li>Name the point labeled I
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li><li>
+What is the importance of those points in evolution?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li><li>What is this stage of meiosis called? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li></ol>
+</div>
+
+<div class="carry ce">
+
+                <a href="chapter5.html">
+                <div class="btnRed btnC">« Previous</div>
+                </a>
+                <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+                <a href="chapter7.html">
+                <div class="btnRed btnC">Next »</div>
+                </a>
+                
+                </div>
+             
+<script type="text/javascript" src="../js/jq.js">
+</script>
+<script type="text/javascript" src="js/ch6.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+              </script>
+</div>
+</body><script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>
+

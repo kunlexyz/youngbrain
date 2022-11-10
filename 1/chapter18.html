@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 18</title>
+<link rel="stylesheet" href="../MobileTem.css">
+<link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+</div>
+<div id="coHide">
+<img src="images/b18.jpg" class="imn" />
+<div class="titBox">
+Notable Concepts
+<ul>
+<li>Reproduction in Amoeba
+</li><li>Reproduction in Paramecium
+</li><li>Reproduction in Spirogyra
+</li><li>Reproduction in Earthworm
+</li><li>Reproduction in Cockroach
+</li><li>Reproduction in Housefly
+</li><li>Reproduction in Snail
+</li></ul>
+</div>
+
+<div class="fig_1">
+<strong>fig18.1:</strong> Diagram of a dissected cockroach
+</div>
+<img src="images/fig18.1.jpg" class="imn" />
+
+<div class="hh7">
+Background information in summary
+</div>
+<div class="hh8"><strong>
+Reproduction in Unicellular organisms
+</strong></div>
+<div class="pa paj">
+Unicellular organisms are organisms with only one cell.
+These organisms can exist as a single cell that functions as
+an independent living unit. Examples of such organisms
+are: Amoeba, Paramecium, Euglena, Chlamydomonas
+etc. Reproduction in unicellular organisms can involve
+both Asexual and Sexual reproductions.
+</div>
+<div class="hh7 ce">
+The table below itemizes reproduction in unicellular organisms
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>
+Unicellular organisms</td><td>
+Type(s) of Reproduction</td>
+</tr>
+<tr>
+<td>
+Amoeba<br />
+multiple ﬁssion</td><td>
+*Asexual reproduction by binary ﬁssion and 
+(cell division process)<br />
+*No sexual reproduction</td>
+</tr>
+<tr>
+<td>
+Paramecium</td><td>
+*Asexual reproduction (cell division)<br />
+*Sexual reproduction by conjugation</td>
+</tr>
+<tr>
+<td>
+Spirogyra</td><td>
+*Asexual reproduction by vegetative
+propagation<br />
+*Sexual reproduction by conjugation</td>
+</tr>
+</table>
+<div class="pa"><strong>
+Reproduction in Multicellular Invertebrates</strong><br />
+Examples of multicellular invertebrates are worms, (example: earthworm) cockroach, housefly, snail etc.
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>
+Organism</td><td>
+Type of Reproduction</td>
+</tr>
+<tr>
+<td>
+Earth worm</td><td>
+Earth worms do reproduce sexually. As it is in many other worms, they are
+hermaphrodites. The ovaries where eggs are produced are found in the thirteenth
+segment while the testes which produce sperm are located in the tenth and eleventh
+segments, two worms lie side by side during mating. Sperms are exchanged from each
+other’s body and stored. Each of the Worms secretes a capsule. The clitellum secretes
+the capsule. Both eggs and stored sperms are released into the capsule. Fertilization
+takes place there and new Worms are developed as the capsule slips oﬂ’ the worm into
+the soil.</td>
+</tr>
+<tr>
+<td>
+Cockroach</td><td>
+Female cockroaches lay eggs which are enclosed in an egg case. The eggs hatches
+and the nymph emerge. This is an example of <b>incomplete metamorphosis.</b></td>
+</tr>
+<tr>
+<td>
+Housefly</td><td>
+Eggs are laid in batches and they hatch in less than 24 hours. Maggots (larva) are
+noticed after few days, the larva changes to pupa. After 3 days the adult houseﬂy
+emerges. This is an example of <b>complete metamorphosis</b></td>
+</tr>
+<tr>
+<td>
+Snail</td><td>
+Many snails usually have separate sexes. They reproduce sexually. Snails lay eggs
+from which the young ones emerge after intemal fertilization</td>
+</tr>
+</table>
+<div class="pa paj">
+<h3 class="h_bio">GENERAL QUESTIONS</h3>
+1) Which of the nucleus of a Paramecium is active only during reproduction? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2) Which of the nucleus disintegrate during sexual reproduction in Paramecium? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+3) In which type of reproduction in Paramecium do we have a new combination of genetic information?  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+4) In the following organisms, which of them cannot carry out a reproduction that gives rise to organisms with new
+combination of genetic information? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span><br />
+Paramecium, Clamydomonas, Amoeba, Spirogyra, Volvox 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+5) Binary fission in Amoeba is a type of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> reproduction.
+</div>
+<div class="pa paj">
+6) Write two differences between reproduction in Amoeba and that of a Paramecium 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+7) Spirogyra reproduces asexually by  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and sexually by 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+8) What part of the cells of a spirogyra is mainly involved during its sexual reproduction? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+9) The diagram below illustrates sexual reproduction in a spirogyra. Label the part indicated as
+A B C and D
+</div>
+
+<div class="fig">
+<strong>fig18.2:</strong> 
+</div>
+<img src="images/fig18.2.jpg" class="imn" />
+<ol type="A">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+<div class="pa paj">
+9b The diagram below shows reproduction in an annelid, identify and write down the Segement numbers
+where testes are located 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig18.3:</strong> Mushroom
+</div>
+<img src="images/fig18.3.jpg" class="imn" />
+
+<div class="pa paj">
+
+9c) Write down one function of the clitellum 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+
+10a) Identify the organism by name without given any reason 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+10b) Where does fertilization take place in the organism? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+11) Write briefly on the type of reproduction found in the organism 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+12) What is a hermaphrodite? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+13) Write four examples of organisms that are hermaphrodites
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+14) Reproduction in a hermaphrodites, is it sexual or asexual reproduction? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+15) State the importance of the organism to a farmer
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+16) How can you differentiate between a male and a female cockroach
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+17) How does the Cockroach lay its eggs
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</div>
+<div class="pa paj">
+18) How does the young nymph differ from an adult cockroach
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+19) Describe sexual reproduction in a housefly
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</div>
+<div class="pa paj">
+20) Identify, among the conditions below which ones are favourable to larvae of houseflies
+Humid environment, bright light, dark place, warm environment
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+
+</div>
+<div class="pa paj">
+21) Compare the life history of a housefly to that of a cockroach
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Cockroach</td><td>Housefly</td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+<tr>
+<td></td><td></td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h3 class="ce h_bio">Practical Activities</h3>
+1. Diagram of sexual reproduction in a unicellular Organism
+</div>
+
+<div class="fig">
+<strong>fig18.4:</strong> 
+</div>
+<img src="images/fig18.4.jpg" class="imn" />
+
+<div class="pa paj">
+The diagram above illustrates the life history of a Unicellular Organism
+What is the Organism? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+a. Which Phylum does the organism belong?  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+b. State one other method of reproduction that can be found in the organism 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2. Illustrate vegetative propagation in a Spirogyra using diagram. Compare this with its sexual
+reproduction
+
+</div>
+
+<div class="fig">3. 
+<strong>fig18.5a:</strong> Specimen A
+</div>
+<img src="images/fig18.5a.jpg" class="imn" />
+
+<div class="fig">3. 
+<strong>fig18.5b:</strong> Specimen B
+</div>
+<img src="images/fig18.5b.jpg" class="imn" />
+
+<div class="pa paj">
+
+a. State one major difference between reproduction in both organisms, in Specimen A and
+SpecimenB 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+b. State two similarities between reproduction in Aand B 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+c. Repeat the diagram of a the dissected cockroach in Fig. 18.1 and label the following parts:
+the head, the thorax, the legs and abdomen.(do it in your practical notebook).
+
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">Practical Work</h4>
+Obtain a large specimen of an earthworm in your area. Using a magnifying lens or microscope (your
+teacher will guide you) find out the segment where the ovary and the testes are located. Also identify the
+position of the clitellum. Make a large well labeled diagram of the specimen.
+</div>
+<div class="carry ce">
+
+  <a href="chapter17.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="../pastquestion.html">
+  <div class="btnRed btnC">Past Question »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 18;
+</script>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch18.js">
+</script>
+</div>
+</body>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

@@ -1,0 +1,39 @@
+var answer= [
+	['Sterilization'],
+	['disinfectants','Antiseptics','disinfectants','Antiseptics'],
+	['disinfectants','Antiseptics','disinfectants','Antiseptics'],
+	['37c','37','37oc'],
+	[''],
+	[''],
+	//6
+	['Toxoid'],
+	['Sanitary land fill','controlled tipping'],
+	[''],
+	['treatment'],
+	[''],
+	//6
+	[''],
+	[''],
+	[''],
+	[''],
+	[''],
+	//6
+	[''],
+	[''],
+	[''],
+	[''],
+	[''],
+	//6
+	[''],
+	[''],
+	[''],
+	[''],
+	[''],
+	//6
+	[''],
+	[''],
+	[''],
+	[''],
+	[''],
+	//6
+];

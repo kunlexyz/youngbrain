@@ -1,0 +1,946 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <div class="menu1" onclick="showViewTab('verify')"><div class="bull"></div>Activate</div>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t le">
+New Senior School Biology Practical Activity &amp; Work Book Two
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">9</div>
+</div>
+	<div class="box_title" style="font-size:20px;">
+REPRODUCTIVE <br />SYSTEMS IN <br />VERTEBRATES
+	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="square">
+<li>Reproductive structure    in Vertebrates(fish    reptiles birds and    mammals)
+</li><li>Reproductive structure in Vertebrates(fish    reptiles birds and    mammals)
+</li><li>Reproductive structures    Functions of the    reproductive parts
+</li><li>Differences between    male and female    reproductive organs
+</li><li>Structural differences in    egg of Vertebrates
+</li><li>Comparing reproduction    in vertebrates.
+</li>
+</ul>
+</div>
+
+<div class="fig_1">
+<strong>fig9.1:</strong> Female reproductive system of rabbit
+</div>
+<img src="images/fig9.1.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig9.2:</strong> Female reproductive organs of a hen
+</div>
+<img src="images/fig9.2.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig9.3:</strong>
+</div>
+<img src="images/fig9.3.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig9.4:</strong>
+</div>
+<img src="images/fig9.4.jpg" class="imn" />
+
+<div class="pa paj">
+<h4>
+Background Information
+</h4>
+Vertebrates are refered to as “Animals with backbones”. They are the most complex Organism in the animal kingdom.Vertebrates are of Several classes which Includes:
+</div>
+
+<ol type="1">
+<li>fishes
+</li>
+<li>Amphibians e.g  Frogs, toads, salamanders
+</li>
+<li>Reptiles e.g. Turtle, Lizard, alligator, crocodiles,
+</li>
+<li>Aves which are Birds
+</li>
+<li>Mammals.
+</li>
+</ol>
+
+<div class="pa paj">
+Reproduction in vertebrates is sexual reproduction.
+</div>
+<div class="pa paj">
+<h4 class="ce">
+Methods of Reproduction in Vertebrates
+</h4>
+Reproduction in vertebrates involves
+</div>
+
+<ol type="1">
+<li> Internal or External Fertilization
+</li>
+<li>Oviparity; Ovoviparity and Viviparity
+</li>
+</ol>
+<div class="pa paj">
+<b>Internal Fertilization:</b> In internal fertilization in vertebrates the male releases the sperm into the body of the female through the reproductive opening to fertilize the egg within.
+</div>
+<div class="pa paj">
+<b>External Fertilization:</b> External fertilization in Vertebrates involves, the female laying eggs into surrounding water and the males ejecting sperms over them outside the females body.
+</div>
+<div class="pa paj">
+<b>Oviparity:</b> In Oviparity, fertilized or unfertilized eggs are shed into the external environment where the development process of the embryo is completed. The eggs are hatched out as young ones. Oviparity can be found among fishes, Amphibians, Reptiles and Birds.
+</div>
+<div class="pa paj">
+<b>Ovoviparity:</b> In this case the eggs which are fertilized inside the females body is retained within and the embryo develops using stored food in the eggs. When developmental process is completed, the young hatch from the eggs and are released from the females body. You can find ovoviparity among certain fishes, and reptiles.
+</div>
+<div class="pa paj">
+<b>Viviparity:</b> In viviparity, the fertilized egg(s) within the female's body developes inside the female's body obtaining nourishment therein; on development the young is born alive. All Mammals, A few fishes and reptiles are vipiparous.
+</div>
+
+<div class="fig">
+<strong>fig9.8:</strong> Viviparity in humans
+</div>
+<img src="images/fig9.5.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig9.8:</strong> Oviparity in birds and reptile
+</div>
+<img src="images/fig9.6A.jpg" class="imn" />
+
+<img src="images/fig9.6B.jpg" class="imn" />
+
+<h4 class="ce">
+In oviparity fertilization can be internal or external
+</h4>
+
+<h3 class="ce">
+Diagram of chicken development
+</h3>
+
+<div class="fig">
+<strong>5 DAYS</strong>
+</div>
+<img src="images/fig9.6x.jpg" class="imn" />
+
+<div class="fig">
+<strong>10 DAYS</strong>
+</div>
+<img src="images/fig9.6x2.jpg" class="imn" />
+
+<div class="fig">
+<strong>15 DAYS</strong>
+</div>
+<img src="images/fig9.6x3.jpg" class="imn" />
+
+<div class="fig">
+<strong>20 DAYS</strong>
+</div>
+<img src="images/fig9.6x4.jpg" class="imn" />
+
+<h3 class="ce">
+Reproductive structure in Amphibians frogs and toads
+</h3>
+
+<div class="fig">
+<strong>fig9.7A:</strong> 
+</div>
+<img src="images/fig9.7A.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig9.7B:</strong> 
+</div>
+<img src="images/fig9.7B.jpg" class="imn" />
+
+<div class="pa paj">
+Reproductive Structure of an Amphibian e.g Frog . Fertilzation is usually external: They areoviparous
+</div>
+<h3 class="ce">
+Features and functions of reproductive structures in Amphibian
+</h3>
+
+<div class="ce">Male</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Features</td><td>Function</td>
+</tr>
+<tr>
+<td>Two testes</td><td>Sperm Production</td>
+</tr>
+<tr>
+<td>Vasa efferentia</td><td>Linking each testis to sperm conducting tubules in the anterior part of the kidney</td>
+</tr>
+<tr>
+<td>Wolffian duct</td><td>Transport channel for urine and sperm</td>
+</tr>
+<tr>
+<td>Cloaca</td><td>Urinogenital opening through which sperm is released.</td>
+</tr>
+<tr>
+<td>Seminal vessicle</td><td>For sperm storage</td>
+</tr>
+</table>
+
+<div class="ce">Female</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Features</td><td>Function</td>
+</tr>
+<tr>
+<td>Ovaries</td><td>Production of egg cells</td>
+</tr>
+<tr>
+<td>Oviduct</td><td>Receives egg in body cavity and cloaca</td>
+</tr>
+<tr>
+<td>Glands</td><td>Production of albumen</td>
+</tr>
+<tr>
+<td>Ovisac</td><td>Storage of eggs</td>
+</tr>
+<tr>
+<td>Cloaca</td><td>Openning for egg release</td>
+</tr>
+</table>
+
+<div class="pa paj">
+<h3 class="ce">Reproductive structures of Reptiles
+</h3>
+Oviparous and ovoviparous; Fertilization in usually internal
+</div>
+
+<div class="fig">
+<strong>fig9.8:</strong> Internal Anatomy of a Lizard showing its reproductive structures
+</div>
+<img src="images/fig9.8.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig9.9:</strong> Amniote egg of a reptile
+</div>
+<img src="images/fig9.9.jpg" class="imn" />
+
+<h3 class="ce">Features and functions of reproductive structures in Reptile</h3>
+
+<div class="ce">Male</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Features / Structure</td><td>Functions</td>
+</tr>
+<tr>
+<td>A pair of testes</td><td>Sperm Production</td>
+</tr>
+<tr>
+<td>Sperm duct</td><td>A channel through which sperm flows from each testis to the cloaca and penis</td>
+</tr>
+<tr>
+<td>Penis</td><td>Copulatory organ for ejecting sperm into the female reproductive tract</td>
+</tr>
+</table>
+
+<div class="ce">Female</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Features / Structure</td><td>Function</td>
+</tr>
+<tr>
+<td>A pair of ovaries</td><td>Production of egg cells with large amount of yolk</td>
+</tr>
+<tr>
+<td>A pair of ovaduct</td><td>Fertilization occur at it anterior</td>
+</tr>
+<tr>
+<td>Glands</td><td>Secretes shell and its menbranes.</td>
+</tr>
+</table>
+
+<h3 class="ce">Reproductive Structure of a bird (example: fowl)</h3>
+
+<div class="fig">
+<strong>fig9.91:</strong> Birds are Oviparous; fertilization is internal
+</div>
+<img src="images/fig9.91.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig9.92:</strong> 
+</div>
+<img src="images/fig9.92.jpg" class="imn" />
+
+<h4 class="ce">Features and functions of reproductive structures in birds</h4>
+
+<div class="ce">Male</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Features / Structure</td><td>Functions</td>
+</tr>
+<tr>
+<td>A pair of testes</td><td>Sperm production</td>
+</tr>
+<tr>
+<td>Sperm duct</td><td>Channel through which sperm flows to the cloaca</td>
+</tr>
+<tr>
+<td>Cloaca</td><td>Copulatory organ which forms the opening through which sperm are transferred from male to female</td>
+</tr>
+</table>
+<div class="ce">Female</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Features / Structure</td><td>Functions</td>
+</tr>
+<tr>
+<td>One ovary</td><td>Production of egg cells with large amount of yolk</td>
+</tr>
+<tr>
+<td>One oviduct</td><td>Fertilization occurs at the anterior </td>
+</tr>
+<tr>
+<td>Glands</td><td>secretes shells and its membrances</td>
+</tr>
+</table>
+
+<h4 class="ce">
+Reproductive Structure of mammals (rat)
+</h4>
+
+<div class="fig">
+<strong>fig9.93 A:</strong> Female 
+</div>
+<img src="images/fig9.93A.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig9.93 B:</strong> Male 
+</div>
+<img src="images/fig9.93B.jpg" class="imn" />
+
+<h4 class="ce">
+Features and functions of reproductive structures in mammals (e.g. rat)
+</h4>
+
+<div class="ce">Male</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Features / Structure</td><td>Functions</td>
+</tr>
+<tr>
+<td>Testes(one pair)</td><td>Sperm production</td>
+</tr>
+<tr>
+<td>Epididymis</td><td>For Sperm storage</td>
+</tr>
+<tr>
+<td>Vas deferens(sperm duct)</td><td>A channel through which the sperm flows to the urethra</td>
+</tr>
+<tr>
+<td>Scrotal sac</td><td>A housing or protective bag for testis</td>
+</tr>
+<tr>
+<td>Prostrate gland cowper's gland and seminal vesicle</td><td>Fluid from the glands, enhances sperm mobility, provides nourishment for sperm and neutralizes acidity that may be caused by urine.</td>
+</tr>
+<tr>
+<td>Penis</td><td>A copulatory organ which is inserted into the female inorder to release the sperm into the female reproductive organ.</td>
+</tr>
+</table>
+<div class="ce">Female</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Features / Structure</td><td>Function</td>
+</tr>
+<tr>
+<td>Ovary(two)</td><td>Production of egg cells or ova</td>
+</tr>
+<tr>
+<td>Oviduct</td><td>Site for fertilization</td>
+</tr>
+<tr>
+<td>Two (uterus)</td><td>Position or space in which the embryo develops</td>
+</tr>
+<tr>
+<td>Vagina</td><td>A muscular wall that leads to the outside</td>
+</tr>
+<tr>
+<td>Vulva</td><td>An external opening</td>
+</tr>
+</table>
+
+
+<div class="pa">
+<h4 class="ce">
+General Question
+</h4>
+
+</div>
+<div class="pa paj">
+1.    In sexual reproduction, the cell division that gives rise to gamates is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> 
+</div>
+<div class="pa paj">
+2.    Rats are vertebrates. Fertilization among them is internal, Birds too are vertebrates fertilization among them is 
+<span id="q2"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q2')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">external</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q2',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">also internal</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q2')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op"> both internal and external</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+3.    Bird, for example: Hen lays eggs which hatch to give rise to young ones after some days. We call       this method of sexual reproduction 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+4. Among vertebrates, the class 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> are practically all viviparous.
+</div>
+<div class="pa paj">
+5.    External fertilization always requires an _________ environment.
+<span id="q5"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q5')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">industrial</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q5',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">aquatic</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q5')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">aboreal</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+6.    In the reproductive structure of a male fish, the wolffian duct is for 
+<span id="q6"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q6',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">transporting of urine and sperm</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q6')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">transporting of urine only</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q6')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">transporting of sperm only</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+7.    In the reproduction structure of a frog, the number of ovaries found is 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+8.    State the function of the ovary in the reproductive structure of a bird 
+<span id="q8"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q8')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Formation of zygote</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q8',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">production of egg cell</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q8')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">production of sperm</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+9.    In the reproduction structure of a lizard, the number of ovaries is two while in bird's (e.g. fowl)       reproductive structure the number of ovaries is 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+10. The function of the seminal vesicle sac in the reproductive structure of frogs is for 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+11.  Frogs can live on lands, but they must return to  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> to lay and to fertilize       their eggs.
+</div>
+<div class="pa paj">
+12.  Both male and female birds have an opening between their legs called a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+13.  In birds, fertilization takes place at the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+14. The sitting on the eggs by the female bird to keep the eggs warm is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="ce"> Diagram of chicken development</h4>
+</div>
+
+<div class="fig">
+<strong>fig9.94:</strong><br /> A
+</div>
+<img src="images/fig9.94A.jpg" class="imn" />
+
+<div class="fig">B
+</div>
+<img src="images/fig9.94B.jpg" class="imn" />
+
+<div class="fig">C
+</div>
+<img src="images/fig9.94C.jpg" class="imn" />
+
+<div class="fig">D
+</div>
+<img src="images/fig9.94D.jpg" class="imn" />
+
+<div class="pa paj">
+Use the diagram in fig 9.94 to answer the questions below in nos 14-16, identify and label the parts that perform the following functions
+</div>
+<div class="pa paj">
+
+</div>
+<div class="pa paj">
+14. The part that supplies food nourishment to the embryo 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<div class="pa paj">
+15. The membrane covering the blood vessel which allows gaseous exchange 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+16. Which of the eggs is close to its’ time to hatch 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+17. What is the incubation period of a fowl(chicken) egg 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<div class="pa paj">
+In the diagram of the female reproductive system of a hen (Fig 9.95), write down the functions of B and C as answers to questions 18 and 19
+</div>
+<div class="pa paj">
+18 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+19. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+20. What is the function of D in the diagram during reproduction in bird 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig9.95:</strong> 
+</div>
+<img src="images/fig9.95.jpg" class="imn" />
+
+<div class="pa">
+21. The part labeled 2 functions as or for 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<h4 class="ce">
+Male and female reproductive structures / organs of rats
+</h4>
+</div>
+
+<div class="fig">
+<strong>fig9.96:</strong> A
+</div>
+<img src="images/fig9.96A.jpg" class="imn" />
+
+<div class="fig">
+B
+</div>
+<img src="images/fig9.96B.jpg" class="imn" />
+
+<h4 class="ce">Identify and write the functions of the parts labeled 22 – 25</h4>
+<div class="pa">
+22. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+23. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="pa">
+24. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+
+</div>
+<div class="pa">
+25. 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+Write two structural difference between the male and female reproduction organs of rats 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+27 . State two features which distinguish a male lizard from a female lizard 
+<textarea class="w100"></textarea><span class="w100resp"></span> 
+</div>
+<div class="pa paj">
+28 . In  a perch (an example of bony fish) Fertilization occurs in the open water and parents swim       away without protecting the young. This is a case of  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>  fertilization
+</div>
+<div class="pa paj">
+29 . In female frog, the cilia lining the inner surface of the oviduct is for 
+<textarea class="w100"></textarea><span class="w100resp"></span> 
+</div>
+
+<div class="pa paj">
+30 . Male reptiles unlike amphibian have structure adapted to internal fertilization which is used to       transfer sperm cells into the cloaca of the female during mating. This structure       is called  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> 
+</div>
+<div class="pa paj">
+<h4 class="ce">
+Expression Exercise
+</h4>
+1.    Explain ovoviparity and differentiate it from oviparity. Use one example of animal, each for       each reproductive method 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2 .   Consider the following vertebrates; group each of them under external fertilization, and       internal fertilization <br />
+(i) Frog (ii) Perch bony fish (iii) Lizard (iv) shark cartilage (v) birds
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>External Fertilization</td><td>Internal Fertilization</td>
+</tr>
+<tr>
+<td>Frog</td><td>Lizard</td>
+</tr>
+<tr>
+<td>Perch (bony fish)</td><td>Bird</td>
+</tr>
+<tr>
+<td></td><td>Shark</td>
+</tr>
+</table>
+<div class="pa paj">
+3 .   Distinguish between the reproductive structures of a bird and that of  a reptile 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+4 .  Write or state the functions of the following structures in the reproduction of a vertebrate.
+<ol type="i">
+<li>Ovary
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>Testis
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li> 
+<li>Oviduct
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>Uterus
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>Cloaca
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>Sperm duct
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+
+<div class="pa paj">
+5.  State, among the following animals which ones are viviparous<br />
+        (i) Monkey   (ii) Rat   (iii) Toad   (iv) Fish   (v) Bony fish   (vi) Turtle          (vii) Birds 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="ce">
+Practical Activities
+</h4>
+Diagrams of Eggs of reptile and that of a bird are shown in fig 9.97 A and B
+</div>
+
+<div class="fig">
+<strong>fig9.97: A</strong> 
+</div>
+<img src="images/fig9.97A.jpg" class="imn" />
+
+<div class="fig">
+<strong>B</strong> 
+</div>
+<img src="images/fig9.97B.jpg" class="imn" />
+
+<div class="pa paj">
+1    (a)   State four structural similarities you can observe in A and B
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+(b)   In which of the eggs does the parent vertebrate incubate till they are hatched 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+ (c)   Parental care is given after egg of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+<h4>
+Comparing eggs of certain vertebrate:
+</h4>
+<h4><strong>
+Eggs of fowl, lizard and amphibian were presented as specimen A, B and C</strong>
+</h4>
+
+</div>
+<div class="fig">
+<strong>fig9.98: A</strong> 
+</div>
+<img src="images/fig9.98A.jpg" class="imn" />
+
+<div class="fig">
+<strong>B</strong> 
+</div>
+<img src="images/fig9.98B.jpg" class="imn" />
+
+<div class="fig">
+<strong>C</strong> 
+</div>
+<img src="images/fig9.98C.jpg" class="imn" />
+
+
+<div class="pa paj">
+1.    Identify the egg of amphibian among the specimens
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+ (ii) State the environment where each can be found
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+ (iii) Which of the egg is fertilized by external fertilization?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="pa paj">
+ (iv) Which of the eggs do not receive more care from the female parent after they are layed
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+
+</div>
+<div class="pa paj">
+
+</div>
+<div class="carry ce">
+
+  <a href="chapter8.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter10.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 9;
+</script>
+</div>
+</body>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch9.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

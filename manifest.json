@@ -1,0 +1,74 @@
+{
+    "lang": "en-us",
+    "name": "Biology Practical & Activity Workbook",
+    "short_name": "Biology Practical Workbook",
+    "description": "Contain SSCE past questions, Illustrated and Elaborated Diagrams.",
+    "start_url": "/biology.html",
+    "background_color": "#008644",
+    "theme_color": "#a40d07",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+          "src": "images/1x1x72.png",
+          "type": "image/png",
+          "sizes": "72x72"
+        },
+        {
+          "src": "images/1x1x96.png",
+          "type": "image/png",
+          "sizes": "96x96"
+        },
+        {
+          "src": "images/1x1x128.png",
+          "type": "image/png",
+          "sizes": "128x128"
+        },
+        {
+          "src": "images/1x1x144.png",
+          "type": "image/png",
+          "sizes": "144x144"
+        },
+        {
+          "src": "images/1x1x152.png",
+          "type": "image/png",
+          "sizes": "152x152"
+        },
+        {
+          "src": "images/1x1x192.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "purpose": "maskable"	  
+        },
+        {
+          "src": "images/1x1x384.png",
+          "type": "image/png",
+          "sizes": "384x384"
+        },
+        {
+            "src": "images/1x1x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+          "purpose": "maskable"	 
+        }
+    ],"screenshots" : [
+  {
+    "src": "images/bio_back_cover.jpg",
+    "type": "image/png",
+    "platform": "wide",
+    "label": "Home screen of A-Z bible characters"
+  },
+  {
+    "src": "images/screenshot2.jpg",
+    "type": "image/png",
+    "platform": "narrow",
+    "label": "Home screen of A-Z bible characters"
+  },
+  {
+    "src": "./1/images/bio.jpg",
+    "type": "image/png",
+    "platform": "narrow",
+    "label": "Home screen of A-Z bible characters"
+  }
+]
+}

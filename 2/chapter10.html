@@ -1,0 +1,743 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <div class="menu1" onclick="showViewTab('verify')"><div class="bull"></div>Activate</div>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t le">
+New Senior School Biology Practical Activity &amp; Work Book Two
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">10</div>
+</div>
+	<div class="box_title" style="font-size:25px;line-height: 25px">
+REPRODUCTION<br />IN PLANTS
+	</div>
+</div>
+
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="square">
+<li>Sexual Reproduction in plants
+</li><li>Flower structures and functions
+</li><li>Ovary positioning orarrangement
+</li><li>Placentation
+</li>
+</ul>
+</div>
+
+<div class="fig_1">
+<strong>fig9.8:</strong> 
+</div>
+<img src="images/fig10.1.jpg" class="imn" />
+
+<div class="pa paj">
+Plants can carry out both sexual and asexual reproductions.
+</div>
+<div class="pa paj">
+<h4>Sexual Reproduction in Plants</h4>
+In plants sexual reproduction occurs only in flowering plants.Since plants cannot move to actualize the fussion of gamates from the  opposite sexes of organisms of the same species (fertilization), as required in sexual reproduction,  reproductive structures called flowers are in place not only to contain reproductive  organs but to also enhance the process that leads to fertilization.
+</div>
+
+<div class="pa paj">
+<b>Flowers</b> (Structures and their functions)A flower can basically be described as a modified leaf borne on a shortened stem or stalk of the plant. A flower consists of four whorls which are referred to as its floral parts this include: 
+</div>
+<div class="pa paj">
+The <b>sepal; Petal, Stamen</b> and <b>carpel</b> arranged in concentric rings one above each other, on a base called receptacle or thalamus
+</div>
+<div class="pa paj">
+<b>The Sepals:</b> They are collectively called calyx. The Sepals are usually green in colour. They protect the inner essential parts of the flower during bud stage
+</div>
+
+<div class="pa paj">
+<b>The Petals:</b> Together, the petals are called corolla. Going by order, from outer to inner part of the flower, the petals are second whorl just after the sepals. They are the colourful and scented part of the flower which enhances insect and animal pollination. They also protect the inner essential reproductive parts.
+</div>
+<div class="pa paj">
+<b>Stamens:</b> This is the male reproductive organ or part of a flower, which is in groups, collectively called Androecium. Most stamens of flowers consist of filament – a long thin stalk and anther which is the swollen end of the thin stalk. The filament bears the anther which contain the pollen grains. The male gamete is found in the pollen grain.
+</div>
+
+<div class="fig ce">
+A Section of the floral parts of a flower 
+</div>
+<img src="images/fig10.2.jpg" class="imn" />
+
+<div class="pa paj">
+<b>Carpels:</b> The carpels are located centrally. They are the female reproductive part or organ of the flower collectively carpels are called gynoecium.
+</div>
+
+<div class="pa paj">
+A flower can be said to be
+</div>      
+
+<ul type="disc">
+<li>Monocarpous  – just one carpel</li>
+<li>Apocarpous     – Two or more separate carpels. Or</li>
+<li>Syncarpous     – Two or more carpel fused to be a single structure.</li>
+</ul>
+<div class="pa paj">
+When a carpel that is existing as a single structure either singly separated or severally fused as one, it is called a pistil.
+</div>
+<div class="pa paj">
+Most pistil have the following features
+</div>
+      
+
+<ul type="disc">
+<li><b>Ovary,</b> which contain the ovules where the female gamate or egg cell is found</li>
+<li>Slander structure(s) arising from the top of the ovary called <b>style</b></li>
+<li><b>Stigma</b>(s) which is the tip of the style.</li>
+</ul>
+<div class="pa paj">
+The ovary which develops into a fruit after fertilization protects the egg cells within ovule and the embryo  
+</div>
+<div class="pa paj">
+The ovule develops into a seed which contain the embryo.
+</div>
+<div class="pa paj">
+The style bears the stigma which is the surface that receive pollen grain.
+</div>
+
+<div class="fig">
+<b>A Section of flower structure showing the male reproductive part</b> 
+</div>
+<img src="images/fig10.3.jpg" class="imn" />
+
+<div class="fig">
+<b>A Section of flower structure showing the male reproductive part</b>
+<strong>fig10.4:</strong> 
+</div>
+<img src="images/fig10.4.jpg" class="imn" />
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td colspan="2">Types of flowers based on ovary positioning.</td>
+</tr>
+<tr>
+<td>1. Hypogynous flower     <br />e.g Hibiscus flower</td><td>flower parts arising from the receptacle at the same level as the ovary or below it. The ovary is called Superior ovary</td>
+</tr>
+<tr>
+<td>2. Perigynous flower<br />example: rose flower</td><td>Here the receptacle appears cup shaper and floral parts seem to be above the central ovary. The ovary is called half inferior ovary</td>
+</tr>
+<tr>
+<td>3. Epigynous flower<br />example: guava</td><td>All the other floral parts are above the ovary which is completely enclosed in a fleshly receptacle. The ovary is called inferior ovary</td>
+</tr>
+</table>
+
+<h3 class="ce">Positioning</h3>
+<div class="fig">
+<strong>fig10.5A:</strong>
+<b> A</b> 
+</div>
+<img src="images/fig10.5A.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig10.5B:</strong>
+<b> B</b> 
+</div>
+<img src="images/fig10.5B.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig10.5:</strong>
+<b> C</b> 
+</div>
+<img src="images/fig10.5C.jpg" class="imn" />
+
+<div class="pa paj">
+
+<h3 class="ce">Placentation</h3>
+The arrangement of ovules in the ovary of a flower is called placentation
+</div>
+
+<strong>fig10.6 A - G:</strong>
+<div class="fig">
+<b> A axial, </b>e.g., Tomato (ovules are attached to the central column connected to ovulary walls by partitions)
+</div>
+<img src="images/fig10.6A.jpg" class="imn" />
+
+<div class="fig">
+<b> B free-central, </b>e.g. water leaf (ovules attached to a central column not connected to the rest of the ovulary)
+</div>
+<img src="images/fig10.6B.jpg" class="imn" />
+
+<div class="fig">
+<b> C parietal,</b>  e.g. pawpawhypogynousperigynousepigynous(ovules are connected to the inner surface of the outer wall)
+</div>
+<img src="images/fig10.6C.jpg" class="imn" />
+
+<div class="fig">
+<b> D marginal, </b>e.g. Pride of Berbados (ovules lined up in a row on one side of the ovulary)
+</div>
+<img src="images/fig10.6D.jpg" class="imn" />
+
+<div class="fig">
+<b> E</b> e.g. sun flower <br />(ovule(s) attached to the base of the ovulary)
+</div>
+<img src="images/fig10.6E.jpg" class="imn" />
+
+<div class="fig">
+<b> F apical</b>  (ovule(s) attached to the apex of the ovulary)
+</div>
+<img src="images/fig10.6F.jpg" class="imn" />
+
+<div class="fig">
+<b> G superficial, </b> e.g. water lily
+</div>
+<img src="images/fig10.6G.jpg" class="imn" />
+
+<div class="pa paj">
+<h3 class="ce h_bio">
+General Questions On Reproductive System in Plants
+</h3>
+1.    Flowering plants which are also called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>, apart from having flowers, they produce       seeds that develop within fruits.
+</div>
+
+<div class="pa paj">
+2.    Diagram of a flower . Label  the parts labeled A B C D and F in the flower diagram       in fig10.7
+</div>
+
+<div class="fig">
+<b> fig10.7 </b>
+</div>
+<img src="images/fig10.7.jpg" class="imn" />
+
+<ol type="A">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+<div class="pa paj">
+3.    Is the flower a perfect flower or an imperfect flower? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+4. The pistil can constitute the innermost structure of a flower. It is the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+5.    Filament and anthers make up the male reproductive part of a flower called  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<div class="pa paj">
+6. A single ovary, style and stigma make up a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+7.    One example of an imperfect flower is 
+<span id="q7"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q7',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">maize</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q7')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">hibiscus</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q7')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">pride of the barbados</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+8. Among flowering plants, it is in 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> that petals, sepals and stamens occur in multiples       of 3 while in 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> they occur in multiples of 4 or 5.
+</div>
+<div class="pa paj">
+9. All the sepals of a flower together form the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<div class="pa paj">
+10. A flower with one carpel is said to be monocarpous while the ones with two or more separate       carpels are called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+11. The ovary is part of the carpel, it contains one or more ovoid structure called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+12. After fertilization in flowering plants, the ovary develop into a fruit, while the ovules develop       into 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+13.  Male gametes are found in the pollen grain while female gametes are located within the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+14. A pollen grain contains haploid tube nucleus and a haploid 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> nucleus which gives       rise to two male gametes.
+</div>
+<div class="pa paj">
+15. Arrangement of ovules in the ovary is called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig10.8:</strong> 
+</div>
+<img src="images/fig10.8.jpg" class="imn" />
+
+
+<ol type="1" start="16">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+
+<div class="pa paj">
+20. Parietal placentation can be found in pawpaw while 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>placentation is found in       tomato
+</div>
+<div class="pa paj">
+21. Bisexual flowers are 
+<span id="q21"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q21')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">flowers that are unisexual</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q21')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">flower that have more than one sepal</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q21',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">flowers that have both carpel and stamens</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+22. In certain plants, flowers are either male or female. Such flowers are called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> flowers.
+</div>
+<div class="pa paj">
+23. When male and female flowers are found on the same plant, the plant is known to be a monoecious plant but when they are found in different plants, the plant is said to       be 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+The diagram below is a pistil cut in half. Identify and label the:
+</div>
+
+<div class="fig">
+<strong>fig10.9</strong> 
+</div>
+<img src="images/fig10.9.jpg" class="imn" />
+
+
+<div class="pa paj">
+24. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+25. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+26. 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>.
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+EXPRESSION EXERCISE
+</h4>
+1.    (a)    Write down two non essential floral parts of a flower 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b)  Write down one function that each can perform in a flowering plant 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c) Why are the structures you stated regarded as non essential floral parts of a flower 
+<textarea class="w100"></textarea><span class="w100resp"></span> 
+</div>
+<div class="pa">
+2.    write down or explain what you understand by the following:
+</div>
+<div class="pa paj">
+ (a) Polysepalous 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b) Gamosepalous 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c) Polypetalous
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(d) Gamopetalous 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+3.   ( a) Explain with example, what you understand by incomplete or imperfect flowers 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+ (b) Explain with examples, the difference between: <br />     (i) Monocarpous      <br />(ii) Apocarpous and  <br />(iii) Syncarpous pistils
+ 
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+
+<h4 class="ce">PRACTICALACTIVITIES</h4>
+<div class="fig">
+<strong>fig10.91 A</strong> 
+</div>
+<img src="images/fig10.91A.jpg" class="imn" />
+
+<div class="fig">
+<strong>B</strong> 
+</div>
+<img src="images/fig10.91B.jpg" class="imn" />
+
+<div class="pa paj">
+1.    Study the diagram in fig 10.91 carefully
+</div>
+<div class="pa paj">
+a)   Identify which of them that shows the male reproductive structure and the one that shows the       female reproductive structure.
+</div>
+<div class="pa paj">
+b)   Label the parts indicated or shown with leading lines
+</div>
+<div class="pa paj">
+2.   Diagram below in fig 10.92 A - E shows placentation in flowering plants, write down the type       of placentation for the following plants in the table and indicate the diagram that shows that       type of placentation
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Plant</td><td>Type of placentation</td><td>Diagram that shows type of placentation</td>
+</tr>
+<tr>
+<td>orange</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>okra</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>tomato</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>pawpaw</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>tomato</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>pride of the berbados</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+</table>
+
+fig 10.92 A - E
+<div class="fig">
+<strong>A</strong> 
+</div>
+<img src="images/fig10.92A.jpg" class="imn" />
+
+<div class="fig">
+<strong>B</strong> 
+</div>
+<img src="images/fig10.92B.jpg" class="imn" />
+
+<div class="fig">
+<strong>C</strong> 
+</div>
+<img src="images/fig10.92C.jpg" class="imn" />
+
+<div class="fig">
+<strong>D</strong> 
+</div>
+<img src="images/fig10.92D.jpg" class="imn" />
+
+<div class="fig">
+<strong>E</strong> 
+</div>
+<img src="images/fig10.92E.jpg" class="imn" />
+
+<div class="pa paj">
+The following are specimens of different flowers: Caesalpinia pulcherrima, sunflower, maize flower, and pawpaw flowers
+</div>
+
+<div class="fig">
+<strong>Specimen A</strong> 
+</div>
+<img src="images/fig10.93A.jpg" class="imn" />
+
+
+<div class="fig">
+<strong>Specimen B</strong> 
+</div>
+<img src="images/fig10.93B.jpg" class="imn" />
+
+<div class="fig">
+<strong>Specimen C</strong> 
+</div>
+<img src="images/fig10.93C.jpg" class="imn" />
+
+<div class="fig">
+<strong>Specimen D</strong> 
+</div>
+<img src="images/fig10.93D.jpg" class="imn" />
+
+
+
+<div class="pa paj">
+3.   (a)    Identify and label the ovary and petals in specimen B
+</div>
+<div class="pa paj">
+(b)    Identify the flower(s) that are bisexual and unisexual 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+ (c)    Which of the flowers would likely be wind pollinated 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+ (d)    Write down the specimen flowers that are insect pollinated 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(e)    Which of the flowers has its plant as a monoecious plant 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+ (f)     Which of the flowers has its plant as a dioecious plant 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="carry ce">
+
+  <a href="chapter9.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter11.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 10;
+</script>
+</div>
+</body>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch10.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

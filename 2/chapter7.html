@@ -1,0 +1,755 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <div class="menu1" onclick="showViewTab('verify')"><div class="bull"></div>Activate</div>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t le">
+New Senior School Biology Practical Activity &amp; Work Book Two
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">7</div>
+</div>
+	<div class="box_title" style="font-size:25px;line-height: 25px;">
+ECOLOGICAL <BR />MANAGEMENT
+	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="square">
+<li>Ecological studies</li>
+<li>Association</li>
+<li>Tolerance
+</li><li>Adaptations
+</li><li>Pollution
+</li><li>Conservation of
+</li>
+</ul>
+</div>
+
+<div class="fig_1"> Symbiosis
+<strong>fig7.1:</strong> 
+</div>
+<img src="images/fig7.1.jpg" class="imn" />
+
+<div class="fig"> Commensalism
+<strong>fig7.2:</strong> 
+</div>
+<img src="images/fig7.2.jpg" class="imn" />
+
+<div class="fig"> Tapeworm (a parasite)
+<strong>fig7.3:</strong> 
+</div>
+<img src="images/fig7.3.jpg" class="imn" />
+
+<div class="pa paj">
+<h4>Background Information</h4>
+<h4 class="ce u">
+Association
+</h4>
+Ecological studies inform us that living things do not live in isolation. In ecological system, living organisms interact with one another mainly through food relationships. Very often, this interaction leads to competition.
+</div>
+<div class="pa paj">
+In an ecosystem, organisms are subjected to both favourable and unfavourable ecological factors. Some species of organisms try to survive and cope with environmental condition by forming close relationships or association with other species.
+</div>
+<div class="pa paj">
+Some of these associations are beneficial to one species and harmful to the other <strong>(parasitism)</strong> while some are beneficial to both species <strong>(symbiosis or mutualism)</strong> but some of the associations are beneficial to one species but neither harmful nor beneficial to the other <strong>(comensalism).</strong>
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Type of association</td><td>The manner of the association</td><td>Examples of such association</td>
+</tr>
+<tr>
+<td>1.   Symbiosis</td><td>Both organisms benefit</td><td>
+(i)  Nitrogen fixing bacteria in root module of leguminous plants.<br />(ii)  Algae and fungi in lichens.<br />(iii) Herbivores and bacteria in their  anus and large intestines.<br />(iv) Termites and protozoa in their alimentary canals</td>
+</tr>
+<tr>
+<td>2. Parasitism</td><td>The parasite benefits from the other species while the host suffers harms.</td><td>(i)  Human’s tapeworm and   roundworm.<br />(ii)  Tick in cattle.<br />(iii) Fungi</td>
+</tr>
+<tr>
+<td>3. Commensalism</td><td>One organism which is the commensal benefits while the host is not affected favourably or adversely.</td><td>Epiphites</td>
+</tr>
+</table>
+<div class="pa paj">
+<h4 class="ce">
+Tolerance
+</h4>
+Organisms in their habitats are usually confronted with prevailing factors among which some are favourable while some are adverse. organisms can either die, or leave the habitat or develop <strong>tolerance.</strong><b> Toleranceis the organisms ability to withstand or cope with all or some sorts of unfavourable environmental factors in the habitat.</b>
+</div>
+<div class="pa paj">
+For every organism, there is a <strong>minimum</strong> and a <strong>maximum limit</strong> of a factor it can tolerate. The minimum limit is the lowest possible limit at which an organism can have tolerance over changes in an environmental factor. The maximum limit is the upper limit.
+</div>
+<div class="pa paj">
+<h4>
+Geographic Range and Adaptation
+</h4>
+Organisms due to some ecological needs can dwell successfully in certain geographic zones or area. <strong>The area or location in the biosphere in which a population of organisms can naturally dwell successfully as a result of their adaptation to the prevailing environmental factors there is called geographic range.</strong>
+</div>
+<h4 class="ce">   Plants and animals adaptations</h4>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Organisms</td><td>conditions</td><td>Animals adaptive features</td>
+</tr>
+<tr>
+<td>Fish and Tad pole</td><td>aquatic, movement and Respiratory</td><td>fins, streamline bodies, gills</td>
+</tr>
+<tr>
+<td>Amoeba and Paramecium</td><td>aquatic and osmoregulatory</td><td>contractile vacuole</td>
+</tr>
+<tr>
+<td>Birds</td><td>flight and feeding</td><td>hollow bones, feathers, streamline bodiesStrong and hooked  claws.</td>
+</tr>
+<tr>
+<td>Insects</td><td>regulating water loss</td><td>exoskeleton, tracheal system and Malpighian Tubules</td>
+</tr>
+</table>
+
+<div class="hh8 u">Plant Adaptation to Water Availability</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td>Names of plants</td><td>Examples</td><td>Adaptation features</td>
+</tr>
+<tr>
+<td>1</td><td><b>Hydrophytes:</b> plants that live in fresh water which has all or part of their bodies in water.</td><td>Water lily, water hyacinth.</td><td>Large well developed air spaces covering of thick cuticle on the exposed floating parts.</td>
+</tr>
+<tr><td>2</td>
+<td><b class="u">Mesophytes:</b> land plant that are found in an adaquate water supply.</td><td>Hybiscus, Cassava</td><td>Waxy cuticle cover their body to minimise water loss, presence of stomata on leaves for geseous exchange</td>
+
+</tr>
+<tr>
+<td>3</td><td>Xerophytes: plants that survive a water scarce environment such as a desert.</td><td>Cacti, euphorbia, aloe</td><td>Well developed root system, swoolen stems or leaves (succulents) containing water storage cells. Reduced surface area of leaves, absence of leaf blade and covery of leaves by tick waxy cuticle inorder to reduce water loss from leaves.Ability of the protoplasms to withstand</td>
+</tr>
+</table>
+<div class="pa paj">
+<h4 class="u ce">
+Pollution
+</h4>
+Introduction of materials or energy to the environment which defiles and make it uncondusive for life is called pollution. It is an undesirable change in the environment.Pollution can be:-·
+<ul>
+<li>
+<strong>Air pollution</strong>which is due mainly to the burning of fossil fuels, release of chlorofluoro carbons, noise and radiactive fall outs
+</li><li><strong>Water pollution</strong> which is caused by domestic refuse and sewage, industrial and agricultural waste, crude oil (petroleum) and heat.
+</li><li><strong>Soil pollution</strong> which is caused by soil erosion due to agricultural practices, mining activities, and deforestation.
+</li></ul>
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Types of pollution</td><td>Pollutant</td><td>Cartilagenous fish</td>
+</tr>
+<tr>
+<td>Air pollution</td><td>i. pollution from burning fuel e.g oxides of carbon sulphur ivoxide oxides of nitrogen.<br />
+ii. Chlorofluorocarbons.<br />
+iii. Noise.<br />
+v. Radiation</td><td>
+i.blood disease in man, respiratory problem, dizziness, heasache brain damage.<br />
+ii.Depletion of ozone layer which can lead to skin cancer and wrinkle, cataract sunburn and lower resistance to infection diseases.<br />
+iii. High blood pressure, parmanent deafness mental illness.<br />
+iv.  Cancer, genetic muttions, lukemia.
+</td>
+</tr>
+<tr>
+<td>Soil pollution</td><td>Erosion garbage, fertilizers and pesticides.</td><td>Constitutes a breading places for pests andvectors of diseases.</td>
+</tr>
+<tr>
+<td>Water pollution</td><td>Refuse and sewages, industrial wasteAgricultural wastes and crude oil  etc.</td><td>Infectious diseases, mercury, poisoning, devastation of  the ecosystem etc.</td>
+</tr>
+</table> 
+
+<div class="pa paj">
+
+<h4 class="ce h_bio">
+Conservation of Natural Resources
+</h4>
+Air , water, soil, wildlife, forests, fossil fuel, and minerals are among the important natural resources of the earth. Among all these, only fossil fuels and minerals are non renewable. As human activities distort the delicate balance of the ecosystem, it is necessary to conserve natural resources in order to maintain a healthy functional biosphere that will meet human needs and also restrain a harmful imbalance in the ecosystem.
+</div>
+<div class="pa paj">
+Conservation can be indirectly carried out by population control and pollution reduction and directly by use of naturalresources, reducing wastage and recycling. For the future of life on earth, there is need for conservation of landscape and wild life.<br />
+This will prevent the extinction of species.
+</div>
+<div class="pa paj">
+
+<h4 class="ce h_bio">
+General Questions
+</h4>
+Fill in the correct type of association of living things that is exhibited by organisms in each column.
+</div>
+
+<table class="tabler bg_white">
+<tr class="trA"><td></td>
+<td>Organisms in relationship</td><td>Type of association</td>
+</tr>
+<tr>
+<td>1</td><td>Herbivores and bacteria in their rumens and large intestine</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>2</td><td>Alga and fungus in lichens</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>3</td><td>Tapeworm in the intestine of man</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>4</td><td>Man and intestinal bacterial</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>5</td><td>Cassytha growing in another plant</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>6</td><td>Remora and shark</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+</table>
+
+<div class="pa paj">
+7.Define tolerance 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+8. Plants of dry areas where either rainfall is very low or water present is in frozen forms and thus  not available to the plant are called: 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+9. What plants do you call mesophytes 
+
+<span id="q9"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q9')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Plants in dry area</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q9')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Plants in water loggedd area</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q9',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Plants that are found in adequate water supply enivironment</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+10. Write two adaptations of plants to shade 
+
+<span id="q10"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q10')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Thick bark (ii) Low chlorophyl content</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q10',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Thinner leaves with large surface area (ii) Relatively high chlorophyl content</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q10')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Sharpy spine thorny leaves (ii) Tall stems</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+11. State one harmful effect of polluting the environment with carbon dioxide 
+<span id="q11"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q11',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Green house effect</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q11')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Noise pollution</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q11')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Acid rain</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+12. Write three common water pollutions 
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+13. A thinning ozone layer can occur due to the environmental pollution by 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+14. _________ and ___________ can be caused by noise pollution. 
+<span id="q14"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('a14')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Lead poisoning and cough</div>
+    </div>
+	<div class="optionbox" onclick="opMark(q14')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Green house effect andheart failure</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q14',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Loss of hearing and insomia</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+15.Write three examples of non renewable resources 
+
+<span id="q15"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q15')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) wind (ii) water (iii) biomas</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q15',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) crude oil (ii) coal (iii) natural gsa</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q15')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">(i) Solar (ii) hydro energy (iii) water</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+<h4 class="ce">
+Expression Exercise
+</h4>
+1a. Write three effects of noise pollution.
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+1b. List three natural resource than need to be conserved.<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+2a. Write the harmful effects of the following pollutants.
+
+<ol type="i">
+<li>Crude oil <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Lead compounds<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Dust<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Fertilizer<textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+2b. Write four methods of conserving soil.
+
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+3a. Give three reasons why conservation a necessary
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+3b. What is?
+<ol type="i">
+<li>Tolerance <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Geographic range <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Adaptation <textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+<h4 class="ce">
+Practical Activities
+</h4>
+<ol type="i">
+Observe the features  of each of the organisms listed below:
+<li>Tilapia fish
+</li><li>Tad pole 
+</li><li>Pigeon 
+</li><li>Weaver bird
+</li></ol>
+(a) Then based on your observation fill in the answer to the questions within the table below.
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td> Names of organisms</td><td>Habitat </td><td>Shape</td><td>Locomotive Organ</td><td>Organ of Ventilation</td>
+</tr>
+<tr>
+<td>i</td><td>Tilapia fish</td><td>Water</td><td>Stream lined</td><td>Fins</td><td>Gills</td>
+</tr>
+<tr>
+<td>ii</td><td>Tad pole</td><td>Water</td><td>Stream lined</td><td>Limbs and tail</td><td>Gills</td>
+</tr>
+<tr>
+<td>iii</td><td>Pigeon</td><td>Trees/ceiling</td><td>Stream lined</td><td>Wings and legs</td><td>Gills</td>
+</tr>
+<tr>
+<td>iv</td><td>Weaver bird</td><td>Trees</td><td>Stream lined</td><td>Wings and legs</td><td>Gills</td>
+</tr>
+</table>
+
+<div class="pa paj">
+1b Write your observations based on :close relationship between the adaptations of the organisms and their
+</div>
+<div class="pa paj">
+i. Shapes 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+ii.Habitats 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2. Observe the features of each of these plants.
+<ol type="i">
+<li>Water weed (Elodea)
+</li><li>Crotolaria plant
+</li><li>Water lily
+</li><li>Talinum triangulare
+</li><li>Bryophyllum plant.
+</li></ol>
+Particularly observe: the root system of the plants by cutting the roots using razor blade, <strong>also by cutting open each stem using razor blade,</strong>carefully observe the <strong>leaves, positions of the stomata, leaf cuticle using hand lens.</strong>
+</div>
+<div class="pa paj">
+(a)Based on your observations complete the table below; fill in the answer according to your observations about any of the plants.
+</div>
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Features</td><td>Water weed  (Elodea)</td><td>Crotolaris plant </td>
+<td>Waterlily</td><td>Talinium triagulare</td><td>Bryophyllum</td>
+</tr>
+<tr>
+<td>1. Root system: fibrousor taproot? reduced orextensive? air spacespresent or not?</td><td></td><td></td>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td>2. Stem: well developedor not? woody orsuculent? air spacespresent or not?</td><td></td><td></td>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td>
+3. Leaves: large or small?thick or thin cuticle?stomata position etc</td><td></td><td></td>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td>4. Habitat: where the plantgrows naturally?</td><td></td><td></td>
+<td></td><td></td><td></td>
+</tr>
+</table>
+<ol type="i">
+b) 
+<li>Which of the plants is xeropyte 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li><li>Which of the plants can you call a hydrophyte 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li></ol>
+
+<div class="pa paj">
+3. <strong>To show the limits of tolerance of tilapia to salinity</strong><br />
+ Apparatus and materials required : three containers or vessels containing salt solution of different concentrations, paper tape for labeling, three tilapia fish, a clock.
+</div>
+
+<ol type="i">
+Procedure :
+<li>Label the vessels: 2g salt, 10g salt and 25g salt solutions respectively.
+</li><li>In each vessel put the marked mass of salt in gramme and 100cm of water.
+</li><li>Put each tilapia fish in each vessel 
+</li><li>Carefully observe each fish in each vessel.
+</li></ol>
+
+
+<ol type="i">
+Answer these questions based on your observations.
+<li>Which of the solutions contains the fish that died first 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li><li>Record the time it took the fish in each container to die.
+</li>
+</ol>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Containers</td><td>Time in seconds or minutes it took the fish to die</td>
+</tr>
+<tr>
+<td>2g/100cm</td><td></td>
+</tr>
+<tr>
+<td>10g/100cm</td><td></td>
+</tr>
+<tr>
+<td>25/100cm</td><td></td>
+</tr>
+</table>
+
+<ol type="i" start="3">
+<li>Did all the fishes die ?  
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li><li>Explain your observations and answers in line with <strong>Tolerance, minimum and maximum limits of tolerance
+</strong>  
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+</li>
+</ol>
+<div class="pa paj">
+4. Take a visit to an industrial Estate or a factory near your school or where you live (The teacher can schedule and arrange an excursion for this purpose). On your trip, make sure you carefully observe what you see, smell, and hear and also ask the relevant questions.
+</div>
+
+<ol type="i" start="3">
+<li>What industrial wastes does the factory produce?
+</li>
+<li>How does the factory dispose the waste?
+</li>
+<li>What gas pollutant(s)  come from the factory?
+</li>
+</ol>
+<div class="pa paj">
+5. <strong class="u">Group class activities</strong><br />
+Let the class divide into five groups and let each group write on any of the following topics.
+</div>
+
+<ol type="i" start="3">
+<li>The effects of tree planting and indiscriminate logging on conservation of natural resources.
+</li>
+<li>The effects of over grazing in the conservation of natural resources.
+</li>
+<li>Soil conservation practice and its effect on food conservation.
+</li>
+<li>Forests and game reserves in Nigeria and their effects on conservation of natural resources.
+</li>
+<li>Problems associated with conservation of natural resources in Nigeria.
+</li>
+</ol>
+
+<div class="pa paj">
+
+</div>
+<div class="pa paj">
+</div>
+<div class="carry ce">
+
+  <a href="chapter6.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter8.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 7;
+</script>
+</div>
+</body>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script type="text/javascript" src="js/ch7.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

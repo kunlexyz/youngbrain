@@ -1,0 +1,27 @@
+var answer= [
+	['Meiosis'],
+	['Oviparity'],
+	[''],
+	['2','two'],
+	['1','one'],
+	['Sperm Storage','Storage of Sperm'],
+	['water'],
+	['Cloaca'],
+	['Oviduct'],
+	['Incubation'],
+	['Yolk and Albumen','Albumen and Yolk','the Yolk and Albumen','the Albumen and Yolk'],
+	[''],
+	['egg d','d'],
+	['28','28 days','twenty eight days','twenty eight'],
+	[''],
+	[''],
+	[''],
+	[''],
+	[''],
+	[''],
+	[''],
+	[''],
+	[''],
+	['']
+	 
+];

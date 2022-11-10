@@ -1,0 +1,1537 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t2 le">
+New Senior School Biology Practical Activity &amp; Work Book 3
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">5</div>
+</div>
+	<div class="box_title" style="font-size:16px;line-height: 20px;">
+SEXUAL REPRODUCTION<br />AND<br />REPRODUCTIVE BEHAVIOURS
+	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="disc">
+<li>Sexual reproduction</li>
+<li>Sexual reproduction in vertebrates.</li>
+<li>Sexual reproduction in flowering plant.</li>
+<li>Reproductive behaviours.</li>
+</ul>
+</div>
+
+<div class="pa paj">
+<h4 class="h_bio">
+Background Information
+</h4>
+Species of organisms survive and still continue their existence through the process of reproductIon.Reproduction can be asexual or sexual
+</div>
+
+<div class="pa paj">
+<b>Sexual reproduction:</b> Sexual reproduction involves two sex cells called gametes. Two critical events that take place in sexual reproduction are: <strong>Meiosis and Fertilization.</strong>
+</div>
+<div class="pa paj"><strong>
+Meiosis is a cell division that gives rise to gamete (sexcell) which has a haploid number of chromosomes (n) while fertilization is the fusion of the nucleus of the male and female gametes to give rise to a zygote which has a diploid number of chromosomes (2n).</strong>
+</div>
+<div class="pa paj">
+Sexual reproduction requires male and female gonads (which are gametes producing parts); energy and food for gamete production, development of new organism and reproductive behaviour that will enhance the presence of mature male/female gametes at the place of fertilization at the right time.
+</div>
+<div class="pa paj">
+<h4 class="h_bio">Advantages of Sexual Reproduction:</h4>
+One main advantage or importance of sexual reproduction is the Genetic variation that results from it during meiosis and fertilization which gives rise to the following benefits:
+</div>
+<div class="pa paj">
+
+<ol type="i">
+<li>Proper and better adaptation of species to the environment.</li>
+<li>Ability to survive unfavorable environmental conditions which will promote life continuity.</li>
+</ol>
+</div>
+
+<h4 class="h_bio ce">
+SEXUAL REPRODUCTION IN VERTEBRATES
+</h4>
+
+<div class="pa paj">
+Among all vertebrates; there are individual males and females of separate sexes. Mature gametes from each of the opposite sexes can only be brought together at the right time for fertilization to occur. This is achieved by mating or copulation among the opposite sexes.
+</div>
+<div class="pa paj">
+
+<h4 class="h_bio">
+Reproduction in Fishes and Amphibian
+</h4>
+<b>Fishes:</b> Reproduction takes place in an aquatic environment, it is characterized by the following features and events:
+
+<ul type="disc">
+<li>Lays numerous egg in most cases.</li>
+<li>External fertilization in most cases.</li>
+<li>Eggs hatch into larvae.</li>
+<li>Oviparity (laying of egg).</li>
+<li>No parental care.</li>
+<li>Wasteful Reproduction process.</li>
+</ul>
+</div>
+<div class="pa paj">
+
+<h4 class="h_bio">
+Amphibians e.g Toads and frogs
+</h4>
+
+<ul type="disc">
+<li>Reproduction takes place in an aquatic environment.</li>
+<li>Fertilization is external </li>
+<li>Oviparity</li>
+<li>Distasteful gelatinous layer protects the eggs from being eaten.</li>
+<li>Fertilized eggs hatch into larva</li>
+<li>There is complete metamorphosis</li>
+<li>Small portion of the larva develop into adults</li>
+<li>No parental care.</li>
+<li>Reproduction is wasteful.</li>
+</ul>
+
+</div>
+
+<h4 class="h_bio ce">
+Amphibians e.g Toads and frogs
+</h4>
+
+<div class="fig">
+<strong>fig5.1a:</strong> 
+</div>
+<img src="images/fig5.1a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig5.1b:</strong> 
+</div>
+<img src="images/fig5.1b.jpg" class="imn" />
+
+<div class="pa paj">
+
+<h4 class="h_bio">
+Sexual Reproduction in birds
+</h4>
+<ul type="disc">
+<li>Reproduction takes place in a terrestrial external environment.</li>
+<li>Fertilization is internal</li>
+<li>Oviparity</li>
+<li>They do incubate their laid eggs</li>
+<li>The eggs are hatched into young ones</li>
+<li>There is parental care and</li>
+<li>Reproduction process is not wasteful.</li>
+</ul>
+
+</div>
+
+<div class="fig">
+<strong>fig5.2:</strong> <div class="box_O trA round_corner">Amniotic Egg</div>
+</div>
+<img src="images/fig5.2a.jpg" class="imn" />
+<img src="images/fig5.2b.jpg" class="imn" />
+<img src="images/fig5.2c.jpg" class="imn" />
+<img src="images/fig5.2d.jpg" class="imn" />
+
+<h4 class="h_bio ce">
+Male Reproductive System
+
+</h4>
+
+<div class="fig">
+<strong>fig5.3a:</strong> 
+<div class="box_O trA round_corner">Vertical Section</div>
+</div>
+<img src="images/fig5.3a.jpg" class="imn" />
+
+<h4 class="h_bio ce">
+Female Reproductive System
+
+</h4>
+<div class="fig">
+<strong>fig5.3b:</strong> 
+<div class="box_O trA round_corner">Vertical Section</div>
+</div>
+<img src="images/fig5.3b.jpg" class="imn" />
+
+<div class="pa paj">
+
+<h4 class="h_bio ce">Sperm Production</h4>
+Sperms are produced by the seminiferous tubules of the testis. These tubules are lined with layers of actively dividing cells. These cells migrate, enlarge and undergo meiosis to bring the process of sperm production with the formation of spermatids. These spermatids mature into non-motile spermatozoa, which are carried passively to the epididymis. They mature  into motile sperms which eventually move to the sperm duct. This whole process takes about 72days to take place. The sperm at the sperm duct can remain active for three months.
+</div>
+<div class="pa paj">
+Sperm production in male humans begins at puberty and continues till old age. Up to 300 million sperms can be produced in a day by the seminiferous tubules.
+</div>
+
+<div class="fig">
+<strong>fig5.3c:</strong> 
+<div class="box_O trA round_corner">Sperm Cell</div>
+</div>
+<img src="images/fig5.3c.jpg" class="imn" />
+
+<div class="pa paj">
+<h4 class="h_bio">Ova maturation and the menstrual cycle</h4>
+Females are born with ovaries which contain potential egg cells called primary oocytes.  The production of mature ova is a cyclic process which involves certain events that take place in the ovary (ovarian cycle) and the uterus (uterine cycle).
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+The ovarian cycle:
+</h4>
+ Each oocytes is surround by a structure called follicle – an actively dividing granular cell. The oocytes receives nutrients from the follicle.
+</div>
+<div class="pa paj">
+A mature follicle is called <b>Graafian follicle.</b> Follicle secrete ooestrogen hormone. The secretion of oestrogen increases with the maturity of the follicles. The follicles become filled with fluid and pushes the oocytes to one side as they mature. A mature follicle (graafian folloicle) contains a secondary oocytes. The follicle bulges on the surface of the ovary and finally splits the ovarian lining and releases the egg into the abdominal cavity. This is called ovulation and normally only one of the follicles becomes mature to produce one ovum (egg). The released egg has a protein coat called <strong>zona pellucidia</strong> and layer of granular cells surrounding it. The ovum eventually  gets wafted into the oviduct.
+</div>
+<div class="pa paj">
+Ovulation takes place about day 14 from the beginning of the cycle. The Graafian follicle developes into corpus Luteum after releasing the ovum. <strong>Corpus luteum</strong> secretes progesterone and little oestrogen hormones. It shrivels if fertilization and implantation does not occur while the unfertilized egg dies.
+</div>
+<div class="pa paj">
+
+<h4 class="h_bio">
+Uterine Cycle:
+</h4>
+This aspect of menstrual cycle involves the tickening of the endometrium at the uterus and the increase in supply of blood to it in readiness for implantation of the zygote. If fertilization does not occur, the endometrium breaks down. Blood and some endometrium tissue then leave the body through the vagina opening. This is called <strong>menstruation.</strong> Both the uterine and ovarian part of the cycle make up the <strong>menstrual cycle. The process is controlled by ostrogen, projesterone, follicle stimulating hormone and luteiuzing hormone.</strong>
+</div>
+
+<h4 class="h_bio ce">
+Sexual Reproduction in Flowering Plants
+</h4>
+
+<div class="fig">
+<strong>fig5.4:</strong> 
+</div>
+<img src="images/fig5.4.jpg" class="imn" />
+
+<div class="pa paj">
+
+<h4 class="h_bio">
+Flower Structure
+</h4>
+There are four whorls that make up a flower. They are: <b>The sepals</b> (collectively called calyx). <b>The petals</b> (collectively called corolla), <b>The stamens </b>(collectively known as Androecium) and <b>The carpel's </b>(collectively called Gynoecium's).
+
+</div>
+<div class="carry">
+<h3 class="ce h_bio">
+The four Whorls of a Flower and Their Functions
+</h3>
+<h4>Diagram of the structure showing different part</h4>
+
+<div class="fig">
+<strong>fig5.5a</strong> 
+</div>
+<img src="images/fig5.5a.jpg" class="imn" />
+
+<ul type="disc" class="h_bio">
+<b>(i) The sepals</b>
+<li>Not directly concerned with sexual reproduction.</li>
+<li>They are usually small and green</li>
+<li>Separated ones are referred to as gamosepatous.</li>
+<li>They protect the essential parts of the flower at the bud stage.</li>
+</ul>
+
+<div class="fig">
+<strong>fig5.5b</strong> 
+</div>
+<img src="images/fig5.5b.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig5.5c</strong> 
+</div>
+<img src="images/fig5.5c.jpg" class="imn" />
+
+<ul type="disc" class="h_bio">
+<b>(ii) Petals</b>
+<li>Separated ones are called polypetalous</li>
+<li>Joined ones are called gamopetalous.</li>
+<li>They are brightly coloured</li>
+<li>They protect the stamens and carpel.</li>
+<li>Their colours and scent facilitate pollination.</li>
+</ul>
+
+<div class="fig">
+<strong>fig5.5</strong> 
+</div>
+<img src="images/fig5.5d.jpg" class="imn" />
+
+<ul type="disc" class="h_bio">
+<b>(iii) Stamens</b>
+<li>They are made up of the filament and anther.</li>
+<li>They are the male reproductive part of the flower.</li>
+<li>They can be free or united, whereas in some, filament can be united while the anters are free.</li>
+</ul>
+
+<div class="fig">
+<strong>fig5.5g</strong> 
+</div>
+<img src="images/fig5.5g.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig5.5g</strong> 
+</div>
+<img src="images/fig5.5g.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig5.5i</strong> 
+</div>
+<img src="images/fig5.5i.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig5.5j</strong> 
+</div>
+<img src="images/fig5.5j.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig5.5k</strong> 
+</div>
+<img src="images/fig5.5k.jpg" class="imn" />
+
+<div class="pa paj">
+<b>(iv) Carpels</b><br />
+They are the female reproductive part of the flower.<br />
+There can be one carpel (monocarpous) e.g flamboyant.It can be two or more carpel (syncapous)<br />
+Separate or fused simple structure carpel is called <strong>pistil.</strong>
+</div>
+<div class="pa paj">
+(v) A single structure or separated carpel (pistil) has  among most of them:One ovary<br />
+One or more  styles<br />One or more stigmas the tip[ part of the style.<br />
+The ovary contain ovules and the arrangement of the ovule  in the ovary is called <strong>placentation.</strong>
+</div>
+
+<h3 class="h_bio ce">
+Reproductive Behaviours
+</h3>
+<div class="pa paj">
+Behaviours that facilate and ensure fertilization are called reproductive behaviours. Such behaviour include the following: 
+</div>
+
+<ol type="i">
+<li>Courtship</li>
+<li>Pairing</li>
+<li>Territoriality</li>
+<li>Seasonal breading migrations</li>
+<li>Parental care etc.</li>
+</ol>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td></td><td>Reproduction</td><td>Its characteristics or features</td>
+</tr>
+<tr>
+<td>1</td><td><b>Courtship:</b><br />Reproductive communication between opposite sexes of animals that ends in sexual union</td><td>Visual signals as in displaying of a male peacocks before a peahen and the displaying of orange coloured head of a male lizard before a female one.Auditory signal: Croaking of toad, in the night during rainy season; mating calls of pigeons e.t.c.Smell signal: sex attractants which is secreted by the anal gland of a civet cat and the one secreted in the  urine of cows when on heat.</td>
+</tr>
+<tr>
+<td>2</td><td><b>Pairing:</b><br />The coming together of compatible individuals of opposite sexes for sexual union for life or for a brief period.</td><td>
+(i). Pairing can be between one male and female of the same species for a brief period or for life.<br />(ii) It can be one male and a group of female for a brief period or for life.<br />
+(iii) In certain cases especially in the first case, parental care is by both parents.<br />
+(iv). In other cases it is only one parent usually the female that takes care of the young.
+</td>
+</tr>
+<tr>
+<td>3</td><td><b>Territoriality</b><br />
+A behaviour in which a member of species (usually the males) marks out a fixed area and defends it against intruders.</td><td>
+(i).Territories are established prior to mating<br />
+(ii) Intruding males are chased or scared away while females can be allowed or even wooed in.<br />
+(iii) The behaviour ensures adequate food and space for the occupants of the territory.<br />
+(iv) Also the fittest pass favorable characteristics to offspring's thus increasing their survival value.</td>
+</tr>
+<tr>
+<td>4</td><td><b>Seasoonal breeding migration:</b><br />Seaonal two way movement of certain animals which are associated with breeding</td><td>This occur mostly in birds and also in mammals</td>
+</tr>
+<tr>
+<td>5</td><td><b>Parental care:</b><br />
+The behaviour of caring for the young  after they are hatched or born.</td><td>This occur mostly among birds and mammals.</td>
+</tr>
+</table>
+</div>
+<div class="pa paj">
+
+<h4 class="ce h_bio">
+Pollination in Plants
+</h4>
+Pollination is the transfer of pollen grains from the anters to a receptive stigma of a a flower of the same plant species. Pollination is of two types <strong>(i) self pollination and (ii) Cross pollination</strong>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">
+1.  Self Pollination:
+</h4>
+ A type of pollination that takes place when mature pollen grains from the anter of a flower falls on the stigma of the same flower (for example wheat and pea)  or another flower of the same plant (for example: maize).
+</div>
+<div class="pa paj">
+
+<ol type="i">
+It is favoured, enhanced or facilitated by:
+<li><b>Homogamy:</b> (carpels and stamen in bisexual flowers maturing at the same time)  example: Mirabilis.</li>
+<li><b>Cleistogamy:</b> Condition in which bisexual flowers refuse to open and in such closed condition the pollen grain, are discharged directly onto the receptive stigma. Example isLegumes such as groundnut.</li>
+</ol>
+</div>
+<div class="pa paj">
+
+<h4 class="h_bio">
+2.  Cross pollination :
+</h4>
+ A type of pollination in which mature pollen grains of a particular flower are transferred to the stigma of another flower in another plant of the same species or closely related Species. Cross pollination is favoured or facilitated by:
+<ol type="i">
+<li><b>Unisexuality</b> in flowers</li>
+<li><b>Dichogamy:</b> A condition of bisexual flowers of flowering plants having their stamens and carpel mature at different times.</li>
+<li><b>Self – incompatibility:</b> An inherited condition, in which bisexual flowers of the same stamens bear stamens and carpels which mature at the same time but which are incompatible to each other for sexual reproduction.</li>
+</ol>
+</div>
+<div class="pa paj">
+<b>Pollinating Agents:</b> This includes: <strong>Wind , Water, Insects</strong> and some other animals like birds, bats squirrels and snails. Wind and insects are the major pollinators.
+</div>
+<div class="pa paj">
+<b>Wind pollination:</b> Flower that are pollinated by wind are called  anemophilous flowers. They have the following characteristics:
+
+<ul type="disc">
+<li>Small and not conspicuous, they are borne in large inflorescences.</li>
+<li>Flowers are unisexual with both male and female occurring in the same plant.</li>
+<li>Sepels and petals when present are pale or green coloured.</li>
+<li>No scent or nectar</li>
+<li>Simple flower structure.</li>
+<li>Mature stamens hang outside the flower while the anters are large and they produce large quantities of pollen grains.</li>
+<li>Also the stigmas hang outside the flower on long flexible styles this provide large surface area for trapping pollen grains.</li>
+</ul>
+</div>
+<div class="pa paj">
+<b>Insect pollination:</b> Insects pollinated flowers are called entomophilous flowers. They have the following characteristics:
+<ul type="disc">
+<li>Usually large and couspicious flowers.</li>
+<li>Bisexual flowers</li>
+<li>Brightly coloured and large petals.</li>
+<li>Scented flowers which produce nectar</li>
+<li>There is an elaborate structural modification of the flower to suit its insect pollinator</li>
+<li>Also the stigmas lie within flowers</li>
+</ul>
+</div>
+
+<h4 class="h_bio">
+Wind Pollinating Flower
+</h4>
+
+<div class="fig">
+<strong>fig5.6a:</strong>  Sessile male floret of maize
+</div>
+<img src="images/fig5.6a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig5.6b:</strong>  Female spikelets of maize
+</div>
+<img src="images/fig5.6b.jpg" class="imn" />
+
+<div class="pa paj">
+
+<h4 class="h_bio">
+General questions
+</h4>
+1. In sexual reproduction meiosis leads to the formation of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> while fertilization leads to formation of 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+2. Fertilization gives rise to an organism with 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> number of chromosomes
+</div>
+<div class="pa paj">
+3. During meiosis 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>number of daughter cells are formed and each cell has a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> number of chromosomes.
+</div>
+<div class="pa paj">
+4. An individual organism that produces both eggs and sperms is called a 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+5. Write two examples of the organism in question '4'
+
+<span id="q5"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q5')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Human; Birds</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q5',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Planarians; Earthworm</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q5')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Reptiles, Amphibians</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+6. In sexual reproduction, oviparity is an act of _______
+<span id="q6"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q6')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">giving birth to young once alive</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q6',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">shedding or laying eggs into the external environment</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q6')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">release of egg in the internal environment</div>
+    </div>
+</div> 
+
+It can be found among _________ and _____________
+<span id="q6"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q6')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Fishes and amphibians</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q6',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Primate and hominids</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q6')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Annelids and planarians</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+7. In vertebrates external fertilization occurs among 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+8. One essential environmental condition for external fertilization to take place among vertebrates is an  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> environment.
+</div>
+<div class="pa paj">
+9. Eggs that are layed by reptiles and birds after fertilization are called 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> eggs.
+</div>
+<div class="pa paj">
+Use the diagram below to answer question 10 – 15 
+</div>
+
+<div class="fig">
+<strong>fig5.7a:</strong> 
+</div>
+<img src="images/fig5.7a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig5.7b:</strong> 
+</div>
+<img src="images/fig5.7b.jpg" class="imn" />
+
+<div class="pa paj">
+Identify and label the parts, numbered 10 – 15 and state their functions as tabulated
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Parts</td><td>Function</td>
+</tr>
+<tr>
+<td>10. <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>11. <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>12. <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>13. <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>14. <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>15. <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+<div class="pa paj">
+16. In vertebrates, parental care for the young ones in reproduction is observed mostly among <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+17. State two functions of male sex hormone (testoterone) in secondary sexual characteristics
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+18. Sperms are produced at the cells lining of the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and stored at the 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+19. Write three functions of these accessory glands in the male reproductive organ: Seminal vesicles, prostrate glands and the cowper's gland
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+20. In male reproductive sytem, which structure connects the epididymis to the urethra? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+21. The openning at the penis is called a urino genital opening because <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+22. State the hormone that directly causes ovulation 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+23. When does the ovum undergo its second meiotic division?
+
+<span id="q23"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q23')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">During ovulation at the falopian tube</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q23',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">After ovulation in the falopian tube</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q23')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Before ovulation</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+24. After releasing the ovum (egg cell), the Graafian follicle develops into 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> <br />
+A yellow solid that secretes 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+25. When  is a female mammal said to be on heat.
+
+<span id="q25"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q25')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">When females show lack of willingness to mate</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q25')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">When females are feeling very hot</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q25',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">When a female mammals shows urge to mate when ripe grapian follicle is present in the ovary.</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+26. What happens to the endometrial tissue in the uterus if implantation does not occur <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+27. Where in the female repoductive system does ovulation take place? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+28. The main reproductive parts among the four whorls of a flower are _______ and _________
+<span id="q6"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q6')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Calyx and corolla</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q6',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Stamens and Carpels</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q6')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">Gynoecium and stamens</div>
+    </div>
+</div> 
+
+</div>
+
+<div class="fig">
+<strong>fig5.7c:</strong> 
+</div>
+<img src="images/fig5.7c.jpg" class="imn" />
+<img src="images/fig5.7d.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig5.7c: (e, f, g)</strong> Shapes of receptacle in relation to the ovary.
+</div>
+<img src="images/fig5.7e.jpg" class="imn" />
+<img src="images/fig5.7f.jpg" class="imn" />
+<img src="images/fig5.7g.jpg" class="imn" />
+
+<div class="pa paj">
+Label the diagram numbered 29,30,31 and 32
+</div>
+<div class="pa paj">
+33. State the names of each ovary in relation to its position to the receptacle in the diagram in fig 4.95
+<ol type="A">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+34. Identify and label the ovary, style and stigma in each diagram(see fig 5.7e, f,g)<textarea class="w100"></textarea><span class="w100resp"></span>
+
+</div>
+<div class="pa paj">
+35. What is an Anemophilous flower?  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+36. What is a complete or perfect flower?
+
+<span id="q36"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q36',1)">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">A flower that has all the floral parts</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q36')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">A flower that has one of its floral parts</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q36')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">A flower that has both male and female reproductive parts in one flower or plant</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+37. When male and female flowers are found on the same plant, it is said to be 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> while different plants having male and female flowers are said to be 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+38. A <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> is an example of an animal that displays courtship behaviour by auditory signals.
+</div>
+<div class="pa paj">
+39. Cleistogamy is a characteristic in flowers that encourages 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> pollination.
+</div>
+<div class="pa paj">
+40. The two main pollination agents are 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+<h4 class="ce h_bio">
+Expression Exercises
+</h4>
+1a. Write two advantages of sexual reproduction over Asexual reproduction.
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+1b. State two reasons why sexual reproduction in fishes and amphibians is wasteful
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Parts</td><td>Functions</td>
+</tr>
+<tr>
+<td>Shell</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>York</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>Chorion</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>Air space</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+<div class="pa paj">
+2b. Below is a diagram of developing young inside the uterus of a female mammal. Use it to answer question 2b.
+</div>
+
+<div class="fig">
+<strong>fig5.7h:</strong> 
+</div>
+<img src="images/fig5.7h.jpg" class="imn" />
+
+<div class="pa paj">
+Identify the following parts in the table with a leading line on the diagram and label accurately also write their function in the table.
+</div>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Parts in the Diagram</td><td>Functions</td>
+</tr>
+<tr>
+<td>Embryo</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>Villi</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>Umbilical cord</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>Amnion</td><td><textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+<div class="pa paj">
+3a. How is circulating system of the embryo separated from the mother? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+b. What is menstrual cycle? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+What is the duration of the cycle in humans 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+c. Once fertilization takes place, What prevents other sperms from entering an egg.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+4. Write three features that favour cross-pollination
+<ol type="i">
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+b. Write four characteristics of an entomophilous flower and three characteristics of anemophilous flower
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<h4>
+Practical Activities
+</h4>
+<div class="pa paj">
+1. <b class="u">Observing the reproductive organ of a freshly dissected male rat.</b><br />Your teacher will dissect a male rat with its reproductive organ exposed.
+</div>
+<div class="pa paj">
+<ol type="i">
+Materials required: 
+<li>Freshly dissected male rat with exposed reproductive organs</li>
+<li>Identify the following parts in the dissected specimen 
+
+<ol type="a">
+<li>The testis</li>
+<li>The vas deferens.</li>
+<li>The seminal vesicle</li>
+<li>The penis and</li>
+<li>epididymis.</li>
+</ol>
+
+</li>
+<li>Make up to 10cm diagram of what you observed ( the dissected rat reproductive part) and label the major parts.</li>
+</ol>
+</div>
+
+<h4 class="ce h_bio">
+Questions
+</h4>
+
+<div class="pa paj">
+(i) Where are the male gametes produced from your specimen observation 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(ii) Do rats breed through out the year? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(iii) How does breeding among rats differ from that of frogs? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2. Observing the reproductive organs of a freshly dissected female rat.
+<ol type="i">
+<li>Repeat the procedure in 1 above using a freshly dissected female rat.</li>
+<li>Also idenify the following: Ovary, Oviduct, and Uterus.</li>
+<li>Draw 10cm size of what you have observed, labelling the part that where identified in (ii).</li>
+</ol>
+</div>
+
+<h4 class="ce h_bio">
+Questions
+</h4>
+
+<div class="pa paj">
+(i) From your observed specimen, where are the female gametes produced? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(ii) Where does the fertilization of those gametes occur 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(iii) How long does gestation period last in the mammal under investigation
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+3. <b class="u">Examining the eggs of vertebrates</b><br />
+Collect the eggs of bird and lizard 
+<ol type="i">
+<li>Examine their external structural differences and appearances
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Draw the internal structure of any of the two eggs, identify and label the important structures.</li>
+<li>Which of the eggs receives much parental care <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+4. <b class="u">Examinning the parts of a flower</b><br /><strong>Materials/Apparatus:</strong> Pride of Barbados or hibiscus flower, hand lens,
+<ol type="i">
+<li>Hold the flower by its green stalk i.e. the pedicel and examine its general external features.</li>
+<li>Identify and observe the sepals and remove and count them. Then record the number.</li>
+<li>Identify and carefully observe the petals, remove them and count how many they are.</li>
+<li>Using the hand lens, carefully observe the stamens. Remove the stamens and locate the anthers.</li>
+<li>Use the hand lens to view the internal central structure which is the  pistil. Identify the stigma, style and ovary. Particularly note the arrangement there.</li>
+</ol>
+</div>
+<div class="pa paj">
+From your observations in the experiment supply the information at the vacant spaces in the table below concerning the flower you have studied.
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Flower name</td><td>Floral part</td><td>Number of parts</td><td>Colour</td><td>Free of united</td>
+</tr>
+<tr>
+<td rowspan="4">Pride <br /> of <br /> Barbados</td><td>Calyx</td><td>5</td><td></td><td></td>
+</tr>
+<tr>
+<td>Corolla</td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>Stamens</td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>Stigma</td><td></td><td></td><td></td>
+</tr>
+</table>
+<div class="pa paj">
+(b) Suggest the function of the corolla (the petals) in the flower 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+Observing a half section of a flower.
+<br />
+<b>Material required:</b>
+</div>
+<div class="pa paj">
+Flower of pride of Barbados or hibiscus; scalpel or razor blade, hand lens.<br />
+First study the diagram below which will guide you in your investigation and observation.
+</div>
+
+<div class="fig">
+<strong>fig5.8a:</strong> 
+</div>
+<img src="images/fig5.8a.jpg" class="imn" />
+
+<div class="pa paj">
+(i) Take a flower; starting from the pedicel, cut it into two halves longitudinally using the scalpel or razor blade
+</div>
+<div class="pa paj">
+(ii) Use a hand lens to examine the section of the half flower while the flower is placed on the bench.
+</div>
+<div class="pa paj">
+(iii) Make a well Labeled diagram of the structure in your biology practical notebook.
+</div>
+
+<div class="pa paj">
+<h4 class="u">Questions:</h4>
+(i) Write down one content of the ovary of the flower 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(ii) What is the name given to the arrangement of the ovules in the ovary 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(iii) What type of such arrangement is present here? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig5.8b:</strong> 
+</div>
+<img src="images/fig5.8b.jpg" class="imn" />
+
+<div class="pa paj">
+Examine the diagram in fig 4.8 carefully. Use it to answer the questions that follow.
+</div>
+<div class="pa paj">
+(i) Identify the diagram without reasons
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(ii) Where is it produced in humans
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(iii) What hormone stimulates the production of the specimen diagram
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(iv) Label the parts of the diagram labeled A B C
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa">
+(v) What is the function of the part labeled C 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(vi) What is the purpose of the part labeled A in the function of the diagram specimen during sexual reproduction 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<h3 class="h_bio ce" > Maize flower </h3>
+<div class="fig">
+<strong>fig5.8c:</strong> 
+</div>
+<img src="images/fig5.8c.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig5.8d:</strong> 
+</div>
+<img src="images/fig5.8d.jpg" class="imn" />
+
+
+<div class="pa paj">
+(a) Which of the flowers in the diagrams above is male and which one is female
+<ol type="i">
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(b) Does the flower favour insect pollination or wind pollination? Gave reason for your answer 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c)  Write two exmples of:  
+<ul type="square">
+(i) a dioecious plant and two examples of a (ii) Monoecious plant.
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ul>
+
+<ul type="square">(ii) Monoecious plant.
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ul>
+</div>
+<div class="pa">
+3. In the diagrams below identify the type of placentation in each case, then write one example of plant that has such placentation
+<ul type="square">A
+<li>Type
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>Example
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ul>
+<ul type="square">B
+<li>Type
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>Example
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ul>
+<ul type="square">C
+<li>Type
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>Example
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ul>
+<ul type="square">D
+<li>Type
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>Example
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ul>
+</div>
+
+<div class="fig">
+<strong>fig5.9a:</strong> 
+</div>
+<img src="images/fig5.9a.jpg" class="imn" />
+
+<img src="images/fig5.9b.jpg" class="imn" />
+
+<img src="images/fig5.9c.jpg" class="imn" />
+
+<img src="images/fig5.9d.jpg" class="imn" />
+
+<h4 class="ce h_bio">
+SSCE PAST QUESTIONS<br />
+Sexual Reproduction and Reproductive Behaviour
+</h4>
+<div class="pa paj">
+<b>Nov 1990 1a and b</b><br />
+1.a List three features which are essential for cross pollination to take place.
+<ol type="i">
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+b. State three characteristics of wind-pollinated flowers
+
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol></div>
+<div class="pa paj">
+3. <br />Specimen E-Pride of Barbados<br />
+Specimen F- Maize plant flower
+</div>
+<div class="pa paj">
+(a) Identify specimen E and F  <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(b) Suggest the agent of pollination of Specimen E <textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c) Give three reasons for your suggestion in (B)
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+(d) In a tabular form, state three difference between specimen E and F
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Specimen E</td><td>Specimen F</td>
+</tr>
+<tr>
+<td>1
+<textarea class="w100"></textarea><span class="w100resp"></span></td><td>1
+<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>2
+<textarea class="w100"></textarea><span class="w100resp"></span></td><td>2
+<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+<tr>
+<td>3
+<textarea class="w100"></textarea><span class="w100resp"></span></td><td>3
+<textarea class="w100"></textarea><span class="w100resp"></span></td>
+</tr>
+</table>
+<div class="pa paj">
+(c) With a sharp blade or scalpel, cut a longitudinal section of specimen E, to produce two equal parts of specimen E. Make a labelled drawing 10cm to 12cm long, of one half of specimen E.
+</div>
+<div class="pa paj">
+<b>May/June 2001 Q2</b>
+</div>
+<div class="pa paj">
+Specimen C, a pride of Barbados flower is provided.
+</div>
+<div class="pa paj">
+4. (a)i. Identify specimen C 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(ii). What is the symmmetry of specimen C? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(iii). Using the scapel/knife or razor blade provided, cut through specimen C longitudinally, diving it into two equal halves. Make a labelled drawing of 8cm to 10cm long of one half.
+</div>
+<div class="pa paj">
+(iv). What is the common name given to specimen C? Name its placentation.3
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(v). Mention two elements contained in the class of food produced by specimen C 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<b>June 1999 Q3</b><br />
+Specimen K: A hibsicus flower or pride of the barbados
+</div>
+
+<table class="tabler bg_white smal_t">
+<tr class="trA">
+<td>Flower name</td><td>Floral part</td><td>Number of parts</td><td>Colour</td><td>Free or fusedor united</td><td>Essential orNon Essential</td>
+</tr>
+<tr>
+<td rowspan="4"><br />Pride <br />of <br />Barbados</td><td>Sepals/calyx</td><td>5</td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>Petal/corolla</td><td>5</td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>Stamens</td><td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td>Stigma</td><td></td><td></td><td></td><td></td>
+</tr>
+</table>
+
+<div class="pa paj">
+(b) Cut Specimen K longitudinally into halves. Observe the halved specimen K and use it to answer Questions (b) (i) – (v)
+</div>
+<div class="pa paj">
+(i) What is the symmetry of specimen K 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(ii) Classify specimen K in relation to its reproductive structures 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(iii) Name the type of placentation of specimen K 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(c)  Detach the sepals and petals of the longitudinal section of K and make a labelled drawing of 10cm to 12cm long to illustrate the features of the remaining parts of specimen K
+</div>
+
+<div class="pa paj">
+(d)
+<ol type="i">
+<li>Name the agent of pollination of K <textarea class="w100"></textarea><span class="w100resp"></span>
+</li>
+<li>Give one example of the agent of pollination of specimen K <textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>State four adaptive features of specimen K that attracts the agent you have mentioned
+<ul type="square">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ul></li>
+</ol>
+</div>
+<div class="pa paj">
+June 2005 WASSCE BIOLOGY 1 PRATICAL-QUESTION (Part 111)
+</div>
+<div class="pa ce">
+You are given specimen I which is flower of flamboyant
+</div>
+<div class="pa paj">
+4(d)(i) Carefully detach two petals from specimen I making sure that the special petal is left  intact, make a labeled drawing 10 -12cm long of the remaining portion of specimen I.
+</div>
+<div class="pa paj">
+(ii) what is the function of the special petal?
+</div>
+<div class="pa paj">
+(iii) Classify specimen I into its phylum and class.
+</div>
+<div class="pa paj">
+ (iv) State three pollinating agents of specimen I.
+</div>
+<div class="pa paj">
+(e) State two observable adaptations for survival in specimen J.
+</div>
+<div class="pa paj">
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+June 2008 WASSCE BIOLOGY 1 PRATICAL-QUESTION
+</div>
+<div class="pa paj">
+You are provided with pride of Barbados flower as specimen A, a legum/pod (beans)
+</div>
+<div class="pa paj">
+1. (a) (i) Specimen A is a flower. Remove all the stamens and three petals from specimen A leaving the special petal. Make a drawing 10 -12cm long of the remaining parts of specimen A and label fully. (11marks)  
+</div>
+<div class="pa paj">
+(ii)  What type of ovary is present in specimen A?(1marks)  
+</div>
+<div class="pa paj">
+(iii) Give one reason for your answer in 1(a) (ii) above. (1mark) 
+</div>
+<div class="pa paj">
+(iv) Describe the petals and sepals of specimen A. (2marks) (v) What is the function of the special petal?(1mark)
+</div>
+<div class="pa paj">
+ (vi) State three features of specimen A which have led to the success of flowering plants. (3marks)
+</div>
+<div class="pa paj">
+(b)(i) What type of fruit is specimen B? (1mark)
+</div>
+<div class="pa paj">
+(ii) Give two other examples of the fruit type. (2marks)
+</div>
+<div class="pa paj">
+(iii) State the mode of dispersal of specimen B.(1marks)
+</div>
+<div class="pa paj">
+ (iv) State two biological importance of the class of fruit to which specimen B belongs. (2marks)
+</div>
+<div class="pa paj">
+
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+
+</div>
+<div class="pa paj">
+
+</div>
+
+<div class="carry ce">
+
+  <a href="chapter4.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter6.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 5;
+</script>
+
+</div>
+</body>
+
+<script type="text/javascript" src="../js/jq.js">
+</script>
+<script type="text/javascript" src="js/ch5.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>

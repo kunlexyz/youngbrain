@@ -1,0 +1,149 @@
+.tabler, .tabler th, .tabler td {
+    border: none;
+    text-align: left;
+    padding: 8px;
+	border-left: 1px solid #aaa;
+}
+.tabler tbody tr:nth-child(2n) {
+    background-color: #FF9;
+}
+.tabler {
+    border-collapse: collapse;
+    border-spacing: 0;
+width: 100%;
+	border: 1px solid #aaa;
+	margin-bottom:15px;
+}
+
+/*.tabler tr{background-color:#FFF;}*/
+.bg_white{background-color:#fff;}
+
+.tableB{
+    border-collapse: collapse;
+    border-spacing: 0;
+width: 100%;
+	margin-bottom:15px;
+}
+
+.tableB td:nth-child(2n){
+	border-left: 1px solid #aaa;
+}
+
+.tableB td{
+    padding: 8px;
+}
+
+.w100{width:100%;}
+
+.h_bio{
+	border-bottom: 1px solid #aaa;}
+	
+.fig{
+	background-color:#FC0;
+	margin-top:15px;
+	text-align:left;}
+.fig_box{display:inline-block;
+	background-color:#FC0;}
+.no_ol{    padding: 0px 14px;
+    margin: 0px;}
+.method{border-right:#0C0 solid 2px;}
+.gr{color:#0C0}
+.or{color:#F60;}
+
+.tb td{padding:15px;}
+
+.titBox{
+	background-color:#000;
+	color:#FF0;
+	/*max-width:450px;*/
+	padding:5px;
+}
+.u{text-decoration:underline;}
+
+.qBox_bio{border:none;
+	border-bottom:2px #03F solid;
+	background-color:#DEF3F8;
+	text-align:center}
+.resp{color:#F00;}
+
+/*[FreeTutorials.Us] Udemy - The Complete Web Developer in 2018 Zero to Mastery*/
+/*
+
+
+</div>
+<div class="pa paj">
+
+
+<table class="tabler">
+<tr class="trA">
+<td></td>
+</tr>
+</table>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td></td><td>Bony fish</td><td>Cartilagenous fish</td>
+</tr>
+<tr>
+<td>1</td><td></td><td></td>
+</tr>
+<tr>
+<td>2</td><td></td><td></td>
+</tr>
+<tr>
+<td>3</td><td></td><td></td>
+</tr>
+</table>
+
+<div class="Notable_head">
+Notable Concepts
+</div>
+
+*/
+
+/*
+#####images
+
+<div class="fig">
+<strong>fig7.3:</strong> Mushroom
+</div>
+<img src="images/fig5.3.jpg" class="imn" />
+
+
+
+<div class="fig">
+<strong>fig7.5b:</strong> 
+</div>
+<img src="images/7.5b.jpg" class="imn" />
+
+
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><br />
+
+
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" />
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" />
+</li>
+</ol>
+
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+
+<textarea class="w100"></textarea><span class="w100resp"></span>
+
+<h3 class="h_bio">
+
+</h3>
+
+
+</li><li>
+<!--
+
+-->
+*/

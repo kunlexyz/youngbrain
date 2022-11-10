@@ -1,0 +1,984 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biology</title>
+        <link rel="stylesheet" href="../MobileTem.css">
+        <link rel="stylesheet" href="../css/biology.css">
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="contentChap ce co" id="verify">
+	<div class="headaChap">
+    To Get this chapter, you must activate this app<br />
+    Version: 1.0.2
+	</div>
+	
+Verification Number:
+<div id="vN" class="heada" style="font-size:33px;">TT</div>
+<div class="imDesc">Enter the Activation Number below:</div>
+<input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />
+<br /><button onclick="activ8()">Activate</button>
+		<div class="content ce" style="margin-top:9px; background-color:#C8FDA8">
+<div id="activate">To Get your activation number</div>
+<strong>Contact:</strong><br />
+<img src="../images/wh.png" /><br />
+08033527655<br />+2348033527655
+<br />or<br />
+
+<button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>
+
+<form id="paymentForm" class="payForm" style="display:none;">
+<div class="ce">fill the form below to buy <br />(please, make sure your data is on)
+</div>
+<table>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Email Address:</label>
+	</td><td>
+    <input type="email" id="email-address" class="inp" required />
+	</td>
+</tr>
+  </div>
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="email">Phone No:</label>
+	</td><td>
+    <input type="tel" id="phone No" class="inp" required />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="amount">Amount:</label>
+
+	</td><td>
+    <b style="color:#060;">1500 Naira Only</b>
+    <!--
+    <input type="tel" id="amount" required />
+    -->
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+    <label for="first-name">First Name:</label>
+	</td><td>
+    <input type="text" class="inp" id="first-name" />
+	</td>
+</tr>
+  </div>
+
+  <div class="form-group">
+<tr>
+<td>
+
+    <label for="last-name">Last Name:</label>
+	</td><td>
+
+    <input type="text" class="inp" id="last-name" />
+	</td>
+</tr>
+  </div>
+<tr>
+<td>
+	</td><td>
+  <div class="form-submit">
+
+    <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>
+
+  </div>
+	</td>
+</tr>
+</table>
+
+</form>
+<div id="paystackEmbedContainer"></div></div>
+<div style="display:none;">
+        <button onclick="rem()">Test Mode Id</button>
+        <div id="tk"></div>
+</div>
+</div>
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay">
+  <div class="closebtn close3" onclick="closeNav()">&times;</div>
+		<img class="coI" src="../images/bio_logo2.png" style="width:200px; border-radius:25px; margin:auto;"  />
+  <div class="overlay-content">
+  
+    <a href="../index.html">
+    <div class="menu1"><div class="bull"></div>Cover Page</div>
+    </a>
+    
+    <a href="content.html">
+    <div class="menu1" onclick="">
+    <div class="bull"></div>Table of Content
+    </div>
+    </a>
+    
+    <a href="diagram.html">
+    <div class="menu1" onclick=""><div class="bull"></div>Diagrams</div>
+    </a>
+    
+    <a href="../about.html">
+    <div class="menu1" onclick=""><div class="bull"></div>About the Book</div>
+    </a>
+    
+    <a href="../more.html">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>More Books</div>
+    </a>
+    
+    <a href="../set.html">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>
+    
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()">
+</div>
+<!-- -->
+</div>
+<div id="coHide">
+<div class="ce box_Oh">
+<div class="trA smal_t2 le">
+New Senior School Biology Practical Activity &amp; Work Book 3
+</div>
+<div class="box_head">
+Chapter
+<div class="box_head2">3</div>
+</div>
+	<div class="box_title" style="font-size:20px;line-height: 20px;">
+SENSORY RECEPTORS<br />AND<br />SENSE ORGANS
+	</div>
+</div>
+<div class="titBox">
+<div class="Notable_head">
+Notable Concepts
+</div>
+<ul type="disc">
+<li>Sensory receptors.</li>
+<li>Sense organs.</li>
+<li>Defects of sense organs and their correction.</li>
+</ul>
+</div>
+
+<div class="pa paj">
+<b>
+Background Information
+</b>
+</div>
+<div class="pa paj">
+Living cells has response to stimuli as one of their characteristics but there are certain cells in organisms which are specialized to detect a particular type of stimulus. Such cells are called sensory receptors.
+</div>
+<div class="pa paj">
+Such cells can be categorized into four groups, which are
+</div>
+<div class="pa paj">
+<strong>(i) Chemoreceptors</strong>(which detect chemical stimuli like taste, smell, concentration of chemical substances in the blood e.t.c)
+</div>
+<div class="pa paj">
+<strong>(ii) Mechano receptors</strong> (which detect stimuli of touch, sound, vibrations muscle contraction, pain e.t.c)
+</div>
+<div class="pa paj">
+<strong>(iii) Photoreceptors</strong> (Which detect stimuli of light intensity and other electromagnetic stimuli
+</div>
+<div class="pa paj">
+<strong>(vi) Thermoreceptors</strong> (which detect temperature and heat energy changes).
+</div>
+<div class="pa paj">
+Sensory receptors are made up of sensory structures which are grouped into:
+</div>
+<div class="pa paj">
+<strong>Primary sense cells</strong>(which have nerve ending e.g Touch receptors in the skin):
+</div>
+<div class="pa paj">
+<strong>Secondary sense cells</strong>(which has no nerve cell but consists of group of sensory cells e.g taste buds in the tongue);
+</div>
+<div class="pa paj">
+<strong>The sense organ</strong>(which has both the secondary sense cells, sensory nerve cells and other structures).
+</div>
+
+<div class="fig">
+<strong>fig3.1a:</strong> Taste areas of the Tongue
+</div>
+<img src="images/fig3.1a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig3.1b:</strong> Senses of the Nose and Tongue
+</div>
+<img src="images/fig3.1b.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig3.1c:</strong> 
+</div>
+<img src="images/fig3.1c.jpg" class="imn" />
+<div class="carry">
+
+<div class="trA hh8 ce big_t">
+Sense Organ
+</div>
+<div class="fig_1">
+<strong>fig3.2a:</strong> 
+<div class="box_O trA round_corner">
+Skin
+</div>
+</div>
+<img src="images/fig3.2a.jpg" class="imn" />
+
+<h3 class="trA ce">
+How the organ functions
+</h3>
+
+<div class="pa paj">
+The skin detects senses of touch, temperatureandheatenergychanges, pressure and pain.Certain regions of the skin are more sensitive to a particular stimulus. Sensory receptors in the skin which are mainly dendrite ending of neurons receive sensations of feelings which are interpreted by the brain via the sensory (afferent neurones).
+</div>
+<div class="fig">
+<strong>fig3.2b:</strong> 
+<div class="box_O trA round_corner">
+Taste Bud
+</div>
+</div>
+<img src="images/fig3.2b.jpg" class="imn" />
+
+<h3 class="trA ce">
+How the organ functions
+</h3>
+<div class="pa paj">
+<b>Taste buds</b><br />
+Which lie in grooves on the surface of the tongue receive the stimulus of taste from dissolved substances on the tongue.Basically the tongue can detect four types of taste which are sweet and salty taste at the front, sour taste at the sides and bitter taste at the back.
+</div>
+<div class="fig">
+<strong>fig3.2c:</strong> 
+<div class="box_O trA round_corner">
+Smell (Olfactory) Sensory Cells
+</div>
+</div>
+<img src="images/fig3.2c.jpg" class="imn" />
+
+<h3 class="trA ce">
+How the organ functions
+</h3>
+<div class="pa paj">
+Olfactorychemoreceptorsinmammals are at the epithelial linning of the upper portion of the nasal cavity. They are stimulated by the disolution of chemicals (from the surrounding air in the enviroment) on it.These chemoreceptors send off sensory impulses to the brain through the olfactory nerves.
+</div>
+
+<div class="fig">
+<strong>fig3.2d:</strong> 
+<div class="box_O trA round_corner">
+The Eye
+</div> Structure of the eye
+</div>
+<img src="images/fig3.2d.jpg" class="imn" />
+
+<div class="pa paj">
+<h3 class="trA ce">
+How the organ functions
+</h3>
+<h4 class="h_bio">How do we see:</h4>
+Light rays from objects enter the eyes. They bend mostly at the air/cornea surface boundary.<br />
+They also bend at the aqueous humour, lens and vitreous humour. The light rays which carry the photo stimulus to be detected in the eyes, after being given a final adjustment and bending, focuses the image of the objects on the retina.<br />
+This stimulates photoreceptors called <b>rod</b> and<b> cone cells.</b> An electrical impulse is sent through the optic nerve to the brain.<br />
+The brain interprets the impulse and enables the perception of the correct position and distance, colour etc of the image to be seen clearly and distinctly when they are focused on the <b>fovea centralis</b> of the retina.
+</div>
+
+<div class="fig">
+<strong>fig3.3:</strong> 
+<div class="box_O trA round_corner">
+The Ear
+</div> Sense of hearing and balance
+</div>
+<img src="images/fig3.3.jpg" class="imn" />
+
+<div class="pa paj">
+<h3 class="trA ce">
+How the organ functions
+</h3>
+
+<h4 class="h_bio">
+How do we hear:
+</h4>
+Sound which reaches the ear in form of waves of vibrating air travels through the auditory canal and sets the tympanic membrane (eardrum) into vibration also.
+<br />
+The ear drum passes this vibration to earbonescalledossicles <strong>(the malleus, incus and stapes).</strong><br />
+The vibration of the stapes makes the membrane of the oval window to vibrate.<br />
+This leads to the vibration of the peri lymph of the cochlea which pushed the round window out and in. The pressure wave movement in the perilymph sets the endolymph in motion, this movement results to the stimulation of sensory receptor cells. Auditory nerves sends the received impulse of hearing to the brain where it is interpreted as sound. In addition to hearing the ear is involved in the sense of balance. This occurs by means of the semicircular canal of the ear.
+</div>
+<div class="u ce hh8">
+Eye Deffects
+</div>
+<div class="pa">
+Illustration by Diagram
+</div>
+
+<div class="fig_box">
+<strong>fig3.4a:</strong> 
+</div>
+<img src="images/fig3.4a.jpg" class="imn" />
+
+<h4 class="ce h_bio">
+Deffect and its Features and correction
+</h4>
+<ul type="disc"><b>
+1. Short sightedness<br />(Myopia)</b>
+<li>Near objects are seen clearly while distant ones appear blurred.</li>
+<li>Caused by eyeball being too long.</li>
+<li>Light rays are focused in front of retina.</li>
+</ul>
+
+<div class="pa paj h_bio">
+
+<ul type="square">
+<b class="u">Correction</b>
+<li>Using a concave  or diverging lens</li>
+</ul>
+
+</div>
+
+<div class="fig_box">
+<strong>fig3.4b:</strong> 
+</div>
+<img src="images/fig3.4b.jpg" class="imn" />
+*
+<ul type="disc">
+<b>2. Long sightedness</b>
+<li>Distant objects are seen clearly but near ones appear blurred.</li>
+<li><b>caused by:</b> (i) eyeball being too short it is called <strong>hypermetropia.</strong><br />
+(ii) Or the lens and cilliary muscle loosing their elasticity with old age, it is called (presbyopia).</li>
+<li>Light rays are focused behind the retina</li>
+</ul>
+<div class="pa paj h_bio">
+
+<ul type="square">
+<b class="u">Correction</b>
+<li>Use of convex lens which is also called converging lens.</li>
+</ul>
+
+</div>
+
+
+<ul type="disc">
+<b>3. Astigmatism</b>
+<li>Caused by uneven cornea surface</li>
+<li>Vision is distored</li>
+</ul>
+<div class="pa paj h_bio">
+
+<ul type="square">
+<b class="u">Correction</b>
+<li>Using lenses that will compensate for the uneven cornea</li>
+</ul>
+
+</div>
+
+<ul type="disc">
+<b>4. Cataract</b>
+<li>Occurs mainly among the aged.Cloudy lens which cannot allow sufficient light to pass through.</li>
+</ul>
+<div class="pa paj h_bio">
+
+<ul type="square">
+<b class="u">Correction</b>
+<li>Replacing the lenses with a plastic lens or using spectacles with the right kind of lens</li>
+</ul>
+
+</div>
+
+<ul type="disc" class="h_bio">
+<b>5. Night blindness</b>
+<li>Inability to see clearly in dimlightIt can be caused by vitamin Adeficiency</li>
+</ul>
+
+<ul type="disc" class="h_bio">
+<b>6. Xerophythalmia</b>
+<li>This can result to permanent blindness.</li>
+<li>It is caused by vitamin A</li>
+</ul>
+
+<ul type="disc" class="h_bio">
+<b>7. Conjuctivitis:</b>
+<li>An infection in the eye which brings about inflammation of the conjunctiva.</li>
+</ul>
+
+</div>
+
+<div class="pa paj">
+</div>
+
+<div class="fig">
+<strong>fig3.4c:</strong><br />
+Normal Sight<br />(Both far and near object are focused on the retina ) 
+</div>
+<img src="images/fig3.4c.jpg" class="imn" />
+
+<h4 class="ce h_bio">
+General Questions
+</h4>
+
+<div class="pa paj">
+1.  Chemical receptors do receive chemical stimuli while 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> receptors receive stimulus of light
+</div>
+<div class="pa paj">
+2.  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>, 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>,
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> are senses of feeling which can be detected by sensory receptors at the skin.
+</div>
+<div class="pa paj">
+3.  Taste buds can be found in the  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>. It is secondary sensory cell.
+</div>
+<div class="pa paj">
+4.  Pressure receptors known as 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> corpuscles are found in the deeper parts of the dermis in the skin.
+</div>
+
+<div class="fig">
+<strong>fig3.5:</strong> 
+</div>
+<img src="images/fig3.5.jpg" class="imn" />
+
+<div class="pa paj">
+Identify and label the part numbered 5 – 9
+
+<ol type="1" start="5">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+10.  The 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> sends sensory impulses received by the olfactory chemoreceptors to the brain.
+</div>
+<div class="pa paj">
+11. Write down the two chemical senses 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+12.  Write down four parts of the eye that bend incoming lights rays
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+13.  What visual receptors work best in dim light? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+14.  Reflection of light inside the eyeball is prevented by the
+
+<span id="q14"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q14')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">vitreous humour</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q14',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">pigment(black) choroid layer</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q14')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">aqueous humour</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">15.  The adjustment of the focal length of the eye lens so as to appropriately form images distinctly on the retina is called
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+16.  The contraction of the circular muscles of the iris and relaxation of its radial muscles results to 
+<span id="q16"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q16')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">The pupils becoming larger and more light enters the eyes.</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q16')">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">The cilliary muscles becomes expanded and more light enetrs the eyes</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q16',1)">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">The pupils becomming smaller and less light enters the eyes.</div>
+    </div>
+</div> 
+
+</div>
+<div class="pa paj">
+17.  The cochlea is a hearing organ or structure in the ear while the Eustachian tube and the semicircular canals are for __________ and _______ 
+
+<span id="q17"></span>
+<div class="option_bio">
+	<div class="optionbox" onclick="opMark('q17')">
+    	<img src="../past/images/Abtn.png" class="imageOpt">  
+    	<div id="opa" class="op">perceiving direction of sound</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q17',1)">
+    	<img src="../past/images/Bbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">balancing air pressure and balance</div>
+    </div>
+	<div class="optionbox" onclick="opMark('q17')">
+    	<img src="../past/images/Cbtn.png" class="imageOpt">  
+    	<div id="opa" class="op">clear audibility</div>
+    </div>
+</div> 
+ 
+</div>
+<div class="pa paj">
+18.  The fluid that can be found in the inner ear are <input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and  
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+19.  Short sightedness as an eye defect can be corrected by 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+20.  Two eye defects that can be caused by vitamin A deficiency are 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> and 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+
+<h4 class="ce h_bio">
+Expression Exercise
+</h4>
+
+<div class="pa">
+(1a)  How is the lights rays entering into the eyes controlled?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa">
+(b)  What is accommodation
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c)  Write down the function of the retina 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(2a)  Write down two sensory funtions of the ear
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(b)  Write down four ear deffects 
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+<div class="pa paj">
+3.  In the process of hearing all the following structures tabulated below are set into oscillation (Vibration), Write them down in the table in order in which they begin to vibrate.
+</div>
+
+<table class="tabler bg_white">
+<tr class="trA">
+<td></td><td>Structures</td><td>Order of Vibration</td>
+</tr>
+<tr>
+<td>(a)</td><td>Oval window</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>(b)</td><td>Anvil</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>(c)</td><td>Cochlea fluid</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>(d)</td><td>Tympanic</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>(e)</td><td>Stirrup</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+<tr>
+<td>(f)</td><td>Hammer</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</td>
+</tr>
+</table>
+
+<div class="pa">
+5.  In the process of vision in mammalian eyes, light passes through some, but not all, of the following structures; write down which of the structures light does pass through<br />(a) Retina, (b) Cornea  (c) Iris muscles (d) Lens (e) Optic nerve (f) Pupils 
+<ul>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ul>
+
+</div>
+
+<h4 class="ce h_bio">
+Practical Activities
+</h4>
+<div class="pa paj">
+1.  Examine another student's (or your friend's) eyes on flashing a very dim light from a torch light to it and on flashing a shining light of another torch light on it. From your observation and knowledge of sense  organs and sensory receptors, answer the following questions.
+</div>
+<ol type="i">
+Write down what happen to the iris muscles and the pupil when
+<li>you flashed dim light 
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>When you flashed shining light.
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li>Are the actions observed, or that occurred voluntary or reflex actions? Give reasons for your answer.
+<textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+<div class="pa paj">
+2.  <b class="u">Dissection of a Mammalian Eye</b><br />First look at your partners eye and try to draw the parts you can see. Now obtain the head of a sheep or goat from the market or visit the abattoir for it. Observe the thick white sclerotic coat with the clearer thin cornea in the front. Identify the position of the optic nerve, the muscles attached to the eyeballs and the transparent cornea.
+</div>
+<div class="pa paj">Using a short scissors cut the eye so you can see a front half and back half. Look inside both halfs and try to locate the blind spot and the retina. Identify the lens in the front half, the iris and the cilliary muscles. From your various observations, attempt the questions below.
+</div>
+<div class="pa paj">
+(a)  What nerve leaves the eyes from the blind spot?
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(b)  What was the shape of the lens of the eye observed? Is it elastic or stiff? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(c) Try to draw. The eye you have observed and compare it with an already existing eye model or drawing. (Draw in your biology practical notebook).
+</div>
+
+<div class="pa paj">
+Investigating the response to a sharp tap near the kneeMaterials/apparatus required:
+</div>
+<div class="pa paj">
+(i) Ruler, (ii) Stool
+</div>
+
+<ol type="i">
+Procedure:
+<li>Work with a partner and let one of you sit on the stool with the legs crossed and swinging or hanging freely.</li>
+<li>Using the edge of the ruler, let the other partner apply a sharp tap just below the knee cap of the partner that is sitting down.</li>
+<li>Let the investigation be repeated with other partner sitting down and the other carrying out the activity.</li>
+</ol>
+
+<ol type="a">Questions
+ 
+<li>What were the reactions of both partner s to the sharp tap?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+(a) Did it take the lower leg any time to react? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> </li>
+<li>With such sharp tap applied, could it have been possible to stop the knee from jerking?
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></li>
+<li>What part of the nervous system controls such response you' ve observed? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></li>
+</ol>
+<div class="pa paj">
+<b class="u">Investigating the response of the eye to bright light<br />
+Apparatus/Material required: A mirror</b>
+</div>
+<div class="pa paj">Procedure:
+<ol type="i">
+<li>Using the diagram of the eye in fig. 3.6 below as a guide, identify the parts of your eyes as you look through the mirror.</li>
+<li>Cover your right eye with your right palm for about five minutes,</li>
+<li>Then observe the pupil immediately you remove your hand.</li>
+<li>Now go to a place where light is very bright and observe the size of the pupil.</li>
+</ol>
+</div>
+<div class="pa paj">
+<h4 class="h_bio">Questions</h4>
+(a)  State your observations about the size of the pupil:
+</div>
+<div class="pa paj">
+(i)  Immediately you removed your hand? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig3.6:</strong> 
+</div>
+<img src="images/fig3.6.jpg" class="imn" />
+
+<div class="pa paj">
+(ii)  In very bright light?
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="pa paj">
+(iii)  Explain the biological significance of your observations in (i) and (ii) above
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<b class="u">To investigation if different tastes are detected by different areas of the tongue </b><br />
+Apparatus / Materials:
+</div>
+<div class="pa paj">
+Short piece of drinking straws, lemon juice; sugar solution, salt solution and bitter leaf or quinine solution.
+</div>
+<div class="pa paj">
+<ol type="i">
+Procedure:
+<li>First draw or sketch the outline of your tongue using the diagram in fig 3.1a as guide</li>
+<li>Touch all the parts of your tongue with the lemon juice. Put a sign like plus sign where your tongue can detect taste.</li>
+<li>Repeat the 2<sup>nd</sup> step using the other  solutions, using a fresh piece of straw for each case.</li>
+</ol>
+</div>
+<div class="pa paj">
+You can differentiate the signs by using red sign for sour (lemon solution), blue for salt solution, black for bitter leaf and quinine solutions and green for sugar solution.
+</div>
+<div class="pa paj">
+<h4>Questions</h4>
+(a) Did you observe the taste of each of the solutions more pronounced in a particular area of the tongue than other areas if Yes explain your answer. If No tell us why?
+</div>
+
+<h4 class="ce h_bio">Test of Practical Work</h4>
+
+<div class="fig">
+<strong>fig3.7:</strong> 
+</div>
+<div class="ce">
+<img src="images/fig3.7a.jpg" class="" />
+<img src="images/fig3.7b.jpg" class="" />
+
+</div>
+
+<div class="pa paj">
+Study the diagrams above carefully
+</div>
+<div class="pa paj">
+1a.  Identify what they illustrate in the process of vision 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(b)  Which of the diagrams is illustrating focusing near objects 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+(c) Explain the role of cilliary muscles in the process.
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+(d)  What distance is called the near point? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+
+<div class="fig">
+<strong>fig3.8:</strong> 
+</div>
+<div class="ce">
+<img src="images/fig3.8.jpg" class="" />
+</div>
+<div class="pa paj">
+2. Use the diagram of the tongue below to answer the question below
+</div>
+<div class="pa paj">(a) Identify the parts that detects the following taste according to the A B C D on the diagram(write your answer within the table below)
+</div>
+<table class="tabler bg_white">
+<tr class="trA">
+<td>Taste</td><td>Part</td>
+</tr>
+<tr>
+<td>Salty</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>Sour</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+<tr>
+<td>Bitter</td><td>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></td>
+</tr>
+</table>
+<div class="pa paj">
+(b) Explain the function of Eustachain tube in the mammalian ear 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<h4 class="ce h_bio">
+S S C E PAST QUESTIONSSENSORY RECEPTORS AND SENSE ORGANS</h4>
+<div class="pa paj">
+<b>June 97Q1</b><br />
+1.  Define Accomodation or what is meant by the term Accomodation? 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+2.  List three types of stimuli detected by the sensory nerve endings on the skin
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+3.  Explain the function of the cilliary muscle of the eye 
+<textarea class="w100"></textarea><span class="w100resp"></span>
+</div>
+<div class="pa paj">
+<b>June 1993 Q6a-b</b><br />
+4.  Diagram A and B below represent the reaction of some structures in the mammalian skin to different environmental conditions. Use them to answer Questions (a) and (b)
+</div>
+
+<div class="fig">
+<strong>fig3.9A:</strong> 
+</div>
+<img src="images/fig3.9a.jpg" class="imn" />
+
+<div class="fig">
+<strong>fig3.9B:</strong> 
+</div>
+<img src="images/fig3.9b.jpg" class="imn" />
+
+<div class="pa paj">
+(a)  Which of the diagrams represents the reactions of the skin to cold condition? 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+List four Observations from the diagram to support your answer
+<ol type="i">
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+<li><textarea class="w100"></textarea><span class="w100resp"></span></li>
+</ol>
+</div>
+
+<div class="pa paj">
+<b>June 1995 Q9 abc</b><br />
+6.  Use the diagram below to answer Questions (a) to (c).
+</div>
+<div class="fig">
+<strong>fig3.91:</strong> 
+</div>
+<img src="images/fig3.91.jpg" class="imn" />
+
+<div class="pa paj">
+
+<ol ty(a)pe="i">
+<li>Name the structure illustrated above 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></li>
+<li>State the organ in which it is found 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span></li>
+</ol>
+
+</div>
+<div class="pa paj">
+(b)  Name the parts labelled I – IV 
+<ol type="i">
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+<li>
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</li>
+</ol>
+</div>
+<div class="pa paj">
+(c)   Name the fluid that is found within parts of the structure labelled I – IV 
+<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
+</div>
+<div class="pa paj">
+</div>
+<div class="pa paj">
+</div>
+<div class="carry ce">
+
+  <a href="chapter2.html">
+  <div class="btnRed btnC">« Previous</div>
+  </a>
+  <div class="menu_btn sign"  onclick="openNav()"> ≡ </div>
+  <a href="chapter4.html">
+  <div class="btnRed btnC">Next »</div>
+  </a>
+  
+  </div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+  <div class="pa"></div>
+<script type="text/javascript">
+var chapter = 3;
+</script>
+
+</div>
+</body>
+<script type="text/javascript" src="../js/jq.js">
+</script>
+<script type="text/javascript" src="js/ch3.js">
+</script>
+              <script type="text/javascript" src="../js/connect.js">
+</script>
+<script src="https://js.paystack.co/v1/inline.js"></script> 
+
+</html>
