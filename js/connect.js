@@ -32,7 +32,7 @@ var leta = 'ZYXWVEDCBA';
 letta = 'JKLMNOPQRS';
 text = '';
 textLetta = '';
-serva = 'https://youngbrain.heroku.com';
+serva = 'https://youngbrain.herokuapp.com';
 //serva = 'http://localhost';
 //generator
 function gener(){
