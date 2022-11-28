@@ -32,8 +32,8 @@ var leta = 'ZYXWVEDCBA';
 letta = 'JKLMNOPQRS';
 text = '';
 textLetta = '';
-//serva = 'https://youngbrain.heroku.com';
-serva = 'http://localhost';
+serva = 'https://youngbrain.heroku.com';
+//serva = 'http://localhost';
 //generator
 function gener(){
 	text = '';
