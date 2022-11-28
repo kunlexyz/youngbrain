@@ -43,7 +43,8 @@ if ($result->num_rows > 0) {
 echo '
 <html>
 <head>
-	<title>Score Board</title> 
+	
+<title>Score Board</title> 
 <style>
 body{
 	margin:0px;

@@ -1,8 +1,9 @@
 const staticCacheName = 'site-static-v2';
-const dynamicCacheName = 'site-dynamic-v1';
+const dynamicCacheName = 'site-dynamic-v2';
 const assets = [
   '/',
   '/biology.html',
+  '/biology_installed.html',
 './MobileScript.js',
 './MobileTem.css',
 './about.html',
@@ -790,16 +791,17 @@ self.addEventListener('activate', evt => {
 });
 
 // fetch event
+
 self.addEventListener('fetch', evt => {
   //console.log('fetch event', evt);
   evt.respondWith(
     caches.match(evt.request).then(cacheRes => {
       return cacheRes || fetch(evt.request).then(fetchRes => {
         return caches.open(dynamicCacheName).then(cache => {
-          cache.put(evt.request.url, fetchRes.clone());
+          //cache.put(evt.request.url, fetchRes.clone());
           return fetchRes;
         })
       });
-    }).catch(() => caches.match('/'))
+    }).catch(() => caches.match('/biology_installed.html'))
   );
 });

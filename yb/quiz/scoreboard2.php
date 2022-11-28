@@ -43,7 +43,8 @@ if ($result->num_rows > 0) {
 echo '
 <html>
 <head>
-	<title>Score Board</title> 
+	
+<title>Score Board</title> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body{

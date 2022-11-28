@@ -37,13 +37,12 @@ if(isset($_POST['name']) && isset($_POST['score'])){
 			<td>Date</td>
 	</tr>
 	';
-		$pp=$row["phone"];
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
         echo "<tr>
 		<td>" . $row["id"]. " </td>
 		<td>" . $row["name"]."</td>
-		<td> ".$pp[0]. $pp[1].$pp[2]. "XXXX" .$pp[7]. $pp[8].$pp[9].$pp[10]. "</td>
+		<td>" . $row["phone"]. "</td>
 		<td>" . $row["score"]. "</td>
 		<td>" . $row["created_at"]. "</td>
 			</tr>";
@@ -74,13 +73,13 @@ if(isset($_GET['label']) == 'q'){
 		while($row = $result->fetch_assoc()) {
 			$d_date = substr($row["created_at"], 0,10);
 			$dd = date("Y-m-d");
-			$pp=$row["phone"];
+			
 			$dayz = number_of_working_days($d_date, $dd);
 			if($dayz < 7){
 				echo "<tr>
 				<td>" . $row["id"]. " </td>
 				<td>" . $row["name"]."</td>
-				<td>".$pp[0]. $pp[1].$pp[2]. "XXXX" .$pp[7]. $pp[8].$pp[9].$pp[10]. "</td>
+				<td>" . $row["phone"]. "</td>
 				<td>" . $row["score"]. "</td>
 				<td>" . $row["created_at"]. "</td>
 					</tr>";
@@ -118,7 +117,8 @@ if(isset($_GET['label'])){
 	<head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
-	<title>Score Board</title>
+	
+<title>Score Board</title>
 	</head>
 	<body>
 	<a href="label.html"><button> Back </button></a>

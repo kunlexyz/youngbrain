@@ -3,7 +3,7 @@
     "name": "Biology Practical & Activity Workbook",
     "short_name": "Biology Practical Workbook",
     "description": "Contain SSCE past questions, Illustrated and Elaborated Diagrams.",
-    "start_url": "/biology.html",
+    "start_url": "/biology_installed.html",
     "background_color": "#008644",
     "theme_color": "#a40d07",
     "orientation": "any",

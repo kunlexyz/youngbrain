@@ -93,7 +93,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["reg"]) == "reg") {
 		  ///if the phone no exist";
 		  $info = '
 		  <html>
-		  <head><title>Score Board</title>
+		  <head>
+<title>Score Board</title>
 		  <style>
 		  td{padding: 8px;
 border-left: 1px solid #aaa;
@@ -187,12 +188,12 @@ mysqli_close($conn);
   		$phone='080_TEST';}
 mysqli_close($conn);
 ?>
-
-<!doctype html>
-<html>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 <meta name='viewport' content='width=device-width, initial-scale=1'>
+
 <title>app</title>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata'>
     
@@ -208,7 +209,6 @@ input[type=text]{
 	border:none;
 	margin:1px 0px;
 	border-bottom:thin solid #06C;
-	width: 90%;
 }
 .mk{vertical-align: middle;}
 
@@ -287,10 +287,9 @@ echo $xx[0];
   ?>
 <br />
 How far can you go in 180 seconds?
-<div id="caption" style="padding-top:5px;">
-<img src="images/biology_quiz.png" style="max-width: 91%;" />
+<div id='caption' style='font-size:50px;padding-top:30px;'>
+<img src="images/biology_quiz.png" style="max-width:90%; margin:auto;" />
 </div>
-
 <div id='ti2' style='padding:11px 0px;'> Time duration: 3 minutes</div>
 <!--
 
@@ -330,32 +329,18 @@ End 200226754811
     -->
 <div id='start' style='font-size:30px;' onclick='passq()'>Past Results</div>
 
-			
-
-
-		<div class="pa">
-  <img src="images/bio_logo.png" style="width:35px; vertical-align:middle;" alt="Biology Practical Activity and Work Book 1 - 3"  /> YOUNG BRAIN PUBLISHERS<br>
-		
-		<a style="text-decoration:none; font-size: 16px;" href="https://youngbrain.com.ng/app">
-  Download the complete app
-			<br />
-  
-  <img src="images/ad.jpg" alt="Biology Practical Activity and Work Book 1 - 3"  />
-  </a>
-			
 <div style='padding-top:15px;'>
 For more exercises: download the APP for <br />
 Biology Practical Activity &amp; Work Book 1 - 3.<br />
 
-<a href='https://github.com/kunlexyz/My-app/raw/master/biologyPracticalActivityAndWorkBook_1_1.0.apk'>
+<a href='https://youngbrain.com.ng/app'>
 <div id='start' style='font-size:30px;' onclick='again()'>Biology_App</div>
 </a>
 
 <br /> For more information, visit our facebook page<br/><a href="https://www.facebook.com/Youngbrain-publishers-ltd-103972044777696/">Youngbrain Publishers Ltd </a>
 </div>
-			</div>
-</div>
-		<div id='labelView' style='display:none;'>
+        </div>
+		<div id='labelView' class='ce' style='display:none;'>
 <div class ='hh'>Answer All
 
 	<div id='ti'> Time: </div>
@@ -366,16 +351,11 @@ Biology Practical Activity &amp; Work Book 1 - 3.<br />
 font-size:20px;
 text-align:left;}
 
-.imn {
-    margin: auto;
-    display: block;
-    max-width: 100%;
-}
 </style>
 
 <div class='qq'>
 <div class="pa paj">
-1. Write the classes that the following organisms belong in the spaces
+5. Write the classes that the following organisms belong in the spaces
 provided against them.
 </div>
 <table class="tabler">
@@ -394,7 +374,7 @@ Cat  </td><td>
 <input type="text"  class="answ"  /><span class="resp"></span>
 </td></tr>
 <tr><td>
-Maize plant  </td><td>
+Maiza plant  </td><td>
 <input type="text"  class="answ"  /><span class="resp"></span>
 </td></tr>
 <tr><td>
@@ -407,41 +387,34 @@ Mango </td><td>
 </td></tr>
 </table>
 	</div>
-    <div class='qq'>
-<div class="pa paj">
-2. <strong class="u">Identify diagrams A.B.C </strong>
-</div> 
-
-
-<div class="fig">
-<strong>fig2.7a:</strong>
-</div>
-<img src="images/fig2.7a.jpg" class="imn" /><br />
-A. 
-<input type="text"  class="answ"  /><span class="resp"></span>
-
-<div class="fig">
-<strong>fig2.7b:</strong> 
-</div>
-<img src="images/fig2.7b.jpg" class="imn" /><br />
-B. 
-<input type="text"  class="answ"  /><span class="resp"></span>
-
-<div class="fig">
-<strong>fig2.7c:</strong>
-</div>
-<img src="images/fig2.2b.jpg" class="imn" /><br />
-C. 
-<input type="text"  class="answ"  /><span class="resp"></span>
+	<div class='qq'>
 
 <div class="pa paj">
-d. Which of these organisms is a cilliate?
+<!-- No six -->
 
+6. Write(type) the families of the following organisms in the spaces against them
+</div>
+<table class="tabler">
+<tr class="trA"><td>Organisms</td><td>Families</td>
+</tr>
+<tr><td>
+Humans </td><td>
 <input type="text"  class="answ"  /><span class="resp"></span>
-</div>
-
-</div>
-		
+</td></tr>
+<tr><td>
+Cats</td><td>
+<input type="text"  class="answ"  /><span class="resp"></span>
+</td></tr>
+<tr><td>
+Maize plants</td><td>
+<input type="text"  class="answ"  /><span class="resp"></span>
+</td></tr>
+<tr><td>
+Frogs</td><td>
+<input type="text"  class="answ"  /><span class="resp">
+</td></tr>
+</table>
+	</div>
 	<div class='qq'>
 
 	</div>
@@ -593,11 +566,12 @@ var answer= [
 	['Angiosperms','Angiosperm'],
 	['Amphibia','Amphibians','Amphibian'],
 	['Angiosperms','Angiosperm'],
-	//2
-	['amoeba'],
-	['Euglena'],
-	['paramecium'],
-	['paramecium']
+	//6(i)
+	['Hominidae','hominid', 'hominids'],
+	//6(ii)
+	['canidae','canid','canids'],
+	['Graminacae', 'poaceae', 'gramineae'],
+	['Ranidae']
 ];
 
 /*

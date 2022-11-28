@@ -28,17 +28,26 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "test";
+
 */
+/*
 $servername = "localhost";
 $username = "youngbra_maxi123";
 $password = "xkyLj9xiEtz=";
 $dbname = "youngbra_maxi";
 
+*/
+
+$servername = "us-cdbr-east-05.cleardb.net";
+$username = "bf8a2a4c4bb416";
+$password = "8e7892fc";
+$dbname = "heroku_0b7403b2cb4575f";
+
 function check_if_empty($a,$b,$c,$d,$e,$f){
 	return "<html>
 	<head>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<title>Quiz</title>
+<title>Quiz</title>
 	<style>
 body{
 	margin:0px;
