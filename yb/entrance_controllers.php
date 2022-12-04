@@ -6,19 +6,16 @@ function bring($x,$y){
 		require('yb/controller/'.$y);
 	}
 }
-function bring2(){
-	$url = $_SERVER['REQUEST_URI'];
-	//echo $url;
-	$url = explode('/',$url);
-	if($url[1] =='xxxxappxxxx' && $url[3] == 'change'){
-		if(isset($url[4]))
-		echo 'I just got the - '. $url[4];
-		exit;
+function bring2($x,$y){
+	$url = explode('/',$_SERVER['REQUEST_URI']);
+	if($url[1] == $x){
+		require('yb/controller/'.$y);
 	}
-	
 }
 
 $url = explode('/',$_SERVER['REQUEST_URI']);
+
+bring2('math_qu','mathQu.php');
 
 if($url[1] =='xxxxappxxxx'){
 	

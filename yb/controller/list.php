@@ -37,6 +37,8 @@ function sw2($k){
 if ($result->num_rows > 0) {
 	echo '
 	<html>
+	<head>
+	<title> List of downloaded Apps</title>
 	<style>
 	.red{background-color:red;}
 	.rr{color:red;}
@@ -44,8 +46,58 @@ if ($result->num_rows > 0) {
 	tbody>tr>:nth-child(your_parameter){ 
 /* your css here */
 }
-
+.pCon {
+    margin: auto;
+	margin-top: 80px;
+    padding: 20px;
+    background: #eee;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 12%), 0 4px 7px rgb(0 0 0 / 24%);
+}
+.pas {
+    font-size: 22px;
+    border-radius: 8px;
+    border: solid 2px #f00;
+    padding: 10px;
+    max-width: 90%;
+    margin-top: 5px;
+    background: #fff;
+}
+.btnRed {
+    color: #FFF;
+    background-color: #F00;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btnC {
+    border: solid 1px #F00;
+    border-radius: 5px;
+    display: inline-block;
+    overflow: hidden;
+}
+.overlay2 {
+    opacity: 0.5;
+    background-color: #000;
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: none;
+    top: 0px;
+	left: 0px;
+}
+.lay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+	z-index: 3;
+}
 	</style>
+	</head>
+	<body>
 	';
 echo '<table class="tabler bg_white smal_t">
 <tr class="trA">
@@ -71,7 +123,7 @@ echo '<table class="tabler bg_white smal_t">
 		<td>" . $row["name"]. "</td>
 		<td>" . $row["phone_no"]. "</td>
 		<td id='" . $row["user_id"]. "_status' >" . sw2($row["status"]). "</td>
-		<td class='red'><button id='" . $row["user_id"]. "_button' onclick=\"srch2('" . $row["user_id"]. "','" . $row["veri_no"]. "','" . $row["user_id"]. "_status','" . $row["user_id"]. "_button')\">" . sw($row["status"]). "</button></td>
+		<td class='red'><button id='" . $row["user_id"]. "_button' onclick=\"openNav('" . $row["user_id"]. "','" . $row["veri_no"]. "','" . $row["user_id"]. "_status','" . $row["user_id"]. "_button')\">" . sw($row["status"]). "</button></td>
 		<td>" . date('d.m.y',strtotime($row["created_at"])). '</td>
 		</tr>';
     }
@@ -80,12 +132,33 @@ echo '<table class="tabler bg_white smal_t">
     echo "0 results";
 }
 echo '
+<div class="overlay2" onclick="closeNav()" style="display: block;">                                </div>
+<div class="lay">
+	<div id="_1pc" class="pCon shadow">
+		
+		<div id="info">Please enter your:</div>
+		Password:<br>
+		<input type="password" id="name" class="pas">
+
+		
+			<div class="ce">
+		<div onclick="enta()" class="btnRed btnC">Enter</div>
+		<div onclick="closeNav()" class="btnRed btnC">←Back</div>
+			</div>
+		<div id="help">
+			
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="http://'.$_SERVER['SERVER_NAME'].'/yb/jq.js">
 </script>
 <script>
+
+var h1=h2= h3= h4="";
 function srch2(p1,p2,p4,x3){
 	//alert("i dey");
+
 	pp = document.getElementById(x3).innerHTML;
 	p3 = "ON";
 	if(pp == "ShutDown"){p3 = "OFF"}else {p3 = "ON";}
@@ -95,7 +168,7 @@ function srch2(p1,p2,p4,x3){
 	//$("#result").load("card2.php?quick_search=qq&member="+qs);
 	
 	$.get("http://'.$_SERVER['SERVER_NAME'].'/yb/store.php?app_status=change&user="+p1+"&veri="+p2+"&status="+p3, function(data, status){
-    //alert("Data: " + data + "\nStatus: " + status);
+    alert("Data: " + data + "\nStatus: " + status);
 	var data2 = "";
 	if(data.toUpperCase() == "OFF"){/*data = "ON";*/data2 = "Start";
 	}else {/*data = "OFF";*/data2 = "ShutDown"}
@@ -104,6 +177,47 @@ function srch2(p1,p2,p4,x3){
   });
 }
 
+function enta(){
+	if(document.getElementById("name").value ==""){}
+	if(fun(document.getElementById("name").value,pep)==true){
+		//alert("i dey");
+		srch2(h1,h2,h3,h4);		
+		closeNav();
+	}else{
+		document.getElementById("info").innerHTML="Invalid <span style=\"color:#f00\" >password</span>!";
+	}
+}
+
+function openNav(p1,p2,p4,x3) {
+	h1 = p1;
+	h2 = p2;
+	h3 = p4;
+	h4 = x3;
+	document.getElementsByClassName("lay")[0].style.display="block";
+	document.getElementsByClassName("overlay2")[0].style.display="block";
+  }
+  
+function closeNav() {
+	document.getElementsByClassName("lay")[0].style.display="none";
+	document.getElementsByClassName("overlay2")[0].style.display="none";
+}
+
+pep =[
+"col001",
+"ramie01",
+"mau55",
+"kunz07"
+];
+fun = function(x,y){
+	z=false;
+	for(i=0;i<y.length;i++){
+		if(x == y[i]){
+			z=true;
+			break;
+		}
+	}
+	return z;
+}
 
 function Time_user(a,b,c,d,e){
 	
@@ -117,7 +231,9 @@ function Time_user(a,b,c,d,e){
 	document.getElementById(d).innerHTML=data;
   });
 }
-</script></html>
+</script>
+</body>
+</html>
 ';
 
 
