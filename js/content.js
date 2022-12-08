@@ -30,7 +30,7 @@ var leta = 'ZYXWVEDCBA';
 letta = 'JKLMNOPQRS';
 text = '';
 textLetta = '';
-serva = 'https://youreventplug.com/';
+serva = 'https://youreventplug.com';
 //serva = 'http://localhost'; //http://localhost
 
 //generate data & yek

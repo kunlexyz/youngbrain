@@ -82,6 +82,8 @@ if(count($url) > 5 && $url[2] == 'regis'){
 	$veri = test_input($url[4]);
 	$phone = test_input($url[5]);
 	$name = test_input($url[6]);
+
+	$name = str_replace('%20',' ',$name);
 	
 	//....
 	$sql = "SELECT * FROM app_info WHERE user_id='$user'";

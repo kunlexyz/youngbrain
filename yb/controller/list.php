@@ -34,6 +34,12 @@ function sw2($k){
 	else{return 'Off';}
 }
 
+if($_SERVER['SERVER_NAME'] =='localhost'){
+	$htt='http';
+}else{	
+	$htt='https';
+}
+
 if ($result->num_rows > 0) {
 	echo '
 	<html>
@@ -45,6 +51,27 @@ if ($result->num_rows > 0) {
 	
 	tbody>tr>:nth-child(your_parameter){ 
 /* your css here */
+}
+table {
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+th {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #4CAF50;
+    color: white;
+}
+td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
 }
 .pCon {
     margin: auto;
@@ -95,21 +122,22 @@ if ($result->num_rows > 0) {
     top: 0px;
 	z-index: 3;
 }
+body{margin:0px;padding:0px;}
 	</style>
 	</head>
 	<body>
 	';
 echo '<table class="tabler bg_white smal_t">
 <tr class="trA">
-<td>No.</td>
-		<td>Reg Id</td>
-		<td>Veri No</td>
-		<td>Activation</td>
-		<td>Name</td>
-		<td>Phone</td>
-		<td>Status</td>
-		<td class="red">Switch</td>
-		<td>Date</td>
+	<th>No.</th>
+	<th>Reg Id</th>
+	<th>Veri No</th>
+	<th>Activation</th>
+	<th>Name</th>
+	<th>Phone</th>
+	<th>Status</th>
+	<th class="red">Switch</th>
+	<th>Date</th>
 </tr>
 ';
     // output data of each row 
@@ -123,7 +151,9 @@ echo '<table class="tabler bg_white smal_t">
 		<td>" . $row["name"]. "</td>
 		<td>" . $row["phone_no"]. "</td>
 		<td id='" . $row["user_id"]. "_status' >" . sw2($row["status"]). "</td>
-		<td class='red'><button id='" . $row["user_id"]. "_button' onclick=\"openNav('" . $row["user_id"]. "','" . $row["veri_no"]. "','" . $row["user_id"]. "_status','" . $row["user_id"]. "_button')\">" . sw($row["status"]). "</button></td>
+		<td class='red'>
+		<button id='" . $row["user_id"]. "_button' onclick=\"openNav('" . $row["user_id"]. "','" . $row["veri_no"]. "','" . $row["user_id"]. "_status','" . $row["user_id"]. "_button')\">" . sw($row["switch"]). "</button>
+		</td>
 		<td>" . date('d.m.y',strtotime($row["created_at"])). '</td>
 		</tr>';
     }
@@ -132,8 +162,8 @@ echo '<table class="tabler bg_white smal_t">
     echo "0 results";
 }
 echo '
-<div class="overlay2" onclick="closeNav()" style="display: block;">                                </div>
-<div class="lay">
+<div class="overlay2" onclick="closeNav()" style="display: none;">                                </div>
+<div class="lay" style="display: none;">
 	<div id="_1pc" class="pCon shadow">
 		
 		<div id="info">Please enter your:</div>
@@ -151,7 +181,7 @@ echo '
 	</div>
 </div>
 
-<script type="text/javascript" src="http://'.$_SERVER['SERVER_NAME'].'/yb/jq.js">
+<script type="text/javascript" src="'.$htt.'://'.$_SERVER['SERVER_NAME'].'/yb/jq.js">
 </script>
 <script>
 
@@ -167,8 +197,8 @@ function srch2(p1,p2,p4,x3){
 	//alert(x);
 	//$("#result").load("card2.php?quick_search=qq&member="+qs);
 	
-	$.get("http://'.$_SERVER['SERVER_NAME'].'/yb/store.php?app_status=change&user="+p1+"&veri="+p2+"&status="+p3, function(data, status){
-    alert("Data: " + data + "\nStatus: " + status);
+	$.get("'.$htt.'://'.$_SERVER['SERVER_NAME'].'/yb/store.php?app_status=change&user="+p1+"&veri="+p2+"&status="+p3, function(data, status){
+    //alert("Data: " + data + "\nStatus: " + status);
 	var data2 = "";
 	if(data.toUpperCase() == "OFF"){/*data = "ON";*/data2 = "Start";
 	}else {/*data = "OFF";*/data2 = "ShutDown"}
@@ -226,7 +256,7 @@ function Time_user(a,b,c,d,e){
 	//return;
 	
 	
-	$.get("http://'.$_SERVER['SERVER_NAME'].'/xxxxappxxxx/give_time/"+a+"/"+b+"/"+c2+"/"+d, function(data, status){
+	$.get("'.$htt.'://'.$_SERVER['SERVER_NAME'].'/xxxxappxxxx/give_time/"+a+"/"+b+"/"+c2+"/"+d, function(data, status){
     //alert("Data: " + data + "\nStatus: " + status);
 	document.getElementById(d).innerHTML=data;
   });

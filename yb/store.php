@@ -108,6 +108,8 @@ $result2 = $conn->query($sql);
 $result2 = $result2->fetch_assoc();
 echo $result2['status'];
 */
+
+header("Access-Control-Allow-Origin: *");
 echo $status;	  
 	} else {
 	  echo "Error updating record: " . $conn->error;
