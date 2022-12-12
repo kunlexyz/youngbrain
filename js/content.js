@@ -274,3 +274,44 @@ function instal(){
 		deferredPrompt = null;
 	});
 }
+
+//version 6 code
+
+function openRef(){
+    $('#reg_box').slideUp();
+    $('#ref_box').slideDown();
+}
+function backToPopName(){
+    $('#reg_box').slideDown();
+    $('#ref_box').slideUp();
+}
+
+function submit_refferer() {
+    ref_man = document.getElementById('refferer').value;
+    document.getElementById('ref_help').innerHTML = 'Loading, Please click the send button again after a minute.';
+    k=localStorage.biO;
+
+    if(ref_man.length <10){
+        document.getElementById('ref_help').innerHTML = 'Incorrect Number! Pls enter a valid phone number. It cannot be less than 10';
+        return;
+    }else if(typeof localStorage.ref_reg != 'undefined'){ 
+        document.getElementById('ref_help').innerHTML = 'You have entered a refferer before.<br>'+localStorage.ref_reg+'<br>Contact the Admin if you want to change it.';    
+        return;
+    }else{   
+        $.get(serva+"/xxxxappxxxx/refer/"+ref_man+'/'+k, function(data, status){
+
+            console.log(serva+"/xxxxappxxxx/refer/"+ref_man+'/'+k);
+            if(data == 'success'){
+                localStorage.ref_reg = ref_man;
+                document.getElementById('ref_help').innerHTML = 'Refferal Updated Successful';
+            }
+            if(status != 'success'){
+                document.getElementById('ref_help').innerHTML = 'Internet Error! Please, Try again when you have internet';
+            }
+            console.log(data);
+            console.log(status);
+
+        });
+    }
+    
+}

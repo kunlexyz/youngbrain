@@ -348,7 +348,7 @@ YOUNG BRAIN SENIOR SECONDARY SECONDARY SCIENCE SERIES 1-3
 
 <div id="namebox" style="z-index: 2;position:fixed; top:40px; width: 100%;
 display: none;">
-<div class="pCon shadow">
+<div id="reg_box" class="pCon shadow">
     <div class="closebtn" onclick="unPopName()"
     style="background: red;top:none;font-size: 45px;
     cursor: pointer;
@@ -374,7 +374,23 @@ display: none;">
         </div>
         <br>
         <div onclick="srch2()" class="btnRed btnC">Open Gateway</div>
+        <div onclick="openRef()" class="btnRed btnC">Referrer</div>
 </div>
+
+
+    <div id="ref_box" class="pCon shadow" style="display: none;">
+        <div id="ref_help">Please enter your 
+            <br>
+            Refferer's phone number:
+        </div><br>
+        <input type="tel" id="refferer" class="pas" >
+            
+        <div class="ce">
+            <div onclick="submit_refferer()" class="btnRed btnC">Submit</div>
+            <div onclick="backToPopName()" class="btnRed btnC">←Back</div>
+        </div>
+
+    </div>
 </div>
 
 <div id="the_line">

@@ -349,33 +349,49 @@ YOUNG BRAIN SENIOR SECONDARY SECONDARY SCIENCE SERIES 1-3
 
 <div id="namebox" style="z-index: 2;position:fixed; top:40px; width: 100%;
 display: none;">
-<div class="pCon shadow">
-    <div class="closebtn" onclick="unPopName()"
-    style="background: red;top:none;font-size: 45px;
-    cursor: pointer;
-    color: #F60;
-    color: #FFF;
-    line-height: 40px;
-    font-weight: bold;"
-    >×</div>
-        <div>Please enter your:</div>
-        Name:<br>
-        <input type="text" id="name" class="pas" >
+    <div id="reg_box" class="pCon shadow">
+        <div class="closebtn" onclick="unPopName()"
+        style="background: red;top:none;font-size: 45px;
+        cursor: pointer;
+        color: #F60;
+        color: #FFF;
+        line-height: 40px;
+        font-weight: bold;"
+        >×</div>
+            <div>Please enter your:</div>
+            Name:<br>
+            <input type="text" id="name" class="pas" >
 
-        <br>
-        Phone Number:<br>
-        <input type="tel" id="phone" class="pas" >
-        
-            <div class="ce">
-        <div onclick="submit_name()" class="btnRed btnC">Submit</div>
-        <div onclick="unPopName()" class="btnRed btnC">←Back</div>
+            <br>
+            Phone Number:<br>
+            <input type="tel" id="phone" class="pas" >
+            
+                <div class="ce">
+            <div onclick="submit_name()" class="btnRed btnC">Submit</div>
+            <div onclick="unPopName()" class="btnRed btnC">←Back</div>
+                </div>
+            <div id="help">
+                This info help us to serve you better
             </div>
-        <div id="help">
-            This info help us to serve you better
+            <br>
+            <div onclick="srch2()" class="btnRed btnC">Open Gateway</div>
+            <div onclick="openRef()" class="btnRed btnC">Referrer</div>
+    </div>
+
+
+    <div id="ref_box" class="pCon shadow" style="display: none;">
+        <div id="ref_help">Please enter your 
+            <br>
+            Refferer's phone number:
+        </div><br>
+        <input type="tel" id="refferer" class="pas" >
+            
+        <div class="ce">
+            <div onclick="submit_refferer()" class="btnRed btnC">Submit</div>
+            <div onclick="backToPopName()" class="btnRed btnC">←Back</div>
         </div>
-        <br>
-        <div onclick="srch2()" class="btnRed btnC">Open Gateway</div>
-</div>
+
+    </div>
 </div>
 
 <div id="the_line">
@@ -402,5 +418,25 @@ $(document).ready(function(){
         $("#cova1").slideUp(3000);
 });
 
+/*
+
+            <div onclick="openRef()" class="btnRed btnC">Referrer</div>
+    </div>
+
+
+    <div id="ref_box" class="pCon shadow" style="display: none;">
+        <div>Please enter your 
+            <br>
+            Refferer:
+        </div><br>
+        <input type="text" id="refferer" class="pas" >
+            
+        <div class="ce">
+            <div onclick="submit_refferer()" class="btnRed btnC">Submit</div>
+            <div onclick="backToPopName()" class="btnRed btnC">←Back</div>
+        </div>
+
+    </div>
+*/
 </script>
 </html>
