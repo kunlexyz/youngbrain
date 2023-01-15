@@ -32,6 +32,9 @@ text = '';
 textLetta = '';
 serva = 'https://youreventplug.com';
 //serva = 'http://localhost'; //http://localhost
+if(location.host=='localhost'|| location.host==""){
+	serva = 'http://localhost';
+}
 
 //generate data & yek
 function gener(){

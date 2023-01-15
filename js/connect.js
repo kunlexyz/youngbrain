@@ -22,11 +22,111 @@ function closeNav() {
 
 //****a function for loading security
 function loadGate(){
-	var gate = '<div class="contentChap ce" id="verify" style="position:fixed;"><div class="headaChap">To Get this chapter, you must activate this app<br />Version: 1.0.2</div>Verification Number:<div id="vN" class="heada" style="font-size:33px;">XXXXX</div><div class="imDesc">Enter the Activation Number below:</div><input type="text" onblur="upperC()" onchange="activ8()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" /><br /><button onclick="activ8()">Activate</button><div class="content ce" style="margin-top:9px; background-color:#C8FDA8"><div id="activate">To Get your activation number</div><strong>Contact:</strong><br /><img src="../images/wh.png" /><br />08033527655<br />+2348033527655</div><button onclick="rem()">removeIt</button><div id="tk"></div></div>';
-	DIVcontent = document.getElementById('navig8').innerHTML;
-	document.getElementById('navig8').innerHTML = gate + DIVcontent;
+	var gate = '\
+	<div class="headaChap">\
+        To Get this chapter, you must activate this app<br />\
+        Version: 1.0.2\
+    </div>\
+        \
+    Verification Number:\
+    <div id="vN" class="heada" style="font-size:33px;">TT</div>\
+    <div class="imDesc">Enter the Activation Number below:</div>\
+    <input type="text" onblur="activ8()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />\
+	<div id="mmsg"></div>\
+    <br /><button onclick="activ82()">Activate</button>\
+            <div class="content ce" style="margin-top:9px; background-color:#C8FDA8">\
+    <div id="activate">To Get your activation number</div>\
+    <strong>Contact:</strong><br />\
+    <img src="../images/wh.png" /><br />\
+    08033527655<br />+2348033527655\
+    <br />or<br />\
+    \
+    <button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>\
+    \
+    <form id="paymentForm" class="payForm" style="display:none;">\
+    <div class="ce">fill the form below to buy <br />(please, make sure your data is on)\
+    </div>\
+    <table>\
+      <div class="form-group">\
+    <tr>\
+    <td>\
+    \
+        <label for="email">Email Address:</label>\
+        </td><td>\
+        <input type="email" id="email-address" class="inp" required />\
+        </td>\
+    </tr>\
+      </div>\
+      <div class="form-group">\
+    <tr>\
+    <td>\
+    \
+        <label for="email">Phone No:</label>\
+        </td><td>\
+        <input type="tel" id="phone No" class="inp" required />\
+        </td>\
+    </tr>\
+      </div>\
+    \
+      <div class="form-group">\
+    <tr>\
+    <td>\
+        <label for="amount">Amount:</label>\
+    \
+        </td><td>\
+        <b style="color:#060;">1500 Naira Only</b>\
+        <!--\
+        <input type="tel" id="amount" required />\
+        -->\
+        </td>\
+    </tr>\
+      </div>\
+    \
+      <div class="form-group">\
+    <tr>\
+    <td>\
+        <label for="first-name">First Name:</label>\
+        </td><td>\
+        <input type="text" class="inp" id="first-name" />\
+        </td>\
+    </tr>\
+      </div>\
+    \
+      <div class="form-group">\
+    <tr>\
+    <td>\
+    \
+        <label for="last-name">Last Name:</label>\
+        </td><td>\
+    \
+        <input type="text" class="inp" id="last-name" />\
+        </td>\
+    </tr>\
+      </div>\
+    <tr>\
+    <td>\
+        </td><td>\
+      <div class="form-submit">\
+    \
+        <button type="submit" onclick="payWithPaystack()" class="stack_button"> Pay </button>\
+    \
+      </div>\
+        </td>\
+    </tr>\
+    </table>\
+    \
+    </form>\
+    <div id="paystackEmbedContainer"></div></div>\
+    <div style="display:none;">\
+            <button onclick="rem()">Test Mode Id</button>\
+            <div id="tk"></div>\
+    </div>\
+	';
+	//DIVcontent = document.getElementById('navig8').innerHTML;
+	document.getElementById('verify').innerHTML = gate;
 	
 }
+loadGate();
 /*************YEK**********/
 var leta = 'ZYXWVEDCBA';
 letta = 'JKLMNOPQRS';
@@ -34,6 +134,9 @@ text = '';
 textLetta = '';
 serva = 'https://youreventplug.com';
 //serva = 'http://localhost';
+if(location.host=='localhost'|| location.host==""){
+	serva = 'http://localhost';
+}
 //generator
 function gener(){
 	text = '';
@@ -606,4 +709,48 @@ console.log(new Date(trialTimeMilli));
 	tim = setTimeout(opp,5000);
 	}
 
+}
+
+function srch3(){
+	
+	//alert(x);
+	//$("#result").load("card2.php?quick_search=qq&member="+qs);
+	
+	p2 = localStorage.biO;
+	p3 = document.getElementById('act').value;
+	if(p3 < 7){
+		document.getElementById('mmsg').innerHTML="invalid card";
+		return;
+	}
+	
+	//#Expecting hostname.com/xxxxappxxxx/recharge/voucher/ver_number
+	console.log(serva+"/xxxxappxxxx/recharge/"+p3+"/"+p2);
+	$.get(serva+"/xxxxappxxxx/recharge/"+p3+"/"+p2, function(data, status){
+    //alert("Data: " + data + "\nStatus: " + status);
+	//var data2 = data.split("+");
+	//document.getElementById('tt').innerHTML = "Switch :- "+data2[0]+"Lock Time :- "+data2[0];
+	
+	if(data == 1514){
+		
+		localStorage.sutats = 1514;
+					
+		document.getElementById('tk').innerHTML ='Activated Successfully <br /> Reg No :'+ localStorage.actidKey + '<br /> Click the button below to go back to "table of content" <br /> <a href="content.html"><button>Content</button></a>';
+		document.getElementById('verify').style.display='none';
+        document.getElementById('coHide').style.display='block';
+		document.getElementById('mmsg').innerHTML ='Activated Successfully';
+        
+	}else{
+		document.getElementById('mmsg').innerHTML=data;		
+	}
+	
+	
+  });
+
+}
+
+function activ82(){
+	
+	if(document.getElementById('act').value.length >= 7){
+		srch3();
+	}
 }
