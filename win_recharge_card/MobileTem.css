@@ -1,0 +1,366 @@
+.mCon2{position:fixed;
+background-color:#3694ed; color:#FFF;
+z-index:101;
+top:0px;
+padding:5px;
+cursor:pointer;
+padding-top:2px;
+height:31px;}
+/*
+Name of File:MobileTem.css
+Recreated: 05_08_2019
+originally created about 2years to this time
+font:futura BT
+Extra: changable font
+kunle make it changeable
+    
+	<div class="headaChap">
+<span class="hh7x">2.5</span> The Kanuri Culture
+	</div>
+	
+	
+	<div class="pa">
+
+    </div>
+	<div class="pa">
+
+    </div>
+	<div class="pa">
+
+    </div>
+	<div class="pa">
+
+    </div>
+	
+<img src="images/fig1.9.jpg" class="im" />   
+<div class="imDesc">Fig. 1.9: Fulani distribution in West Africa </div>
+
+
+<table>
+<tr><td>ITQ: </td><td>You have just learnt that Fulanis are called differently by different people,
+what are these names given to them by different people?,</td></tr>
+<tr><td>ITA:</td><td>You might have thought about such names as Peul by the Wolf, Fula by the
+Bambara, Fellata by the Kanuris and Fulani by the Hausas.</td></tr>
+</table>
+*/
+body{
+    margin: 0px;
+    padding: 0px;
+	font-family:myFirstFont;
+	font-size:16px;
+    -webkit-font-smoothing: antialiased;
+}
+#bdy{-webkit-font-smoothing: antialiased;}
+strong{font-style:italic;}
+.tableA{border:solid 1px #000;}
+.trA{background-color:#333; color:#FFF;}
+/*.thh2:nth-child(odd){background-color:#D4F9B2;}*/
+.tableA th{
+    padding: 10px 0px;
+    border-top: solid 1px #222;
+}
+.tableA tr:nth-child(odd){background-color:#d6f7d9;}
+.heada1{
+	background-color:#F60;
+    color: #fff;
+	padding:7px;
+	padding-bottom: 0px;
+}
+.headaChap{
+	font-size:18px;
+	text-transform:capitalize;
+	padding:10px;
+	background-color:#b2ffb7;
+	font-weight:bold;
+	text-align:center;padding-top: 35px;}
+.contentChap{}
+.aut{margin:auto;}
+a{text-decoration:none;
+color:#000;}
+.pa{padding:10px;}
+.paj{}
+.pa:nth-child(odd){background-color:#dddddd91;}
+
+@font-face{
+	font-family:myFirstFont;
+	src:url(css/tt0140m_.ttf);
+}
+@font-face{
+	font-family:myFont2;
+	src:url(css/comic.ttf);
+}
+@font-face{
+	font-family:myFont3;
+	src:url(css/sylfaen.ttf);
+}
+@font-face{
+	font-family:myFont4;
+	src:url(css/tt0001m_.ttf);
+}
+@font-face{
+	font-family:myFont5;
+	src:url(css/tt1018m_.ttf);
+}
+.b{font-weight:bold;}
+.cover2{height:40vh;
+	background-color:#F60;}
+.cover2i{width:100%;
+		height:100%;}
+.coI{width:100%; max-height:150px;}
+/* codes for content*/
+.contentH{
+	border-bottom:solid 1px #999;
+}
+.content, .contentH{margin: 0px 10px;
+	padding-bottom:8px;
+}
+td{vertical-align:top;padding:5px 0px;}
+th{text-align:left;}
+.sp{width:60px;}
+.sp2{width:20px;}
+.sign{font-size:28px;}
+.hh6{font-size:18px;
+	font-weight:bolder;
+	padding:15px 0px 8px 0px;
+}
+.hh7{padding:10px 0px;
+	font-size:14px;
+	font-weight:bolder;
+	color:#F60;	
+}
+.hh7x{color:#F00;
+text-align:center;}
+.hh8{text-transform:capitalize;
+	padding:5px 3px;}
+/*.hh8:nth-child(odd){background-color:#D4F9B2;}*/
+.cirCh{
+	width:30px;
+	height:25px;
+	border-radius:15px;
+	background-color:#F60;
+	color:#FFF;
+	text-align:center;
+	font-weight:bolder;
+	padding-top:5px;
+}
+/*
+.co{display:none;
+position:fixed;
+top:0px;
+width:100vw;
+height:100vh;
+overflow:auto;
+background-color:#FFF;}
+*/
+.abs{position:absolute;}
+.heada{
+    font-size: 28px;
+}
+.mCon{
+    float: left;
+    padding-top: 7px;
+    padding-left: 5px;
+	margin-right: 10px;
+
+}
+.mCon3{
+    border-bottom: solid 1px rgb(27, 15, 15);
+}
+
+.menu_dash{
+    padding: 3px;
+    margin: 4px 10px;
+    background-color: #fff;
+	border-radius:50%;
+}
+.menu_head{
+	width:30%;
+	display:table-cell;
+	padding:10px 3px;
+	cursor:pointer;
+	margin:auto;
+	vertical-align:middle;
+	
+}
+.menu_head2{text-align:center;}
+.menu_head2x{ display:inline-block;
+margin:auto;
+width:100%;}
+
+.menu_head:hover{
+	background-color:#D74600;
+	border-bottom:solid;}
+
+.menu_btn{padding: 3px 10px;
+display: inline-block;
+font-weight: bold;
+background-color: #F00;
+color:#fff;
+border-radius: 5px;
+overflow: hidden;
+cursor:pointer;}
+
+.bullet{
+    padding: 5px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0px 5px 3px 15px;
+}
+
+.chap{
+    color: #fff;
+    display: inline-block;
+    font-size: 22px;
+    padding: 12px;
+}
+
+/*
+css code for Pop Out Menu
+*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 102;
+  top: 0;
+  left: 0;
+  background-color:#0773d1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+}
+.overlay2{opacity:0.5;
+background-color:#000;
+  position: fixed;
+  z-index: 101;
+  height: 100%;
+  width: 100%;
+  display:none;
+    top: 0px;}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align:left;
+  padding: 10px 0px;
+  background-color:#FFF;
+}
+
+.overlay .menu1 {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #222;
+  display: block;
+  transition: 0.3s;
+}
+.menu1:hover{
+	cursor:pointer;background-color:#DDD;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+  
+}
+
+.closebtn {
+  position: absolute;
+}
+
+.close3{
+	font-size:45px;
+	cursor:pointer;
+	background-color:#F00;
+	color:#FFF;
+	line-height: 40px;
+	top:0px;
+	font-weight:bold;
+	border:solid 1px #FF0000;
+}
+
+.bull{
+	padding:4px;
+	background-color:#F60;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:10px;
+}
+/* @end of Pop Out Menu*/
+.im{max-width:350px;width:100%; max-height:350px; margin:auto; display:block;}
+.ims{max-width:200px; max-height:200px; margin:auto; display:block;}
+.imn{margin:auto; display:block; max-width:100%;}
+.imDesc{background-color:#FFC082; padding:3px; margin-bottom:5px;
+font-weight:bold; font-style:italic;}
+
+.btnC{
+	border:solid 1px #F00;
+	border-radius:5px;
+	padding-bottom:8px;
+	display:inline-block;
+	overflow:hidden;}
+.btnRed{color:#FFF;
+	background-color:#F00;
+	padding:10px;
+	font-weight:bold
+	}
+.btn2{margin:5px; padding:3px;}
+.fl{float:left;}
+.fr{float:right;}
+.ce{text-align:center;}
+.bigt{font-size:88px;
+line-height:63px;}
+
+.sBox{width:30px; height:50px;
+display:inline-block; cursor:pointer;
+border:solid 1px #CCC;}
+.sBoxUp{width:100%;
+height:30%;}
+.sBoxDown{width:100%;
+height:70%;
+text-align:center;}
+
+/****Question_n_Answer***/
+.imageOpt{float:left; width:37px; height:28;}
+.optionbox{
+	display:inline-block;
+background: linear-gradient(#fdf30f, #f1a906);;
+margin:0px;
+width:100%;
+color:#000000;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+border-radius:8px;
+padding:2px 0px 2px 0px;
+}
+.main{text-align:center;
+	min-height:380px;
+	padding:2px;}
+.op{margin-top:3px;}
+#sco td{min-width:50px;
+text-align:center;}
+/****Biology***/
+.Nco{margin:0px;
+background-color:#333;
+color:#FFF;}
+.Notable_head{
+	padding:5px;
+}
+
+.inp{
+	border:solid 2px #009900;
+	font-size:20px;
+	border-radius:5px;
+}
+
+.stack_button{
+	background-color:#060;
+	color:#FFF;
+	font-size:20px;
+	border:none;
+	padding:6px;
+}
+
+.payForm{
+	text-align:left;background-color: #f7ddad;
+max-width: 420px;
+margin: auto;
+padding: 8px;
+}
