@@ -184,13 +184,13 @@ q=[
 ];
 c_sc=0;guage=2;
 var A='A';B='B';C='C';D='D';mk=0;ANS_handle=0;
-// var ANS = [
-// C,A,B,C,B,
-// C,A,D,A,C,
-// A,D,C,B,C,
-// C,C,C,D,B,
-// D,B,A,B,A];
-ANS = [A,B,C,D];
+var ANS = [
+C,A,B,C,B,
+C,A,D,A,C,
+A,D,C,B,C,
+C,C,C,D,B,
+D,B,A,B,A];
+//ANS = [A,B,C,D];
 function opBtn(o){
     console.log(ANS[(rAN[(ANS_handle)])]+'--'+n);
 	if(o==ANS[(rAN[(ANS_handle)])]){mk++;
