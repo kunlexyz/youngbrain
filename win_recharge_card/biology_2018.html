@@ -370,7 +370,7 @@ background-image: url('images/jamb_trans.png'); -->
     font-size: 33px;">
       Loading...
       <br>
-      <div style="font-size: 12px;">
+      <div id="backend_status" style="font-size: 12px;">
         (Poor Network)
       </div>
     </div>
@@ -605,7 +605,7 @@ function start(){
 	function(data,status){
 	//$('.slide').css({display:'block'});
     
-  //console.log(data);
+  
     //alert(status);
     if(data=='registered'){
       console.log(data);
@@ -617,8 +617,11 @@ function start(){
       next();
       sc=0;
       time();
-    }	  
+    }else{
     // else make sure no number in your name
+      console.log(data);
+      $('#backend_status').html(data+`<br>Click on back button`);
+    }
 
   });
 }

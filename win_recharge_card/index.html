@@ -370,7 +370,7 @@ background-image: url('images/jamb_trans.png'); -->
     font-size: 33px;">
       Loading...
       <br>
-      <div style="font-size: 12px;">
+      <div id="backend_status" style="font-size: 12px;">
         (Poor Network)
       </div>
     </div>
@@ -597,18 +597,8 @@ function start(){
   
   localStorage.txtName = txtName;
   localStorage.txtPhone=ph;
-  $.post(serva+'/00dracapp00drac/reg', 
-	{
-		first_name: txtName,
-		phone_number: ph
-	}, 
-	function(data,status){
-	//$('.slide').css({display:'block'});
-    
-  //console.log(data);
-    //alert(status);
-    if(data=='registered'){
-      console.log(data);
+
+    //remove the following code from here
       ani='off';n=0;
       $('#sp').css({display:'block'});
 	    $('#cover').css({display:'none'});
@@ -617,10 +607,7 @@ function start(){
       next();
       sc=0;
       time();
-    }	  
-    // else make sure no number in your name
-
-  });
+    // to here
 }
 //fname-lname-score-080
 function send_sco(a,b,c,d){

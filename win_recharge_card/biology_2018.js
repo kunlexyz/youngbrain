@@ -42,14 +42,14 @@ q = [
     'reptiles'
     ],
     [
-    'Use the diagram below to answer questions 7 and 8.<br /><img src="images/biology1.jpg" width="100%" /><br />7. In ferns, the structure above is equivalent to the',
+    'Use the diagram below to answer the question.<br /><img src="../past/images/biology1.jpg" width="100%" /><br />7. In ferns, the structure above is equivalent to the',
     'gametophyte generation of a moss',
     'sporophyte generation of a moss',
     'sporangium of a moss',
     'zygote of a moss'
     ],
     [
-    'Use the diagram below to answer questions 7 and 8.<br /><img src="images/biology1.jpg" width="100%" /><br />8. The structures labeled II and III respectively are',
+    'Use the diagram below to answer the question.<br /><img src="../past/images/biology1.jpg" width="100%" /><br />8. The structures labeled II and III respectively are',
     'sporophyte and sori',
     'annulus and stalk of sporangium',
     'female organs and rhizoid',
@@ -133,7 +133,7 @@ q = [
     'lung.'
     ],
     [//...20
-    'Use the diagram below to answer questions 20.<Br /><img src="images/BIO2.jpg" width="100%" alt="biology diagram" /><br />The structure above represents a',
+    'Use the diagram below to answer questions 20.<Br /><img src="../past/images/BIO2.jpg" width="100%" alt="biology diagram" /><br />The structure above represents a',
     'thoracic vertebra',
     'cervical vertebra',
     'caudal vertebra',
@@ -176,12 +176,12 @@ q = [
     ]
 ];
 //debugiing
-q=[
-	['1','1','1','1','1'],
-	['2','2','2','2','2'],
-	['3','3','3','3','3'],
-	['4','4','4','4','4'],
-];
+// q=[
+// 	['1','1','1','1','1'],
+// 	['2','2','2','2','2'],
+// 	['3','3','3','3','3'],
+// 	['4','4','4','4','4'],
+// ];
 c_sc=0;guage=2;
 var A='A';B='B';C='C';D='D';mk=0;ANS_handle=0;
 var ANS = [
