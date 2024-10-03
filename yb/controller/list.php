@@ -4,7 +4,7 @@ function run_itz(){
 
 	$url = explode('/',$_SERVER['REQUEST_URI']);
 	if($url[1] =='xxxxappxxxx' && $url[2] == 'list'){
-		require('yb/database_con2.php');
+		require('yb_/yb/database_con2.php');
 		#echo '<br><br><br>This is the begining of something great';
 		#echo 'the begining';
 	

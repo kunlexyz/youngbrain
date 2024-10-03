@@ -73,10 +73,10 @@ function srch(){
 	ac = localStorage.actN;
 	
 	if(typeof localStorage.BioEmail == 'undefined')
-	{email = localStorage.BioEmail;}else{ email = 'none';}
+	{email = 'none';}else{email = localStorage.BioEmail; }
 	
 	if(typeof localStorage.BioPhone == 'undefined')
-	{phone = localStorage.BioPhone;}else{ phone = 'none';}
+	{phone = 'none';}else{phone = localStorage.BioPhone; }
 	
 	if(typeof localStorage.sutats == 'undefined')
     {
@@ -259,23 +259,23 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 	
 window.addEventListener('appinstalled', (evt) => {
-	app.logEvent('Biology App', 'installed');
+	//app.logEvent('Biology App', 'installed');
 	btnAdd.style.display = 'none';
 	btnAdd2.style.display = 'none';
-});
-	
-function instal(){
-  document.getElementById('install_btn').value='installed';
-  document.getElementById('install_btn_menu').value='installed';
-  document.getElementById('install_btn_menu').style.display = 'none';
-	console.log('hit me');
-	deferredPrompt.prompt();
 	deferredPrompt.userChoice.then((choiceResult) => {
 		if (choiceResult.outcome === 'accepted') {
 		console.log('User accepted the prompt');
 		}
 		deferredPrompt = null;
 	});
+  document.getElementById('install_btn').value='installed';
+  document.getElementById('install_btn_menu').value='installed';
+  document.getElementById('install_btn_menu').style.display = 'none';
+});
+	
+function instal(){
+	console.log('hit me');
+	deferredPrompt.prompt();
 }
 
 //version 6 code

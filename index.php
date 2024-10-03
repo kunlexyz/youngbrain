@@ -1,6 +1,14 @@
 <?php
 
 $x = $_SERVER['REQUEST_URI'];
+//echo $x;
+$xx = explode('/',$x);
+if($xx[1] =='xxxxappxxxx'){
+	echo 'Made it to the serve';
+    exit;
+}
+
+$x = $_SERVER['REQUEST_URI'];
 $xx = explode('/',$x);
 #echo count($xx);
 
@@ -144,5 +152,6 @@ if ($result->num_rows > 0) {
 	$conn->close();
   	exit();
 }
-//090579779870
+//username - brandbuka; pass- 8d(C0oWu3]7CeJ
+//090579779870 - i don't know who owns this number
 ?>

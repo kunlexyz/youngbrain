@@ -13,7 +13,7 @@ const assets = [
 self.addEventListener('install', evt => {
   //console.log('service worker installed');
   evt.waitUntil(
-    caches.open(staticCacheName).then((cache) => {
+    caches.open(staticCacheName).then(cache => {
       console.log('/caching shell assets');
       cache.addAll(assets);
     })
@@ -35,6 +35,7 @@ self.addEventListener('activate', evt => {
 });
 
 // fetch event
+
 self.addEventListener('fetch', evt => {
   //console.log('fetch event', evt);
   evt.respondWith(
@@ -45,6 +46,10 @@ self.addEventListener('fetch', evt => {
           return fetchRes;
         })
       });
-    }).catch(() => caches.match('/'))
+    }).catch(() =>{
+      if(evt.request.url.indexOf('html') > -1){
+        caches.match('/biology_installed.html')
+      }
+    })
   );
 });

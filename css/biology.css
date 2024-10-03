@@ -96,8 +96,8 @@ width: 100%;
 }
 .box_title{
 	font-size:25px;
-	line-height:20px;
-	padding-top:12px;
+	line-height:23px;
+	padding:11px 0px;
 	font-weight: bolder;
 }
 .le{text-align:right;}
@@ -126,13 +126,19 @@ font-style:italic;font-size:11px;}
 
 .option_bio{padding-top:4px;}
 /*[FreeTutorials.Us] Udemy - The Complete Web Developer in 2018 Zero to Mastery*/
+
+@media screen and (max-width: 500px) {
+	.book_mini{		
+		font-size: 10px;
+	}
+}
 @media screen and (min-width: 900px) {
 	body{text-align: center;}
 	ul{
 		text-align: left;
 		font-size: 25px;
 	}
-	.pa, ol, ul, .Nco, .imDesc, .table_900 {
+	.pa, ol, ul, .Nco, .imDesc, .table_900, .Notable_head {
     font-size: 25px;
     max-width: 900px;
 	margin-left: auto;
@@ -144,6 +150,7 @@ font-style:italic;font-size:11px;}
 	}
 	.Notable_head{
 		font-size: 25px;
+		color: #DEF3F8;
 	}
 	.smal_t{
 		font-size: 25px;
@@ -155,6 +162,14 @@ font-style:italic;font-size:11px;}
 	}
 	.big_img{
 		width: 550px;
+	}
+	.box_title{
+		font-size: 50px;
+		line-height: 45px;
+	}
+	.book_mini{		
+		font-size: 15px;
+		padding: 10px;
 	}
 }
 /*

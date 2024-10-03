@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="images/thinkative.png">
+<title>Biology Quiz</title>
+<link rel="stylesheet" type="text/css" href="testcord3.css" />
+<link rel="stylesheet" type="text/css" href="testcord3x.css" />
+<link rel="stylesheet" type="text/css" href="temp.css" />
+<link rel="stylesheet" href="MobileTem.css">
+<style>
+.slide{
+    width: 100vw;
+    /*height: 100%;*/
+    background: #efeded;
+	box-shadow:1px 1px 5px #333;
+    /*position:fixed;*/
+    left:0px;
+    top:0px;
+	padding:10px;
+	padding-top:44px;
+	z-index:50;
+  display:none;
+  }
+ .button {
+        height: 30px;
+        width: 80px;
+  }
+.bt{
+    width: 70px;
+    height: 50px;
+    padding-top: 20px;
+    background-color: #0C0;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+    opacity:0.5;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+	z-index:75;
+}
+.bt2{
+    background:#3694ed;
+    padding:8px;
+    font-size:15px;
+}
+.mvImg{
+	width:100px;
+	opacity:0.8;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.qu{
+  border-bottom: solid 2px #a7a;
+  border-radius: 7px;
+  padding: 10px;
+  padding-top: 4px;
+  text-align:center;
+}
+
+.op{
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 5px;
+}
+.sq{
+  max-width:100%;
+}
+
+.sco{
+  border:collapse;
+}
+
+@keyframes myfirst
+ {
+ 0% {transform: rotate(0deg);}
+ 40% {transform: rotate(1deg);}
+ 50% {transform: rotate(359deg);}
+ 100% {transform: rotate(0deg);}
+ }
+ 
+ @-webkit-keyframes myfirst /* Safari and Chrome */
+ {
+ 0% {transform: rotate(0deg);}
+ 45% {transform: rotate(1deg);}
+ 48% {transform: rotate(359deg);}
+ 70% {transform: rotate(0deg);}
+ 100% {transform: rotate(0deg);}
+ } 
+ 
+ .rev{
+ animation: myfirst 10s;
+ -webkit-animation: myfirst 10s; /* Safari and Chrome */
+ animation-iteration-count: infinite;
+ animation-delay: 2s;
+ animation-timing-function: ease-in-out;
+ }
+
+@keyframes gentle_roll
+ {
+ 0% {transform: rotate(0deg);}
+ 50% {transform: rotate(359deg);}
+ 100% {transform: rotate(0deg);}
+ }
+ 
+ @-webkit-keyframes gentle_roll /* Safari and Chrome */
+ {
+ 0% {transform: rotate(0deg);}
+ 50% {transform: rotate(359deg);}
+ 100% {transform: rotate(0deg);}
+ }
+ .rolling_stars{
+  animation: gentle_roll 10s;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-in-out;
+ }
+</style>
+</head>
+<body>
+
+<div id="cover" class="co ce" 
+  style="display:none;
+  z-index:101;
+  background:#fff;
+  ">
+    <div id="nameImg" style="background:#fc7f18;" >
+      <div style="position: absolute;top:125px;width: 100%;text-align: center;">
+        <img class="rev" src="./images/ca ui.png" style="width: 150px;">
+      </div>
+      <img
+      style="max-width:290px;"
+      src="images/ca1x.jpg">
+    </div>
+  <!--
+    <button>Start</button><br>
+    <button>Instructions</button><br>
+-->
+    <div
+    class="bt2"
+    style="
+        letter-spacing:10px;
+        width:150px;
+        margin-top: -9px;
+    " 
+    onclick="sta()"
+    >
+      Start
+    </div><br>
+    
+    <div
+    class="bt2"
+    style="margin-top:5px;"
+    >
+      Instructions
+    </div>
+    
+    <p>
+      Sponsored By: <br>
+    </p>
+    <img src="./images/yb-logo.png" style="max-width: 150px;">
+
+</div>
+  
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay" style="width: 0%;">
+  <div class="closebtn close3" onclick="closeNav()">×</div>
+		<img class="coI" src="./images/bio_logo.png" style="width:200px; border-radius:25px; margin:auto;">
+  <div class="overlay-content">
+  
+    <a href="./menu.html">
+    <div class="menu1"><div class="bull"></div>Home Page</div>
+    </a>
+    
+    <a href="#">
+    <div class="menu1" onclick=""><div class="bull"></div>About the App</div>
+    </a>
+    
+    <a href="#">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>Sponsorers</div>
+    </a>
+    
+    <a href="#">
+    <div class="menu1" onclick=""><div class="bull"></div>Score Board</div>
+    </a>
+    
+    <a href="#">
+    <div class="menu1" onclick=""><div class="bull"></div>Highest Scorers</div>
+    </a>
+    
+    <a href="#">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>    
+    
+    <a href="#">
+    <div class="menu1" onclick=""><div class="bull"></div>Credits</div>
+    </a>
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()" style="display: none;">
+</div>
+<!-- -->
+</div>
+<!--  -->
+<div id="bar">
+  Math score:
+  <strong id="sco2">0/50</strong>
+ | 
+  card:
+  <div id="c_sco" style="
+    font-size: 18px;
+    padding: 8px;
+    border:solid #900 2px;
+    display: inline-block;
+">0</div>
+</div>
+<div id="timero" style="
+position:fixed;
+right:0px;
+top:0px;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px;
+    z-index:102;
+">Time:</div>
+
+<div id="sl" class="slide">
+  <div id="que" class="qu"></div>
+  
+  <div id="" class="op"></div>
+  <div id="" class="op"></div>
+  <div id="" class="op"></div>
+  <div id="" class="op"></div>
+  
+</div>
+
+<div id="sl2" class="slide"
+style="position:fixed;"
+>2222</div>
+
+<table id="sco" style="margin:auto;">
+</table>
+
+<!--
+<div id="play2" class="bt pl" onClick="playPause()" 
+
+    style="opacity:0.5;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    ">&rang;</div>
+-->
+<div class="co ce" id="card_entrance"
+style="top:0px;
+  background:rgba(255,255,255,0.8);
+  z-index: 102;
+  background-repeat: no-repeat;
+  background-position: center center;
+"
+>
+  
+  <div style="position: absolute;width: 100%;height: 100vh;z-index: 1;">
+    <img src="./images/galaxy.png" class="rolling_stars" style="max-width: 100%;">
+  </div>
+
+  <table height="100%" width="100%" style="position: relative; z-index: 2;">
+    <tr>
+      <td valign="middle"
+      style="
+      font-size: 20px;
+      vertical-align: middle;
+    "
+      >
+    
+      
+  
+  <div>
+    <img src="./images/galaxy_text.png">
+  </div>
+  <p>
+    You Have won a MTN recharge card
+  </p>
+
+  <h3 id="drac" style="background-color: #ff0;">09676-63837-973625</h3>
+
+  <div class="ce pa">
+    <div class="btnRed btnC" onclick="continue_()" style="background-color: rgb(20, 157, 255);border:  rgb(20, 157, 255);">Continue</div>
+    <a href="./menu.html">
+      <div onclick="" class="btnRed btnC">Quit &times;</div>
+    </a>
+  </div>
+  
+  <p>
+    Sponsored By: <br>
+  </p>
+    <img src="./images/yb-logo.png" style="max-width: 150px;">
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!-- view for collecting name and number
+background-image: url('images/jamb_trans.png'); -->
+
+<div class="co ce" id="entrance"
+  style="top:0px;
+  background:rgba(255,255,255,0.7);
+  z-index: 102;
+  background-repeat: no-repeat;
+  background-position: center center;"
+>
+
+  <table height="100%" width="100%">
+    <tr><td valign="middle"
+      style="
+      font-size: 20px;
+      font-weight:bolder;
+      vertical-align: middle;"
+      >
+    
+      
+  Enter your <br>
+  Name &amp; Surname:<br>
+  <input type="text" id="na" class="pas" placeholder="--"  value="test name">
+      
+  <div id="phone_box">
+    Phone Number:<br>
+    <input type="text" id="phone_number" class="pas" placeholder="--" value="08099991234">
+  </div>
+  <div id="warning" style="color: #f00;background: #fff;font-size: 16px;"></div>    
+    <div class="ce pa">
+  <div class="btnRed btnC" onclick="start()">Enter</div>
+  <div onclick="bak()" class="btnRed btnC">←Back</div>
+    </div>
+  
+    </td></tr>
+  </table>
+</div>
+<div class="co ce" id="loading_view"
+  style="top:0px;
+  background:rgba(255,255,255,0.7);
+  z-index: 102;
+  background-repeat: no-repeat;
+  background-position: center center;"
+>
+
+  <table height="100%" width="100%">
+    <tr><td valign="middle"
+      style="
+      font-weight:bolder;
+      vertical-align: middle;"
+      >
+    
+         
+    <div class="ce pa" style="
+    font-size: 33px;">
+      Loading...
+      <br>
+      <div id="backend_status" style="font-size: 12px;">
+        (Poor Network)
+      </div>
+    </div>
+
+    <div class="btnRed btnC" onclick="start()">
+      Try Again
+    </div>
+    <div onclick="bak()" class="btnRed btnC">←Back</div>
+  
+    </td></tr>
+  </table>
+</div>
+</body>
+<script type="text/javascript" src="jq.js"></script>
+
+<script type="text/javascript" src="biology_2018.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(e) {
+	var wh = window.innerHeight;
+	$('.slide').css({
+	  display:'block'/*,
+	  height:(window.innerHeight - document.getElementById('bar').clientHeight-23)+'px'*/,width:(window.innerWidth-20)+'px'});    
+    //time();
+	$('#cover').css({display:'block'});
+	//$('#bar').css({width:window.innerWidth+'px'});
+});
+//random generator
+
+var random, rAN = [];
+function myFunction()
+{
+    array_ = [];
+
+    for (i=0; i < q.length; i++ ) {
+        array_.push(i);
+    }
+
+    random, rAN = [];
+
+    for (a = array_, i = a.length; i--; ) {
+        random = a.splice(Math.floor(Math.random() * (i + 1)), 1)[0];
+        rAN.push(random);
+    }
+    //console.log(rAN);
+}
+myFunction();
+//Timero
+var ktime=20; fin=61 - ktime;
+if(!namo){var namo="User";}
+namo.toUpperCase()
+function time(){
+	ktime--;
+	document.getElementById('timero').innerHTML='time: '+ktime;
+	if(ktime==0){next();}
+	//setTimeout("time()",1000);
+  
+	if(last_question=='on'){
+		setTimeout(time,1000);
+	}
+}			
+
+function sta(){
+	$('#entrance').slideDown();
+}
+
+function bak(){
+	$('#entrance').slideUp();
+	$('#loading_view').slideUp();
+}
+var n = 0;mk=0;
+function fil(n){
+var txt = '\
+  <div id="que" class="qu">\
+  <div class="cir">'+(n+1)+'</div><br>\
+  '+q[rAN[n]][0]+'</div>\
+  \
+  <div onclick="opBtn(\'A\')" id="" class="op"><img src="image/Ax.png" class="imageOpt">'
+    +q[rAN[n]][1]+'</div>\
+  <div onclick="opBtn(\'B\')" id="" class="op"><img src="image/Bx.png" class="imageOpt">'+q[rAN[n]][2]+'</div>\
+  <div onclick="opBtn(\'C\')"  id="" class="op"><img src="image/Cx.png" class="imageOpt">\
+'+q[rAN[n]][3]+'\
+  </div>\
+  <div onclick="opBtn(\'D\')" id="" class="op"><img src="image/Dx.png" class="imageOpt">\
+  '+q[rAN[n]][4]+'\
+  </div>';
+  return txt;
+}
+function next(){
+	ktime =25;
+	$('#c_sco').html(c_sc);
+
+  $('#sl').html(fil(n));
+  $('#sl2').html(fil(n));
+  ANS_handle=n;
+  $('#sl2').css({left:0+'px'});
+  $('#sl2').animate({left:(-innerWidth-20)+'px'});
+  //setTimeout(function(){
+  //mva('.qu:eq(0)',200);
+  mva('.op:eq(0)',300);
+  mva('.op:eq(1)',500);
+
+  mva('.op:eq(2)',700);
+  mva('.op:eq(3)',800);
+  //},500);
+  n++;
+  if(n==q.length){
+    n=0;
+  }
+}
+function continue_(){
+			$('#card_entrance').slideUp();
+			last_question='on';
+			document.getElementById('sl').style.display='block';
+			document.getElementById('sl2').style.display='block';
+      c_sc=0;
+      time();
+    }
+
+function mva(a,b)
+{ 
+  $(a).css({'margin-left':(innerWidth-2)+'px'})
+
+  $(a).animate({'margin-left':-10+'px'},b);
+  $(a).animate({'margin-left':0+'px'},b);
+  
+}
+
+function moveSli2(){
+  $('#sl2').animate({left:(-innerWidth-2)+'px'});
+  
+}
+var old='';oldx='';
+function openNav() {
+  document.getElementById("myNav").style.width = "75%";
+  document.getElementsByClassName('overlay2')[0].style.display='block';
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+  document.getElementsByClassName('overlay2')[0].style.display='none';
+}
+
+var intro = function(){
+        $("#intro").slideUp(3000);
+	}
+
+function rd(){
+	return Math.floor(Math.random()*(window.innerWidth-50));
+}
+function rd2(){
+	return (Math.floor(Math.random()*10)+1)*1000;
+}
+function rd3(){
+	return (Math.floor(Math.random()*3)+1);
+}
+
+var ani='on';sc=0;name=0;Phone='';
+function bmove(x,y,z){
+	var im = '<img id="i'+z+'" src="images/confetti_'+rd3()+'.png" class="mvImg">';
+	//document.body.append(im);
+	$('#sl').after(im);
+	//console.log(y);
+	$('#i'+z+'').css({left:(x+'px'),top:(window.innerHeight+120)+'px'},3000);
+	$('#i'+z+'').animate({top:-150+'px'},y,function(){
+	  $('#i'+z).remove();
+	  if(ani=='on'){
+	   bmove(rd(),rd2(),z);
+	  }
+	});
+	/*
+	$('.mvImg:eq(1)').css({left:(x+'px'),top:(window.innerWidth+120)+'px'},3000);
+	$('.mvImg:eq(1)').animate({top:-70+'px'},y,function(){bmove(rd(),rd2())});
+	*/
+}	
+
+//animation background
+
+im='';
+for(i=0;i<5;i++){
+	//im += '<img src="images/ic_6.png" class="mvImg">';
+
+bmove(rd(),rd2(),i);
+}
+	//$('#sl').after(im);
+
+serva = 'https://maxiserve.com.ng';
+//serva = 'http://localhost'; 
+if(location.host=='localhost'|| location.host==""){
+	serva = 'http://localhost';
+}
+function Check_field(){
+  // console.log(!localStorage.txtNameC);
+  if(localStorage.txtName){
+    document.getElementById('na').value=localStorage.txtName;
+  }
+  if(localStorage.txtPhone){
+    document.getElementById('phone_number').value=localStorage.txtPhone;
+  }
+}
+Check_field();
+
+function start(){
+	last_question='on';
+  txtName = document.getElementById('na').value;
+  ph = document.getElementById('phone_number').value;
+  msg = '';
+  n=0;mk=0;
+  if(txtName.length<3){
+    msg ="<i><strong>Your name cannot be less than 3 letter word. <br>Enter your name and surname </strong></i>";
+    document.getElementById('warning').innerHTML=msg;
+    return;
+  }else{
+	  txtName = txtName.replace(/ /g,'_');
+  }
+  if(ph.length<11){
+    msg ="<i><strong>Your phone cannot be less than 11. <br>Enter a correct phone number to get a recharge card when you win </strong></i>";
+    document.getElementById('warning').innerHTML=msg;
+    return;
+  }
+
+  $('#loading_view').css({'display':'block'});
+	$('#warning').html('');
+  
+  localStorage.txtName = txtName;
+  localStorage.txtPhone=ph;
+
+    //remove the following code from here
+      ani='off';n=0;
+      $('#sp').css({display:'block'});
+	    $('#cover').css({display:'none'});
+      $('#loading_view').css({display:'none'});
+	    $('#entrance').slideUp();
+      next();
+      sc=0;
+      time();
+    // to here
+}
+//fname-lname-score-080
+function send_sco(a,b,c,d){
+  $.get(serva+"/00dracapp00drac/win_recharge/"+a+"/"+b+"/"+c+"/"+d, function(data, status){
+
+    //alert("Data: " + data + "\nStatus:
+		if(status == 'success'){
+			content = data.split('*_*');
+      $('#drac').html(content[1]);
+      console.log('i broought drac');
+    }
+      console.log("win_recharge/"+a+"/"+b+"/"+c+"/"+d);
+    
+	});
+}
+/*
+//code for GET method
+$("button").click(function(){
+  $.get("demo_test.asp", function(data, status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+});
+
+//code for POST method
+$("button").click(function(){
+  $.post("demo_test_post.asp",
+  {
+    name: "Donald Duck",
+    city: "Duckburg"
+  },
+  function(data, status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+});
+*/
+</script>
+</html>

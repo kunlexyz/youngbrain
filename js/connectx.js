@@ -22,10 +22,10 @@ function closeNav() {
 
 //****a function for loading security
 function loadGate(){
-	var gate = '<div class="contentChap ce" id="verify" style="position:fixed;"><div class="headaChap">To Get this chapter, you must activate this app<br />Version: 1.0.2</div>Verification Number:<div id="vN" class="heada" style="font-size:33px;">XXXXX</div><div class="imDesc">Enter the Activation Number below:</div><input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" /><br /><button onclick="activ8()">Activate</button><div class="content ce" style="margin-top:9px; background-color:#C8FDA8"><div id="activate">To Get your activation number</div><strong>Contact:</strong><br /><img src="../images/wh.png" /><br />08033527655<br />+2348033527655
+	var gate = `<div class="contentChap ce" id="verify" style="position:fixed;"><div class="headaChap">To Get this chapter, you must activate this app<br />Version: 1.0.2</div>Verification Number:<div id="vN" class="heada" style="font-size:33px;">XXXXX</div><div class="imDesc">Enter the Activation Number below:</div><input type="text" onblur="upperC()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" /><br /><button onclick="activ8()">Activate</button><div class="content ce" style="margin-top:9px; background-color:#C8FDA8"><div id="activate">To Get your activation number</div><strong>Contact:</strong><br /><img src="../images/wh.png" /><br />08033527655<br />+2348033527655
 <br/>or fill the form below to buy <br />(please, make sure your data is on)
 <script src="https://js.paystack.co/v1/inline.js"></script>
-<div id="paystackEmbedContainer"></div></div><button onclick="rem()">removeIt</button><div id="tk"></div></div>';
+<div id="paystackEmbedContainer"></div></div><button onclick="rem()">removeIt</button><div id="tk"></div></div>`;
 	DIVcontent = document.getElementById('navig8').innerHTML;
 	document.getElementById('navig8').innerHTML = gate + DIVcontent;
 	

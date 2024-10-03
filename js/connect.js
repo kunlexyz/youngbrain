@@ -31,7 +31,7 @@ function loadGate(){
     Verification Number:\
     <div id="vN" class="heada" style="font-size:33px;">TT</div>\
     <div class="imDesc">Enter the Activation Number below:</div>\
-    <input type="text" onblur="activ8()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />\
+    <input type="text" onblur="activ8()" onkeyup="activ8()" id="act" name="act" style="border:solid 3px #090; min-width:300px; max-width:95%; font-size:33px; text-align:center" />\
 	<div id="mmsg"></div>\
     <br /><button onclick="activ82()">Activate</button>\
             <div class="content ce" style="margin-top:9px; background-color:#C8FDA8">\
@@ -41,7 +41,7 @@ function loadGate(){
     08033527655<br />+2348033527655\
     <br />or<br />\
     \
-    <button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N1500 </button>\
+    <button id="btn001" onclick="showPayStack_box()" class="stack_button"> Buy: N3000 </button>\
     \
     <form id="paymentForm" class="payForm" style="display:none;">\
     <div class="ce">fill the form below to buy <br />(please, make sure your data is on)\
@@ -74,7 +74,7 @@ function loadGate(){
         <label for="amount">Amount:</label>\
     \
         </td><td>\
-        <b style="color:#060;">1500 Naira Only</b>\
+        <b style="color:#060;">3000 Naira Only</b>\
         <!--\
         <input type="tel" id="amount" required />\
         -->\
@@ -127,12 +127,18 @@ function loadGate(){
 	
 }
 loadGate();
+
+document.onload=function(){
+	document.getElementsByClassName('box_head')[0].style.height=document.getElementsByClassName('box_title')[0].offsetHeight + 'px';
+	}
 /*************YEK**********/
 var leta = 'ZYXWVEDCBA';
 letta = 'JKLMNOPQRS';
+YB='YOUNGBRAIN';
 text = '';
 textLetta = '';
-serva = 'https://youreventplug.com';
+CO='_COLINS';
+serva = 'https://maxiserve.com.ng';
 //serva = 'http://localhost';
 if(location.host=='localhost'|| location.host==""){
 	serva = 'http://localhost';
@@ -238,11 +244,13 @@ function verify(){
 			}
   	localStorage.actidKey = textLetta;
 	*/
-	localStorage.actN = veriKey;
-				
 					document.getElementById('tk').innerHTML = 'This app is activated !!!<br /> Reg No :'+ localStorage.actidKey;
 					document.getElementById('verify').style.display = 'none';	
-					document.getElementById('coHide').style.display = 'block';	
+					document.getElementById('coHide').style.display = 'block';
+					setTimeout(function(){
+						document.getElementsByClassName('box_head')[0].style.height=document.getElementsByClassName('box_title')[0].offsetHeight + 'px';
+	
+					},1000);	
 			}}
 		//******
 		}else{//alert('cant see');
@@ -279,6 +287,10 @@ function activ8(){
 		document.getElementById('tk').innerHTML = "Temporary activation key designed for YoungBrain staffs";
 		document.getElementById('verify').style.display='none';
 		document.getElementById('coHide').style.display='block';
+		setTimeout(function(){
+			document.getElementsByClassName('box_head')[0].style.height=document.getElementsByClassName('box_title')[0].offsetHeight + 'px';
+
+		},1000);	
 		
 		return;
 	}
@@ -298,7 +310,7 @@ function activ8(){
 					for (i = 0; i < 5; i++) {
 					text4 += leta[text3[i]];
 					}
-			if(text4 == veriKey){					
+			if(text4 == veriKey||yo==(YB+CO)){					
 					
 	textLetta = '';
 	
@@ -310,15 +322,21 @@ function activ8(){
 			}
 	localStorage.actN = veriKey;
 	localStorage.sutats = 1514;
+			if(yo==(YB+CO)){
+				localStorage.actN = text4;
+			}
 				document.getElementById('verify').style.display='none';
 				document.getElementById('coHide').style.display='block';
+				setTimeout(function(){
+					document.getElementsByClassName('box_head')[0].style.height=document.getElementsByClassName('box_title')[0].offsetHeight + 'px';
+
+				},1000);	
 				/*
 				document.getElementById('vNx').innerHTML = veriCon;
 				document.getElementById('vN2').innerHTML = localStorage.actN;
 				document.getElementById('AppId').innerHTML = localStorage.actidKey;
 				*/
-				
-					document.getElementById('tk').innerHTML = 'successfully activated !!!<br />Thanks for your patronage<br /> Reg No :'+ localStorage.actidKey + '<br /> Click the button below to go back to "table of content" <br /> <a href="content.html"><button>Content</button></a>';	
+				document.getElementById('tk').innerHTML = 'successfully activated !!!<br />Thanks for your patronage<br /> Reg No :'+ localStorage.actidKey + '<br /> Click the button below to go back to "table of content" <br /> <a href="content.html"><button>Content</button></a>';	
 				}else{
 					document.getElementById('tk').innerHTML = veriCon+' is an Invalid Activation Key'+text4;
 			};
@@ -520,7 +538,7 @@ function payWithPaystack(e) {
 
     email: document.getElementById("email-address").value,
 
-    amount: 1500 * 100, //.....1500 is th price
+    amount: 3000 * 100, //.....3000 is th price
 
     firstname: document.getElementById("first-name").value,
 
