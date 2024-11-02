@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data from Firestore</title>
+</head>
+<body>
+    <h1>Data from Firestore</h1>
+    <ul id="data-list"></ul>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script>
+
+    <script>
+        // Firebase configuration from Firebase Console
+        const firebaseConfig = {
+      apiKey: "AIzaSyDoF2sTPbPLnFzD12UjEa38NvGcGfcerwM",
+      authDomain: "biology-fcd02.firebaseapp.com",
+      projectId: "biology-fcd02",
+      storageBucket: "biology-fcd02.appspot.com",
+      messagingSenderId: "118666941690",
+      appId: "1:118666941690:web:fa1b89b4f968e8e423e543"
+        };
+
+        // Initialize Firebase and Firestore
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        // Function to fetch data where 'country' is 'USA'
+        async function fetchData() {
+            const dataList = document.getElementById("data-list");
+
+            try {
+                const querySnapshot = await db.collection("bio")
+                    .where("country", "==", "Lagos")
+                    .get();
+
+                querySnapshot.forEach((doc) => {
+                    const data = doc.data();
+                    const listItem = document.createElement("li");
+                    listItem.textContent = `Name: ${data.name}, City: ${data.city}, Country: ${data.country}`;
+                    dataList.appendChild(listItem);
+                });
+
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        }
+
+        // Fetch data on page load
+        window.onload = fetchData;
+    </script>
+</body>
+</html>

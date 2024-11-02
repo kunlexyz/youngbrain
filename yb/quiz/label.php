@@ -71,11 +71,15 @@ if(isset($_GET['label']) == 'q'){
 	';
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
+			/*
+			### The following comment-out code was written to output only records that is earlier than 7days.
+			
 			$d_date = substr($row["created_at"], 0,10);
 			$dd = date("Y-m-d");
 			
 			$dayz = number_of_working_days($d_date, $dd);
 			if($dayz < 7){
+			*/
 				echo "<tr>
 				<td>" . $row["id"]. " </td>
 				<td>" . $row["name"]."</td>
@@ -83,7 +87,7 @@ if(isset($_GET['label']) == 'q'){
 				<td>" . $row["score"]. "</td>
 				<td>" . $row["created_at"]. "</td>
 					</tr>";
-			}
+			/* } */
 		}
 	}
 	echo '</table>

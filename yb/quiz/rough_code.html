@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  
+
+<script type="text/javascript">
+
+  //$("#score").load("label.php?label=q");
+  /*
+  Here's a JavaScript function that meets the provided guidelines:
+  
+  ```
+  */
+  // Get next Monday
+  const today = new Date();
+  const dayOfWeek = today.getDay();
+  const daysUntilMonday = dayOfWeek === 0 ? 7 : 7 - dayOfWeek;
+  const nextMonday = new Date(today.getTime() + daysUntilMonday * 86400000);
+  
+  // Get last performance date from local storage
+  const lastPerformance = localStorage.saved_date;
+  
+  // Function to check if seven days have passed
+  function checkIfSevenDays() {
+      // If no last performance date, save today's date and return false
+      if (!lastPerformance) {
+          const todayDate = new Date().toISOString().split('T')[0];
+          localStorage.saved_date = todayDate;
+          return false;
+      } else {
+          // Calculate number of days since last performance
+          const lastPerformanceDate = new Date(lastPerformance);
+          const todayDate = new Date();
+          const numberOfDays = Math.round((todayDate - lastPerformanceDate) / 86400000);
+  
+          // Check if more than 7 days have passed
+          if (numberOfDays > 7) {
+              return false;
+          } else {
+              // Calculate days between last Monday and last performance
+              const lastMonday = new Date(nextMonday.getTime() - 7 * 86400000);
+              const daysBetweenLastMondayAndLastPerformance = Math.round((lastPerformanceDate - lastMonday) / 86400000);
+  
+              // Return true if less than 7 days, false otherwise
+              return daysBetweenLastMondayAndLastPerformance < 7;
+          }
+      }
+  }
+  
+  // Call the function
+  checkIfSevenDays();
+  /*
+  ```
+  
+  This code calculates the next Monday, retrieves the last performance date from local storage, and checks if seven days have passed since the last performance. If seven days have passed, it returns false; otherwise, it calculates the days between the last Monday and the last performance and returns true if less than seven days.
+  
+  *Notes:*
+  
+  1. `localStorage.saved_date` stores dates in ISO format (`YYYY-MM-DD`).
+  2. The `checkIfSevenDays` function assumes the stored date is in the same format.
+  3. Date calculations use milliseconds (1000 * 60 * 60 * 24 = 86400000).
+  4. The `checkIfSevenDays` function does not handle potential errors when retrieving or parsing dates from local storage. You may want to add error handling based on your application's requirements.
+  */
+  function daysUntilNextFriday() {
+      const today = new Date();
+      const dayOfWeek = today.getDay();
+      
+      // Calculate the number of days to add to reach the next Friday
+      const daysToNextFriday = (5 - dayOfWeek + 7) % 7 || 7;
+  
+      return daysToNextFriday;
+  }
+  // console.log(daysUntilNextFriday()); 
+  // Outputs the number of days until the next Friday
+  
+  
+  /*
+  Write a JavaScript function that save the current date into the local storage and write a second function that check if the date is saved in the local storage, if it is not saved it calls the first function but if it is saved it return the difference of days between saved date and the current day
+  
+  if the difference between the saved date and current date is zero, return true else
+  if current date is monday
+  
+  function check_if_eligible(){
+  let eligibility = 0;
+  if (today is saturday || today is sunday ){
+    participate = 'you cannot participate on saturdays and sundays';
+    console.log( participate);
+  }else if(localStorage.last_performance){
+        if(localStorage.last_performance is before last monday){
+            eligibility = true;
+            localStorage.last_performance = today's date;
+            open_game();
+        }else{
+            eligibility = false;
+            console.log('You have participated this week, Please check on saturday. We announce all Winners on Saturdays. Thanks')
+        }
+    }else{
+        eligibility = true;
+        localStorage.last_performance = today's date;
+        open_game();
+    }
+        return eligibility;
+  }
+
+  ########### from chatGPT
+  function checkIfEligible() {
+    const today = new Date();
+    const dayOfWeek = today.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+    let eligibility = false;
+
+    // Helper function to get the date of the last Monday
+    function getLastMonday() {
+        const daysSinceMonday = (dayOfWeek + 6) % 7; // Calculate days since last Monday
+        const lastMonday = new Date(today);
+        lastMonday.setDate(today.getDate() - daysSinceMonday);
+        return lastMonday;
+    }
+
+    const lastPerformance = localStorage.getItem("last_performance");
+
+    // Check if today is Saturday (6) or Sunday (0)
+    if (dayOfWeek === 6 || dayOfWeek === 0) {
+        const participateMessage = 'You cannot participate on Saturdays and Sundays';
+        console.log(participateMessage);
+        return eligibility;
+    } else if (lastPerformance) {
+        const lastPerformanceDate = new Date(lastPerformance);
+        const lastMonday = getLastMonday();
+
+        // Check if last performance date is before last Monday
+        if (lastPerformanceDate < lastMonday) {
+            eligibility = true;
+            localStorage.setItem("last_performance", today.toISOString());
+            openGame();
+        } else {
+            eligibility = false;
+            console.log('You have participated this week. Please check on Saturday. We announce all winners on Saturdays. Thanks');
+        }
+    } else {
+        eligibility = true;
+        localStorage.setItem("last_performance", today.toISOString());
+        openGame();
+    }
+
+    return eligibility;
+}
+
+// Placeholder function for opening the game
+function openGame() {
+    console.log("Game opened! Good luck!");
+}
+
+#########
+Apostle John Evergreen Ministry House Of Prayer
+
+1a Hodoh-gboloo Street Ketu Tipper Lagos.
+Present:
+4 Days Out Door Crusade
+
+Theme: GOD AS OF OLD
+
+Host:
+Rev John Hormorlolu Holuwafemi and Evangelist Christiana Holuwafemi
+
+Revivalist Bishop Karyordeh Williams
+
+Ministering:
+Pastor Abbey Metileyluu
+
+Pastor Paul
+and Other anointed med of God
+
+Tel: 0 8 1 6 1 5 5 7 0 5 3
+
+Powered By Crystal Animation
+
+You can contact crystal Animation on:
+0 8 0 3 3 4 7 7 4 7 7
+0 8 0 2 4 5 9 1 4 6 1
+  */
+ 
+  </script>
+</body>
+</html>
