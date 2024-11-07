@@ -123,7 +123,7 @@ How much can you label right in 60 sec
       <img src="images/ScoreBoard.jpg" style="width:100%;" alt="Score Board" />
 
 			<h1>Data from Firestore</h1>
-			<ul id="data-list"></ul>
+			<div id="data-list"></div>
 
 			<div id="score"></div>
 		</div>
@@ -374,11 +374,26 @@ if (dayOfWeek === 6 || dayOfWeek === 0) {
         const lastPerformanceDate = new Date(lastPerformance);
         const lastMonday = getLastMonday();
 
+        //today's date
+        const todayDate = new Date().toISOString().split('T')[0]; // Get today's date in 'YYYY-MM-DD' format
+        lastPerformanceDate_adjusted = new Date(lastPerformance).toISOString().split('T')[0];
+
+        if (lastPerformanceDate_adjusted === todayDate) {
+          participated();
+        } else if (lastPerformanceDate < lastMonday) {
         // Check if last performance date is before last Monday
-        if (lastPerformanceDate < lastMonday) {
             validate_registration();
             
         } else {
+          participated();
+        }
+    } else {
+        validate_registration();
+    }
+
+	}
+
+  function participated(){
             eligibility = false;
             let participateMessage ='You have participated this week with the following phone number<div style="color:blue;">'+quiz_data[1]+'</div>Please check on Saturday. We announce all winners on Saturdays.<br>Thanks';
             console.log(participateMessage);
@@ -386,12 +401,7 @@ if (dayOfWeek === 6 || dayOfWeek === 0) {
         show_n_hide("loading","reg_page");
         //$("#score").load("label.php?label=q");
 				fetchData();
-        }
-    } else {
-        validate_registration();
-    }
-
-	}
+      }
   
   function checkIfEligible() {
     const today = new Date();
@@ -489,20 +499,22 @@ function UPDATE_APP() {
   var txtName = oruko,
   txtPhone = pho,
   txtScore = cc;
+  const today = new Date();
 	
   const quizData = {
       name: oruko,
       phone: pho,
       surname: surname,
       subject: 'biology_quiz',
-      score : cc
+      score : cc,
+      date: today.toISOString()
   };
 	async function add_data() {
 			try {
 					// Add data to Firestore collection
 					await db.collection("quiz_submissions").add(quizData)
 					.then(fetchData());
-					alert("Data submitted successfully!");
+					//alert("Data submitted successfully!");
 					
 					// Clear form fields
 					//document.getElementById("quizForm").reset();
@@ -578,7 +590,7 @@ function start2() {
   const dayOfWeek = today.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
 
   localStorage.setItem("quiz_last_performance", today.toISOString());
-  tym = 3; // 181;
+  tym = 181;
   document.getElementById('msg').style.display = 'none';
   document.getElementById('scoreBoard').style.display = 'none';
   document.getElementById('labelView').style.display = 'block';
@@ -681,14 +693,33 @@ async function fetchData() {
                     .where("subject", "==", "biology_quiz")
                     .get();
 
-                let tabili = '<table>';
+                let tabili = `
+	<table class="tabler bg_white">
+	<tr class="trA">
+	<td>No.</td>
+			<td>Name</td>
+			<td>Phone No</td>
+			<td>Score</td>
+      <td>Date</td>
+	</tr>
+	`;
+  let indexo_=0;
 										querySnapshot.forEach((doc) => {
                     const data = doc.data();
+
+                    let dateo = '--';
+                    if(data.date){
+                      let dateo = new Date(data.date);
+                    }else{
+                      dateo = '--';
+                    }
 										
 										tabili += `<tr>
+                        <td>${indexo_++}</td>
 												<td>${data.name}</td>
 												<td>${data.phone}</td>
 												<td>${data.score}</td>
+												<td>${dateo}</td>
 											</tr>`;
                 });
 
