@@ -104,14 +104,15 @@ Enter Your phone number, name &amp; surname to redeem your price if your win.
 </div>
 
 <div class="inp">
-	Enter your first name and middle name<br />
+	Enter your full name<br />
 	<input id="name" name="uname" type="text" class="roundIt" placeholder="Name:" required="required" />
 	<div id="name_complain" class="red"></div>
 </div>
 
-<div class="inp">
+
+<div class="inp" style="display: none;">
 	Enter your surname<br />
-	<input id="surname" name="surname" type="text" class="roundIt" placeholder="Surname:" required="required" />
+	<input id="surname" name="surname" type="text" class="roundIt" placeholder="Surname:" value="Hidden" />
 	<div id="surname_complain" class="red"></div>
 </div>
 
@@ -695,48 +696,50 @@ var answer = [
 
 async function fetchData() {
             const dataList = document.getElementById("data-list");
-
             try {
-                const querySnapshot = await db.collection("quiz_submissions")
-                    .where("subject", "==", "biology_quiz")
-                    .get();
+    const querySnapshot = await db.collection("quiz_submissions")
+        .where("subject", "==", "biology_quiz")
+        .get();
 
-                let tabili = `
-	<table class="tabler bg_white">
-	<tr class="trA">
-	<td>No.</td>
-			<td>Name</td>
-			<td>Phone No</td>
-			<td>Score</td>
-      <td>Date</td>
-	</tr>
-	`;
-  let indexo_=0;
-										querySnapshot.forEach((doc) => {
-                    const data = doc.data();
+    let tabili = `
+    <table class="tabler bg_white">
+        <tr class="trA">
+            <td>No.</td>
+            <td>Name</td>
+            <td>Phone No</td>
+            <td>Score</td>
+            <td>Date</td>
+        </tr>
+    `;
+    
+    let indexo_ = 1;
+    
+    querySnapshot.forEach((doc) => {
+        const data = doc.data();
+        let dateo = data.date ? new Date(data.date).toLocaleDateString() : '--';
+        
+        // Handle score based on its type
+        const scoreDisplay = isNaN(data.score) ? 
+            (data.score || '').replace(/[^a-zA-Z0-9-_\.]/g, "*") : 
+            data.score;
 
-                    let dateo = '--';
-                    if(data.date){
-                      let dateo = new Date(data.date);
-                    }else{
-                      dateo = '--';
-                    }
-										
-										tabili += `<tr>
-                        <td>${indexo_++}</td>
-												<td>${data.name}</td>
-												<td>${data.phone}</td>
-												<td>${data.score}</td>
-												<td>${dateo}</td>
-											</tr>`;
-                });
+        tabili += `<tr>
+            <td>${indexo_++}</td>
+            <td>${(data.name || '').replace(/[^a-zA-Z0-9-_]/g, "*")}</td>
+            <td>${(data.phone || '').replace(/[^a-zA-Z0-9-_]/g, "*")}</td>
+            <td>${scoreDisplay}</td>
+            <td>${dateo}</td>
+        </tr>`;
+    });
 
-								tabili += "</table>";
-								dataList.innerHTML = tabili;
+    tabili += "</table>";
+    dataList.innerHTML = tabili;
 
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
+} catch (error) {
+    console.error("Error fetching data:", error);
+    dataList.innerHTML = '<p>Error loading data</p>';
+}
+
         }
 </script>
 		</html>
