@@ -1,129 +1,756 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    
+  <!-- Open Graph meta tags for social media -->
+  <meta property="og:title" content="Quiz">
+  <meta property="og:description" content="An online quiz for secondary school students.">
+  <meta property="og:image" content="https://youngbrain.com.ng/yb/quiz/images/biology_quiz2.png"> <!-- Thumbnail image URL -->
+  <meta property="og:url" content="https://youngbrain.com.ng/yb/quiz/index.html">
+  <meta property="og:type" content="website">
 
-<title>Biology</title>
-        <link rel="stylesheet" href="../MobileTem.css" />
-        <link rel="stylesheet" href="css/biology.css" />
-<style>
+  <title>Quiz</title>
+	<style>
+body{
+	margin:0px;
+	padding:0px;
+	background-color:#d0ebfb;
+        font-family: 'Crimson Pro', serif;
+}
+.mk{vertical-align: middle;}
 
+.imgCon{background-color:#fff;}
+
+.imgCon img{max-width:100%;}
+
+ol{ padding:20px;
+    max-width: 310px;
+    margin: auto;}
+
+#ti{
+	position:fixed;
+	top:0px;
+	right:0px;}
+#ti, .start, .ti {display:inline-block;
+	background-color:#009;
+	color:white;
+	padding:6px;
+	cursor:pointer;
+	font-size:26px;
+	margin:0px 1px;
+}
+.hh{
+	background-color:#e0fbfb;
+	font-size:20px;
+	padding:6px;
+	margin-bottom: 6px;
+  text-align: left;
+	}
+.ce{text-align:center;}
+#end, .v{width:100%;height:100vh;}
+
+.roundIt{border-radius:11px; background-color:#fff;
+	border:none;
+	font-size:17px;
+	padding:10px 5px;
+	margin:5px 0px;
+  box-shadow: 3px 3px 3px #bcc0d2;
+}
+
+.tabler, .tabler th, .tabler td {
+    border: none;
+    text-align: left;
+    padding: 8px;
+	border-left: 1px solid #aaa;
+}
+.tabler tbody tr:nth-child(2n) {
+    background-color: #F7D5A2;
+}
+.tabler {
+    border-collapse: collapse;
+    border-spacing: 0;
+width: 100%;
+	border: 1px solid #aaa;
+	margin-bottom:15px;
+}
+
+.trA {
+    background-color: #090;
+    color: #FFF;
+}
+.red{color:red;}
+.inp{margin-top: 20px;}
+.answ {
+    border: none;
+    border-bottom: 2px #03F solid;
+    background-color: #DEF3F8;
+    text-align: center;
+}
+.co{display: none;}
+.pa {
+  padding: 10px;
+  text-align: left;
+}
+
+.imn {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}
+#instruction_list li{
+	font-size:17px;
+  text-align: justify;
+  margin: 10px 0;
+  margin-left: 10px;
+}
 </style>
 </head>
-
 <body>
+	<div id="reg_page" class ="ce co" style="padding: 10px;display: block;" >
+How far can you go in 180 seconds?
 
-<div class="pa paj">
+<div id="caption" style="font-size:50px;padding-top:15px;">
 
-<ol>
-<li>
+<img src="images/biology_quiz2.png" style="max-width:200px; margin:auto;" alt="Biology Quiz" />
+</div>
+<div id="ti2"> Time duration: 3 minutes</div>
+<u><strong>Instruction</strong></u> : This quiz is meant for secondary school students, WAEC,GCE,NECO and JAMB candidates. <br>
+<button id="read_more" class="start" style="font-size: 15px;">Read more</button>
+<button class="start past_result" style="font-size: 15px;">Check scores</button>
+<hr />
+  		<form id="reg_me">
+Enter Your phone number, name &amp; surname to redeem your price if your win.
+<br />
+<div class="inp">
+<input id="Uphone" name="phone" class="roundIt" type="tel" placeholder="Phone Number:" required="required" />
+<div id="phone_complain" class="red"></div>
+</div>
 
-		<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> is the name of the procedure scientists follow to solve problems.
-</li><li>
-A preliminary explanation scientists give for a particular question is called 
-<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>.
-</li><li>
-In any experiment, the factor that changes is called 
-<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>.
-</li><li>
-A 
-<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span> can be regarded as a scientific explanation supported by a large number of experimental results.
-</li></ol>
-
+<div class="inp">
+	Enter your full name<br />
+	<input id="name" name="uname" type="text" class="roundIt" placeholder="Name:" required="required" />
+	<div id="name_complain" class="red"></div>
 </div>
 
 
+<div class="inp" style="display: none;">
+	Enter your surname<br />
+	<input id="surname" name="surname" type="text" class="roundIt" placeholder="Surname:" value="Hidden" />
+	<div id="surname_complain" class="red"></div>
+</div>
+
+<input type="hidden" name="reg" value="reg" />
+<input type="submit" id="testo" class="start" style="
+	font-size:20px;border: none;" value="Send" />
+
+		</form>
 <!--
-Chapter 2 in Book 1 (page 22)
+How much can you label right in 60 sec
 -->
-<img src="images/fig2.993.jpg" class="imn" />
+		</div>
+		
+		<div id="scoreBoard" class="co">
 
-<div class="pa paj">
- SSCE NOV 1989 Biology 1 practical question 9 a,b,c.
-</div>
- <ul>
-9. 
-<li>(a) Name the organism represented in the diagram above 
-<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
-</li>
-<li>
-(b) Name the structure labelled X 
-<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
-</li>
-<li>
-(c) Into what stage would the organism develop?
-<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
-</li>
-</ul>
+			<button id="back_btn"> Back </button>	
+      <button class="instruction_btn"> Home </button>		
+      <img src="images/ScoreBoard.jpg" style="width:100%;" alt="Score Board" />
 
-<!-- 
-Chapter 5 in Book 2 (page 41) -->
+			<div id="data-list"></div>
 
-<div class="pa paj">
-<h4 class="ce u">
-Find out
-</h4>
-Why the right kidney is slightly lower that the left kidney? 
-<textarea class="w100"></textarea><span class="w100resp"></span>
-</div>
-<div class="pa paj">
-How many times each day, the entire human blood is filtered by the kidneys
-<textarea class="w100"></textarea><span class="w100resp"></span>
-</div>
+			<div id="score"></div>
+		</div>
 
-<!-- Book 2 / chapter 2
-Chapter 2 in Book 2 (page 10) -->
-<div class="fig">
-<strong>fig2.94 is The jaw and dentition of a mammal</strong> 
-</div>
-<img src="images/fig2.94.jpg" class="imn" />
+		<div id="loading" class="co ce" style="padding-top: 50px;">
+			<div id="messa" style="margin: 20px;font-size: 20px;"> ...Loading </div>
+      
+			<div class='past_result start' style='font-size:30px;' >Past Results</div>
+	
+			<div style='padding-top:15px;'>
+				For more exercises: download the APP for <br />
+				Biology Practical Activity &amp; Work Book 1 - 3.<br />
+	
+				<a href='https://youngbrain.com.ng/app'>
+					<div class='start' style='font-size:30px;' onclick='again()'>Biology_App</div>
+				</a>
+	
+				<br /> For more information, visit our facebook page<br /><a
+					href="https://www.facebook.com/Youngbrain-publishers-ltd-103972044777696/">Youngbrain Publishers Ltd </a>
+			</div>
+		</div>
 
-<div class="pa paj">
-16.a. Is the organism a herbivore or a carnivore? 
-<input type="text" placeholder="type the answer here" class="qBox_bio" onkeyup="check_it('plant')" /><span class="resp"></span>
-</div>
+		<div id="msg" class="co ce" style="padding-top: 100px;">	
+			
+			<div id='caption' style='font-size:50px;padding-top:30px;'>
+				Ready? <br />
+			</div>
+			<div id="message"></div>
+			<div id="start_ready" class='start' style='font-size:30px;'>Start</div>
 
-<!--
-Chapter 5 in Book 3 (page 50)
--->
+		</div>
+	
+		<div id='end' class='co ce' >
+			<div id='ti3' class='ti'> Time up</div>
+			<div id='sco' style='font-size:30px;'>0/0</div>
+			<div style='padding-top:15px'></div>
+			<!--
+	<div class='start' style='
+		font-size:30px;' onclick='again()'>Try again?</div>
+			-->
+			<div class='past_result start' style='font-size:30px;'>Past Results</div>
+	
+			<div style='padding-top:15px;'>
+				For more exercises: download the APP for <br />
+				Biology Practical Activity &amp; Work Book 1 - 3.<br />
+	
+				<a href='https://youngbrain.com.ng/app'>
+					<div class='start' style='font-size:30px;' onclick='again()'>Biology_App</div>
+				</a>
+	
+				<br /> For more information, visit our facebook page<br /><a
+					href="https://www.facebook.com/Youngbrain-publishers-ltd-103972044777696/">Youngbrain Publishers Ltd </a>
+			</div>
+		</div>
+		<div id='labelView' class='co ce' style="">
+			<div class='hh'>Answer All
+	
+				<div id='ti'> Time: </div>
+			</div>
 
-<h3 class="u ce" > Maize flower </h3>
-<div class="fig">
-<strong>fig5.8c:</strong> A
-</div>
-<img src="images/fig5.8c.jpg" class="imn" />
+      <div id='labelView_inner'>
+        <div class="pa">
+          1. During deamination by the liver, nitrogen containing amino part is converted to
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span> while the keto
+          acids (which is a carbon compound) is converted to
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          2. The layer of the skin which contain melanin pigment is the
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          3. An electric sensation which is the main mechanism of transferring information along a nerve fibre is called
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          4.The organic chemical substances that bring about chemical digestion is called digestive
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          5 what type of dentition does mammals have?
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          6. State two products of anaerobic breakdown of glucose by bacteria<br />
+          i
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span> <br /> ii
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">7. The movement of molecules against the concentration gradient using cellular energy is called
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          8. The process of hardening of cartilage tissues into bones through the addition of minerals is called
+    
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          9. Obesity is a condition caused by <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+    
+        </div>
+        <div class="pa">
+          10. During glycolysis a 6-carbon sugar molecule is broken down to a 3-carbon compound called
+    
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+      </div>
 
-<div class="fig">
-<strong>fig5.8d:</strong> B
-</div>
-<img src="images/fig5.8d.jpg" class="imn" />
+      <button id="submit_manual" class="start"> Submit </button>
+	
+		</div>
 
-<div class="pa paj">
-(a) Which of the flowers in the diagrams above is male and which one is female
-<ol type="i">
-<li>
-<textarea class="w100"></textarea><span class="w100resp"></span>
-</li>
-<li>
-<textarea class="w100"></textarea><span class="w100resp"></span>
-</li>
-</ol>
-</div>
-<div class="pa paj">
-(b) Does the flower favour insect pollination or wind pollination? Gave reason for your answer 
-<textarea class="w100"></textarea><span class="w100resp"></span>
-</div>
+    <div id="instruction_view" class="co ce">
+      <div style="text-align: left;">
+        <button class="start instruction_btn">&lArr; Back</button>
+      </div>
+      <h3 style="color: #009;">Instruction</h3>
+      <h5>Rules and how to decide the winner every week.</h5>
+      <hr />
+        <ol id="instruction_list">
+          <li>
+            Attempting the questions requires, that student or candidate must like and follow youngbrain page in their social media platforms e.g Facebook, Instagram and tiktok
+          </li>
+          <li>
+            The winner is decided weekly (every Monday) by Choosing the three candidates that scored the highest (above average) scores in the shortest possible time within the 3 minutes allotted time. 
+          </li>
+          <li>The highest score in this regard will get 2000naira recharge card, the second will get 1000naira worth recharge card and the third will receive 500naira worth recharge card . The recharge card will be that of the network you used.</li>
+          <li>A single person can only win maximum of twice in a month.</li>
+          <li>If there's a tie, the person that answered first will be given preference while the other will go to a lower position.</li>
+          <li>Every week, first ten highest scores according to the rules will receive our Biology practical books 1-3 app free of charge.</li>
+        </ol>   
+        
+        <button class="start instruction_btn">&lArr; Back</button>
 
-<script type="text/javascript">
-var chapter = 2;
+    </div>
+
+		</body>
+
+    <!-- Firebase SDKs -->
+    <script src="./js/firebase-app-compat.js"></script>
+    <script src="./js/firebase-firestore-compat.js"></script> 
+    
+<script src="../jq.js"></script>
+
+<script>	
+
+        // Firebase configuration
+        const firebaseConfig = {
+      apiKey: "AIzaSyDoF2sTPbPLnFzD12UjEa38NvGcGfcerwM",
+      authDomain: "biology-fcd02.firebaseapp.com",
+      projectId: "biology-fcd02",
+      storageBucket: "biology-fcd02.appspot.com",
+      messagingSenderId: "118666941690",
+      appId: "1:118666941690:web:fa1b89b4f968e8e423e543"
+        };
+
+        // Initialize Firebase and Firestore
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+//localStorage.removeItem("quiz_last_performance");
+//localStorage.setItem("quiz_last_performance","2024-10-25T18:30:57.916Z");
+console.log(localStorage.quiz_last_performance);
+	if(localStorage.quiz){
+		var quiz_data = localStorage.quiz;
+		quiz_data = quiz_data.split('*-*');
+
+		if(quiz_data.length > 2){
+			document.getElementById('name').value=quiz_data[0];
+			document.getElementById('Uphone').value=quiz_data[1];
+			document.getElementById('surname').value=quiz_data[2];
+		}
+	}else{console.log('testing;')}
+/*
+	if(localStorage.quiz.name){document.getElementById('name').value=localStorage.quiz.name};
+	if(localStorage.quiz.phone){document.getElementById('Uphone').value=localStorage.quiz.phone};
+	if(localStorage.quiz.surname){document.getElementById('surname').value=localStorage.quiz.surname};
+*/
+	document.querySelector("reg_me");
+	const form = document.getElementById("reg_me");
+	document.getElementById("testo").addEventListener('click', (e)=>{submit_name(e)});
+	form.addEventListener('submit', (e)=>{submit_name(e)});
+	document.getElementById("submit_manual").addEventListener('click', ()=>{
+    
+    setTimeout(ty, 1000);
+    tymbox.innerHTML = 'Finished';
+    document.getElementById('ti3').innerHTML = 'Finished';
+    document.getElementById('end').style.display = 'block';
+    document.getElementById('labelView').style.display = 'none';
+
+    cc = countSco();
+    document.getElementById('sco').innerHTML = 'you scored: ' + cc + '<div style="font-size:16px;">We will contact you on friday if you are the highest scorer for the week <br />You can try again next week.</div>';
+      
+    UPDATE_APP
+  });
+	
+		
+	var oruko = 'nil',
+   pho = 'nil',
+	 surname = 'nil';
+
+    // Helper function to get the date of the last Monday
+    function getLastMonday() {
+        const daysSinceMonday = (dayOfWeek + 6) % 7; // Calculate days since last Monday
+        const lastMonday = new Date(today);
+        lastMonday.setDate(today.getDate() - daysSinceMonday);
+        return lastMonday;
+    }
+    const today = new Date();
+    const dayOfWeek = today.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+    var eligibility = true;
+
+	function submit_name(e){
+		e.preventDefault();
+		
+    //check last performance
+    const lastPerformance = localStorage.getItem("quiz_last_performance");
+
+// Check if today is Saturday (6) or Sunday (0)
+if (dayOfWeek === 6 || dayOfWeek === 0) {
+    let participateMessage = 'You cannot participate on Saturdays and Sundays';
+    console.log(participateMessage);
+    document.getElementById('messa').innerHTML=participateMessage;
+    show_n_hide("loading","reg_page");
+		fetchData();
+
+    return eligibility;
+} else if (lastPerformance) {
+        const lastPerformanceDate = new Date(lastPerformance);
+        const lastMonday = getLastMonday();
+
+        //today's date
+        const todayDate = new Date().toISOString().split('T')[0]; // Get today's date in 'YYYY-MM-DD' format
+        lastPerformanceDate_adjusted = new Date(lastPerformance).toISOString().split('T')[0];
+
+        if (lastPerformanceDate_adjusted === todayDate) {
+          participated();
+        } else if (lastPerformanceDate < lastMonday) {
+        // Check if last performance date is before last Monday
+            validate_registration();
+            
+        } else {
+          participated();
+        }
+    } else {
+        validate_registration();
+    }
+
+	}
+
+  function participated(){
+            eligibility = false;
+            let participateMessage ='You have participated this week with the following phone number<div style="color:blue;">'+quiz_data[1]+'</div>Please check on Saturday. We announce all winners on Saturdays.<br>Thanks';
+            console.log(participateMessage);
+        document.getElementById('messa').innerHTML=participateMessage;
+        show_n_hide("loading","reg_page");
+        //$("#score").load("label.php?label=q");
+				fetchData();
+      }
+  
+  function checkIfEligible() {
+    const today = new Date();
+    const dayOfWeek = today.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+    let eligibility = false;
+
+    // Helper function to get the date of the last Monday
+    function getLastMonday() {
+        const daysSinceMonday = (dayOfWeek + 6) % 7; // Calculate days since last Monday
+        const lastMonday = new Date(today);
+        lastMonday.setDate(today.getDate() - daysSinceMonday);
+        return lastMonday;
+    }
+
+    const lastPerformance = localStorage.getItem("quiz_last_performance");
+
+    // Check if today is Saturday (6) or Sunday (0)
+    if (dayOfWeek === 6 || dayOfWeek === 0) {
+        let participateMessage = 'You cannot participate on Saturdays and Sundays';
+        console.log(participateMessage);
+        document.getElementById('messa').innerHTML=participateMessage;
+        show_n_hide("loading","reg_page");
+
+        return eligibility;
+    } else if (lastPerformance) {
+        const lastPerformanceDate = new Date(lastPerformance);
+        const lastMonday = getLastMonday();
+
+        // Check if last performance date is before last Monday
+        if (lastPerformanceDate < lastMonday) {
+            eligibility = true;
+            localStorage.setItem("quiz_last_performance", today.toISOString());
+            start2();
+        } else {
+            eligibility = false;
+            let participateMessage ='You have participated this week. Please check on Saturday. We announce all winners on Saturdays. Thanks';
+            console.log(participateMessage);
+        document.getElementById('messa').innerHTML=participateMessage;
+        show_n_hide("loading","reg_page");
+        }
+    } else {
+        eligibility = true;
+        localStorage.setItem("quiz_last_performance", today.toISOString());
+        openGame();
+    }
+
+    return eligibility;
+}
+
+var current_view = "reg_page",
+last_view = "msg";
+function show_n_hide(a,b){
+  $('.co').css({display:'none'});
+  $('#'+a).slideDown();
+  //document.getElementById(a).style.display = "block";
+  //current_view = a;
+  //last_view = b;
+}
+$('.past_result').click(function(){
+  show_n_hide("scoreBoard","loading");
+  fetchData();
+});
+$('#back_btn').click(function(){show_n_hide("loading","scoreBoard")});
+$('#start_ready').click(function(){start2()});
+$('.instruction_btn').click(function(){show_n_hide("reg_page")});
+$('#read_more').click(function(){show_n_hide("instruction_view")});
+
+function validate_registration(){
+  
+  if ((document.getElementById('Uphone').value).length >10) {
+       pho = document.getElementById('Uphone').value;
+       document.getElementById('phone_complain').innerHTML='';
+   }else{
+		document.getElementById('phone_complain').innerHTML="phone number cannot be less than 11 digits";
+		return false;
+	 }
+
+   if ((document.getElementById('name').value).length >2) {
+       oruko = document.getElementById('name').value;
+       document.getElementById('name_complain').innerHTML="";
+   }else{
+		document.getElementById('name_complain').innerHTML="name cannot be less than 3 letters"; 
+		return false;
+	 }
+
+		if ((document.getElementById('surname').value).length >2) {
+				surname = document.getElementById('surname').value;
+        document.getElementById('surname_complain').innerHTML="";
+		}else{
+			document.getElementById('surname_complain').innerHTML="surname cannot be less than 3 letters";
+			return false;
+		}
+    //prepere the playing stage
+    show_n_hide("msg","reg_page");
+		localStorage.quiz = oruko+'*-*'+pho+'*-*'+surname;
+}
+
+var cc = 0;
+function UPDATE_APP() {
+  var txtName = oruko,
+  txtPhone = pho,
+  txtScore = cc;
+  const today = new Date();
+	
+  const quizData = {
+      name: oruko,
+      phone: pho,
+      surname: surname,
+      subject: 'biology_quiz',
+      score : cc,
+      time_spent: tym,
+      date: today.toISOString(),
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+  };
+	async function add_data() {
+			try {
+					// Add data to Firestore collection
+					await db.collection("quiz_submissions").add(quizData)
+					.then(fetchData());
+					//alert("Data submitted successfully!");
+					
+					// Clear form fields
+					//document.getElementById("quizForm").reset();
+			} catch (error) {
+					console.error("Error adding document: ", error);
+					alert("Error submitting data. Please try again.");
+			}
+		}
+		add_data();
+   
+}
+
+var tym = 5,
+tymbox = document.getElementById('ti');
+function ty() {
+  if (tym > 0) {
+    tym--;
+    tymbox.innerHTML = 'Time : ' + tym;
+    setTimeout(ty, 1000);
+  }
+  else {
+    tymbox.innerHTML = 'TIME UP! 00:00';
+    document.getElementById('ti3').innerHTML = 'TIME UP! 00:00';
+    document.getElementById('end').style.display = 'block';
+    document.getElementById('labelView').style.display = 'none';
+
+    cc = countSco();
+    document.getElementById('sco').innerHTML = 'you scored: ' + cc + '<div style="font-size:16px;">We will contact you on friday if you are the highest scorer for the week <br />You can try again next week.</div>';
+      
+      UPDATE_APP();
+      /*
+    if (phoneNo !== '080_TEST') {
+    }
+    */
+  }
+}
+
+function passq() {
+  document.getElementById('scoreBoard').style.display = 'block';
+  document.getElementById('end').style.display = 'none';
+}
+
+function backq() {
+  document.getElementById('scoreBoard').style.display = 'none';
+  document.getElementById('end').style.display = 'block';
+}
+function again() {
+  document.getElementById('msg').style.display = 'block';
+  document.getElementById('end').style.display = 'none';
+}
+
+var fname = "!_This_is_a_Test_Mode",
+phoneNo = "080_TEST";
+localStorage.season = 0;
+function start2() {
+
+  const today = new Date();
+  const dayOfWeek = today.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+
+  localStorage.setItem("quiz_last_performance", today.toISOString());
+  tym = 181;
+  document.getElementById('msg').style.display = 'none';
+  document.getElementById('scoreBoard').style.display = 'none';
+  document.getElementById('labelView').style.display = 'block';
+  setTimeout(ty, 1000);
+  /*
+  if (localStorage.quiz_last_performance == phoneNo) {
+    passq();
+    document.getElementById('message').innerHTML = 'You have attempted <br /> You can only participate once in a week <br /> You visit our facebook page<br/><a href="https://www.facebook.com/Youngbrain-publishers-ltd-103972044777696/">Youngbrain publishers Ltd </a> ';
+  } else {
+    tym = 3; // 181;
+    document.getElementById('msg').style.display = 'none';
+    document.getElementById('scoreBoard').style.display = 'none';
+    document.getElementById('labelView').style.display = 'block';
+    setTimeout(ty, 1000);
+  }
+    */
+}
+function countSco() {
+  var mkk = 0;
+
+  for (let ii = 0; ii < totSco.length; ii++) {
+    mkk = mkk + totSco[ii];
+  }
+
+  return mkk;
+}
+
+/*** marker **/
+
+var g = document.getElementsByClassName('answ'),
+gg = document.getElementsByClassName('resp'),
+z = 'x',
+totSco = [];
+function myFunction() {
+  for (var i = 0, len = g.length; i < len; i++) {
+    totSco[i] = 0;
+    //if(answer[i][0].length < 1){gg[i].innerHTML=xw}else{ gg[i].innerHTML=answer[i][0];}
+    (function (index) {
+      g[i].onkeyup = function () {
+        //alert(index+1)  ;
+        if (answer[index][0].length < 1) { gg[index].innerHTML = xw } else {
+
+          var y = (g[index].value.toLowerCase()).trim().replace(/\s+/g, ' ');
+          xx = answer[index];
+          mk = '';
+          anso = 'f';
+          //alert(xx.length);
+
+
+          for (var ii = 0, len = xx.length; ii < len; ii++) {
+            x2 = xx[ii].toLowerCase();
+            if (y == x2) {
+              anso = 't';
+              /*
+              return anso;
+              break;
+              */
+            }
+          }
+
+          if (anso == 't') {
+            z = "<img src='images/correctx.jpg' alt='correct' class='mk' />";
+            totSco[index] = 1;
+          }
+          else {
+            z = "<img src='images/wrongx.jpg' alt='wrong' class='mk' />";
+            totSco[index] = 0;
+          }//{z= x2}
+          //document.getElementById('demo').innerHTML=z;
+          gg[index].innerHTML = z;
+        }
+      }
+    })(i);
+
+  }
+}
+setTimeout(myFunction, 3000);
+
+
+var answer = [
+  ['urea'],
+  ['glucose'],
+  ['malphighian','malphighian layer'],
+  ['Nerve impulses'],
+  ['enzyme'],
+  ['heterodant dentition','heterodant'],
+  ['Acetic acid','Ethansic acid','lactic acid'],
+  ['Acetic acid','Ethansic acid','lactic acid'],
+  ['active transport'],
+  ['ossification'],
+  ['excess carbonhydrate'],
+  ['pyruvic acid'],
+  []
+];
+
+async function fetchData() {
+            const dataList = document.getElementById("data-list");
+            try {
+    const querySnapshot = await db.collection("quiz_submissions")
+        .orderBy("date", "desc") // Sort by timestamp field in descending order
+        .limit(20)
+        .get();
+
+    let tabili = `
+    <table class="tabler bg_white">
+        <tr class="trA">
+            <td>No.</td>
+            <td>Name</td>
+            <td>Score</td>
+            <td>Phone No</td>
+            <td>Date</td>
+        </tr>
+    `;
+    
+    let indexo_ = 1;
+    
+    querySnapshot.forEach((doc) => {
+        const data = doc.data();
+        let dateo = data.date ? new Date(data.date).toLocaleDateString() : '--';
+        
+        // Handle score based on its type
+        const scoreDisplay = isNaN(data.score) ? 
+            (data.score || '').replace(/[^a-zA-Z0-9-_\.]/g, "*") : 
+            data.score;
+
+        tabili += `<tr>
+            <td>${indexo_++}</td>
+            <td>${(data.name || '').replace(/[^a-zA-Z0-9-_]/g, "*")}</td>
+            <td>${scoreDisplay}</td>
+            <td>${maskPhoneNumber((data.phone || '').replace(/[^a-zA-Z0-9-_]/g, "*"))}</td>
+            <td>${dateo}</td>
+        </tr>`;
+    });
+
+    tabili += "</table>";
+    dataList.innerHTML = tabili;
+
+} catch (error) {
+    console.error("Error fetching data:", error);
+    dataList.innerHTML = '<p>Error loading data</p>';
+}
+
+}
+function maskPhoneNumber(phoneNumber) {
+    return phoneNumber.slice(0, 4) + "---" + phoneNumber.slice(-4);
+}
 </script>
-<script type="text/javascript" src="./js/jq.js">
-</script>
-</body>
-<script type="text/javascript" src="js/ch1.js">
-</script>
-<script type="text/javascript" src="js/connect.js">
-</script>
-
-</html>
+		</html>

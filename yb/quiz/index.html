@@ -212,7 +212,7 @@ How much can you label right in 60 sec
 					href="https://www.facebook.com/Youngbrain-publishers-ltd-103972044777696/">Youngbrain Publishers Ltd </a>
 			</div>
 		</div>
-		<div id='labelView' class='co ce'>
+		<div id='labelView' class='co ce' style="">
 			<div class='hh'>Answer All
 	
 				<div id='ti'> Time: </div>
@@ -220,78 +220,57 @@ How much can you label right in 60 sec
 
       <div id='labelView_inner'>
         <div class="pa">
-          1. Write down the name of the first scientist who used the word cell to describe an observation in an organism
-          <input type="text" placeholder="type the answer here" class="answ" /><span
-            class="resp"></span>
+          1. During deamination by the liver, nitrogen containing amino part is converted to
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span> while the keto
+          acids (which is a carbon compound) is converted to
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          2. The layer of the skin which contain melanin pigment is the
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          3. An electric sensation which is the main mechanism of transferring information along a nerve fibre is called
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          4.The organic chemical substances that bring about chemical digestion is called digestive
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          5 what type of dentition does mammals have?
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          6. State two products of anaerobic breakdown of glucose by bacteria<br />
+          i
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span> <br /> ii
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">7. The movement of molecules against the concentration gradient using cellular energy is called
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          8. The process of hardening of cartilage tissues into bones through the addition of minerals is called
+    
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+        </div>
+    
+        <div class="pa">
+          9. Obesity is a condition caused by <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
     
         </div>
         <div class="pa">
-          2. State the two main types of molecules that make up the plasma membrane of a cell
-          <ol type="i">
-            <li>
-              <input type="text" placeholder="type the answer here" class="answ" /><span
-                class="resp"></span>
-            </li>
-            <li>
-              <input type="text" placeholder="type the answer here" class="answ"  /><span
-                class="resp"></span>
-            </li>
-          </ol>
-        </div>
-        <div class="pa">
-          3. In what cell organelle is the chromatin of plants and animal cells located?
-          <input type="text" placeholder="type the answer here" class="answ"  /><span
-            class="resp"></span>
-        </div>
-        <div class="pa">
-          4. What term can be used to describe an organism that consists of
-          <ol type="i">
-            <li>One cell
-              <input type="text" placeholder="type the answer here" class="answ" /><span
-                class="resp"></span>
-            </li>
-            <li>Many cells?
-              <input type="text" placeholder="type the answer here" class="answ" /><span
-                class="resp"></span>
-            </li>
-          </ol>
-        </div>
-        <div class="pa">
-          5. The nucleus is bound by two unit membrane called?
-          <input type="text" placeholder="type the answer here" class="answ" /><span
-            class="resp"></span>
-        </div>
-        <div class="pa">
-          6. In a cell, apart from the nuclear membrane, state another membrane that is semi permeable
-          <input type="text" placeholder="type the answer here" class="answ" /><span
-            class="resp"></span>
-        </div>
-        <div class="pa">
-          7. The cell wall of plant cells is made up of poly saccharide called
-          <input type="text" placeholder="type the answer here" class="answ" /><span
-            class="resp"></span>
-        </div>
-        <div class="pa">
-          8.
-          <input type="text" placeholder="type the answer here" class="answ" /><span
-            class="resp"></span> is the cell organelle which functions to release energy from food during cellular
-          respiration
-        </div>
-        <div class="pa">
-          9.
-          <input type="text" placeholder="type the answer here" class="answ" /><span
-            class="resp"></span> in the chromosome contain heredity information in a code form while
+          10. During glycolysis a 6-carbon sugar molecule is broken down to a 3-carbon compound called
     
-          <input type="text" placeholder="type the answer here" class="answ" /><span
-            class="resp"></span> are among the chromatins which is involved in the manufacture of molecules with information
-          for protein synthesis from the nucleus to the cytoplasm.
-        </div>
-        <div class="pa">
-          10. A simple living cell which is able to carry out all the life processes of a living organism is said to be
-          existing as a
-          <input type="text" placeholder="type the answer here" class="answ" /><span
-            class="resp"></span>
-    
+          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
         </div>
       </div>
 
@@ -326,8 +305,8 @@ How much can you label right in 60 sec
 		</body>
 
     <!-- Firebase SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script> 
+    <script src="./js/firebase-app-compat.js"></script>
+    <script src="./js/firebase-firestore-compat.js"></script> 
     
 <script src="../jq.js"></script>
 
@@ -669,7 +648,7 @@ function myFunction() {
         //alert(index+1)  ;
         if (answer[index][0].length < 1) { gg[index].innerHTML = xw } else {
 
-          var y = g[index].value.toLowerCase();
+          var y = (g[index].value.toLowerCase()).trim().replace(/\s+/g, ' ');
           xx = answer[index];
           mk = '';
           anso = 'f';
@@ -707,22 +686,19 @@ setTimeout(myFunction, 3000);
 
 
 var answer = [
-
-['Robert Hook'],
-	['lipids','protein'],
-	['lipids','protein'],
-	['Nucleus'],
-	['Unicellular','accelular'],
-	['multicellular'],
-	['nuclear membrance'],
-	['plasma membrane'],
-	['cellulose'],
-	//9
-	['mitochondrion'],
-	['gene'],
-	['nucleolus'],
-	['as an independent organism','independent organism','organism'],
-  ['']
+  ['urea'],
+  ['glucose'],
+  ['malphighian','malphighian layer'],
+  ['Nerve impulses'],
+  ['enzyme'],
+  ['heterodant dentition','heterodant'],
+  ['Acetic acid','Ethansic acid','lactic acid'],
+  ['Acetic acid','Ethansic acid','lactic acid'],
+  ['active transport'],
+  ['ossification'],
+  ['excess carbonhydrate'],
+  ['pyruvic acid'],
+  []
 ];
 
 async function fetchData() {
