@@ -257,70 +257,78 @@ How much can you label right in 60 sec
         href="https://www.facebook.com/Youngbrain-publishers-ltd-103972044777696/">Youngbrain Publishers Ltd </a>
     </div>
   </div>
-  <div id='labelView' class='co ce' style="">
+  <div id='labelView' class='co ce' >
     <div class='hh'>Answer All
 
       <div id='ti'> Time: </div>
     </div>
 
-    <div id='labelView_inner'>
-
-
+    <div id='labelView_inner' style="display: block;">
+      <!--begin of the question -->
       <div class="pa">
-        <div>
-          1. In any experiment, the factor that changes is called
-          <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>.
-        </div>
-      </div>
-
-      <div class="pa">
-        2. Mammals nourish their young ones with milk from
-        their
-        <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
-
-      </div>
-      <div class="pa">
-        3. The DNA code is copied by the process of
-
-        <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
-
-      </div>
-      <div class="pa">
-        4. Asexual reproduction does not involve fussion of nuclei, it requires mitosis; thus asexual
-        reproduction results to
-        offsprings called
-        <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
-        which are identical to the parents
-      </div>
-      <div class="pa">
-        5. Bones attach to each other at the joints by means of
+        1. A bile is produced by the liver and stored at the
         <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
       </div>
-      <div class="pa">
-        6.
-        <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span> in green parts
-        of plants absorbs or captures energy from the sun for photosynthesis.
+      <div class="fig">
+        <strong>The jaw and dentition of a mammal</strong>
+      </div>
+      <img src="images/images2/fig2.94.jpg" class="imn" />
+
+      <div class="pa paj">
+        2. Is the organism a herbivore or a carnivore?
+        <input type="text" placeholder="type the answer here" class="answ"  /><span
+          class="resp"></span>
       </div>
 
-      <div class="pa">
-        7.
-        <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span> must take place
-        before a complex food substances like starch can be absorbed into the
-        blood stream.
+      <div class="pa paj">
+        3. The liver receives double blood supply from the heart through the
+        <input type="text" placeholder="type the answer here" class="answ"  /><span
+          class="resp"></span> and
+        <input type="text" placeholder="type the answer here" class="answ"  /><span
+          class="resp"></span>
       </div>
-      <div class="pa">
-        8. A bile is produced by the liver and stored at the
-        <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+      <div class="pa paj">
+        4.Arteries usually carry oxygenated blood except the
+        <input type="text" placeholder="type the answer here" class="answ"  /><span
+          class="resp"></span>
       </div>
-      <div class="pa">
-        9.The blood cell that defends the body against foreign substances and diseases is the
-        <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+
+      <div class="pa paj">
+        5.During blood clotting, for prothrombin to change into thrombin
+        <input type="text" placeholder="type the answer here" class="answ"  /><span
+          class="resp"></span> ions must be present
       </div>
-      <div class="pa">
-        10. Energy is vital for powering life processes of living things, but though it is contained in food, energy can
-        not be released from food except through the process of
-        <input type="text" placeholder="type the answer here" class="answ" /><span class="resp"></span>
+      <div class="pa paj">
+        6.The human heart sits between the lungs and above the diaphragm. It is surrounded by a protective membrane
+        called
+        <input type="text" placeholder="type the answer here" class="answ"  /><span
+          class="resp"></span>
       </div>
+
+      <div class="pa paj">
+        7.The opening of the left auricles into the left ventricle is guarded by the
+        <input type="text" placeholder="type the answer here" class="answ"  /><span
+          class="resp"></span> valve
+      </div>
+
+      <div class="pa paj">
+        8.Arteries usually carry oxygenated blood except the
+        <input type="text" placeholder="type the answer here" class="answ"  /><span
+          class="resp"></span>
+      </div>
+
+      <div class="pa paj">
+        9. During external respiration in mammals, gaseous exchange surface in lung is found at the
+        <input type="text" placeholder="type the answer here" class="answ"  /><span
+          class="resp"></span>
+      </div>
+      <div class="pa paj">
+        10. Within the thoracic cavity, each lung is surrounded by an inner and outer
+        <input type="text" placeholder="type the answer here" class="answ"  /><span
+          class="resp"></span> which forms a water proof and air tight sac.
+      </div>
+
+      <!-- end of the question -->
     </div>
 
     <button id="submit_manual" class="start"> Submit </button>
@@ -738,32 +746,25 @@ How much can you label right in 60 sec
     }
   }
   setTimeout(myFunction, 3000);
-
-
+  
   var answer = [
     [
-      'variable'
-    ], [
-      'mammary gland'
-    ], [
-      'replication'
-    ], [
-      'clones'
-    ], [
-      'tendons'
-    ], [
-      'chlorophyl'
-    ], [
-      'digestion'
-    ], [
       'gall bladder'
-    ], [
-      'white blood cell'
-    ], [
-      'respiration'
-    ], [
-      ''
+    ],  [
+      'Herbivore'
     ],
+	['hepatic artery','hepatic portal vein'],
+	['hepatic portal vein','hepatic artery'],
+  ['pulmonary artery'],//4
+	['calcium'],//5
+	['pericardium membrane'], 
+  [
+      'bicuspid'
+    ], [
+      'pulmonary artery'
+    ], //8
+    ['Alveoli'],
+    ['pleural membrane'],
   ];
 
   async function fetchData() {
