@@ -358,9 +358,7 @@ function rem(){
 	localStorage.actidKey = 0;
 }
 /*** marker **/
-function cleanString(str) {
-	return str.trim().replace(/\s{2,}/g, ' ');
-}
+
 var g=document.getElementsByClassName('qBox_bio');
 gg=document.getElementsByClassName("resp");
 xw='<span class="T_A_required">Teacher\'s attention required</span>';
@@ -374,7 +372,7 @@ for (var i = 0, len = g.length; i < len; i++)
 			  if(answer[index][0].length < 1){gg[index].innerHTML=xw}else{
 				  
               var y=g[index].value.toLowerCase();
-              xx=cleanString(answer[index]);
+              xx=answer[index];
               mk = "";
               anso = "f";
               //alert(xx.length);
